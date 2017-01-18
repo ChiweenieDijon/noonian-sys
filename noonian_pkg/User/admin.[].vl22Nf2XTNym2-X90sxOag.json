@@ -1,0 +1,14 @@
+{
+	"__ver": "sys:3",
+	"_id": "vl22Nf2XTNym2-X90sxOag",
+	"name": "admin",
+	"password": {
+		"hash": "$2a$10$upi6IEXcAO71HY.NzpT33ePm58Pf4Oxo8Flf8K6iOWqyPrQjFyh9G"
+	},
+	"roles": [
+		{
+			"_disp": "ROLE_SYSADMIN",
+			"_id": "FnQ_eBYITOSC8kJA4Zul5g"
+		}
+	]
+}
