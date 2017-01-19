@@ -439,6 +439,8 @@ function ($http, $q) {
           var THIS = this;
           this._id = initObj._id;
           this.__ver = initObj.__ver;
+          this.__t = initObj.__t;
+          
           _.forEach(this._bo_meta_data.type_desc_map, function(td, fieldName) {
 
             if(td.construct) {
