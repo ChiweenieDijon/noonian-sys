@@ -1,13 +1,19 @@
 {
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_id": "0tydbMgIRdudkdXTyXt7qA",
+	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.RemotePackageRepository",
+	"rolespec": [
+	],
 	"system": true,
 	"value": {
 		"edit": {
 			"layout": [
 				"name",
-				"packages",
+				[
+					"packages",
+					"package_keys"
+				],
 				"url",
 				"auth"
 			]
@@ -15,13 +21,17 @@
 		"list": {
 			"fields": [
 				"name",
-				"packages"
+				"packages",
+				"package_keys"
 			]
 		},
 		"view": {
 			"layout": [
 				"name",
-				"packages",
+				[
+					"packages",
+					"package_keys"
+				],
 				"url",
 				"auth"
 			],
