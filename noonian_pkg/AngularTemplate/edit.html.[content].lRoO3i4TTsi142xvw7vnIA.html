@@ -17,4 +17,6 @@
 
   <dbui-object-editor the-object="theObject" perspective="editPerspective" ></dbui-object-editor>
 
+  <!-- related -->
+  <dbui-related-viewer ng-if="editPerspective.related" the-object="theObject" perspective-name="editPerspective.name" related-spec="editPerspective.related"></dbui-related-viewer>
 </div>
