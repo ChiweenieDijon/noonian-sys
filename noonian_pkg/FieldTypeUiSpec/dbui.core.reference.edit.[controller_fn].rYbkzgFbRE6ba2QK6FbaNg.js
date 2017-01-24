@@ -1,4 +1,4 @@
-function ($scope, $stateParams, db, Dbui, DbuiObjectPicker) {
+function ($scope, $stateParams, db, Dbui, DbuiObjectPicker, DbuiAction) {
     var td = $scope.typeDesc;
     var refClass = td.ref_class;
 
@@ -30,4 +30,7 @@ function ($scope, $stateParams, db, Dbui, DbuiObjectPicker) {
           $scope.refDisplayText = '';
     });
 
+    $scope.invokeAction = function(a) {
+        DbuiAction.invokeAction($stateParams.perspective, ($scope.binding && $scope.binding.value), a);
+    } 
 }

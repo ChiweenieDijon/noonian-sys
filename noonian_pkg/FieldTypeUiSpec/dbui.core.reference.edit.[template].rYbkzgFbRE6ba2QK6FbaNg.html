@@ -8,5 +8,8 @@
    ng-blur="lostFocus()"
 	 uib-typeahead="stub._disp for stub in getRefs($viewValue)"
    typeahead-on-select="onSelect($item, $model, $label)">
+   <div ng-if="fieldCustomizations.fieldActions">
+       <button type="button" ng-repeat="action in fieldCustomizations.fieldActions" class="btn btn-action" ng-click="invokeAction(action)"><i class="fa fa-lg" ng-class="action.icon" ></i> {{ action.label }}</button>
+   </div>
    </p>
 </div>
