@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:7",
+	"__ver": "sys:9",
 	"_id": "kX5Bln7MQ7evgGJJm9QhUw",
 	"doc": "Operates on a set of objects whose hierarchy is defined by a \"path\" field.  Template operates on a tree that has been flattened by logic in the controller.",
 	"module": {

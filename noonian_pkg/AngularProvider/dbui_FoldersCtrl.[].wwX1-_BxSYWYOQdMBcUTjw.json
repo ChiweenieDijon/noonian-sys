@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_id": "wwX1-_BxSYWYOQdMBcUTjw",
 	"doc": "The controller for ui-router state dbui.folders",
 	"module": {
@@ -9,9 +9,9 @@
 	"name": "dbui_FoldersCtrl",
 	"parameters": [
 		"$scope",
-		"$state",
 		"$stateParams",
-		"Dbui",
+		"NoonI18n",
+		"DbuiAction",
 		"folderPerspective"
 	],
 	"path": "dbui/core/state",

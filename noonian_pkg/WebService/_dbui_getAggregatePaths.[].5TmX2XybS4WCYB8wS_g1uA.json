@@ -1,0 +1,8 @@
+{
+	"__ver": "sys:1",
+	"_id": "5TmX2XybS4WCYB8wS_g1uA",
+	"doc": "Summarizes path information for a specified path field.  Used by the \"folders\" view in DBUI.\n@param className\n@param pathField\n@param conditions",
+	"path": "/dbui/getAggregatePaths",
+	"rolespec": [
+	]
+}

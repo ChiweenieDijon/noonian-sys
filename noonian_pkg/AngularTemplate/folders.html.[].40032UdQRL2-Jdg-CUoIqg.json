@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:6",
+	"__ver": "sys:7",
 	"_id": "40032UdQRL2-Jdg-CUoIqg",
 	"doc": "The base template that is rendered for ui-router state dbui.folders.",
 	"module": {

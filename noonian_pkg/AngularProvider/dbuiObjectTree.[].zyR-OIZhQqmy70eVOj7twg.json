@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:6",
+	"__ver": "sys:8",
 	"_id": "zyR-OIZhQqmy70eVOj7twg",
 	"doc": "Renders a list of \"BusinessObject-like\" objects in a hierarchical tree defined by a \"path\" type field on the objects.\n\n@todo refactor to be like object-list directive - bound via ngModel to a list of business objects, with \"path\" object as a parameter.",
 	"module": {
@@ -13,8 +13,7 @@
 		"db",
 		"NoonI18n",
 		"DbuiAction",
-		"NoonConfig",
-		"Dbui"
+		"NoonWebService"
 	],
 	"path": "dbui/reusable/core",
 	"type": "directive"

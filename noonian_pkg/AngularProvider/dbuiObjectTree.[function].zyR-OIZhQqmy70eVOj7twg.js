@@ -1,4 +1,4 @@
-function ($timeout, $q, db, NoonI18n, DbuiAction, NoonConfig, Dbui) {
+function ($timeout, $q, db, NoonI18n, DbuiAction, NoonWebService) {
   return {
     templateUrl: 'dbui/reusable/core/object_treelist.html',
     restrict: 'E',
@@ -19,6 +19,10 @@ function ($timeout, $q, db, NoonI18n, DbuiAction, NoonConfig, Dbui) {
             }
           };
         
+        
+          /** 
+           * Generates a list of objects that represent the flattened path tree.
+           */
           var createPathElements = function(prefix, indent, parent, prefixMap, elemArray) {
             var infoObj = prefixMap[prefix];
         
@@ -42,64 +46,73 @@ function ($timeout, $q, db, NoonI18n, DbuiAction, NoonConfig, Dbui) {
             return me;
         
           };
+          
+          var boClass = $scope.boClass;
+          var objectMetaData = db[boClass]._bo_meta_data;
+          var perspective;
         
-          $scope.filterDef = {};
-          $scope.labels = I18n.getLabelGroup('sys.dbui.bo.'+$scope.boClass);
+        
+          $scope.labels = NoonI18n.getBoLabelGroup($scope.boClass);
+          
+          //Query stuff
+          var queryOpts = {}, selectObj = {};
         
           $scope.$watch('perspective', function() {
             if(!$scope.perspective) return;
         
-        
-            var boClass = $scope.boClass;
-            var perspective = $scope.perspective;
-        
-            Dbui.prepareScope($scope, perspective);
+            perspective = $scope.perspective;
+            
+            if(perspective.sort) {
+              queryOpts.sort = perspective.sort;
+            }
+            
+            //Ask only for the fields we're showing
+            for(var i=0; i <  perspective.fields.length; i++) {
+                var f = perspective.fields[i];
+                selectObj[f] = 1;
+            }
+            
+            if(perspective.recordActions) {
+                $scope.recordActionList = DbuiAction.unaliasActionList(perspective.recordActions);
+            }
+            
+            $scope.filterDef = perspective.filter || {};
         
             $scope.dispFields = perspective.fields;
             $scope.pathField = perspective.pathField;
             $scope.viewField = perspective.viewField;
         
-            $scope.typeDescMap = db[boClass]._meta.type_descriptor;
-            $scope.pathSeperator = $scope.typeDescMap[$scope.pathField].seperator || '/';
-        
-        
-            // if(perspective.filter) {
-            //   $scope.filterDef.query = perspective.filter;
-            // }
-        
-            // if(perspective.recordActions) {
-            //   var recordActions = $scope.recordActions = [];
-            //   if(perspective.recordActions) {
-            //     for(var i=0; i < perspective.recordActions.length; i++) {
-            //       var a = perspective.recordActions[i];
-            //       if(angular.isString(a))
-            //         recordActions.push(Dbui.getCoreActionDef(a));
-            //       else
-            //         recordActions.push(a);
-            //     }
-            //   }
-            // }
-        
-            Dbui.getAggregatePaths($scope.boClass, $scope.pathField, $scope.filterDef.query).then(function(prefixMap) {
-              var pathSep = $scope.pathSeperator;
-        
-              var pathElems = $scope.pathElements = [];
-        
-              var prefixes = Object.keys(prefixMap);
-              prefixes.sort();
-        
-              //The top-level at the root
-              var rootNode = {expanded:true};
-              for(var i=0; i < prefixes.length; i++) {
-                if(prefixes[i].indexOf(pathSep) === -1) {
-                  createPathElements(prefixes[i], 0, rootNode, prefixMap, pathElems);
+            $scope.pathSeperator = objectMetaData.type_desc_map.getTypeDescriptor($scope.pathField).seperator || '/';
+            
+            NoonWebService.call(
+                'dbui/getAggregatePaths', 
+                {
+                    className:boClass, 
+                    pathField:$scope.pathField, 
+                    conditions:$scope.filterDef.query
                 }
-              }
-        
-              // console.log(pathElems);
+            ).then(function(resp) {
+                var prefixMap = resp.result;
+                var pathSep = $scope.pathSeperator;
+                
+                var pathElems = $scope.pathElements = [];
+                
+                var prefixes = Object.keys(prefixMap);
+                prefixes.sort();
+                
+                //The top-level at the root
+                var rootNode = {expanded:true};
+                for(var i=0; i < prefixes.length; i++) {
+                    if(prefixes[i].indexOf(pathSep) === -1) {
+                        createPathElements(prefixes[i], 0, rootNode, prefixMap, pathElems);   
+                    }
+                }
             });
+
         
           }); //end $watch perspective
+          
+          
         
           $scope.toggleCollapse = function(elemObj) {
             if(elemObj.expanded)
@@ -109,14 +122,13 @@ function ($timeout, $q, db, NoonI18n, DbuiAction, NoonConfig, Dbui) {
         
               if(!elemObj.loaded) {
                 elemObj.loaded = true;
-                var dbModel = db[$scope.boClass];
+                var BoModel = db[$scope.boClass];
         
-                var queryObj = {where:{}};
-                queryObj.where[$scope.pathField] = elemObj.prefix;
-                if($scope.perspective.sort) {
-                  queryObj.sort = $scope.perspective.sort;
-                }
-                dbModel.query(queryObj).$promise.then(function(results) {
+                var queryDef = {};
+                queryDef[$scope.pathField] = elemObj.prefix;
+                
+                
+                 BoModel.find(queryDef, selectObj, queryOpts).$promise.then(function(results) {
                   if(results && results.length > 0) {
                     var newSection = [];
                     for(var i=0; i < results.length; i++) {
@@ -143,15 +155,33 @@ function ($timeout, $q, db, NoonI18n, DbuiAction, NoonConfig, Dbui) {
         
           }
         
-          $scope.getFieldLabel = function(f) {
-            if($scope.labels && $scope.labels[f])
-              return $scope.labels[f];
-            return f;
-          };
         
-          $scope.invokeAction = function(actionObj, recordObj) {
-            Dbui.invokeAction(actionObj, $scope.boClass, recordObj);
-          };
+        $scope.getValue = function(dataObj, field) {
+            return _.get(dataObj, field);
+        };
+        
+        $scope.getTypeDesc = function(field) {
+            return objectMetaData.type_desc_map.getTypeDescriptor(field);
+        };
+        
+        $scope.getFieldLabel = function(field) {
+            var labels = $scope.labels;
+            
+            if(labels) {
+                return (labels._abbreviated && labels._abbreviated[field]) || labels[field] || field;
+            }
+        
+            return fieldName;
+        };
+        
+        
+        $scope.invokeRecordAction = function(dataObj, action, index) {
+            //attach extra action "base parameters" from actionConfig 
+            var params = {index:index, className:objectMetaData.class_name};
+            
+            //Invoke via DbuiAction, including 'index' parameter
+            return DbuiAction.invokeAction(perspective, dataObj, action, params);
+        };
 
     }
   };

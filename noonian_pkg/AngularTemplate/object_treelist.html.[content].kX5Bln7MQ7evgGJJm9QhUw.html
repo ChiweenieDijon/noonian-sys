@@ -23,7 +23,7 @@
         </thead>
         <tr ng-repeat="elementObj in pathElements" ng-if="elementObj.parent.expanded">
           <td class="text-center">
-            <span ng-if="elementObj.bo" ng-repeat="action in recordActionList"><a href="" class="datatable_btn" ng-click="invokeAction(action, elementObj.bo)"><i ng-class="action.icon" class="fa fa-lg"></i></a> </span>
+            <span ng-if="elementObj.bo" ng-repeat="action in recordActionList"><a href="" class="datatable_btn" ng-click="invokeRecordAction(elementObj.bo, action, $parent.$index)"><i ng-class="action.icon" class="fa fa-lg"></i></a> </span>
           </td>
           <td>
             <dbui-indent-spacer indent="elementObj.indent"></dbui-indent-spacer>
@@ -34,12 +34,12 @@
               </a>
             </span>
             <span ng-if="elementObj.bo">
-               <dbui-field-viewer ng-if="elementObj.bo[viewField] != null" type-desc="typeDescMap[viewField]"  display-value="elementObj.bo[viewField]" abbreviated="true" style="display: inline-block;" ></dbui-field-viewer>
+               <dbui-field-viewer ng-if="elementObj.bo[viewField] != null" type-desc="getTypeDesc(viewField)"  display-value="elementObj.bo[viewField]" abbreviated="true" style="display: inline-block;" ></dbui-field-viewer>
             </span>
           </td>
           <td ng-repeat="field in dispFields">
             <span ng-if="elementObj.bo">
-              <dbui-field-viewer ng-if="elementObj.bo[field] != null" type-desc="typeDescMap[field]"  display-value="elementObj.bo[field]" abbreviated="true"></dbui-field-viewer>
+              <dbui-field-viewer ng-if="elementObj.bo[field] != null" type-desc="getTypeDesc(field)"  display-value="elementObj.bo[field]" abbreviated="true"></dbui-field-viewer>
             </span>
           </td>
         </tr>
