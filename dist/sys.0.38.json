@@ -51,15 +51,15 @@
 			"qt1-hwnEQmum-4hvi9O-Aw": "sys:3",
 			"shz0lNmSRhWP9DjcWypp7A": "sys:76",
 			"uIn4BYTnSuqQpF8sCTAiCQ": "sys:8",
-			"wwX1-_BxSYWYOQdMBcUTjw": "sys:2",
+			"wwX1-_BxSYWYOQdMBcUTjw": "sys:3",
 			"xsxZe1yRTb6jFJtSSTF3mQ": "sys:4",
 			"zLrdPMCOSMuj44EGALgmDw": "sys:6",
-			"zyR-OIZhQqmy70eVOj7twg": "sys:6"
+			"zyR-OIZhQqmy70eVOj7twg": "sys:8"
 		},
 		"AngularTemplate": {
 			"-2Gpn4Q_QK6iFWp83138Fg": "sys:9",
 			"1AvVYpoKRzaBCsiGkrDEaQ": "sys:21",
-			"40032UdQRL2-Jdg-CUoIqg": "sys:6",
+			"40032UdQRL2-Jdg-CUoIqg": "sys:7",
 			"4yT9t5IzTIqSCLFnR508rw": "sys:3",
 			"6OYTWbEuSxGAYApNR85rAg": "sys:5",
 			"Asy2H3LZTZaS16UFz4JTdg": "sys:6",
@@ -71,8 +71,8 @@
 			"c-Sh5WEEQqW1adX257yZVQ": "sys:10",
 			"hbhKtxpDQLaUvyA7hogLWw": "sys:14",
 			"iMYbBIZHRvqnpf6mAmeBBw": "sys:7",
-			"kX5Bln7MQ7evgGJJm9QhUw": "sys:7",
-			"lRoO3i4TTsi142xvw7vnIA": "sys:6",
+			"kX5Bln7MQ7evgGJJm9QhUw": "sys:9",
+			"lRoO3i4TTsi142xvw7vnIA": "sys:7",
 			"nWxgcco1SJWxxpgCW1TjYg": "sys:10",
 			"nlXSAaacSla8tUPF9oYF7A": "sys:6",
 			"qwW8v9NIReKHdrGiRZl9tg": "sys:10",
@@ -275,7 +275,7 @@
 			"nRL5-PUBSTCrnHeAH6ZiPw": "sys:3",
 			"nzwhA-zvRsS0i_cousGbiQ": "sys:19",
 			"plX-2sUOSiW3dlXKZKLTQw": "sys:2",
-			"rYbkzgFbRE6ba2QK6FbaNg": "sys:9",
+			"rYbkzgFbRE6ba2QK6FbaNg": "sys:10",
 			"s8cKD6C4SYmGKhog3B4zhg": "sys:7",
 			"tfbLyH5LTdej83BgiANlHQ": "sys:1",
 			"vZafim91SDeMAEcOVdBS3g": "sys:7",
@@ -596,6 +596,7 @@
 			"vl22Nf2XTNym2-X90sxOag": "sys:3"
 		},
 		"WebService": {
+			"5TmX2XybS4WCYB8wS_g1uA": "sys:1",
 			"7ugMfTjtQtyPiOiCpci9hA": "sys:3",
 			"9G9tifuVToCBntbpzatynA": "sys:1",
 			"EPl27ZhKQBO60-xwX60JgA": "sys:2",
@@ -616,7 +617,7 @@
 			"w-lHVPreRRSku89vhlyagA": "sys:2"
 		}
 	},
-	"minor_version": 37,
+	"minor_version": 38,
 	"name": "Core System"
 },
 "business_objects":[
@@ -2519,11 +2520,11 @@
 	"type": "service"
 },
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_class": "AngularProvider",
 	"_id": "wwX1-_BxSYWYOQdMBcUTjw",
 	"doc": "The controller for ui-router state dbui.folders",
-	"function": "function ($scope, $state, $stateParams, Dbui, folderPerspective) {\n\n  $scope.folderPerspective = folderPerspective;\n\n  Dbui.prepareScope($scope, folderPerspective);\n\n}",
+	"function": "function ($scope, $stateParams, NoonI18n, DbuiAction, folderPerspective) {\n    \n    var className = $scope.boClass = $stateParams.className;\n    \n    //Load the labels for this class's fields\n    // $scope.labels = NoonI18n.getBoLabelGroup(className);\n    \n    //Put folderPerspective (populated in $state object's \"resolve\" block) into scope\n    $scope.folderPerspective = folderPerspective;\n    \n    // function(perspectiveObj, contextBo, actionObj, argsObj)\n    $scope.invokeAction = DbuiAction.invokeAction.bind(DbuiAction, folderPerspective, null);\n    \n    if(folderPerspective.actions) {\n        $scope.actionList = DbuiAction.unaliasActionList(folderPerspective.actions);\n    }\n    \n    if(folderPerspective.title) {\n        $scope.setPageTitle(folderPerspective.title);\n    }\n    else {\n        $scope.setPageTitle('Folders '+className);\n    }\n\n}",
 	"module": {
 		"_disp": "noonian.dbui",
 		"_id": "myP57XGhSNyDKrrcJFvO0Q"
@@ -2531,9 +2532,9 @@
 	"name": "dbui_FoldersCtrl",
 	"parameters": [
 		"$scope",
-		"$state",
 		"$stateParams",
-		"Dbui",
+		"NoonI18n",
+		"DbuiAction",
 		"folderPerspective"
 	],
 	"path": "dbui/core/state",
@@ -2574,11 +2575,11 @@
 	"type": "directive"
 },
 {
-	"__ver": "sys:6",
+	"__ver": "sys:8",
 	"_class": "AngularProvider",
 	"_id": "zyR-OIZhQqmy70eVOj7twg",
 	"doc": "Renders a list of \"BusinessObject-like\" objects in a hierarchical tree defined by a \"path\" type field on the objects.\n\n@todo refactor to be like object-list directive - bound via ngModel to a list of business objects, with \"path\" object as a parameter.",
-	"function": "function ($timeout, $q, db, NoonI18n, DbuiAction, NoonConfig, Dbui) {\n  return {\n    templateUrl: 'dbui/reusable/core/object_treelist.html',\n    restrict: 'E',\n    scope: {\n      boClass: '=',\n      perspective: '='\n    },\n    \n    controller: function($scope) {\n        \n          var collapse = function() {\n            this.expanded = false;\n        \n            if(this.children) {\n              for(var i=0; i < this.children.length; i++) {\n                this.children[i].collapse();\n              }\n            }\n          };\n        \n          var createPathElements = function(prefix, indent, parent, prefixMap, elemArray) {\n            var infoObj = prefixMap[prefix];\n        \n            var pathPieces = prefix.split($scope.pathSeperator);\n        \n            //First push my row...\n            var me = {disp:pathPieces[pathPieces.length-1], prefix:prefix, count:infoObj.count, indent:indent, parent:parent, collapse:collapse};\n            elemArray.push(me);\n        \n            //... then my children\n            if(infoObj.children) {\n              me.children = [];\n              for(var i=0; i < infoObj.children.length; i++) {\n                var child = infoObj.children[i];\n                me.children.push(\n                  createPathElements(child, indent+1, me, prefixMap, elemArray)\n                );\n              }\n            }\n        \n            return me;\n        \n          };\n        \n          $scope.filterDef = {};\n          $scope.labels = I18n.getLabelGroup('sys.dbui.bo.'+$scope.boClass);\n        \n          $scope.$watch('perspective', function() {\n            if(!$scope.perspective) return;\n        \n        \n            var boClass = $scope.boClass;\n            var perspective = $scope.perspective;\n        \n            Dbui.prepareScope($scope, perspective);\n        \n            $scope.dispFields = perspective.fields;\n            $scope.pathField = perspective.pathField;\n            $scope.viewField = perspective.viewField;\n        \n            $scope.typeDescMap = db[boClass]._meta.type_descriptor;\n            $scope.pathSeperator = $scope.typeDescMap[$scope.pathField].seperator || '/';\n        \n        \n            // if(perspective.filter) {\n            //   $scope.filterDef.query = perspective.filter;\n            // }\n        \n            // if(perspective.recordActions) {\n            //   var recordActions = $scope.recordActions = [];\n            //   if(perspective.recordActions) {\n            //     for(var i=0; i < perspective.recordActions.length; i++) {\n            //       var a = perspective.recordActions[i];\n            //       if(angular.isString(a))\n            //         recordActions.push(Dbui.getCoreActionDef(a));\n            //       else\n            //         recordActions.push(a);\n            //     }\n            //   }\n            // }\n        \n            Dbui.getAggregatePaths($scope.boClass, $scope.pathField, $scope.filterDef.query).then(function(prefixMap) {\n              var pathSep = $scope.pathSeperator;\n        \n              var pathElems = $scope.pathElements = [];\n        \n              var prefixes = Object.keys(prefixMap);\n              prefixes.sort();\n        \n              //The top-level at the root\n              var rootNode = {expanded:true};\n              for(var i=0; i < prefixes.length; i++) {\n                if(prefixes[i].indexOf(pathSep) === -1) {\n                  createPathElements(prefixes[i], 0, rootNode, prefixMap, pathElems);\n                }\n              }\n        \n              // console.log(pathElems);\n            });\n        \n          }); //end $watch perspective\n        \n          $scope.toggleCollapse = function(elemObj) {\n            if(elemObj.expanded)\n              elemObj.collapse();\n            else {\n              elemObj.expanded = true;\n        \n              if(!elemObj.loaded) {\n                elemObj.loaded = true;\n                var dbModel = db[$scope.boClass];\n        \n                var queryObj = {where:{}};\n                queryObj.where[$scope.pathField] = elemObj.prefix;\n                if($scope.perspective.sort) {\n                  queryObj.sort = $scope.perspective.sort;\n                }\n                dbModel.query(queryObj).$promise.then(function(results) {\n                  if(results && results.length > 0) {\n                    var newSection = [];\n                    for(var i=0; i < results.length; i++) {\n                      newSection.push(\n                        {disp:results[i]._disp, indent:elemObj.indent+1, parent:elemObj, bo:results[i]}\n                      );\n                    }\n        \n                    var elemArr = $scope.pathElements;\n                    var targetIndex = -1;\n                    for(i=0; i < elemArr.length; i++) {\n                      if(elemArr[i] === elemObj) {\n                        targetIndex = i;\n                        break;\n                      }\n                    }\n                    var spliceFn = elemArr.splice.bind(elemArr, targetIndex+1, 0);\n                    spliceFn.apply(elemArr, newSection);\n        \n                  }\n                });\n              }\n            }\n        \n          }\n        \n          $scope.getFieldLabel = function(f) {\n            if($scope.labels && $scope.labels[f])\n              return $scope.labels[f];\n            return f;\n          };\n        \n          $scope.invokeAction = function(actionObj, recordObj) {\n            Dbui.invokeAction(actionObj, $scope.boClass, recordObj);\n          };\n\n    }\n  };\n}",
+	"function": "function ($timeout, $q, db, NoonI18n, DbuiAction, NoonWebService) {\n  return {\n    templateUrl: 'dbui/reusable/core/object_treelist.html',\n    restrict: 'E',\n    scope: {\n      boClass: '=',\n      perspective: '='\n    },\n    \n    controller: function($scope) {\n        \n          var collapse = function() {\n            this.expanded = false;\n        \n            if(this.children) {\n              for(var i=0; i < this.children.length; i++) {\n                this.children[i].collapse();\n              }\n            }\n          };\n        \n        \n          /** \n           * Generates a list of objects that represent the flattened path tree.\n           */\n          var createPathElements = function(prefix, indent, parent, prefixMap, elemArray) {\n            var infoObj = prefixMap[prefix];\n        \n            var pathPieces = prefix.split($scope.pathSeperator);\n        \n            //First push my row...\n            var me = {disp:pathPieces[pathPieces.length-1], prefix:prefix, count:infoObj.count, indent:indent, parent:parent, collapse:collapse};\n            elemArray.push(me);\n        \n            //... then my children\n            if(infoObj.children) {\n              me.children = [];\n              for(var i=0; i < infoObj.children.length; i++) {\n                var child = infoObj.children[i];\n                me.children.push(\n                  createPathElements(child, indent+1, me, prefixMap, elemArray)\n                );\n              }\n            }\n        \n            return me;\n        \n          };\n          \n          var boClass = $scope.boClass;\n          var objectMetaData = db[boClass]._bo_meta_data;\n          var perspective;\n        \n        \n          $scope.labels = NoonI18n.getBoLabelGroup($scope.boClass);\n          \n          //Query stuff\n          var queryOpts = {}, selectObj = {};\n        \n          $scope.$watch('perspective', function() {\n            if(!$scope.perspective) return;\n        \n            perspective = $scope.perspective;\n            \n            if(perspective.sort) {\n              queryOpts.sort = perspective.sort;\n            }\n            \n            //Ask only for the fields we're showing\n            for(var i=0; i <  perspective.fields.length; i++) {\n                var f = perspective.fields[i];\n                selectObj[f] = 1;\n            }\n            \n            if(perspective.recordActions) {\n                $scope.recordActionList = DbuiAction.unaliasActionList(perspective.recordActions);\n            }\n            \n            $scope.filterDef = perspective.filter || {};\n        \n            $scope.dispFields = perspective.fields;\n            $scope.pathField = perspective.pathField;\n            $scope.viewField = perspective.viewField;\n        \n            $scope.pathSeperator = objectMetaData.type_desc_map.getTypeDescriptor($scope.pathField).seperator || '/';\n            \n            NoonWebService.call(\n                'dbui/getAggregatePaths', \n                {\n                    className:boClass, \n                    pathField:$scope.pathField, \n                    conditions:$scope.filterDef.query\n                }\n            ).then(function(resp) {\n                var prefixMap = resp.result;\n                var pathSep = $scope.pathSeperator;\n                \n                var pathElems = $scope.pathElements = [];\n                \n                var prefixes = Object.keys(prefixMap);\n                prefixes.sort();\n                \n                //The top-level at the root\n                var rootNode = {expanded:true};\n                for(var i=0; i < prefixes.length; i++) {\n                    if(prefixes[i].indexOf(pathSep) === -1) {\n                        createPathElements(prefixes[i], 0, rootNode, prefixMap, pathElems);   \n                    }\n                }\n            });\n\n        \n          }); //end $watch perspective\n          \n          \n        \n          $scope.toggleCollapse = function(elemObj) {\n            if(elemObj.expanded)\n              elemObj.collapse();\n            else {\n              elemObj.expanded = true;\n        \n              if(!elemObj.loaded) {\n                elemObj.loaded = true;\n                var BoModel = db[$scope.boClass];\n        \n                var queryDef = {};\n                queryDef[$scope.pathField] = elemObj.prefix;\n                \n                \n                 BoModel.find(queryDef, selectObj, queryOpts).$promise.then(function(results) {\n                  if(results && results.length > 0) {\n                    var newSection = [];\n                    for(var i=0; i < results.length; i++) {\n                      newSection.push(\n                        {disp:results[i]._disp, indent:elemObj.indent+1, parent:elemObj, bo:results[i]}\n                      );\n                    }\n        \n                    var elemArr = $scope.pathElements;\n                    var targetIndex = -1;\n                    for(i=0; i < elemArr.length; i++) {\n                      if(elemArr[i] === elemObj) {\n                        targetIndex = i;\n                        break;\n                      }\n                    }\n                    var spliceFn = elemArr.splice.bind(elemArr, targetIndex+1, 0);\n                    spliceFn.apply(elemArr, newSection);\n        \n                  }\n                });\n              }\n            }\n        \n          }\n        \n        \n        $scope.getValue = function(dataObj, field) {\n            return _.get(dataObj, field);\n        };\n        \n        $scope.getTypeDesc = function(field) {\n            return objectMetaData.type_desc_map.getTypeDescriptor(field);\n        };\n        \n        $scope.getFieldLabel = function(field) {\n            var labels = $scope.labels;\n            \n            if(labels) {\n                return (labels._abbreviated && labels._abbreviated[field]) || labels[field] || field;\n            }\n        \n            return fieldName;\n        };\n        \n        \n        $scope.invokeRecordAction = function(dataObj, action, index) {\n            //attach extra action \"base parameters\" from actionConfig \n            var params = {index:index, className:objectMetaData.class_name};\n            \n            //Invoke via DbuiAction, including 'index' parameter\n            return DbuiAction.invokeAction(perspective, dataObj, action, params);\n        };\n\n    }\n  };\n}",
 	"module": {
 		"_disp": "noonian.dbui",
 		"_id": "myP57XGhSNyDKrrcJFvO0Q"
@@ -2590,8 +2591,7 @@
 		"db",
 		"NoonI18n",
 		"DbuiAction",
-		"NoonConfig",
-		"Dbui"
+		"NoonWebService"
 	],
 	"path": "dbui/reusable/core",
 	"type": "directive"
@@ -2638,10 +2638,10 @@
 },
 {
 	"__t": "AngularTemplate",
-	"__ver": "sys:6",
+	"__ver": "sys:7",
 	"_class": "AngularTemplate",
 	"_id": "40032UdQRL2-Jdg-CUoIqg",
-	"content": "<div>\n\n  <div class=\"row\">\n    <div class=\"col-xs-12 dbui-header\">\n      <h3>{{labels[boClass] || boClass}} List</h3>\n      <button type=\"button\" ng-repeat=\"action in actionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n    </div>\n  </div>\n\n  <dbui-object-tree bo-class=\"boClass\" perspective=\"folderPerspective\"></dbui-object-tree>\n\n</div>\n",
+	"content": "<div>\n\n  <div class=\"row\">\n    <div class=\"col-xs-12 dbui-header\">\n      <h3 ng-hide=\"folderPerspective.title\">{{labels[boClass] || boClass}} List </h3>\n      <h3 ng-show=\"folderPerspective.title\">{{folderPerspective.title}}</h3>\n      <button type=\"button\" ng-repeat=\"action in actionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n    </div>\n  </div>\n\n  <dbui-object-tree bo-class=\"boClass\" perspective=\"folderPerspective\"></dbui-object-tree>\n\n</div>\n",
 	"doc": "The base template that is rendered for ui-router state dbui.folders.",
 	"module": {
 		"_disp": "noonian.dbui",
@@ -2878,10 +2878,10 @@
 },
 {
 	"__t": "AngularTemplate",
-	"__ver": "sys:7",
+	"__ver": "sys:9",
 	"_class": "AngularTemplate",
 	"_id": "kX5Bln7MQ7evgGJJm9QhUw",
-	"content": "<div>\n\n  <!-- actual table data -->\n  <div class=\"row dbui-pathview-data\">\n    <div class=\"col-xs-12\">\n\n      <table class=\"table table-striped table-hover\">\n        <col style=\"width:8%\"/>\n        <thead>\n          <tr>\n            <th class=\"text-center\"><i class=\"fa fa-2x fa-cog\"></i>\n              <!-- <span uib-dropdown>\n                <a href id=\"cog-button\" uib-dropdown-toggle ><i class=\"fa fa-2x fa-cog\"></i></a>\n                <ul class=\"uib-dropdown-menu\" role=\"menu\" aria-labelledby=\"cog-button\">\n                  <li role=\"menuitem\" ng-repeat=\"action in tableActionList\"><a href ng-click=\"invokeAction(action)\"> <i ng-if=\"action.icon\" ng-class=\"action.icon\" class=\"fa\"></i> {{action.label}}</a><div ng-hide=\"$last\"class=\"divider\"></div></li>\n                </ul>\n              </span> -->\n            </th>\n            <th>{{getFieldLabel(perspective.pathField)}}</th>\n            <th ng-repeat=\"field in dispFields\"><a href=\"\" ng-click=\"toggleSort(field)\">{{getFieldLabel(field)}} &nbsp; <i\n              ng-show=\"sortDef[field]\" class=\"fa fa-sm\" ng-class=\"{'fa-chevron-circle-down': sortDef[field]=='asc', 'fa-chevron-circle-up': sortDef[field]=='desc'}\"></i></a></th>\n          </tr>\n        </thead>\n        <tr ng-repeat=\"elementObj in pathElements\" ng-if=\"elementObj.parent.expanded\">\n          <td class=\"text-center\">\n            <span ng-if=\"elementObj.bo\" ng-repeat=\"action in recordActionList\"><a href=\"\" class=\"datatable_btn\" ng-click=\"invokeAction(action, elementObj.bo)\"><i ng-class=\"action.icon\" class=\"fa fa-lg\"></i></a> </span>\n          </td>\n          <td>\n            <dbui-indent-spacer indent=\"elementObj.indent\"></dbui-indent-spacer>\n            <span ng-if=\"!elementObj.bo\">\n              <a href=\"#\" class=\"folder_view_folder\" ng-click=\"toggleCollapse(elementObj)\">\n                <i class=\"fa fa-sm\"  ng-class=\"{'fa-caret-down': elementObj.expanded, 'fa-caret-right': !elementObj.expanded}\"></i>\n                <i class=\"fa fa-sm fa-folder-o\"></i> {{elementObj.disp}}\n              </a>\n            </span>\n            <span ng-if=\"elementObj.bo\">\n               <dbui-field-viewer ng-if=\"elementObj.bo[viewField] != null\" type-desc=\"typeDescMap[viewField]\"  display-value=\"elementObj.bo[viewField]\" abbreviated=\"true\" style=\"display: inline-block;\" ></dbui-field-viewer>\n            </span>\n          </td>\n          <td ng-repeat=\"field in dispFields\">\n            <span ng-if=\"elementObj.bo\">\n              <dbui-field-viewer ng-if=\"elementObj.bo[field] != null\" type-desc=\"typeDescMap[field]\"  display-value=\"elementObj.bo[field]\" abbreviated=\"true\"></dbui-field-viewer>\n            </span>\n          </td>\n        </tr>\n      </table>\n    </div>\n  </div>\n</div>\n",
+	"content": "<div>\n\n  <!-- actual table data -->\n  <div class=\"row dbui-pathview-data\">\n    <div class=\"col-xs-12\">\n\n      <table class=\"table table-striped table-hover\">\n        <col style=\"width:8%\"/>\n        <thead>\n          <tr>\n            <th class=\"text-center\"><i class=\"fa fa-2x fa-cog\"></i>\n              <!-- <span uib-dropdown>\n                <a href id=\"cog-button\" uib-dropdown-toggle ><i class=\"fa fa-2x fa-cog\"></i></a>\n                <ul class=\"uib-dropdown-menu\" role=\"menu\" aria-labelledby=\"cog-button\">\n                  <li role=\"menuitem\" ng-repeat=\"action in tableActionList\"><a href ng-click=\"invokeAction(action)\"> <i ng-if=\"action.icon\" ng-class=\"action.icon\" class=\"fa\"></i> {{action.label}}</a><div ng-hide=\"$last\"class=\"divider\"></div></li>\n                </ul>\n              </span> -->\n            </th>\n            <th>{{getFieldLabel(perspective.pathField)}}</th>\n            <th ng-repeat=\"field in dispFields\"><a href=\"\" ng-click=\"toggleSort(field)\">{{getFieldLabel(field)}} &nbsp; <i\n              ng-show=\"sortDef[field]\" class=\"fa fa-sm\" ng-class=\"{'fa-chevron-circle-down': sortDef[field]=='asc', 'fa-chevron-circle-up': sortDef[field]=='desc'}\"></i></a></th>\n          </tr>\n        </thead>\n        <tr ng-repeat=\"elementObj in pathElements\" ng-if=\"elementObj.parent.expanded\">\n          <td class=\"text-center\">\n            <span ng-if=\"elementObj.bo\" ng-repeat=\"action in recordActionList\"><a href=\"\" class=\"datatable_btn\" ng-click=\"invokeRecordAction(elementObj.bo, action, $parent.$index)\"><i ng-class=\"action.icon\" class=\"fa fa-lg\"></i></a> </span>\n          </td>\n          <td>\n            <dbui-indent-spacer indent=\"elementObj.indent\"></dbui-indent-spacer>\n            <span ng-if=\"!elementObj.bo\">\n              <a href=\"#\" class=\"folder_view_folder\" ng-click=\"toggleCollapse(elementObj)\">\n                <i class=\"fa fa-sm\"  ng-class=\"{'fa-caret-down': elementObj.expanded, 'fa-caret-right': !elementObj.expanded}\"></i>\n                <i class=\"fa fa-sm fa-folder-o\"></i> {{elementObj.disp}}\n              </a>\n            </span>\n            <span ng-if=\"elementObj.bo\">\n               <dbui-field-viewer ng-if=\"elementObj.bo[viewField] != null\" type-desc=\"getTypeDesc(viewField)\"  display-value=\"elementObj.bo[viewField]\" abbreviated=\"true\" style=\"display: inline-block;\" ></dbui-field-viewer>\n            </span>\n          </td>\n          <td ng-repeat=\"field in dispFields\">\n            <span ng-if=\"elementObj.bo\">\n              <dbui-field-viewer ng-if=\"elementObj.bo[field] != null\" type-desc=\"getTypeDesc(field)\"  display-value=\"elementObj.bo[field]\" abbreviated=\"true\"></dbui-field-viewer>\n            </span>\n          </td>\n        </tr>\n      </table>\n    </div>\n  </div>\n</div>\n",
 	"doc": "Operates on a set of objects whose hierarchy is defined by a \"path\" field.  Template operates on a tree that has been flattened by logic in the controller.",
 	"module": {
 		"_disp": "noonian.dbui",
@@ -2898,10 +2898,10 @@
 },
 {
 	"__t": "AngularTemplate",
-	"__ver": "sys:6",
+	"__ver": "sys:7",
 	"_class": "AngularTemplate",
 	"_id": "lRoO3i4TTsi142xvw7vnIA",
-	"content": "<div>\n\t<div class=\"row\">\n\t\t<div class=\"col-sm-12 col-md-12 col-lg-12 dbui-header\">\n\t\t\t<h3 ng-if=\"boId\">Edit {{labels[boClass] || boClass}} <small>{{boId}}</small></h3>\n\t\t\t<h3 ng-if=\"!boId\">New {{labels[boClass] || boClass}}</h3>\n\t\t\t<button type=\"button\" ng-repeat=\"action in actionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n\t\t</div>\n\t</div>\n\t<div class=\"row\">\n\t\t<alert ng-repeat=\"alert in alerts\" type=\"{{alert.type}}\" close=\"closeAlert($index)\">{{alert.msg}}</alert>\n\t</div>\n\t<div class=\"row\" ng-show=\"recordActionList.length > 0\">\n\t\t<div class=\"action-bar col-md-offset-1 col-sm-10 col-md-10 col-lg-10\">\n      <button type=\"button\" ng-repeat=\"action in recordActionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n\t\t</div>\n\t</div>\n\n  <dbui-object-editor the-object=\"theObject\" perspective=\"editPerspective\" ></dbui-object-editor>\n\n</div>\n",
+	"content": "<div>\n\t<div class=\"row\">\n\t\t<div class=\"col-sm-12 col-md-12 col-lg-12 dbui-header\">\n\t\t\t<h3 ng-if=\"boId\">Edit {{labels[boClass] || boClass}} <small>{{boId}}</small></h3>\n\t\t\t<h3 ng-if=\"!boId\">New {{labels[boClass] || boClass}}</h3>\n\t\t\t<button type=\"button\" ng-repeat=\"action in actionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n\t\t</div>\n\t</div>\n\t<div class=\"row\">\n\t\t<alert ng-repeat=\"alert in alerts\" type=\"{{alert.type}}\" close=\"closeAlert($index)\">{{alert.msg}}</alert>\n\t</div>\n\t<div class=\"row\" ng-show=\"recordActionList.length > 0\">\n\t\t<div class=\"action-bar col-md-offset-1 col-sm-10 col-md-10 col-lg-10\">\n      <button type=\"button\" ng-repeat=\"action in recordActionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n\t\t</div>\n\t</div>\n\n  <dbui-object-editor the-object=\"theObject\" perspective=\"editPerspective\" ></dbui-object-editor>\n\n  <!-- related -->\n  <dbui-related-viewer ng-if=\"editPerspective.related\" the-object=\"theObject\" perspective-name=\"editPerspective.name\" related-spec=\"editPerspective.related\"></dbui-related-viewer>\n</div>\n",
 	"doc": "The base template that is rendered for ui-router states dbui.edit and dbui.create",
 	"module": {
 		"_disp": "noonian.dbui",
@@ -6917,10 +6917,10 @@
 	"template": "<div ng-style=\"{'background-color':displayValue}\">\n    <span>{{displayValue}}</span>\n</div>"
 },
 {
-	"__ver": "sys:9",
+	"__ver": "sys:10",
 	"_class": "FieldTypeUiSpec",
 	"_id": "rYbkzgFbRE6ba2QK6FbaNg",
-	"controller_fn": "function ($scope, $stateParams, db, Dbui, DbuiObjectPicker) {\n    var td = $scope.typeDesc;\n    var refClass = td.ref_class;\n\n    $scope.getRefs = function(val) {\n      //Text search for val; limit to a handful, sort so that those with _disp values containing val are at the top.\n      return db[refClass].find({$fulltextsearch:val}, {}, {limit:10}).$promise;\n    };\n\n    $scope.onSelect = function($item) {\n        $scope.binding.value = {_id:$item._id, _disp:$item._disp};\n    };\n\n    $scope.lostFocus = function() {\n        var boundVal = $scope.binding.value;\n        if( !boundVal || $scope.refDisplayText !== boundVal._disp) {\n          $scope.binding.value = null;\n          $scope.refDisplayText = '';\n        }\n    }\n\n    $scope.showPicker = function() {\n        DbuiObjectPicker.showPickerDialog(refClass, $stateParams.perspective, true, $scope.onSelect);\n    }\n\n    $scope.$watch('binding.value', function(newValue) {\n        if(newValue)\n          $scope.refDisplayText = newValue._disp;\n        else\n          $scope.refDisplayText = '';\n    });\n\n}",
+	"controller_fn": "function ($scope, $stateParams, db, Dbui, DbuiObjectPicker, DbuiAction) {\n    var td = $scope.typeDesc;\n    var refClass = td.ref_class;\n\n    $scope.getRefs = function(val) {\n      //Text search for val; limit to a handful, sort so that those with _disp values containing val are at the top.\n      return db[refClass].find({$fulltextsearch:val}, {}, {limit:10}).$promise;\n    };\n\n    $scope.onSelect = function($item) {\n        $scope.binding.value = {_id:$item._id, _disp:$item._disp};\n    };\n\n    $scope.lostFocus = function() {\n        var boundVal = $scope.binding.value;\n        if( !boundVal || $scope.refDisplayText !== boundVal._disp) {\n          $scope.binding.value = null;\n          $scope.refDisplayText = '';\n        }\n    }\n\n    $scope.showPicker = function() {\n        DbuiObjectPicker.showPickerDialog(refClass, $stateParams.perspective, true, $scope.onSelect);\n    }\n\n    $scope.$watch('binding.value', function(newValue) {\n        if(newValue)\n          $scope.refDisplayText = newValue._disp;\n        else\n          $scope.refDisplayText = '';\n    });\n\n    $scope.invokeAction = function(a) {\n        DbuiAction.invokeAction($stateParams.perspective, ($scope.binding && $scope.binding.value), a);\n    } \n}",
 	"doc": "Renders a textbox alongside a \"picker\" button.  The textbox provides auto-complete as a value is typed in, and a reference can be selected from the dropdown that appears.  Alternatively, the \"picker\" button can be clicked, allowing the referenced value to be selected from a data table in a dialog box ({@link DbuiObjectPicker}).",
 	"fieldtypes": [
 		{
@@ -6934,7 +6934,7 @@
 	"for_viewing": false,
 	"for_viewing_array": false,
 	"key": "dbui.core.reference.edit",
-	"template": "<div class=\"dbui-edit-field-reference\">\n\t<p class=\"input-group\">\n\t<span class=\"input-group-btn\">\n      <button type=\"button\" class=\"btn btn-default\" ng-click=\"showPicker()\"><i class=\"fa fa-ellipsis-h\"></i></button>\n    </span>\n\t<input type=\"text\" class=\"form-control\" autocomplete=\"off\" id=\"{{elemId}}\" ng-model=\"refDisplayText\"\n\t placeholder=\"(empty)\"\n   ng-blur=\"lostFocus()\"\n\t uib-typeahead=\"stub._disp for stub in getRefs($viewValue)\"\n   typeahead-on-select=\"onSelect($item, $model, $label)\">\n   </p>\n</div>"
+	"template": "<div class=\"dbui-edit-field-reference\">\n\t<p class=\"input-group\">\n\t<span class=\"input-group-btn\">\n      <button type=\"button\" class=\"btn btn-default\" ng-click=\"showPicker()\"><i class=\"fa fa-ellipsis-h\"></i></button>\n    </span>\n\t<input type=\"text\" class=\"form-control\" autocomplete=\"off\" id=\"{{elemId}}\" ng-model=\"refDisplayText\"\n\t placeholder=\"(empty)\"\n   ng-blur=\"lostFocus()\"\n\t uib-typeahead=\"stub._disp for stub in getRefs($viewValue)\"\n   typeahead-on-select=\"onSelect($item, $model, $label)\">\n   <div ng-if=\"fieldCustomizations.fieldActions\">\n       <button type=\"button\" ng-repeat=\"action in fieldCustomizations.fieldActions\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n   </div>\n   </p>\n</div>"
 },
 {
 	"__ver": "sys:7",
@@ -11043,6 +11043,16 @@
 			"_disp": "ROLE_SYSADMIN",
 			"_id": "FnQ_eBYITOSC8kJA4Zul5g"
 		}
+	]
+},
+{
+	"__ver": "sys:1",
+	"_class": "WebService",
+	"_id": "5TmX2XybS4WCYB8wS_g1uA",
+	"doc": "Summarizes path information for a specified path field.  Used by the \"folders\" view in DBUI.\n@param className\n@param pathField\n@param conditions",
+	"function": "function (queryParams, db, Q) {\n  var className = queryParams.className;\n  var pathField = queryParams.pathField;\n  var conditions = queryParams.conditions\n\n  if(!className || !pathField) {\n    throw new Error(\"Missing parameters\");\n  }\n\n  if(conditions) {\n    try {\n      conditions = JSON.parse(conditions);\n    } catch(e) {console.log(e)}\n  }\n  \n  var deferred = Q.defer();\n\n  var pipeline = [];\n\n  if(conditions) {\n    pipeline.push({$match:conditions});\n  }\n\n  pipeline.push({$group:{_id:'$'+pathField, total:{$sum:1} }});\n\n  db[className].aggregate(pipeline, function(err, paths) {\n    if(err) {\n      deferred.reject(err);\n    }\n\n    var pathSep = db[className]._bo_meta_data.getTypeDescriptor(pathField).seperator || '/';\n\n    var prefixMap = {};\n\n    for(var i=0; i < paths.length; i++) {\n      var currPath = paths[i]._id;\n      var currCount = paths[i].total;\n\n      //Compute all the prefixes for currPath; track count:\n      var sepIndex = -1;\n      var prefix;\n      var prefixStack = []; //[top, top.sub1, top.sub1.sub2, ...]\n\n      do {\n        sepIndex = currPath.indexOf(pathSep, sepIndex+1);\n        if(sepIndex < 0)\n          prefix = currPath\n        else\n          prefix = currPath.substring(0, sepIndex);\n\n        prefixStack.push(prefix);\n\n        if(!prefixMap[prefix])\n          prefixMap[prefix] = {count:0};\n\n        prefixMap[prefix].count += currCount;\n\n\n      } while (sepIndex > -1);\n\n\n      //Make each prefix know about it's direct children:\n      for(var j=0; j < prefixStack.length-1; j++) {\n        var currPrefix = prefixStack[j];\n        if(!prefixMap[currPrefix].children) {\n          prefixMap[currPrefix].children = {};\n        }\n        prefixMap[currPrefix].children[prefixStack[j+1]] = true;\n      }\n\n\n    }\n\n    //Tidy up the children\n    for(var p in prefixMap) {\n      if(prefixMap[p].children) {\n        prefixMap[p].children = Object.keys(prefixMap[p].children);\n        prefixMap[p].children.sort();\n      }\n    }\n\n    deferred.resolve({result:prefixMap});\n  });\n\n    return deferred.promise;\n}",
+	"path": "/dbui/getAggregatePaths",
+	"rolespec": [
 	]
 },
 {

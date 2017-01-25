@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:12",
+	"__ver": "sys:14",
 	"_id": "7R4cBwsWTSacdSk5ZrAjTw",
 	"description": "The foundational package for Noonian.",
 	"enable_building": false,
@@ -51,15 +51,15 @@
 			"qt1-hwnEQmum-4hvi9O-Aw": "sys:3",
 			"shz0lNmSRhWP9DjcWypp7A": "sys:76",
 			"uIn4BYTnSuqQpF8sCTAiCQ": "sys:8",
-			"wwX1-_BxSYWYOQdMBcUTjw": "sys:2",
+			"wwX1-_BxSYWYOQdMBcUTjw": "sys:3",
 			"xsxZe1yRTb6jFJtSSTF3mQ": "sys:4",
 			"zLrdPMCOSMuj44EGALgmDw": "sys:6",
-			"zyR-OIZhQqmy70eVOj7twg": "sys:6"
+			"zyR-OIZhQqmy70eVOj7twg": "sys:8"
 		},
 		"AngularTemplate": {
 			"-2Gpn4Q_QK6iFWp83138Fg": "sys:9",
 			"1AvVYpoKRzaBCsiGkrDEaQ": "sys:21",
-			"40032UdQRL2-Jdg-CUoIqg": "sys:6",
+			"40032UdQRL2-Jdg-CUoIqg": "sys:7",
 			"4yT9t5IzTIqSCLFnR508rw": "sys:3",
 			"6OYTWbEuSxGAYApNR85rAg": "sys:5",
 			"Asy2H3LZTZaS16UFz4JTdg": "sys:6",
@@ -71,8 +71,8 @@
 			"c-Sh5WEEQqW1adX257yZVQ": "sys:10",
 			"hbhKtxpDQLaUvyA7hogLWw": "sys:14",
 			"iMYbBIZHRvqnpf6mAmeBBw": "sys:7",
-			"kX5Bln7MQ7evgGJJm9QhUw": "sys:7",
-			"lRoO3i4TTsi142xvw7vnIA": "sys:6",
+			"kX5Bln7MQ7evgGJJm9QhUw": "sys:9",
+			"lRoO3i4TTsi142xvw7vnIA": "sys:7",
 			"nWxgcco1SJWxxpgCW1TjYg": "sys:10",
 			"nlXSAaacSla8tUPF9oYF7A": "sys:6",
 			"qwW8v9NIReKHdrGiRZl9tg": "sys:10",
@@ -275,7 +275,7 @@
 			"nRL5-PUBSTCrnHeAH6ZiPw": "sys:3",
 			"nzwhA-zvRsS0i_cousGbiQ": "sys:19",
 			"plX-2sUOSiW3dlXKZKLTQw": "sys:2",
-			"rYbkzgFbRE6ba2QK6FbaNg": "sys:9",
+			"rYbkzgFbRE6ba2QK6FbaNg": "sys:10",
 			"s8cKD6C4SYmGKhog3B4zhg": "sys:7",
 			"tfbLyH5LTdej83BgiANlHQ": "sys:1",
 			"vZafim91SDeMAEcOVdBS3g": "sys:7",
@@ -596,6 +596,7 @@
 			"vl22Nf2XTNym2-X90sxOag": "sys:3"
 		},
 		"WebService": {
+			"5TmX2XybS4WCYB8wS_g1uA": "sys:1",
 			"7ugMfTjtQtyPiOiCpci9hA": "sys:3",
 			"9G9tifuVToCBntbpzatynA": "sys:1",
 			"EPl27ZhKQBO60-xwX60JgA": "sys:2",
@@ -616,6 +617,7 @@
 			"w-lHVPreRRSku89vhlyagA": "sys:2"
 		}
 	},
-	"minor_version": 37,
-	"name": "Core System"
+	"minor_version": 38,
+	"name": "Core System",
+	"package_file": null
 }
