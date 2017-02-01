@@ -80,7 +80,15 @@ function (NoonWebService, NoonI18n, db, $q) {
                 
                 _.forEach(typeList, function(typeName) {
                     // console.log('saving template for ', typeName);
-                    specMap[typeName] = specObj;
+                    if(!specMap[typeName]) {
+                        specMap[typeName] = {};
+                    }
+                    if(specObj.key.indexOf('dbui.core') === 0) {
+                        specMap[typeName].default = specObj;
+                    }
+                    else {
+                        specMap[typeName][specObj.key] = specObj;
+                    }
                 });
             });
             
@@ -134,15 +142,19 @@ function (NoonWebService, NoonI18n, db, $q) {
     /**
      * DbuiFieldType.getSpec
      */
-    this.getSpec = function(typeDesc, viewEdit) {
+    this.getSpec = function(typeDesc, viewEdit, fieldCustomizations) {
+        var fc = fieldCustomizations || {};
+        var specKey = fc.uiSpec || 'default';
+        
+        
         var specObj = getSpecFromCache(typeDesc, viewEdit);
         if(specObj) {
-            return $q.resolve(specObj);
+            return $q.resolve(specObj[specKey]);
         }
         
         //Not cached, retrieve it from server:
         return cacheTypeInfoForFieldtype(typeDesc, viewEdit).then(function() {
-            return getSpecFromCache(typeDesc, viewEdit);
+            return getSpecFromCache(typeDesc, viewEdit)[specKey];
         });
         
     };

@@ -21,7 +21,7 @@ function ($compile, $injector, DbuiFieldType) {
             }
             
             
-            DbuiFieldType.getSpec(td, 'edit').then(function(specObj){
+            DbuiFieldType.getSpec(td, 'edit', scope.fieldCustomizations).then(function(specObj){
                 
                 if(!specObj) {
                     console.error('Missing UI Spec in dbuiFieldEditor directive');
@@ -130,7 +130,7 @@ function ($compile, $injector, DbuiFieldType) {
       
       controller: function($scope) {
           
-          DbuiFieldType.getSpec($scope.typeDesc, 'edit').then(function(specObj){
+          DbuiFieldType.getSpec($scope.typeDesc, 'edit', $scope.fieldCustomizations).then(function(specObj){
               
               if(specObj && specObj.controller_fn) {
                   var fnString = specObj.controller_fn;

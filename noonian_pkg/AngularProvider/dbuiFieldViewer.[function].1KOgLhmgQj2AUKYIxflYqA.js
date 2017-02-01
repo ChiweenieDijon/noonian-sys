@@ -17,8 +17,8 @@ function ($compile,  DbuiFieldType, $injector) {
               return;
           }
           
-          DbuiFieldType.getSpec(td, 'view').then(function(specObj){
-              var templateHtml = specObj.template;
+          DbuiFieldType.getSpec(td, 'view', scope.fieldCustomizations).then(function(specObj){
+                            var templateHtml = specObj.template;
               var compiledTemplate = $compile(templateHtml);
               
               element.append(compiledTemplate(scope));
@@ -27,7 +27,7 @@ function ($compile,  DbuiFieldType, $injector) {
       },
        
       controller: function($scope) {
-          DbuiFieldType.getSpec($scope.typeDesc, 'view').then(function(specObj){
+          DbuiFieldType.getSpec($scope.typeDesc, 'view', $scope.fieldCustomizations).then(function(specObj){
               
               if(specObj && specObj.controller_fn) {
                   var fnString = specObj.controller_fn;

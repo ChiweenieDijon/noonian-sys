@@ -120,7 +120,7 @@ function (queryParams, res, db, _) {
     return db.FieldTypeUiSpec.find(queryObj).then(function(uiSpecs) {
         var result = [];
         
-        var copyFields = ['template', 'link_fn', 'controller_fn'];
+        var copyFields = ['template', 'link_fn', 'controller_fn', 'key'];
         
         _.forEach(uiSpecs, function(uiSpecObj) {
             
