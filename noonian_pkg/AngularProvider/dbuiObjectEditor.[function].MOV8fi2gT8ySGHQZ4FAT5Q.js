@@ -52,10 +52,15 @@ function (Dbui, I18n) {
 
       var fieldCustomizations = perspective.fieldCustomizations || {};
       var displayCheckers = {};
+      var contextFields = {}; //maps dotted field names present in fieldCustomizations to the base field name
 
       for(var f in fieldCustomizations) {
         if(fieldCustomizations[f].conditionalDisplay) {
           displayCheckers[f] = $parse(fieldCustomizations[f].conditionalDisplay);
+          var dotPos = f.indexOf('.');
+          if(dotPos > -1) {
+              contextFields[f] = f.substring(0, dotPos);
+          }
         }
       }
 
@@ -68,7 +73,8 @@ function (Dbui, I18n) {
               return true;
           }
           else {
-              return dc($scope.theObject);
+              var context = contextFields[field] ? _.get($scope.theObject, contextFields[field]) : $scope.theObject;
+              return dc(context);
           }
       };
       

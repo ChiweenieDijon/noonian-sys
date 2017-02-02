@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:6",
+	"__ver": "sys:7",
 	"_id": "MOV8fi2gT8ySGHQZ4FAT5Q",
 	"doc": "Renders a form, according to a perspective, for editing a \"BusinessObject-like\" object.",
 	"module": {

@@ -20,10 +20,15 @@ function ($parse, Dbui, NoonI18n) {
     
       var fieldCustomizations = perspective.fieldCustomizations || {};
       var displayCheckers = {};
+      var contextFields = {};
     
       for(var f in fieldCustomizations) {
         if(fieldCustomizations[f].conditionalDisplay) {
           displayCheckers[f] = $parse(fieldCustomizations[f].conditionalDisplay);
+          var dotPos = f.indexOf('.');
+          if(dotPos > -1) {
+              contextFields[f] = f.substring(0, dotPos);
+          }
         }
       }
     
@@ -41,7 +46,8 @@ function ($parse, Dbui, NoonI18n) {
           }
         }
         else  {
-          return dc($scope.theObject);
+          var context = contextFields[field] ? _.get($scope.theObject, contextFields[field]) : $scope.theObject;
+          return dc(context);
         }
       };
     }

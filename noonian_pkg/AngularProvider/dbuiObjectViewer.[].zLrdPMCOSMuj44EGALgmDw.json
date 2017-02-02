@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:6",
+	"__ver": "sys:7",
 	"_id": "zLrdPMCOSMuj44EGALgmDw",
 	"doc": "Renders a view of a \"BusinessObject-like\" object according to a perspective.",
 	"module": {
