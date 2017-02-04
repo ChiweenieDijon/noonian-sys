@@ -1,8 +1,10 @@
 {
-	"__ver": "sys:7",
+	"__ver": "sys:9",
 	"_id": "w2U0lB56Sq2Mb-6r3WDBsw",
 	"allow_customize": false,
 	"key": "sys.dbui.navbar_menu",
+	"rolespec": [
+	],
 	"system": true,
 	"value": [
 		{
@@ -68,7 +70,8 @@
 		{
 			"classes": [
 				"BusinessObjectPackage",
-				"BusinessObjectPackageUpdate",
+				"UpdateLog",
+				"PackageConflict",
 				"RemotePackageRepository"
 			],
 			"title": "Packaging"
