@@ -1,0 +1,23 @@
+{
+	"__ver": "sys:1",
+	"_id": "SpMuRxTkTjaqIcALF8Kj8Q",
+	"key": "sys.dbui.bo.PackageConflict",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"conflict_type": "Conflict Type",
+		"created_date": "Created Date",
+		"diff": "Diff",
+		"installed_object": "Installed Object",
+		"installed_version_id": "Installed Version Id",
+		"merged_object": "Merged Object",
+		"object_class": "Object Class",
+		"object_id": "Object Id",
+		"package": "Package",
+		"package_version_id": "Package Version Id"
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"__ver": "sys:1",
+	"_id": "Dyf49QfST2CwXH1TYOSgHQ",
+	"abstract": false,
+	"class_name": "PackageConflict",
+	"definition": {
+		"conflict_type": {
+			"enum": [
+				"divergent",
+				"independent update",
+				"missing class"
+			],
+			"type": "string"
+		},
+		"created_date": {
+			"type": "datetime"
+		},
+		"diff": {
+			"type": "object"
+		},
+		"installed_object": {
+			"type": "object"
+		},
+		"installed_version_id": {
+			"type": "string"
+		},
+		"merged_object": {
+			"type": "object"
+		},
+		"object_class": {
+			"type": "string"
+		},
+		"object_id": {
+			"type": "string"
+		},
+		"package": {
+			"ref_class": "BusinessObjectPackage",
+			"type": "reference"
+		},
+		"package_version_id": {
+			"type": "string"
+		}
+	},
+	"doc": "When a package is upgraded or installed, it is possible that conflicting changes have been made to objects that are supposed to be installed:\n1. the version in the package is \"older\" than the object that is installed; i.e. some modifications have been made to the object in the instance, but no modifications have been made to the version in the package.  (conflict_type='independent update').  No merge requried - just leave the existing version in the system; this PackageConflict is merely informational.\n2. the version in the package is divergent from the one installed; i.e. modifications have been made to the object installed AND the package contains its own modifications to the previous version. (conflict_type='divergent')  A merge is required; this PackageConflict contains all the data needed to perform the merge",
+	"system": true
+}

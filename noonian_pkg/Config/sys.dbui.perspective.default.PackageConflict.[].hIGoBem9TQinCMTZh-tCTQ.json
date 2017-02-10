@@ -1,0 +1,61 @@
+{
+	"__ver": "sys:1",
+	"_id": "hIGoBem9TQinCMTZh-tCTQ",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.default.PackageConflict",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				"package",
+				"conflict_type",
+				[
+					"object_class",
+					"object_id"
+				],
+				[
+					"installed_version_id",
+					"package_version_id"
+				],
+				"installed_object",
+				"merged_object",
+				"diff"
+			]
+		},
+		"list": {
+			"fields": [
+				"created_date",
+				"package",
+				"conflict_type",
+				"object_class",
+				"installed_version_id",
+				"package_version_id"
+			],
+			"sort": {
+				"created_date": "asc"
+			}
+		},
+		"view": {
+			"layout": [
+				[
+					"package",
+					"created_date"
+				],
+				"conflict_type",
+				[
+					"object_class",
+					"object_id"
+				],
+				[
+					"installed_version_id",
+					"package_version_id"
+				],
+				"installed_object",
+				"merged_object",
+				"diff"
+			]
+		}
+	}
+}
