@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_id": "e9vFlgCpSPaPzAGGPNA9Ug",
 	"fieldtypes": [
 	],
@@ -7,5 +7,5 @@
 	"for_editing_array": false,
 	"for_viewing": false,
 	"for_viewing_array": true,
-	"key": "dbu.core.Array.*.view"
+	"key": "dbui.core.Array.*.view"
 }
