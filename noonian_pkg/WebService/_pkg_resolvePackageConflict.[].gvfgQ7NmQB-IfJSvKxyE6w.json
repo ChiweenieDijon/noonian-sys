@@ -1,0 +1,9 @@
+{
+	"__ver": "sys:1",
+	"_id": "gvfgQ7NmQB-IfJSvKxyE6w",
+	"doc": "Called from a PackageConflict record; \nInstalls the \"Merged Object\" into the system, updating the version id such that it becomes a descendent of both the installed and the incoming versions.",
+	"path": "/pkg/resolvePackageConflict",
+	"rolespec": [
+		"FnQ_eBYITOSC8kJA4Zul5g"
+	]
+}
