@@ -1,0 +1,12 @@
+{
+	"__ver": "sys:1",
+	"_id": "Rk-_b0GMSI2IrwAJjZwqzw",
+	"applies_to": "server",
+	"business_object": {
+		"_disp": "JsonResource",
+		"_id": "iLfiQteMQQ-daJIeQ37y5w"
+	},
+	"is_static": false,
+	"name": "serveContent",
+	"use_injection": false
+}
