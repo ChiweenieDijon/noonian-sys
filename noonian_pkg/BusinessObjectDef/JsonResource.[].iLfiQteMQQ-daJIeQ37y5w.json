@@ -1,0 +1,17 @@
+{
+	"__ver": "sys:1",
+	"_id": "iLfiQteMQQ-daJIeQ37y5w",
+	"abstract": false,
+	"class_name": "JsonResource",
+	"definition": {
+		"content": {
+			"type": "object"
+		}
+	},
+	"doc": "A WebResource with JSON content.  When resource is requested, \"content\" is served with ContentType \"application/json\".",
+	"superclass": {
+		"_disp": "WebResource",
+		"_id": "0TO-sBb1TjeAAzaMgd-8KQ"
+	},
+	"system": true
+}

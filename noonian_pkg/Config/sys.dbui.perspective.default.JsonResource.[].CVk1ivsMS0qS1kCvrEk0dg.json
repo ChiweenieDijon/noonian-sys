@@ -1,0 +1,41 @@
+{
+	"__ver": "sys:3",
+	"_id": "CVk1ivsMS0qS1kCvrEk0dg",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.default.JsonResource",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				"path",
+				"name",
+				"doc",
+				"content",
+				"rolespec"
+			]
+		},
+		"list": {
+			"fields": [
+				"path",
+				"name"
+			]
+		},
+		"picker_list": {
+			"fields": [
+				"path",
+				"name"
+			]
+		},
+		"view": {
+			"layout": [
+				"path",
+				"name",
+				"doc",
+				"content",
+				"rolespec"
+			]
+		}
+	}
+}
