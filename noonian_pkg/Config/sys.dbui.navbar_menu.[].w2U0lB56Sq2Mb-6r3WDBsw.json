@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:9",
+	"__ver": "sys:10",
 	"_id": "w2U0lB56Sq2Mb-6r3WDBsw",
 	"allow_customize": false,
 	"key": "sys.dbui.navbar_menu",
@@ -47,7 +47,8 @@
 				"FileResource",
 				"HtmlResource",
 				"ImageResource",
-				"JsResource"
+				"JsResource",
+				"JsonResource"
 			],
 			"title": "Web Resources"
 		},
