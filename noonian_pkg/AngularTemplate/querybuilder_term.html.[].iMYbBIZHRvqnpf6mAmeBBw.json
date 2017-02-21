@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:7",
+	"__ver": "sys:8",
 	"_id": "iMYbBIZHRvqnpf6mAmeBBw",
 	"doc": "Input for a single query term: a dropdown of field names, a dropdown for operations, and, if applicable, a dbui-field-editor appropriate to the operation.",
 	"module": {

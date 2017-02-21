@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:10",
+	"__ver": "sys:16",
 	"_id": "c-Sh5WEEQqW1adX257yZVQ",
 	"doc": "The sidebar region in the DBUI: renders a menu into uib-accordion-groups.",
 	"module": {

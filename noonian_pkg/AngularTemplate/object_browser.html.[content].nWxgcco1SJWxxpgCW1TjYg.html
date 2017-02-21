@@ -40,10 +40,10 @@
 
   <div ng-show="pageState.totalPages > 1" class="row">
     <div class="col-xs-12 text-center">
-      <uib-pagination ng-model="pageState.current" ng-change="pageChanged()" class="pagination-sm" boundary-links="true"
+      <ul uib-pagination ng-model="pageState.current" ng-change="pageChanged()" class="pagination-sm" boundary-links="true"
         total-items="pageState.totalRecords" items-per-page="pageState.pageSize" max-size="10"
         previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;">
-      </uib-pagination>
+      </ul>
     </div>
   </div>
 

@@ -5,7 +5,7 @@
       <a href uib-dropdown-toggle >
         {{term.fieldInfo.fieldLabel}} &nbsp;&nbsp;<span class="fa fa-lg fa-caret-down"></span>&nbsp;&nbsp;
       </a>
-      <ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
+      <ul uib-dropdown-menu class="dropdown-menu" role="menu" aria-labelledby="single-button">
         <li ng-repeat="fi in fieldList" role="menuitem">
           <a href ng-click="fieldChanged(fi, true)">{{fi.fieldLabel}}</a>
         </li>

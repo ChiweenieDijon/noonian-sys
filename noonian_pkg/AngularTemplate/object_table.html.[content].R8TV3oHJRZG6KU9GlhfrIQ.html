@@ -10,7 +10,7 @@
             <th class="text-center">
               <span ng-if="tableActions.length" uib-dropdown>
                 <a href id="cog-button" uib-dropdown-toggle ><i class="fa fa-2x fa-cog"></i></a>
-                <ul class="uib-dropdown-menu" role="menu" aria-labelledby="cog-button">
+                <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="cog-button">
                   <li role="menuitem" ng-repeat="action in tableActions"><a href ng-click="invokeTableAction(action)"> <i ng-if="action.icon" ng-class="action.icon" class="fa"></i> {{action.label}}</a><div ng-hide="$last" class="divider"></div></li>
                 </ul>
               </span>
