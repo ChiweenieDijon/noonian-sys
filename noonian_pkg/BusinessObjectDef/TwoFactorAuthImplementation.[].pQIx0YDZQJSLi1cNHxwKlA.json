@@ -1,0 +1,20 @@
+{
+	"__ver": "sys:3",
+	"_id": "pQIx0YDZQJSLi1cNHxwKlA",
+	"abstract": false,
+	"class_name": "TwoFactorAuthImplementation",
+	"definition": {
+		"doc": {
+			"type": "text"
+		},
+		"factory_fn": {
+			"applicable": "serverside",
+			"type": "function"
+		},
+		"name": {
+			"type": "string"
+		}
+	},
+	"doc": "Provides a specific implementation for two-factor Auth",
+	"system": true
+}

@@ -1,0 +1,16 @@
+{
+	"__ver": "sys:1",
+	"_id": "yOHJcevIQVKQuzvD4LC_SQ",
+	"key": "sys.dbui.bo.TwoFactorAuthLoginRequest",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"code": "Code",
+		"created_date": "Created Date",
+		"user": "User"
+	}
+}
