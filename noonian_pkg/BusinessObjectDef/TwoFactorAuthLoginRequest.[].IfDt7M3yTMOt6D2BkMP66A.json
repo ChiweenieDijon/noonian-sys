@@ -1,0 +1,29 @@
+{
+	"__ver": "sys:6",
+	"_id": "IfDt7M3yTMOt6D2BkMP66A",
+	"abstract": false,
+	"class_name": "TwoFactorAuthLoginRequest",
+	"definition": {
+		"code": {
+			"type": "string"
+		},
+		"created_date": {
+			"type": "datetime"
+		},
+		"ip": {
+			"type": "string"
+		},
+		"modified_date": {
+			"type": "datetime"
+		},
+		"user": {
+			"ref_class": "User",
+			"type": "reference"
+		},
+		"validated": {
+			"type": "boolean"
+		}
+	},
+	"doc": "Holds the code sent to a user as part of the 2-factor authentication process.",
+	"system": true
+}

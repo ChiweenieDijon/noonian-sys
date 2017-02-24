@@ -1,0 +1,16 @@
+{
+	"__ver": "sys:1",
+	"_id": "rXLbwEJ_RrCjtdHyfECIIw",
+	"key": "sys.dbui.bo.TwoFactorAuthImplementation",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"doc": "Doc",
+		"factory_fn": "Factory Fn",
+		"name": "Name"
+	}
+}
