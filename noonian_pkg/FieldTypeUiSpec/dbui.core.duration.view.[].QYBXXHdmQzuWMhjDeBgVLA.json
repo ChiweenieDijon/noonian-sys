@@ -1,0 +1,16 @@
+{
+	"__ver": "sys:1",
+	"_id": "QYBXXHdmQzuWMhjDeBgVLA",
+	"fieldtypes": [
+		{
+			"_disp": "duration",
+			"_id": "jOZVJVLOTmGK6Ppf7JNnCw",
+			"name": "duration"
+		}
+	],
+	"for_editing": false,
+	"for_editing_array": false,
+	"for_viewing": true,
+	"for_viewing_array": false,
+	"key": "dbui.core.duration.view"
+}
