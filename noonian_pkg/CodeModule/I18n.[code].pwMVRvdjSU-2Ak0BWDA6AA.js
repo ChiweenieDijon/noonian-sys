@@ -7,8 +7,29 @@ function (db, _, Q) {
      */
     var autogenLabelGroup = function(className) {
       var key = 'sys.dbui.bo.'+className;
-    
+      
+      var typeDescMap;
+      
       if(db[className]) {
+          typeDescMap = db[className]._bo_meta_data.type_descriptor;
+      }
+      else if(className.indexOf('#') > -1) {
+          var hashPos = className.indexOf('#');
+          var baseClass = className.substring(0, hashPos);
+          var field = className.substring(hashPos+1);
+          
+          var td = db[baseClass] && db[baseClass]._bo_meta_data.type_descriptor[field];
+          
+          if(td instanceof Array) {
+              td = td[0]
+          }
+          
+          if(td && td.type === 'composite') {
+              typeDescMap = td.type_desc_map;
+          }
+      }
+    
+      if(typeDescMap) {
         console.log("Auto-generating LabelGroup for %s", className);
          //Create a LabelGroup for i18n
          var lg = new db.LabelGroup({
@@ -17,7 +38,7 @@ function (db, _, Q) {
            value:{}
          });
     
-         for(var f in db[className]._bo_meta_data.type_descriptor) {
+         for(var f in typeDescMap) {
            if(f.indexOf('_') !== 0) {
              lg.value[f] = _.startCase(f);
            }
@@ -43,7 +64,7 @@ function (db, _, Q) {
     
     /**
      * I18n.getBoLabelGroup
-     * *resolves immediate reference sub-fields; TODO also resolve inheritance, composites!
+     * *resolves immediate reference sub-fields; TODO also resolve inheritance!
     */
     exports.getBoLabelGroup = function(className, user) {
       var lang = user && user.language ? user.language._id : ENGLISH_ID; //default to english
@@ -52,7 +73,33 @@ function (db, _, Q) {
       var keyPrefix = 'sys.dbui.bo.';
       var baseKey = keyPrefix+className;
     
-      var boMetaData = db[className]._bo_meta_data;
+      var boMetaData;
+      
+      if(db[className]) {
+          boMetaData = db[className]._bo_meta_data;
+      }
+      else if(className.indexOf('#') > -1) {
+          var hashPos = className.indexOf('#');
+          var baseClass = className.substring(0, hashPos);
+          var field = className.substring(hashPos+1);
+          
+          var td = db[baseClass] && db[baseClass]._bo_meta_data.type_descriptor[field];
+          
+          if(td instanceof Array) {
+              td = td[0]
+          }
+          
+          if(!td || td.type !== 'composite') {
+              throw new Error('Invalid class name: '+className);
+          }
+          
+          boMetaData = {
+              type_descriptor:td.type_desc_map
+          };
+      }
+      else {
+          throw new Error('Invalid class name: '+className);
+      }
     
       var queryKeyList = [baseKey]; //LabelGroup keys we'll be asking for
     

@@ -1,0 +1,8 @@
+{
+	"__ver": "sys:1",
+	"_id": "jOZVJVLOTmGK6Ppf7JNnCw",
+	"doc": "Represents a duration of time",
+	"mongo_type": "Mixed",
+	"name": "duration",
+	"text_index": false
+}

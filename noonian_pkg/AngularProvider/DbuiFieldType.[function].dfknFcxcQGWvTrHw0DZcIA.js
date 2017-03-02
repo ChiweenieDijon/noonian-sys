@@ -103,7 +103,14 @@ function (NoonWebService, NoonI18n, db, $q) {
      * Retrieves and caches FieldTypeUiSpec data for fields of specified fieldtype
      */
     var cacheTypeInfoForFieldtype = function(typeDesc, viewEdit) {
-        return cacheTypeInfo( {field_type:getTypeName(typeDesc),view_or_edit:viewEdit}, viewEdit );
+        var typeName = getTypeName(typeDesc);
+        var promiseCacheKey = typeName+'|'+viewEdit;
+        
+        if(!cachePromises[promiseCacheKey]) {
+            cachePromises[promiseCacheKey] = cacheTypeInfo( {field_type:typeName,view_or_edit:viewEdit}, viewEdit );
+        }
+        
+        return cachePromises[promiseCacheKey];
     };
     
     /** 

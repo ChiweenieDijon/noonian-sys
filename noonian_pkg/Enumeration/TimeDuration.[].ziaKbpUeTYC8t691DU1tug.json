@@ -1,0 +1,15 @@
+{
+	"__ver": "sys:1",
+	"_id": "ziaKbpUeTYC8t691DU1tug",
+	"name": "TimeDuration",
+	"values": [
+		"milliseconds",
+		"seconds",
+		"minutes",
+		"hours",
+		"days",
+		"weeks",
+		"months",
+		"years"
+	]
+}
