@@ -1,0 +1,14 @@
+{
+	"__ver": "sys:4",
+	"_id": "Hj3COO0iQyufTftJqfUt_Q",
+	"allow_customize": false,
+	"key": "twilio.auth",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"phone": "+1##########",
+		"sid": "TWILIO_SID",
+		"token": "TWILIO_TOKEN"
+	}
+}
