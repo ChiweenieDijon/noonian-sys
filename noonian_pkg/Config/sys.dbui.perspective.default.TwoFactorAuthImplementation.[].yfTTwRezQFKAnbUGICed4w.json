@@ -1,0 +1,31 @@
+{
+	"__ver": "sys:4",
+	"_id": "yfTTwRezQFKAnbUGICed4w",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.default.TwoFactorAuthImplementation",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				"name",
+				"doc",
+				"factory_fn"
+			]
+		},
+		"list": {
+			"fields": [
+				"name",
+				"doc"
+			]
+		},
+		"view": {
+			"layout": [
+				"name",
+				"doc",
+				"factory_fn"
+			]
+		}
+	}
+}
