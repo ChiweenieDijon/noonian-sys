@@ -3,7 +3,7 @@ function ($rootScope, $timeout) {
     var THIS = this;
     
     var closeDbuiAlert = function(alertObj) {
-        var arr = $rootScope.dbui_alerts;
+        var arr = $rootScope.alertMenu.alerts;
         
         for(var i=0; i < arr.length; i++) {
             if(arr[i] === alertObj) {
@@ -12,14 +12,18 @@ function ($rootScope, $timeout) {
             }
         }
         
-    }
+    };
+    
+    var dismissDbuiAlerts = function() {
+        var arr = $rootScope.alertMenu.alerts;
+        arr.splice(0, arr.length);
+    };
     
     this.alert = function(type, message, timeout) {
         console.log('DbuiAlert.alert', type, message, timeout);
-        if(!$rootScope.dbui_alerts) {
-            //lazy init the alert queue
-            $rootScope.dbui_alerts = [];
+        if(!$rootScope.closeDbuiAlert) {
             $rootScope.closeDbuiAlert = closeDbuiAlert;
+            $rootScope.dismissDbuiAlerts = dismissDbuiAlerts;
         }
         
         if(!timeout) {
@@ -32,11 +36,20 @@ function ($rootScope, $timeout) {
             dismiss_timeout:timeout
         };
         
-        $rootScope.dbui_alerts.push(alertObj);
+        // $rootScope.dbui_alerts.push(alertObj);
+        $rootScope.alertMenu.alerts.unshift(alertObj);
+        $rootScope.alertMenu.isOpen = true;
         
-        $timeout(closeDbuiAlert.bind(null, alertObj), timeout);
+        // $timeout(closeDbuiAlert.bind(null, alertObj), timeout);
+        $timeout(function() {
+            $rootScope.alertMenu.isOpen = false;
+        }, timeout);
         
         
+    };
+    
+    this.info = function(msg, timeout) {
+        THIS.alert('info', msg, timeout);
     };
     
     this.success = function(msg, timeout) {

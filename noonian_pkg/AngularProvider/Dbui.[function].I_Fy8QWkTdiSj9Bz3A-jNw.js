@@ -19,6 +19,12 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
             }
         });
         
+        //init the alert queue
+        $rootScope.alertMenu = {
+            alerts:[],
+            isOpen:false
+        };
+        
         return DbuiFieldType.init().then(DbuiAction.init);
     };
     

@@ -3,13 +3,6 @@
 
 <div class="container-fluid">
     
-    <div class="row" ng-repeat="alert in dbui_alerts">
-        <div class="col-xs-12">
-            <uib-alert type="{{alert.type}}" close="closeDbuiAlert(alert)" >{{alert.msg}}</uib-alert>
-        </div>
-    </div>
-    
-    
     <div class="row">
         
         <!-- CSS makes this invisible when smaller than md threshold; replaced w/ navbar button. -->

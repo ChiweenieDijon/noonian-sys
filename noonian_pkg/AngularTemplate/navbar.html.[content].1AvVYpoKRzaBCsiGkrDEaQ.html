@@ -22,6 +22,29 @@
         <p class="navbar-brand hidden-xs" on-right-click="appTitleRightClick()">{{appTitle}}</p>
 
         <li ng-class="{active: isActive('dbui.home')}"><a ui-sref="dbui.home">Home</a></li>
+        
+        <li>
+            <a href
+                uib-popover-template="'alertPopoverTemplate.html'"
+                popover-is-open="alertMenu.isOpen && alertMenu.alerts.length"
+                popover-enable="alertMenu.alerts.length"
+                popover-placement="bottom"
+                popover-class="alert-popover"
+                popover-append-to-body="true"
+            
+            ><i class="fa fa-bell-o"></i><span class="badge">{{alertMenu.alerts.length || ''}}</span></a>
+            
+        </li>
+        <script type="text/ng-template" id="alertPopoverTemplate.html">
+            <div class="list-group">
+                <button type="button" class="list-group-item" ng-class="'list-group-item-'+alert.type" ng-click="closeDbuiAlert(alert)" ng-repeat="alert in alertMenu.alerts">
+                    <b>{{alert.msg}}</b>
+                </button>
+            </div>
+            <div ng-show="alertMenu.alerts.length > 1">
+                <button ng-click="dismissDbuiAlerts()" class="btn btn-sm btn-primary pull-right"><i class="fa fa-close"></i> <i>Dismiss All</i></button>
+            </div>
+        </script>
 
         <!-- "Business Objects" drop-down -->
         <li ng-show="isAdmin"  class="dropdown" uib-dropdown auto-close="disabled" is-open="boMenuOpen">

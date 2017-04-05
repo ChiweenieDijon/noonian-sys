@@ -485,3 +485,11 @@ a.accordion-toggle:hover {
  }
 
 
+.alert-popover {
+    max-width:100%;
+}
+
+.alert-popover .popover-content {
+    max-height:300px;
+    overflow-y:auto;
+}
