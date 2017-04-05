@@ -195,7 +195,8 @@ function ($http, $q) {
           var responseData = response.data;
 
           if(responseData.error) {
-            throw responseData.error;
+            deferred.reject(responseData.error);
+            return;
           }
 
           returnArr.nMatched = responseData.nMatched;
@@ -271,7 +272,8 @@ function ($http, $q) {
           var responseData = response.data;
 
           if(responseData.error) {
-            throw responseData.error;
+            deferred.reject(responseData.error);
+            return;
           }
 
           if(responseData.result && responseData.result.length > 0) {
@@ -334,7 +336,8 @@ function ($http, $q) {
           var responseData = response.data;
 
           if(responseData.error || !responseData.result) {
-            throw responseData.error || 'Object update failed; no result returned';
+              deferred.reject(responseData.error || 'Object update failed; no result returned');
+              return;
           }
 
           _.assign(theObject, responseData.result);
@@ -369,7 +372,8 @@ function ($http, $q) {
           var responseData = response.data;
 
           if(responseData.error || !responseData.result) {
-            throw responseData.error || 'Object update failed; no result returned';
+            deferred.reject(responseData.error || 'Object update failed; no result returned');
+            return;
           }
 
           deferred.resolve(responseData.result);
