@@ -206,9 +206,10 @@ function (db, auth, config, Q, _) {
     getPerspective = 
     exports.getPerspective = function(boClass, perspectiveName, perspectiveType, userId) {
     
-      var rootKey = 'sys.dbui.perspective';
-      var baseKey = rootKey+'.'+perspectiveName;
-      var classKey = baseKey+'.'+boClass;
+      var rootKey = 'sys.dbui.perspective';         //any perspective, any BO
+      var baseKey = rootKey+'.'+perspectiveName;    //specific perspective, any BO
+      var classKey = baseKey+'.'+boClass;           //specific perspective, specific BO
+      var wildcardKey = rootKey+'.*.'+boClass;      //any perspective, specific BO
       
       //Skip merging of rootKey and baseKey perspectives for composite perspectives
       var skipMerge = boClass.indexOf('#') > -1; //e.g. BoClass#compositeField
@@ -220,11 +221,12 @@ function (db, auth, config, Q, _) {
         if(!skipMerge) {
             promiseArray = [
               config.getCustomizedParameter(rootKey, userId),
-              config.getCustomizedParameter(baseKey, userId)
+              config.getCustomizedParameter(baseKey, userId),
+              config.getCustomizedParameter(wildcardKey, userId)
             ];
         }
         else {
-            promiseArray = [Q(false), Q(false)];
+            promiseArray = [Q(false), Q(false), Q(false)];
         }
     
         if(result && result[perspectiveType]) {
@@ -253,13 +255,15 @@ function (db, auth, config, Q, _) {
     
         var root = configArray[0] || {};
         var base = configArray[1] || {};
-        var clazz = configArray[2];
-        var displayOptions = configArray[3];
+        var wild = configArray[2] || {};
+        var clazz = configArray[3];
+        var displayOptions = configArray[4];
     
         // console.log('ROOT %j BASE %j CLAZZ %j', root, base, clazz);
     
         var merged = _.merge(root, base, arrayMerger); //base onto root...
-        _.merge(merged, clazz, arrayMerger);
+        _.merge(merged, wild, arrayMerger);  //wild onto merged base/root
+        _.merge(merged, clazz, arrayMerger); //clazz atop the whole thing
     
         var perspectiveObj = merged[perspectiveType];
     
