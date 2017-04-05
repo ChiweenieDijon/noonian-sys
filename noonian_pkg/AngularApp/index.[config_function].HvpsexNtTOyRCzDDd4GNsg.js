@@ -24,7 +24,14 @@ function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider, 
                 return Model.findOne({_id:boId}).$promise;
               }
               else if(Model) {
-                return new Model({});
+                  if($stateParams.copyObject) {
+                      var templateObj = _.clone($stateParams.copyObject);
+                      delete templateObj._id;
+                      return new Model(templateObj);
+                  }
+                  else {
+                      return new Model({});
+                  }
               }
               else {
                 return null;
@@ -138,6 +145,9 @@ function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider, 
             return DbuiFieldType.cacheTypeInfoForClass($stateParams.className, 'edit')
                 .then(resolvePerspectiveObj.bind(null, 'edit', $stateParams, Dbui));
           }
+        },
+        params:{
+            copyObject:null
         }
       })
       .state('dbui.custompage', {

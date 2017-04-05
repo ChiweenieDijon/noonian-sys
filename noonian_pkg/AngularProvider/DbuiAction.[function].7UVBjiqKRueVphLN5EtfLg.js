@@ -8,6 +8,13 @@ function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state
         state:'dbui.create',
         icon:'fa-plus-square'
       },
+      'duplicate':{
+        label:'Duplicate',
+        icon:'fa-copy',
+        fn: function(args) {
+            $state.go('dbui.create', {className:args.className, perspective:args.perspective, copyObject:args.targetObj});
+        }
+      },
       'list':{
         label:'List',
         state:'dbui.list',

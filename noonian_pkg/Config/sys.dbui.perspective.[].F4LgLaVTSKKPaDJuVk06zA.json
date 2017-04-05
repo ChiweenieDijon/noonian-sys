@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_id": "F4LgLaVTSKKPaDJuVk06zA",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective",
@@ -48,7 +48,8 @@
 			],
 			"recordActions": [
 				"edit",
-				"delete"
+				"delete",
+				"duplicate"
 			]
 		}
 	}
