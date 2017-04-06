@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_id": "CoWMlx_mQjCR23MRd_OMNA",
 	"key": "sys.dbui.bo.CssResource",
 	"language": {
@@ -9,10 +9,12 @@
 	},
 	"system": true,
 	"value": {
+		"compiled_content": "Compiled Content",
 		"content": "Content",
 		"doc": "Documentation",
 		"name": "Name",
 		"path": "Path",
+		"preprocessor": "Preprocessor",
 		"rolespec": "Rolespec"
 	}
 }

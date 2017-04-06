@@ -1,12 +1,20 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_id": "_7EZRGUeRYaiyU-YSZonhQ",
 	"abstract": false,
 	"class_name": "CssResource",
 	"definition": {
+		"compiled_content": {
+			"language": "css",
+			"type": "sourcecode"
+		},
 		"content": {
 			"language": "css",
 			"type": "sourcecode"
+		},
+		"preprocessor": {
+			"enum": "CssPreprocessor",
+			"type": "enum"
 		}
 	},
 	"doc": "A WebResource containing cascading stylesheet (css) content.",

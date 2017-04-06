@@ -1,0 +1,14 @@
+{
+	"__ver": "sys:1",
+	"_id": "IPWKy2naTimBBtj-HykGvA",
+	"before_after": "before",
+	"business_object": {
+		"_disp": "CssResource",
+		"_id": "_7EZRGUeRYaiyU-YSZonhQ"
+	},
+	"doc": "Compile sass/scss into compiled_content when appropriate",
+	"key": "sys.CssResource.before_save",
+	"on_create": true,
+	"on_delete": false,
+	"on_update": true
+}

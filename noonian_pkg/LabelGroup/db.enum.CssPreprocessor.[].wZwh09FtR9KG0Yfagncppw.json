@@ -1,0 +1,17 @@
+{
+	"__ver": "sys:2",
+	"_id": "wZwh09FtR9KG0Yfagncppw",
+	"key": "db.enum.CssPreprocessor",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"css": "CSS (no preprocessing)",
+		"less": "Less",
+		"sass": "SASS",
+		"scss": "SCSS"
+	}
+}

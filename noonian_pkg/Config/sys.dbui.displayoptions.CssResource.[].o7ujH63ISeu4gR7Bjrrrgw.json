@@ -1,0 +1,16 @@
+{
+	"__ver": "sys:1",
+	"_id": "o7ujH63ISeu4gR7Bjrrrgw",
+	"allow_customize": false,
+	"key": "sys.dbui.displayoptions.CssResource",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"content": {
+			"aceConfig": {
+				"mode": "preprocessor"
+			}
+		}
+	}
+}

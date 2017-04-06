@@ -1,8 +1,10 @@
 {
-	"__ver": "sys:5",
+	"__ver": "sys:6",
 	"_id": "s_sYihekR-CwwhMvagVpRQ",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.CssResource",
+	"rolespec": [
+	],
 	"system": true,
 	"value": {
 		"edit": {
@@ -10,6 +12,7 @@
 				"path",
 				"name",
 				"doc",
+				"preprocessor",
 				"content",
 				"rolespec"
 			]
@@ -17,7 +20,8 @@
 		"list": {
 			"fields": [
 				"path",
-				"name"
+				"name",
+				"preprocessor"
 			]
 		},
 		"picker_list": {
@@ -31,7 +35,9 @@
 				"path",
 				"name",
 				"doc",
+				"preprocessor",
 				"content",
+				"compiled_content",
 				"rolespec"
 			]
 		}
