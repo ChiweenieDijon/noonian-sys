@@ -9,7 +9,7 @@
           <div class="form-group" ng-show="shouldShow(fieldName)">
 
             <label for="{{fieldName}}" class="{{colClass.label[r.length]}} control-label" uib-tooltip="{{labels._tooltip[fieldName]}}" tooltip-placement="bottom"> {{ labels[fieldName] ? labels[fieldName] : fieldName }}</label>
-            <dbui-field-editor fieldtype="{{getTypeDesc(fieldName).type}}" type-desc="getTypeDesc(fieldName)" elem-id="fieldName" ng-model="getterSetter[fieldName]" ng-model-options="{ getterSetter: true }" class="{{colClass.value[r.length]}} dbui-edit-container" field-customizations="perspective.fieldCustomizations[fieldName]"></dbui-field-editor>
+            <dbui-field-editor fieldtype="{{getTypeDesc(fieldName).type}}" type-desc="getTypeDesc(fieldName)" elem-id="fieldName" ng-model="getterSetter[fieldName]" ng-model-options="{ getterSetter: true }" class="{{colClass.value[r.length]}} dbui-edit-container" field-customizations="perspective.fieldCustomizations[fieldName]" context-object="theObject"></dbui-field-editor>
 
           </div>
         </div>

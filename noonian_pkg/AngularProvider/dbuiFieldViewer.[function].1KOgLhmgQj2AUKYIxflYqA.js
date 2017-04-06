@@ -7,7 +7,8 @@ function ($compile,  DbuiFieldType, $injector) {
         displayValue: '=',
         typeDesc: '<',
         abbreviated: '<?',
-        fieldCustomizations: '<?' //From perspective.field_customizations
+        fieldCustomizations: '<?', //From perspective.field_customizations
+        contextObject: '<?'
       },
       
       link: function (scope, element, attrs, ngModel) {

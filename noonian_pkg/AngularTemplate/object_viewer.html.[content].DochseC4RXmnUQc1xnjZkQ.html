@@ -9,7 +9,7 @@
           <div class="{{colClass.top[r.length]}}" ng-repeat="fieldName in r">
             <div class="form-group" ng-if="shouldShow(fieldName)">
               <label for="{{fieldName}}" class="{{colClass.label[r.length]}} control-label" >{{ labels[fieldName] ? labels[fieldName] : fieldName}}</label>
-              <dbui-field-viewer type-desc="typeDescMap[fieldName]" elem-id="fieldName" display-value="theObject[fieldName]" class="dbui-field-viewer {{colClass.value[r.length]}}" field-customizations="perspective.fieldCustomizations[fieldName]" ></dbui-field-viewer>
+              <dbui-field-viewer type-desc="typeDescMap[fieldName]" elem-id="fieldName" display-value="theObject[fieldName]" class="dbui-field-viewer {{colClass.value[r.length]}}" field-customizations="perspective.fieldCustomizations[fieldName]" context-object="theObject" ></dbui-field-viewer>
             </div>
           </div>
         </form>

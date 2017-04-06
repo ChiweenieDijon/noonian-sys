@@ -9,7 +9,8 @@ function ($compile, $injector, DbuiFieldType) {
         scope: {
             typeDesc: '<',
             elemId: '<',
-            fieldCustomizations: '<?' //From perspective.field_customizations
+            fieldCustomizations: '<?', //From perspective.field_customizations
+            contextObject: '<?'
         },
         
         link: function(scope, iElement, iAttributes, ngModel) {
