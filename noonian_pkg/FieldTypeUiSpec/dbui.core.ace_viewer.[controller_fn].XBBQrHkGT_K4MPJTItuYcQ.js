@@ -1,6 +1,7 @@
-function ($scope, $filter) {
+function ($scope, $filter, $parse) {
     var td = $scope.typeDesc;
     var fc = $scope.fieldCustomizations;
+    var context = $scope.contextObject;
 
     var modeMap = {
       'function':'javascript',
@@ -25,6 +26,10 @@ function ($scope, $filter) {
         
     }
     
+    if(fc && fc.aceConfig && fc.aceConfig.mode) {
+        var getMode = $parse(fc.aceConfig.mode);
+        mode = getMode(context) || mode;
+    }
 
 
     var aceLoaded = function(editor) {

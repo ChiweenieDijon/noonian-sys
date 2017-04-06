@@ -1,7 +1,9 @@
-function ($scope) {
+function ($scope, $parse) {
     
     var td = $scope.typeDesc;
     var fc = $scope.fieldCustomizations;
+    var context = $scope.contextObject;
+    
 
     var modeMap = {
       'function':'javascript',
@@ -23,6 +25,25 @@ function ($scope) {
             }
         }
         
+    }
+    
+    if(fc && fc.aceConfig) {
+        if(fc.aceConfig.mode) {
+            var getMode = $parse(fc.aceConfig.mode);
+            mode = getMode(context) || mode;
+            
+            $scope.$watch(
+                function(currentscope) {
+                    return getMode(context) || mode;
+                }, 
+                
+                function(newVal, oldVal) {
+                    if(newVal) {
+                        $scope.aceInit.mode = newVal;
+                    }
+                }
+            );
+        }
     }
     
 

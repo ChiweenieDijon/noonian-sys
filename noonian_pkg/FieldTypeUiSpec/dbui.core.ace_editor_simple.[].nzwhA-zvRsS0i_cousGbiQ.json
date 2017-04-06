@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:19",
+	"__ver": "sys:20",
 	"_id": "nzwhA-zvRsS0i_cousGbiQ",
 	"doc": "Displays an {@link https://ace.c9.io|Ace editor} for sourcecode and function data types.  Utilizes the {@link https://github.com/angular-ui/ui-ace|ui-ace} angular directive wrapper.\n\n@param {Object|string} [displayTheme] name of theme to use for editor (if string), or an object mapping the type descriptors \"applicable\" value ('clientside','serverside' or 'default') to theme name.",
 	"fieldtypes": [

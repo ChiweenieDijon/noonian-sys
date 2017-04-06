@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:9",
+	"__ver": "sys:10",
 	"_id": "XBBQrHkGT_K4MPJTItuYcQ",
 	"doc": "Displays an {@link https://ace.c9.io|Ace editor} in read-only mode for various source-code data types.  Utilizes the {@link https://github.com/angular-ui/ui-ace|ui-ace} angular directive wrapper.  Optionally can simply render without ace editor if \"abbreviated\" parameter is present.\n\n@param {Object|string} [displayTheme] - name of theme to use for editor (if string), or an object mapping the type descriptors \"applicable\" value ('clientside','serverside' or 'default') to theme name.\n@param {boolean} [abbreviated] - if true, simply renders as text without using Ace editor and fancy formatting.",
 	"fieldtypes": [
