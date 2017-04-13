@@ -1,4 +1,4 @@
-function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI18n, db, NoonConfig) {
+function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI18n, db, NoonConfig, $uibModal) {
     
     
     /**
@@ -203,6 +203,36 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
         }
     };
     
+    
+    /**
+     * Show a dialog to get input from the user.
+     * content of dialog determined by provided type descriptor map and perspective
+     */
+    this.showDialog = function(title, prompt, tdMap, perspective, initObj) {
+        
+        var modalInstance;
+        var scope = $rootScope.$new(true);
+        
+        scope.title = title;
+        scope.prompt = prompt;
+        scope.perspective = perspective;
+        scope.theObject = initObj || {};
+        
+        perspective.layout = normalizeLayout(perspective.layout);
+        
+        scope.theObject._bo_meta_data = {type_desc_map: tdMap};
+        if(!tdMap.getTypeDescriptor) {
+            tdMap.getTypeDescriptor = function(f) {
+                return tdMap[f];
+            };
+        }
+        
+        return $uibModal.open({
+            templateUrl:'dbui/reusable/core/object_editor_dialog.html',
+            size:'lg',
+            scope: scope
+        }).result;
+    };
       
     
     /**

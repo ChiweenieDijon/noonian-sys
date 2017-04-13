@@ -1,0 +1,17 @@
+{
+	"__ver": "sys:1",
+	"_id": "XSx9nqdyQeuaytKKJmsEtw",
+	"doc": "used by Dbui.showDialog()",
+	"module": {
+		"_disp": "noonian.dbui",
+		"_id": "myP57XGhSNyDKrrcJFvO0Q"
+	},
+	"name": "object_editor_dialog.html",
+	"path": "dbui/reusable/core",
+	"provider": {
+		"_disp": "Dbui",
+		"_id": "I_Fy8QWkTdiSj9Bz3A-jNw"
+	},
+	"rolespec": [
+	]
+}
