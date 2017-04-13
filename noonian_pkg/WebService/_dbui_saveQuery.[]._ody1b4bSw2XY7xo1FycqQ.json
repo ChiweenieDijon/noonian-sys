@@ -1,0 +1,8 @@
+{
+	"__ver": "sys:1",
+	"_id": "_ody1b4bSw2XY7xo1FycqQ",
+	"doc": "Save a query to user-specific perspective",
+	"path": "/dbui/saveQuery",
+	"rolespec": [
+	]
+}

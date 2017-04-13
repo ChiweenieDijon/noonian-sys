@@ -10,7 +10,7 @@ function ($timeout, $q, db, NoonI18n, DbuiAction, Config,  Dbui, DbuiPerspective
     },
     
     
-    controller:function($scope) {
+    controller:function($scope, NoonWebService) {
         
         var specialTableActions = {
             edit_perspective:{
@@ -235,7 +235,38 @@ function ($timeout, $q, db, NoonI18n, DbuiAction, Config,  Dbui, DbuiPerspective
         
         //Do the initial data load:
         loadData();
+        
+        $scope.saveQuery = function() {
+            //Get a name for the query
+            //is it for me or for everyone?
+            //append it to perspective.savedQueries
+            //save the perspective
+            Dbui.showDialog(
+                'Save Query', 
+                'Please provide a description for the saved query.', 
+                {name:{type:'string'}}, 
+                {layout:['name']}
+            ).then(function(result) {
+                
+                var wsParams = {
+                    title:result.name,
+                    theQuery:perspective.filter,
+                    perspective:perspective.name,
+                    class_name:className
+                };
+                
+                NoonWebService.call('dbui/saveQuery', wsParams).then(function(result) {
+                    // console.log(result);
+                    perspective.savedQueries = result.queryList;
+                });
+            });
+        };
+        
+        $scope.loadQuery = function(q) {
+            perspective.filter = _.cloneDeep(q);
+            loadData();
+        };
 
-    }
+    } // end controller definition
   }
 }

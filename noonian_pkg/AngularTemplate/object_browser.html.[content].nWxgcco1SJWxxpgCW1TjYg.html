@@ -6,6 +6,13 @@
         <div class="col-sm-9" >
           <query-builder bo-class="boClass" ng-model="perspective.filter" on-close="advancedSearch(false)"></query-builder>
           <button type="button" class="btn btn-default" ng-click="execSearch()"><i class="fa fa-lg fa-search"></i></button>
+          <div class="pull-right" uib-dropdown ng-show="perspective.savedQueries">
+            <button type="button" class="btn btn-default" uib-dropdown-toggle><i class="fa fa-lg fa-ellipsis-h"></i></button>
+            <ul class="dropdown-menu" uib-dropdown-menu>
+                <li ng-repeat="sq in perspective.savedQueries"><a href ng-click="loadQuery(sq.query)">{{sq.title}}</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn btn-default pull-right" ng-click="saveQuery()" uib-tooltip="Save Query"><i class="fa fa-lg fa-save"></i></button>
         </div>
       </div>
       <div class="col-sm-4" ng-switch-default>
