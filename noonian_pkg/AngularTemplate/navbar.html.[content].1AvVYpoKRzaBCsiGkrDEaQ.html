@@ -77,7 +77,17 @@
       
       <!-- Right-hand side of navbar-->
       <ul class="nav navbar-nav navbar-right">
-        <li ng-show="loggedIn" class="hidden-xs"><p class="navbar-text">Hello {{ currentUser.name }}</p> </li>
+        <li ng-show="loggedIn && !sidebarMenuList.length" class="hidden-xs"><p class="navbar-text">Hello {{ currentUser.name }}</p> </li>
+        <li ng-if="loggedIn && sidebarMenuList.length"  class="dropdown" uib-dropdown>
+            <a class="dropdown-toggle" role="button" uib-dropdown-toggle>
+                Hello {{ currentUser.name }}
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li role="menuitem" style="padding:3px 10px"><span style="font-weight:bolder">Sidebar Menus</span></li>
+                <li class="divider"></li>
+                <li role="menuitem" ng-repeat="menu in sidebarMenuList"><a href role="button" ng-click="switchMenu(menu.key)"><i ng-if="menu.key == currMenu" class="fa fa-xs fa-asterisk"></i> {{menu.label}}</a></li>
+            </ul>
+        </li>
         <li ng-show="loggedIn"><a href="" ng-click="logout()">Logout</a></li>
       </ul>
 

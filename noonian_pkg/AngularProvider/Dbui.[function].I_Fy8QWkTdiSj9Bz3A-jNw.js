@@ -25,14 +25,29 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
             isOpen:false
         };
         
-        return DbuiFieldType.init().then(DbuiAction.init);
+        return DbuiFieldType.init().then(DbuiAction.init).then(function() {
+            return NoonWebService.call('dbui/getSidebarMenu').then(function(menuMap) {
+                console.log(menuMap);
+                $rootScope.sidebarMenu = menuMap[menuMap._primary];
+                $rootScope.sidebarMenuList = [];
+                $rootScope.sidebarMenuMap = menuMap;
+                
+                _.forEach(menuMap, function(menuObj, menuKey) {
+                    if(menuKey === '_primary') return;
+                    $rootScope.sidebarMenuList.push({
+                        key:menuKey,
+                        label:menuKey
+                    });
+                });
+            });
+        });
     };
     
     /**
-     * Dbui.getSidebarMenu
+     * Dbui.switchSidebarMenu
      */
-    this.getSidebarMenu = function() {
-        return NoonWebService.call('dbui/getSidebarMenu');
+    this.switchSidebarMenu = function(key) {
+        $rootScope.sidebarMenu = $rootScope.sidebarMenuMap[key];
     };
     
     /**

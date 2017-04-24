@@ -1,7 +1,7 @@
 <div ng-controller="dbui_SidebarCtrl" >
 	<uib-accordion close-others="false">
 	    
-	    <div uib-accordion-group  is-open="menuItem.isOpen" class="panel-sidebar"  ng-repeat="menuItem in menu">
+	    <div uib-accordion-group  is-open="menuItem.isOpen" class="panel-sidebar"  ng-repeat="menuItem in sidebarMenu">
 	        <uib-accordion-heading>
                 {{menuItem.label}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': menuItem.isOpen, 'glyphicon-chevron-right': !menuItem.isOpen}"></i>
             </uib-accordion-heading>
