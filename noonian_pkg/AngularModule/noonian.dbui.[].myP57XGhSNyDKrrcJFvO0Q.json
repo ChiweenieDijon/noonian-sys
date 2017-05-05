@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:65",
+	"__ver": "sys:66",
 	"_id": "myP57XGhSNyDKrrcJFvO0Q",
 	"config_function": null,
 	"css_dependencies": [
@@ -54,6 +54,12 @@
 			"_id": "WGmUTuiGS5KfXGYV_sUHeQ",
 			"name": "ui-ace.min.js",
 			"path": "bower_components/angular-ui-ace"
+		},
+		{
+			"_disp": "ext-language_tools.js",
+			"_id": "cevOr03VSL6fKgpPRnXYVQ",
+			"name": "ext-language_tools.js",
+			"path": "bower_components/ace-builds/src-min-noconflict"
 		}
 	],
 	"mod_dependencies": [

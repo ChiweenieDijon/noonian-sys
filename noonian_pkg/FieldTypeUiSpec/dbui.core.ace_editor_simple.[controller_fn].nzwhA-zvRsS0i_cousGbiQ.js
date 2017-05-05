@@ -51,7 +51,13 @@ function ($scope, $parse) {
       theme:theme,
       mode: mode,
       useWrapMode : true,
-      showGutter: true
+      showGutter: true,
+      require: ['ace/ext/language_tools'],
+      advanced: {
+          enableSnippets: false,
+          enableBasicAutocompletion: true,
+          enableLiveAutocompletion: true
+      }
     };
     
     $scope.aceInit.onLoad = function(editor) {
