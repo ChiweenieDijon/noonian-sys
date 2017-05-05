@@ -63,6 +63,23 @@ function (db, _, Q) {
     };
     
     /**
+     * I18n.aggregateLabelGroups
+     * Retrieve multiple label groups for a particular user.
+     */
+    exports.aggregateLabelGroups = function(keyArr, user) {
+      var lang = user && user.language ? user.language._id : ENGLISH_ID; //default to english
+    
+      return db.LabelGroup.find({key:{$in:keyArr}, 'language._id':lang}).then(function(lgArr){
+          var result = {};
+          _.forEach(lgArr, function(lg) {
+              result[lg.key] = lg.value;
+          });
+        return result;
+      });
+    
+    };
+    
+    /**
      * I18n.getBoLabelGroup
      * *resolves immediate reference sub-fields; TODO also resolve inheritance!
     */

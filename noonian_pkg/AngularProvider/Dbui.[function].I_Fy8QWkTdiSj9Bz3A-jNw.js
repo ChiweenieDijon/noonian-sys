@@ -27,18 +27,19 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
         
         return DbuiFieldType.init().then(DbuiAction.init).then(function() {
             return NoonWebService.call('dbui/getSidebarMenu').then(function(menuMap) {
-                console.log(menuMap);
-                $rootScope.sidebarMenu = menuMap[menuMap._primary];
-                $rootScope.sidebarMenuList = [];
-                $rootScope.sidebarMenuMap = menuMap;
                 
+                $rootScope.sidebarMenu = menuMap[menuMap._primary];
+                $rootScope.sidebarMenuMap = menuMap;
+                var labels = menuMap._labels;
+                var menuList = [];
                 _.forEach(menuMap, function(menuObj, menuKey) {
-                    if(menuKey === '_primary') return;
-                    $rootScope.sidebarMenuList.push({
+                    if(menuKey.indexOf('_') === 0) return;
+                    menuList.push({
                         key:menuKey,
-                        label:menuKey
+                        label:labels[menuKey] || menuKey
                     });
                 });
+                $rootScope.sidebarMenuList = _.sortBy(menuList, 'label');
             });
         });
     };

@@ -73,7 +73,8 @@ function ($rootScope, $scope, $location, $state, db, Auth, Action, Dbui, NoonCon
     $scope.isActive = function(stateName) {
       return stateName === $state.$current.name;
     };
-
+    
+    $scope.currMenu = $scope.sidebarMenuMap._primary;
     $scope.switchMenu = function(menuKey) {
         $scope.currMenu = menuKey;
         Dbui.switchSidebarMenu(menuKey);

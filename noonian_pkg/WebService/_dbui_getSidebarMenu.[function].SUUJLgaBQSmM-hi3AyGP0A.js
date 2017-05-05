@@ -1,4 +1,4 @@
-function (req, config, db, auth, DbuiMenuBuilder, Q, _) {
+function (req, config, db, auth, DbuiMenuBuilder, Q, _, I18n) {
     var configKey = 'sys.dbui.sidebar_menu';
     var currUser;
     
@@ -27,7 +27,7 @@ function (req, config, db, auth, DbuiMenuBuilder, Q, _) {
     })
     .then(function(matchingConfigs) {
         var matchedKeys = {};
-        var menuKeys = [];
+        var menuKeys = []; 
         var menuPromises = [config.getCustomizedParameter(configKey, req.user._id)];
         
         _.forEach(matchingConfigs, function(c) {
@@ -38,28 +38,26 @@ function (req, config, db, auth, DbuiMenuBuilder, Q, _) {
             }
         });
         
-        return Q.all(menuPromises).then(function(menuArr) {
-            var result = {_primary:menuArr[0]};
-            for(var i=1; i < menuArr.length; i++) {
-                var menuKey = menuKeys[i-1];
-                result[menuKey] = menuArr[i];
+        menuPromises.push(
+            I18n.aggregateLabelGroups(menuKeys, currUser)
+        );
+        
+        
+        return Q.all(menuPromises).then(function(resultArr) {
+            var result = {_primary:resultArr[0]};
+            for(var i=0; i < menuKeys.length; i++) {
+                var menuKey = menuKeys[i];
+                result[menuKey] = resultArr[i+1];
             }
+            
+            result._labels = resultArr.pop();
+            
             return result;
-        })
+        });
         
         
     })
-    
     ;
     
-    return Q.all([
-        auth.getCurrentUser(req),
-        config.getCustomizedParameter(configKey, req.user._id)
-    ])
-    .then(function(resultArr) {
-        var currUser = resultArr[0];
-        var menuKey = resultArr[1];
-        return DbuiMenuBuilder.buildMenu(menuKey, currUser);
-    });
     
 }
