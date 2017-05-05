@@ -1,7 +1,10 @@
-function (req, queryParams, I18n) {
+function (auth, req, queryParams, I18n) {
     
-    return I18n.getLabelGroup(queryParams.key, req.user).then(function(lg) {
-        return {result:lg};
+    return auth.getCurrentUser(req).then(function(currentUser) {
+        return I18n.getLabelGroup(queryParams.key, currentUser).then(function(lg) {
+            return {result:lg};
+        });
     });
+    
     
 }

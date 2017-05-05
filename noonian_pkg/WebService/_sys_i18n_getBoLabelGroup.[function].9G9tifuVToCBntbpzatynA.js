@@ -1,11 +1,13 @@
-function (req, queryParams, I18n) {
+function (auth, req, queryParams, I18n) {
     
     if(!queryParams.className) {
         return {result:{}};
     }
     
-    return I18n.getBoLabelGroup(queryParams.className, req.user).then(function(fieldLabels) {
-        return {result:fieldLabels};
+    return auth.getCurrentUser(req).then(function(currentUser) {
+        return I18n.getBoLabelGroup(queryParams.className, currentUser).then(function(fieldLabels) {
+            return {result:fieldLabels};
+        })
     });
     
 }

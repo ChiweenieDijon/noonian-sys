@@ -1,6 +1,7 @@
 function (db, auth, Q, _) {
     var exports = {};
-    
+    var ENGLISH_ID='-9vPfv2lEeSFtiimx_V4dw';
+	    
     /**
      * DbuiMenuBuilder.buildMenu
      * takes a key, queryies for the menu, and dereferences any submenus
@@ -20,7 +21,9 @@ function (db, auth, Q, _) {
       //Helper function - populates labels for a ref menuItem (bound to 'this')
       var populateLabels = function() {
         var menuItem = this;
-        return db.LabelGroup.findOne({key:this.ref}).then(
+        var lang = user && user.language ? user.language._id : ENGLISH_ID; 
+    
+        return db.LabelGroup.findOne({key:this.ref, 'language._id':lang}).then(
           function(labelGroupObj) {
             if(labelGroupObj) {
               var lg = labelGroupObj.value;
