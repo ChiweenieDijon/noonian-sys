@@ -98,6 +98,26 @@ function (NoonWebService, NoonI18n, db, $q) {
         });
     };
     
+    /**
+     * Point type name to wildcard spec if type-specific spec isn't cached
+     */
+    var setCacheWildcardIfNeeded = function(typeDesc, viewEdit) {
+        var typeName;
+        var specMap;
+        if(typeDesc instanceof Array) {
+            specMap = arrSpecMaps[viewEdit];
+            typeName = typeDesc[0].type;
+        }
+        else {
+            specMap = specMaps[viewEdit];
+            typeName = typeDesc.type;
+        }
+        
+        if(!specMap[typeName] && specMap['*']) {
+            specMap[typeName] = specMap['*'];
+        }
+    };
+    
     /** 
      * DbuiFieldType.cacheTypeInfoForFieldtype
      * Retrieves and caches FieldTypeUiSpec data for fields of specified fieldtype
@@ -107,7 +127,8 @@ function (NoonWebService, NoonI18n, db, $q) {
         var promiseCacheKey = typeName+'|'+viewEdit;
         
         if(!cachePromises[promiseCacheKey]) {
-            cachePromises[promiseCacheKey] = cacheTypeInfo( {field_type:typeName,view_or_edit:viewEdit}, viewEdit );
+            cachePromises[promiseCacheKey] = cacheTypeInfo( {field_type:typeName,view_or_edit:viewEdit}, viewEdit )
+                .then(setCacheWildcardIfNeeded.bind(null, typeDesc, viewEdit));
         }
         
         return cachePromises[promiseCacheKey];
@@ -120,7 +141,14 @@ function (NoonWebService, NoonI18n, db, $q) {
     this.cacheTypeInfoForClass = function(className) {
         if(!cachePromises[className]) {
             cachePromises[className] = cacheTypeInfo({class_name:className,view_or_edit:'view'}, 'view')
-                .then(cacheTypeInfo.bind(null, {class_name:className,view_or_edit:'edit'}, 'edit'));
+                .then(cacheTypeInfo.bind(null, {class_name:className,view_or_edit:'edit'}, 'edit'))
+                .then(function() {
+                    var typeDescMap = db[className]._bo_meta_data;
+                    _.forEach(typeDescMap, function(typeDesc) {
+                        setCacheWildcardIfNeeded(typeDesc, 'view');
+                        setCacheWildcardIfNeeded(typeDesc, 'edit');
+                    });
+                });
         }
         return cachePromises[className];
     };
@@ -140,9 +168,6 @@ function (NoonWebService, NoonI18n, db, $q) {
         
         if(specMap[typeName]) {
            return specMap[typeName];
-        }
-        else if(specMap['*']) {
-            return specMap['*'];
         }
     };
     
