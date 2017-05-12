@@ -186,13 +186,13 @@ border-radius: 4px;
   text-decoration: none;
 }
 
-.query-editor-term .uib-dropdown-menu {
+.query-editor-term .dropdown-menu {
   max-height: 300px;
-overflow-y: scroll;
+overflow-y: auto;
 padding:0;
 }
 
-.query-editor-term .uib-dropdown-menu a {
+.query-editor-term .dropdown-menu a {
   border-bottom: 1px solid lightgray;
   padding-top:10px;
   padding-bottom: 10px;
