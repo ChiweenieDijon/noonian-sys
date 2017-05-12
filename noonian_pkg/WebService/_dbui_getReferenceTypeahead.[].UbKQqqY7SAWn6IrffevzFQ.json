@@ -1,0 +1,8 @@
+{
+	"__ver": "sys:5",
+	"_id": "UbKQqqY7SAWn6IrffevzFQ",
+	"doc": "Retrieves typeahead list for specified phrase",
+	"path": "/dbui/getReferenceTypeahead",
+	"rolespec": [
+	]
+}
