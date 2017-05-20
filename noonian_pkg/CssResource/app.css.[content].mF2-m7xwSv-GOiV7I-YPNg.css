@@ -32,7 +32,7 @@
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
     background: #4393B9;
     border-radius: 0 0 12px 12px;
-    margin-top:-20px;
+    /*margin-top:-20px;*/
     margin-bottom:10px;
 }
 
@@ -518,3 +518,29 @@ a.accordion-toggle:hover {
     max-height:300px;
     overflow-y:auto;
 }
+
+
+/* Breadcrumb stuff */
+.breadcrumb-pin {
+    opacity:0.25;
+    color:gray;
+    cursor:pointer;
+}
+
+.pinned {
+    font-weight: bolder;
+}
+
+.pinned .breadcrumb-pin {
+    opacity:0.75;
+}
+
+.breadcrumb-pin:hover {
+    opacity:1;
+}
+
+.pinned .breadcrumb-pin i {
+    color:#4393B9;
+}
+
+

@@ -1,0 +1,9 @@
+<ol class="breadcrumb" style="margin-bottom:0">
+  <li ng-repeat="c in crumbHistory" ng-class="{'active':(currentCrumb===c), 'pinned':c.pinned}">
+      <span class="breadcrumb-pin" ng-click="togglepin(c)"><i class="fa fa-thumb-tack" ng-class="{'fa-thumb-tack':(!c.pinned), 'fa-circle':(c.pinned)}"></i></span>
+      <span ng-switch="c">
+        <span ng-if="c === currentCrumb">{{c.title}}</span>
+        <a href ng-if="c !== currentCrumb" ng-click="selected(c)">{{c.title}} </a>
+      </span>
+  </li>
+</ol>
