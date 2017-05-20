@@ -6,17 +6,20 @@
 			<button type="button" ng-repeat="action in actionList" class="btn btn-action" ng-click="invokeAction(action)"><i class="fa fa-lg" ng-class="action.icon" ></i> {{ action.label }}</button>
 		</div>
 	</div>
-	<div class="row">
-		<alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
-	</div>
-	<div class="row" ng-show="recordActionList.length > 0">
-		<div class="action-bar col-md-offset-1 col-sm-10 col-md-10 col-lg-10">
+	
+	<div class="action-bar-upper" ng-show="recordActionList.length > 0">
       <button type="button" ng-repeat="action in recordActionList" class="btn btn-action" ng-click="invokeAction(action)"><i class="fa fa-lg" ng-class="action.icon" ></i> {{ action.label }}</button>
-		</div>
-	</div>
+    </div>
+  
 
-  <dbui-object-editor the-object="theObject" perspective="editPerspective" ></dbui-object-editor>
+    <div class="dbui-form-container">
+      <dbui-object-editor the-object="theObject" perspective="editPerspective" ></dbui-object-editor>
+    </div>
+  
+    <div class="action-bar-lower" ng-show="recordActionList.length > 0">
+      <button type="button" ng-repeat="action in recordActionList" class="btn btn-action" ng-click="invokeAction(action)"><i class="fa fa-lg" ng-class="action.icon" ></i> {{ action.label }}</button>
+    </div>
 
-  <!-- related -->
-  <dbui-related-viewer ng-if="editPerspective.related" the-object="theObject" perspective-name="editPerspective.name" related-spec="editPerspective.related"></dbui-related-viewer>
+    <!-- related -->
+    <dbui-related-viewer ng-if="editPerspective.related" the-object="theObject" perspective-name="editPerspective.name" related-spec="editPerspective.related"></dbui-related-viewer>
 </div>

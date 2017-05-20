@@ -1,0 +1,14 @@
+{
+	"__ver": "sys:11",
+	"_id": "NsTdpPyyQhWREbMKoDr5wA",
+	"module": {
+		"_disp": "noonian.dbui",
+		"_id": "myP57XGhSNyDKrrcJFvO0Q"
+	},
+	"name": "breadcrumbBar",
+	"parameters": [
+		"$rootScope"
+	],
+	"path": "/dbui/core",
+	"type": "directive"
+}

@@ -111,6 +111,11 @@ function ($http, $q, db, $state, $injector, $window, NoonWebService) {
         //TODO allow for parameter substituion via passedArgs
         return $window.open(actionObj.external);
       }
+      else {
+        var err = 'Attempted to invoke invalid action';
+        console.error(err, actionObj);
+        return $q.reject(err);
+      }
     };
     
     this.registerAlias = function(alias, actionObj) {

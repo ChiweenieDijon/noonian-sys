@@ -1,4 +1,5 @@
-<div ng-repeat="sec in perspective.layout" class="dbui-subsection-container">
+<div ng-repeat="sec in perspective.layout" class="dbui-subsection-container" id="{{sec.section_id}}">
+    
   <div class="dbui-subsection-header" ng-if="sec.subheading" ng-click="sec.isHidden = !sec.isHidden">
       <h4>{{labels._subheading[sec.subheading] ? labels._subheading[sec.subheading] : sec.subheading}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': !sec.isHidden, 'glyphicon-chevron-right': sec.isHidden}"></i></h4>
   </div>

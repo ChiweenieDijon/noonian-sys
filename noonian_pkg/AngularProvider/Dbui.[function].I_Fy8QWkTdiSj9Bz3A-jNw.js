@@ -10,7 +10,8 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
         
         var instanceName = $rootScope.instanceName = 'NoonianDBUI'; 
         $rootScope.setPageTitle = function(title) {
-            $rootScope.pageTitle = instanceName+(title ? ' | '+title : '');    
+            $rootScope.fullPageTitle = instanceName+(title ? ' | '+title : '');
+            $rootScope.pageTitle = title;
         };
         
         NoonConfig.getParameter('sys.instanceName').then(function(cfgName) {
