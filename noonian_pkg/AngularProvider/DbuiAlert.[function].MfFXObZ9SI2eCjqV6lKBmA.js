@@ -38,11 +38,11 @@ function ($rootScope, $timeout) {
         
         // $rootScope.dbui_alerts.push(alertObj);
         $rootScope.alertMenu.alerts.unshift(alertObj);
-        $rootScope.alertMenu.isOpen = true;
+        $rootScope.alertMenu.showQueue = true;
         
         // $timeout(closeDbuiAlert.bind(null, alertObj), timeout);
         $timeout(function() {
-            $rootScope.alertMenu.isOpen = false;
+            $rootScope.alertMenu.showQueue = false;
         }, timeout);
         
         

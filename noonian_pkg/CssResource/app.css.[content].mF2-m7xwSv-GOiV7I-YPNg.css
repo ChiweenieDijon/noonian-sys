@@ -544,3 +544,17 @@ a.accordion-toggle:hover {
 }
 
 
+/* alert queue at bottom left of screen */
+#alerts-queue {
+  position: fixed;
+  padding: 0 10px;
+  margin-top: 20px;
+  width: 480px;
+  max-width: 100%;
+  z-index: 999;
+    bottom:0;
+    right:0;
+
+}
+
+
