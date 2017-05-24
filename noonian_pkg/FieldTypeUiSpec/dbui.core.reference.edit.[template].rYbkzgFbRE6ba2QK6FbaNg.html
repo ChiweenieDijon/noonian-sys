@@ -2,6 +2,7 @@
 	<p class="input-group">
 	<span class="input-group-btn">
       <button type="button" class="btn btn-default" ng-click="showPicker()"><i class="fa fa-ellipsis-h"></i></button>
+       <button type="button"  ng-show="fieldCustomizations.enableViewLink && binding.value" class="btn btn-default" ng-click="viewRefObj()"><i class="fa fa-eye"></i></button>
     </span>
 	<input type="text" class="form-control" autocomplete="off" id="{{elemId}}" ng-model="refDisplayText"
 	 placeholder="(empty)"

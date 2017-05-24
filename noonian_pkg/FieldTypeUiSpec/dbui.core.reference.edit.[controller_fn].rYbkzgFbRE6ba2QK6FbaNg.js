@@ -33,5 +33,17 @@ function ($scope, $stateParams, db, Dbui, DbuiObjectPicker, DbuiAction, NoonWebS
 
     $scope.invokeAction = function(a) {
         DbuiAction.invokeAction($stateParams.perspective, ($scope.binding && $scope.binding.value), a);
-    } 
+    };
+    
+    $scope.viewRefObj = function() {
+      var displayValue = $scope.binding.value;
+      if(displayValue) {
+          var action = DbuiAction.unalias('dialog-view');
+          var args = {
+              className:  td.ref_class || displayValue.ref_class,
+              targetObj: displayValue
+          };
+          DbuiAction.invokeAction(null, null, action, args);
+      }
+    };
 }

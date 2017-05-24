@@ -73,7 +73,7 @@ function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state
                 return db[className].findOne({_id:boId}).$promise;
               },
               viewPerspective:  function(Dbui) {
-                return Dbui.getPerspective(perspectiveName, className, 'view');
+                return Dbui.getPerspective(perspectiveName, className, 'dialog-view');
               }
             }
           });
