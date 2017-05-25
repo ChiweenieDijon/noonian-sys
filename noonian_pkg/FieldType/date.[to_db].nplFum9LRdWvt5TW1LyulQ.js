@@ -1,13 +1,23 @@
 function (value) {
+    var properFormat = /^\d{4}-\d{2}-\d{2}$/;
     
-    if(value instanceof Date) {
-        var datestr = value.toISOString();
-
-        var parsed = /(\d{4}-\d{2}-\d{2}).*/.exec(datestr);
-        if(parsed && parsed[1]) {
-            return parsed[1];
-        }
+    if(properFormat.test(value)) {
+        return value;
     }
-    
-    return value;
+    else {
+        var d = new Date(value);
+        
+        if(d.toString() === 'Invalid Date') {
+            return null;
+        }
+        
+        var yyyy = d.getFullYear();
+        var mm = d.getMonth()+1;
+        var dd = d.getDate();
+        
+        mm = mm < 10 ? '0'+mm : ''+mm;
+        dd = dd < 10 ? '0'+dd : ''+dd;
+        
+        return yyyy+'-'+mm+'-'+dd;
+    }
 }
