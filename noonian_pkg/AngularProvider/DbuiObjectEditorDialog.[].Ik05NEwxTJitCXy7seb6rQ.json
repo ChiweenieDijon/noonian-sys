@@ -1,0 +1,16 @@
+{
+	"__ver": "sys:1",
+	"_id": "Ik05NEwxTJitCXy7seb6rQ",
+	"module": {
+		"_disp": "noonian.dbui",
+		"_id": "myP57XGhSNyDKrrcJFvO0Q"
+	},
+	"name": "DbuiObjectEditorDialog",
+	"parameters": [
+		"Dbui",
+		"$uibModal",
+		"$rootScope"
+	],
+	"path": "dbui/reusable/dialog",
+	"type": "factory"
+}
