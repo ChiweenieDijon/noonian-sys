@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_id": "IG7UUXYwTv6Ffj4o489duA",
 	"abstract": false,
 	"class_name": "Menu",
@@ -7,12 +7,23 @@
 		"definition": {
 			"type": "object"
 		},
+		"definition_getter": {
+			"type": "function"
+		},
 		"key": {
 			"separator": ".",
 			"type": "path"
 		},
 		"rolespec": {
 			"type": "rolespec"
+		},
+		"type": {
+			"enum": [
+				"static",
+				"clientside",
+				"serverside"
+			],
+			"type": "string"
 		}
 	},
 	"doc": "An ordered grouping of actions and submenus under a key.  Utilized by DBUI for the sidebar menu.",

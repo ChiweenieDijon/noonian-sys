@@ -1,0 +1,18 @@
+<div>
+  <div class="dbui-header modal-header">
+      <h3>{{title}}</h3>
+      
+  </div>
+  
+  <div class="modal-body">
+      <div class="view_container">
+        <dbui-object-editor the-object="theObject" perspective="perspective"></dbui-object-viewer>
+      </div>
+      
+  </div>
+  
+  <div class="modal-footer">
+    <button class="btn btn-warning" type="button" ng-click="$dismiss()">Cancel</button>
+    <button class="btn btn-primary" type="button" ng-click="$close(theObject)">OK</button>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{
+	"__ver": "sys:5",
+	"_id": "LsujDPMnQ8aJ268YxHkBPA",
+	"doc": "Utility for getting and setting user preferences.",
+	"module": {
+		"_disp": "noonian.dbui",
+		"_id": "myP57XGhSNyDKrrcJFvO0Q"
+	},
+	"name": "DbuiUserPrefs",
+	"parameters": [
+		"NoonConfig",
+		"$rootScope"
+	],
+	"path": "dbui/core/api",
+	"type": "service"
+}

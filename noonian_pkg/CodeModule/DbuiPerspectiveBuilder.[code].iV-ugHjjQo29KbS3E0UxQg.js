@@ -40,6 +40,20 @@ function (db, auth, config, Q, _) {
               }
         },
         
+        'dialog-view':function(targetTypeDescMap, perspectiveConfigItem) {
+            if(perspectiveConfigItem.view) {
+                perspectiveConfigItem['dialog-view'] = perspectiveConfigItem.view;
+            }
+            else {
+              perspectiveConfigItem['dialog-view'].layout = [];
+            
+              for(var f in targetTypeDescMap) {
+                  if(f.indexOf('_') === 0) continue;
+                  perspectiveConfigItem['dialog-view'].layout.push(f);
+              }
+            }
+        },
+        
         edit: function(targetTypeDescMap, perspectiveConfigItem) {
             perspectiveConfigItem.edit.layout = [];
               for(var f in targetTypeDescMap) {
