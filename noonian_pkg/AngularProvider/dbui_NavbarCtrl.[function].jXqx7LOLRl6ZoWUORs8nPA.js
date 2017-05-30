@@ -74,11 +74,8 @@ function ($rootScope, $scope, $location, $state, db, Auth, Action, Dbui, NoonCon
       return stateName === $state.$current.name;
     };
     
-    $scope.currMenu = $scope.sidebarMenuMap._primary;
-    $scope.switchMenu = function(menuKey) {
-        $scope.currMenu = menuKey;
-        Dbui.switchSidebarMenu(menuKey);
-    };
+    
+    $scope.switchMenu = Dbui.switchSidebarMenu;
 
     $scope.invokeAction = function(action) {
         $scope.boMenuOpen = false;

@@ -31,7 +31,7 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
           .then(DbuiUserPrefs.init)
           .then(function() {
             return NoonWebService.call('dbui/getSidebarMenu').then(function(menuMap) {
-                var currMenuKey = DbuiUserPrefs.getParameter('selected_sidebar_menu') || menuMap._primary;
+                var currMenuKey = $rootScope.currMenuKey = DbuiUserPrefs.getParameter('selected_sidebar_menu') || menuMap._primary;
                 
                 $rootScope.sidebarMenu = menuMap[currMenuKey];
                 $rootScope.sidebarMenuMap = menuMap;
@@ -53,6 +53,7 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
      * Dbui.switchSidebarMenu
      */
     this.switchSidebarMenu = function(key) {
+        $rootScope.currMenuKey = key;
         $rootScope.sidebarMenu = $rootScope.sidebarMenuMap[key];
         DbuiUserPrefs.setParameter('selected_sidebar_menu', key);
     };

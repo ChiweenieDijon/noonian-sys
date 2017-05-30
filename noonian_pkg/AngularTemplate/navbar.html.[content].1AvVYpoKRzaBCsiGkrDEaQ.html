@@ -85,7 +85,7 @@
             <ul class="dropdown-menu" role="menu">
                 <li role="menuitem" style="padding:3px 10px"><span style="font-weight:bolder">Sidebar Menus</span></li>
                 <li class="divider"></li>
-                <li role="menuitem" ng-repeat="menu in sidebarMenuList"><a href role="button" ng-click="switchMenu(menu.key)"><i ng-if="menu.key == currMenu" class="fa fa-xs fa-asterisk"></i> {{menu.label}}</a></li>
+                <li role="menuitem" ng-repeat="menu in sidebarMenuList"><a href role="button" ng-click="switchMenu(menu.key)"><i ng-if="menu.key == currMenuKey" class="fa fa-xs fa-asterisk"></i> {{menu.label}}</a></li>
             </ul>
         </li>
         <li ng-show="loggedIn"><a href="" ng-click="logout()">Logout</a></li>
