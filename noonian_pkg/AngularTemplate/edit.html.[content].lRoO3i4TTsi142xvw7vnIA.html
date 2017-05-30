@@ -21,5 +21,5 @@
     </div>
 
     <!-- related -->
-    <dbui-related-viewer ng-if="editPerspective.related" the-object="theObject" perspective-name="editPerspective.name" related-spec="editPerspective.related"></dbui-related-viewer>
+    <dbui-related-viewer ng-if="theObject._id && editPerspective.related" the-object="theObject" perspective-name="editPerspective.name" related-spec="editPerspective.related"></dbui-related-viewer>
 </div>
