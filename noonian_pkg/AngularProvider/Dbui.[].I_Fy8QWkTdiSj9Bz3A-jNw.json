@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:77",
+	"__ver": "sys:81",
 	"_id": "I_Fy8QWkTdiSj9Bz3A-jNw",
 	"doc": "Library of functions needed in various places within Dbui.",
 	"module": {
@@ -17,7 +17,8 @@
 		"NoonI18n",
 		"db",
 		"NoonConfig",
-		"$uibModal"
+		"$uibModal",
+		"DbuiUserPrefs"
 	],
 	"path": "dbui/core/api",
 	"type": "service"

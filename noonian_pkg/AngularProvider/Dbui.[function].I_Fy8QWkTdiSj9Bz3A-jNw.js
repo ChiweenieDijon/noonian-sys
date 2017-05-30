@@ -1,4 +1,4 @@
-function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI18n, db, NoonConfig, $uibModal) {
+function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI18n, db, NoonConfig, $uibModal, DbuiUserPrefs) {
     
     
     /**
@@ -26,10 +26,14 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
             isOpen:false
         };
         
-        return DbuiFieldType.init().then(DbuiAction.init).then(function() {
+        return DbuiFieldType.init()
+          .then(DbuiAction.init)
+          .then(DbuiUserPrefs.init)
+          .then(function() {
             return NoonWebService.call('dbui/getSidebarMenu').then(function(menuMap) {
+                var currMenuKey = DbuiUserPrefs.getParameter('selected_sidebar_menu') || menuMap._primary;
                 
-                $rootScope.sidebarMenu = menuMap[menuMap._primary];
+                $rootScope.sidebarMenu = menuMap[currMenuKey];
                 $rootScope.sidebarMenuMap = menuMap;
                 var labels = menuMap._labels;
                 var menuList = [];
@@ -50,6 +54,7 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
      */
     this.switchSidebarMenu = function(key) {
         $rootScope.sidebarMenu = $rootScope.sidebarMenuMap[key];
+        DbuiUserPrefs.setParameter('selected_sidebar_menu', key);
     };
     
     /**

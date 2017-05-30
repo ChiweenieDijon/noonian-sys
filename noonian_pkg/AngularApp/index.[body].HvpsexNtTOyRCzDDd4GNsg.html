@@ -1,7 +1,7 @@
  <!-- navbar at the top -->
 <div ui-view="navBar"></div>
 <div style="margin-top:-20px;">
-<breadcrumb-bar></breadcrumb-bar>
+<breadcrumb-bar ng-show="userPrefs.enable_breadcrumb_bar"></breadcrumb-bar>
 </div>
 <div class="container-fluid">
     
@@ -21,7 +21,7 @@
 </div>
 
 <div id="alerts-queue"  ng-show="alertMenu.showQueue">
-    <div uib-alert ng-repeat="alert in alertMenu.alerts" ng-class="'alert-'+alert.type" close="closeDbuiAlert(alert)">
+    <div uib-alert ng-repeat="alert in alertMenu.alerts" ng-class="'alert-'+alert.type" ng-click="closeDbuiAlert(alert)" close="closeDbuiAlert(alert)">
         {{alert.msg}}
     </div>
 </div>
