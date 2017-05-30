@@ -26,7 +26,7 @@ function ($http, $q) {
 
 			$http.post('config/customizeParam/'+paramKey, {value:value})
 				.success(function(data) {
-				    console.log('customizeParam result', data);
+				    // console.log('customizeParam result', data);
 					var responseObj = angular.fromJson(data);
 					if(responseObj.error) {
 						deferred.reject(responseObj.error);
