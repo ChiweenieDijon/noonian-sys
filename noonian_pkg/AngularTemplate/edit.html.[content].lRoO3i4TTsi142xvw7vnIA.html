@@ -4,19 +4,19 @@
 			<h3 ng-if="boId">Edit {{labels[boClass] || boClass}} <small>{{boId}}</small></h3>
 			<h3 ng-if="!boId">New {{labels[boClass] || boClass}}</h3>
 			<button type="button" ng-repeat="action in actionList" class="btn btn-action" ng-click="invokeAction(action)"><i class="fa fa-lg" ng-class="action.icon" ></i> {{ action.label }}</button>
-		</div>
+		</div> 
 	</div>
 	
-	<div class="action-bar-upper" ng-show="recordActionList.length > 0">
+	<div class="action-bar-upper" ng-class="{'save-warn':(formStatus.isDirty)}" ng-show="recordActionList.length > 0">
       <button type="button" ng-repeat="action in recordActionList" class="btn btn-action" ng-click="invokeAction(action)"><i class="fa fa-lg" ng-class="action.icon" ></i> {{ action.label }}</button>
     </div>
   
 
     <div class="dbui-form-container">
-      <dbui-object-editor the-object="theObject" perspective="editPerspective" ></dbui-object-editor>
+      <dbui-object-editor the-object="theObject" perspective="editPerspective" form-status="formStatus"></dbui-object-editor>
     </div>
   
-    <div class="action-bar-lower" ng-show="recordActionList.length > 0">
+    <div class="action-bar-lower" ng-class="{'save-warn':(formStatus.isDirty)}" ng-show="recordActionList.length > 0">
       <button type="button" ng-repeat="action in recordActionList" class="btn btn-action" ng-click="invokeAction(action)"><i class="fa fa-lg" ng-class="action.icon" ></i> {{ action.label }}</button>
     </div>
 

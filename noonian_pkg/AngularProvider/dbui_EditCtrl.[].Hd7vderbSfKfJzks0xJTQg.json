@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:11",
+	"__ver": "sys:14",
 	"_id": "Hd7vderbSfKfJzks0xJTQg",
 	"doc": "The controller for ui-router states dbui.edit and dbui.create",
 	"module": {
@@ -15,7 +15,8 @@
 		"DbuiAction",
 		"NoonI18n",
 		"theObject",
-		"editPerspective"
+		"editPerspective",
+		"$rootScope"
 	],
 	"path": "dbui/core/state",
 	"type": "controller"

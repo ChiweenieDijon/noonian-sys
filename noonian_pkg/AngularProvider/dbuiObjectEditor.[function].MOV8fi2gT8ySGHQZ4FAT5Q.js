@@ -6,7 +6,35 @@ function (Dbui, I18n) {
     restrict: 'E',
     scope: {
       theObject: '=',  //Object being displayed (a model instance from datsource)
-      perspective: '='
+      perspective: '=',
+      formStatus: '=?'
+    },
+    
+    link:function(scope) {
+        
+        scope.$watch('editorForm.$dirty', function(isDirty) {
+            //Set isDirty to true when we the form becomes dirty;
+            // (unset is done externally)
+            
+            if(scope.formStatus && isDirty) {
+                scope.formStatus.isDirty = true;
+            }
+        });
+        
+        scope.$watch('formStatus.isDirty', function(isDirty) {
+            if(!isDirty) {
+                scope.editorForm.$setPristine();
+            }
+        });
+        
+        //the dbui-field-editor updates linkStatus when it's link function is complete
+        // use that to initialize "pristine/dirty" status of the form
+        // (the async stuff in the field editor's link fn seems to make the ngModel dirty/pristine stuff act funky)
+        scope.linkStatus = {};
+        scope.$watch('linkStatus', function(ls) {
+            scope.editorForm.$setPristine();
+            if(scope.formStatus) scope.formStatus.isDirty = false;
+        }, true);
     },
     
     controller:function($scope, $parse) {

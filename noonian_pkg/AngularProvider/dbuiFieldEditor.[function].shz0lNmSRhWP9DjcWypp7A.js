@@ -10,7 +10,8 @@ function ($compile, $injector, DbuiFieldType) {
             typeDesc: '<',
             elemId: '<',
             fieldCustomizations: '<?', //From perspective.field_customizations
-            contextObject: '<?'
+            contextObject: '<?', 
+            linkStatus: '='
         },
         
         link: function(scope, iElement, iAttributes, ngModel) {
@@ -89,7 +90,7 @@ function ($compile, $injector, DbuiFieldType) {
                     scope.$watch('binding', function() {
                         //  console.log('dbuiFieldEditor: detected change in scope.binding:', scope.binding);  
                         //must *replace* the viewValue object in order for change to propogate to ng-model!
-                        if(scope.binding) {
+                        if(scope.binding && scope.binding.value !== ngModel.$viewValue.value) {
                             ngModel.$setViewValue({value:scope.binding.value});
                         }
                     }, 
@@ -122,8 +123,10 @@ function ($compile, $injector, DbuiFieldType) {
                      });
                      ngModel.$setViewValue(initValue);
                      ngModel.$render();
+                     ngModel.$setPristine();
                  }
-                
+                 
+                 scope.linkStatus = true;
             });
             
         },

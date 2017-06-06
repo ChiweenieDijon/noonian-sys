@@ -1,8 +1,9 @@
-function ($scope, $state, db, DbuiAlert, DbuiAction, NoonI18n, theObject, editPerspective) {
+function ($scope, $state, db, DbuiAlert, DbuiAction, NoonI18n, theObject, editPerspective,$rootScope) {
 
     var className = $scope.boClass = $state.params.className;
     $scope.theObject = theObject;
     $scope.editPerspective = editPerspective;
+    var formStatus = $scope.formStatus = {};
 
     var boId = $scope.boId = theObject && theObject._id;
     
@@ -16,6 +17,15 @@ function ($scope, $state, db, DbuiAlert, DbuiAction, NoonI18n, theObject, editPe
     }
     
     $scope.setPageTitle(title);
+    
+    var deRegister = $rootScope.$on('$stateChangeStart', function(event, toState, toParams){
+        if(formStatus.isDirty && !confirm('Are you sure you want to navigate away without saving?')){
+            event.preventDefault();
+        }
+        else {
+            deRegister();
+        }
+    });
 
     var saveTheObject = function() {
       console.log('saving object: ', $scope.theObject);
@@ -25,6 +35,9 @@ function ($scope, $state, db, DbuiAlert, DbuiAction, NoonI18n, theObject, editPe
           DbuiAlert.success('Successfully saved '+className+' '+result._id);
           if(!boId) {
             $state.go('dbui.edit', {className:className, id:result._id, perspective:editPerspective.name});
+          }
+          else {
+              formStatus.isDirty = false;
           }
         },
         function(err) {
