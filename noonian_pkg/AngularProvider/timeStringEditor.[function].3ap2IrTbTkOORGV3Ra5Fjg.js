@@ -68,7 +68,7 @@ function (uibDateParser, $filter) {
             //3. Wire up trigger for scope object --> $viewValue
             scope.$watch('binding', function() {
                 //must *replace* the viewValue object in order for change to propogate to ng-model!
-                if(scope.binding) {
+                if(scope.binding &&  !angular.equals(ngModel.$viewValue, scope.binding)) {
                     ngModel.$setViewValue({value:scope.binding.value});
                 }
             }, 
@@ -79,7 +79,9 @@ function (uibDateParser, $filter) {
                 if(!scope.binding) {
                     scope.binding = {};
                 }
-                scope.binding.value = ngModel.$viewValue.value;
+                if(!angular.equals(ngModel.$viewValue, scope.binding)) {
+                    scope.binding.value = ngModel.$viewValue.value;
+                }
                 
             };
             
