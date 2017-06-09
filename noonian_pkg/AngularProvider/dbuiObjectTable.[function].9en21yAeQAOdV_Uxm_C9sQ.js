@@ -31,7 +31,10 @@ function (DbuiAction, NoonI18n) {
       //$watch: our scope -> $viewValue
       scope.$watch('objectArray', function() {
         //replace the viewValue object:
-        ngModelCtrl.$setViewValue({vv:scope.objectArray});
+        var newVv = {vv:scope.objectArray};
+        if(!angular.equals(newVv, ngModelCtrl.$viewValue)) {
+            ngModelCtrl.$setViewValue(newVv);
+        }
       }, true); //deep watch
 
       //$render: $viewValue -> our scope
