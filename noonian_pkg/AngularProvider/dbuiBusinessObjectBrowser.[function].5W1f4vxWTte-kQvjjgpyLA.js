@@ -73,14 +73,6 @@ function ($timeout, $q, db, NoonI18n, DbuiAction, Config,  Dbui, DbuiPerspective
         $scope.dataArray = [];
         
         
-        if(perspective.recordActions) {
-            perspective.recordActions = DbuiAction.unaliasActionList(perspective.recordActions);
-        }
-        
-        if(perspective.tableActions) {
-            perspective.tableActions = DbuiAction.unaliasActionList(perspective.tableActions, specialTableActions);
-        }
-        
         if(!perspective.sort) {
             perspective.sort = {};
         }
