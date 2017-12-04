@@ -1,0 +1,20 @@
+{
+	"__ver": "sys:1",
+	"_id": "1giet8btQbGRHecTjpXtcQ",
+	"key": "sys.dbui.menu.dev_serverside",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"_submenu_label": "SYS Serverside",
+		"bods": "BusinessObjectDefs",
+		"codemodules": "CodeModules",
+		"datatriggers": "Data Triggers",
+		"enumerations": "Enumerations",
+		"labelgroups": "LabelGroups",
+		"webservices": "Web Services"
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:4",
+	"__ver": "sys:5",
 	"_id": "8hfoCeuHQbaV11P33vcTTw",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.non_perspectives.Config",
@@ -29,11 +29,6 @@
 			],
 			"filter": {
 				"$and": [
-					{
-						"system": {
-							"$isfalse": ""
-						}
-					},
 					{
 						"key": {
 							"$notcontains": "sys.dbui.perspective"

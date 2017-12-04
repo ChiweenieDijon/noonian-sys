@@ -1,0 +1,4 @@
+<div ng-if="displayValue && subPerspective">
+    <dbui-object-table ng-if="subPerspective.orientation !== 'vertical'" ng-model="displayValue" perspective="subPerspective" object-meta-data="objMetaData" config="tableConfig"></dbui-object-table>
+    <dbui-vertical-table ng-if="subPerspective.orientation === 'vertical'" ng-model="displayValue" perspective="subPerspective" object-meta-data="objMetaData" config="tableConfig"></dbui-vertical-table>
+</div>

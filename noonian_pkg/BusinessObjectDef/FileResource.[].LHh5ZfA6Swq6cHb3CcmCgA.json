@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:4",
 	"_id": "LHh5ZfA6Swq6cHb3CcmCgA",
 	"abstract": false,
 	"class_name": "FileResource",
@@ -8,7 +8,7 @@
 			"type": "attachment"
 		}
 	},
-	"doc": "A WebResource that is an arbitrary file.  When resource is requested, content is streamed from the {@link attachment} storage (Mongo's fs.files/fs.chunks collections via gridfs-stream) with appropriate ContentType.",
+	"doc": "A WebResource that is an arbitrary file.  When resource is requested, content is streamed from the {@link attachment} storage (Mongo's fs.files/fs.chunks collections via gridfs-stream) with appropriate ContentType.\n @property {attachment} content \n",
 	"superclass": {
 		"_disp": "WebResource",
 		"_id": "0TO-sBb1TjeAAzaMgd-8KQ"

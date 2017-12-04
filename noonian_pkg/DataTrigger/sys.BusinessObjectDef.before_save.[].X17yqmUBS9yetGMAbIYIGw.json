@@ -1,0 +1,14 @@
+{
+	"__ver": "sys:7",
+	"_id": "X17yqmUBS9yetGMAbIYIGw",
+	"before_after": "before",
+	"business_object": {
+		"_disp": "BusinessObjectDef",
+		"_id": "R1r6pCVESdma9hj8GrfMaQ"
+	},
+	"doc": "Update documentation with placeholders for each field",
+	"key": "sys.BusinessObjectDef.before_save",
+	"on_create": true,
+	"on_delete": false,
+	"on_update": true
+}

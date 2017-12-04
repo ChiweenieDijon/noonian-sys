@@ -118,15 +118,17 @@ function (db, auth, config, Q, _) {
             }
             else {
               //No default for this perspective/type; auto-generate and copy from it..
-              return autogenPerspective(boClass, 'default', perspectiveType);
+              return autogenPerspective(boClass, 'default', perspectiveType, defaultConfigItem);
             }
     
           })
           .then(function(perspectiveToCopyFrom) {
             perspectiveConfigItem[perspectiveType] = perspectiveToCopyFrom[perspectiveType];
-            config.saveParameter(key, perspectiveConfigItem).then(
-              function() {deferred.resolve(perspectiveConfigItem)}
-            );
+            deferred.resolve(perspectiveConfigItem);
+            //Don't save the non-default perspective
+            // config.saveParameter(key, perspectiveConfigItem).then(
+            //   function() {deferred.resolve(perspectiveConfigItem)}
+            // );
           });
       }
       else { //Generating a default perspective

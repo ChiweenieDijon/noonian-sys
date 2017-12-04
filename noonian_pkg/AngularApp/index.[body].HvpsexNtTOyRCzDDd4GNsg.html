@@ -21,7 +21,7 @@
 </div>
 
 <div id="alerts-queue"  ng-show="alertMenu.showQueue">
-    <div uib-alert ng-repeat="alert in alertMenu.alerts" ng-class="'alert-'+alert.type" ng-click="closeDbuiAlert(alert)" close="closeDbuiAlert(alert)">
+    <div uib-alert ng-repeat="alert in alertMenu.newAlerts" ng-class="'alert-'+alert.type" ng-click="closeDbuiAlert(alert)" close="closeDbuiAlert(alert)">
         {{alert.msg}}
     </div>
 </div>

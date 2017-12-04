@@ -1,0 +1,14 @@
+{
+	"__ver": "sys:2",
+	"_id": "YKldolloSTitGHf7Wz64PQ",
+	"doc": "Returns the constructor for a \"BusinessObjectLabelGroup\". Instances provide a getLabel accessor function to recurse into sub-fields\nA BO's _bo_meta_data.field_labels is an instance of BusinessObjectLabelGroup.",
+	"module": {
+		"_disp": "noonian.api",
+		"_id": "NJnfAVnFSmuMcv9voRnaJQ"
+	},
+	"name": "BusinessObjectLabelGroup",
+	"parameters": [
+	],
+	"path": "noonian/api/internal",
+	"type": "factory"
+}

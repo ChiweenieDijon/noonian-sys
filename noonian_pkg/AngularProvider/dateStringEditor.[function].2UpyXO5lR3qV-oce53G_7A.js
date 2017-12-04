@@ -14,22 +14,21 @@ function () {
         
         link: function(scope, iElement, iAttributes, ngModel) {
     
-            
-            var stringToDate = function(stringDate) {
-                //GOD I F'ING HATE DATES SO MUCH
-                var parsed = /(\d{4})-(\d{2})-(\d{2})/.exec(stringDate);
-                var year = +parsed[1];
-                var month = (+parsed[2])-1;
-                var day = +parsed[3]
-                return new Date(Date.UTC(year, month, day, 12, 0, 0));
-                
-            };
+            //Add listener to clear text box when it contains invalid date
+            var textBox = iElement.find('input');
+            textBox.on('blur', function() {
+                if(textBox.val() && (!scope.binding || !scope.binding.value)) {
+                    textBox.css('background-color','red');
+                }
+                else {
+                    textBox.css('background-color','');
+                }
+            });
             
             //1. Wire up converter for ng-model object (string)--> internal $viewValue representation (date)
             ngModel.$formatters.push(function(modelValue) {
                 if(modelValue) {
-                    var d =  stringToDate(modelValue);
-                    return {value:d};
+                    return {value:new Date(moment(modelValue).format())};
                 }
                 return {value:null};
             });
@@ -37,14 +36,7 @@ function () {
             //2. Wire up converter for internal $viewValue representation (date) --> ng-model object (string)
             ngModel.$parsers.push(function(viewValue) {
                 if(viewValue && viewValue.value instanceof Date) {
-                    try {
-                        var datestr = viewValue.value.toISOString();
-            
-                        var parsed = /(\d{4}-\d{2}-\d{2}).*/.exec(datestr);
-                        if(parsed && parsed[1]) {
-                            return parsed[1];
-                        }
-                    } catch(e) {}
+                    return moment(viewValue.value).format('YYYY-MM-DD');
                 }
                 
                 return null;
@@ -55,7 +47,11 @@ function () {
                 //must *replace* the viewValue object in order for change to propogate to ng-model!
                 if(scope.binding && !angular.equals(ngModel.$viewValue, scope.binding)) {
                     ngModel.$setViewValue({value:scope.binding.value});
+                    if(scope.binding.value) {
+                        textBox.css('background-color','');
+                    }
                 }
+                
             }, 
             true); 
             
@@ -67,8 +63,9 @@ function () {
                 if(!angular.equals(ngModel.$viewValue, scope.binding)) {
                     scope.binding.value = ngModel.$viewValue.value;
                 }
-                
             };
+            
+            
         },
         
       
@@ -78,13 +75,23 @@ function () {
           formatYear: 'yyyy'
         };
         
-        $scope.ngModelOptions = {
-            timezone: 'Z'
-        };
         
         if(!$scope.displayFormat) {
             $scope.displayFormat = 'MMMM dd, yyyy'; 
         }
+        
+        $scope.altFormats = [
+            'MMM d, yyyy',
+            'MMM dd, yyyy',
+            'M/d/yy',
+            'MM/dd/yy',
+            'M/d/yyyy',
+            'MM/dd/yyyy',
+            'M-d-yy',
+            'MM-dd-yy',
+            'M-d-yyyy',
+            'MM-dd-yyyy',
+        ];
         
         $scope.pickerOpen = false;
     

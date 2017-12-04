@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:4",
 	"_id": "_7EZRGUeRYaiyU-YSZonhQ",
 	"abstract": false,
 	"class_name": "CssResource",
@@ -17,7 +17,7 @@
 			"type": "enum"
 		}
 	},
-	"doc": "A WebResource containing cascading stylesheet (css) content.",
+	"doc": "A WebResource containing cascading stylesheet (css) content.\n @property {sourcecode} compiled_content \n @property {sourcecode} content \n @property {enum} preprocessor \n",
 	"superclass": {
 		"_disp": "WebResource",
 		"_id": "0TO-sBb1TjeAAzaMgd-8KQ"

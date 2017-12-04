@@ -1,0 +1,18 @@
+{
+	"__ver": "sys:2",
+	"_id": "z6W0oxr8RS6aFDKRS2RR1Q",
+	"key": "sys.dbui.menu.dev_dbui_cust",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"_submenu_label": "SYS DBUI Customization",
+		"custom_pages": "Custom Pages",
+		"menus": "Menus",
+		"perspectives": "Perspectives",
+		"ui_actions": "UI Actions"
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:7",
+	"__ver": "sys:8",
 	"_id": "NJnfAVnFSmuMcv9voRnaJQ",
 	"css_dependencies": [
 	],
@@ -24,6 +24,12 @@
 			"_id": "2TDnTPuBRLCu1-DgDQdmKA",
 			"name": "lodash.min.js",
 			"path": "bower_components/lodash"
+		},
+		{
+			"_disp": "moment.min.js",
+			"_id": "omuJBnPOSYC6z4RH26g_xA",
+			"name": "moment.min.js",
+			"path": "bower_components/moment/min"
 		}
 	],
 	"mod_dependencies": [

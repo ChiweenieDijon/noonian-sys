@@ -1,0 +1,20 @@
+{
+	"__ver": "sys:2",
+	"_id": "qIDNRLywS_O0_Qhakttgkw",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.sys_dev_directives.AngularProvider",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"list": {
+			"filter": {
+				"path": {
+					"$contains": "^dbui/|^noonian/"
+				},
+				"type": "directive"
+			},
+			"title": "Angular Directives"
+		}
+	}
+}

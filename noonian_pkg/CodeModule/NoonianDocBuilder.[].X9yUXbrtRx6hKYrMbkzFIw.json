@@ -1,0 +1,7 @@
+{
+	"__ver": "sys:15",
+	"_id": "X9yUXbrtRx6hKYrMbkzFIw",
+	"doc": "Module to build jsdoc for a package",
+	"name": "NoonianDocBuilder",
+	"path": "sys/doc"
+}

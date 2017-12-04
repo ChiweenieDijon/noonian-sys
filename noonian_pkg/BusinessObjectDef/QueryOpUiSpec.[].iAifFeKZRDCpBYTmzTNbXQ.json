@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:4",
+	"__ver": "sys:6",
 	"_id": "iAifFeKZRDCpBYTmzTNbXQ",
 	"abstract": false,
 	"class_name": "QueryOpUiSpec",
@@ -23,6 +23,6 @@
 			"type": "path"
 		}
 	},
-	"doc": "A QueryOpUiSpec describes how DBUI's query builder should display query operations for a particular set of field types.",
+	"doc": "A QueryOpUiSpec describes how DBUI's query builder should display query operations for a particular set of field types.\n @property {object} editors \n @property {reference.<FieldType>[]} fieldtypes \n @property {boolean} for_array \n @property {path} key \n",
 	"system": true
 }

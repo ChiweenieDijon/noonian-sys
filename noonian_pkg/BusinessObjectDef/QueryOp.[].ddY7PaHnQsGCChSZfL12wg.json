@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_id": "ddY7PaHnQsGCChSZfL12wg",
 	"abstract": false,
 	"class_name": "QueryOp",
@@ -33,6 +33,6 @@
 			}
 		]
 	},
-	"doc": "Encapsulates the logic of how to handle a particular query operation in the context a specified set of field types.",
+	"doc": "Encapsulates the logic of how to handle a particular query operation in the context a specified set of field types.\n @property {function} evaluate \n @property {boolean} for_array \n @property {function} fromMongo \n @property {string} name \n @property {function} stringify \n @property {function} toMongo \n @property {reference.<FieldType>[]} types \n",
 	"system": true
 }

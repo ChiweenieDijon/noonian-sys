@@ -1,0 +1,33 @@
+{
+	"__ver": "sys:4",
+	"_id": "mS7U_n_RRl-PY3SO_6tr2Q",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.default.DocTemplate",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				[
+					"key",
+					"content_type"
+				],
+				"content"
+			]
+		},
+		"list": {
+			"fields": [
+				"key",
+				"content_type"
+			]
+		},
+		"view": {
+			"layout": [
+				"key",
+				"content",
+				"content_type"
+			]
+		}
+	}
+}

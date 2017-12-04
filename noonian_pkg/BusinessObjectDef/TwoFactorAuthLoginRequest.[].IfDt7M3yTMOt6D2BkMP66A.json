@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:6",
+	"__ver": "sys:8",
 	"_id": "IfDt7M3yTMOt6D2BkMP66A",
 	"abstract": false,
 	"class_name": "TwoFactorAuthLoginRequest",
@@ -24,6 +24,6 @@
 			"type": "boolean"
 		}
 	},
-	"doc": "Holds the code sent to a user as part of the 2-factor authentication process.",
+	"doc": "Holds the code sent to a user as part of the 2-factor authentication process.\n @property {string} code \n @property {datetime} created_date \n @property {string} ip \n @property {datetime} modified_date \n @property {reference.<User>} user \n @property {boolean} validated \n",
 	"system": true
 }

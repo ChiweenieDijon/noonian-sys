@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_id": "hIGoBem9TQinCMTZh-tCTQ",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.PackageConflict",
@@ -32,6 +32,14 @@
 				"object_class",
 				"installed_version_id",
 				"package_version_id"
+			],
+			"recordActions": [
+				"view",
+				{
+					"icon": "fa-sign-in",
+					"label": "View Object",
+					"ui_action": "dbui.update_log_link"
+				}
 			],
 			"sort": {
 				"created_date": "asc"

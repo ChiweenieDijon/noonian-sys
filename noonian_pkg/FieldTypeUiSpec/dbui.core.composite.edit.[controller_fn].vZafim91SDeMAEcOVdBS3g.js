@@ -15,8 +15,9 @@ function ($scope, $stateParams, Dbui) {
         if(!newBinding) {
             $scope.binding.value = stub;
         }
-        console.log('COMPOSITE EDITOR', $scope.binding.value);
+        // console.log('COMPOSITE EDITOR', $scope.binding.value);
         unwatchFn();
     });
-
+    
+    $scope.formStatus = {};
 }

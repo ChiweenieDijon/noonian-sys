@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:12",
+	"__ver": "sys:14",
 	"_id": "G6NlMXjRQEeiqdsC6PP-Dw",
 	"abstract": false,
 	"class_name": "AngularModule",
@@ -43,7 +43,7 @@
 			}
 		]
 	},
-	"doc": "A WebResource that is an angular module.  \nA module is composed of the AngularProviders (factories, controllers, directives, filters, etc) and AngularTemplates that reference it. \nWhen resource is requested, the components are pulled together into a single document, and served with a content type of 'application/javascript'.",
+	"doc": "A WebResource that is an angular module.  \nA module is composed of the AngularProviders (factories, controllers, directives, filters, etc) and AngularTemplates that reference it. \nWhen resource is requested, the components are pulled together into a single document, and served with a content type of 'application/javascript'.\n @property {function} config_function Function passed to angular.config.\n @property {reference.<CssResource>[]} css_dependencies CssResources to be served alongside the module\n @property {reference.<JsResource>[]} js_dependencies JsResources to be served alongside the module\n @property {reference.<AngularModule>[]} mod_dependencies Other Angular modules to be loaded along with this module\n @property {string[]} external_mod_dependencies Names of Angular modules to load with this module.  This is useful to include libraries whose modules are not defined in Noonian AngularModules, but rather loaded from an included JsResource.",
 	"superclass": {
 		"_disp": "WebResource",
 		"_id": "0TO-sBb1TjeAAzaMgd-8KQ"

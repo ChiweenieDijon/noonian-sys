@@ -7,8 +7,12 @@ function (searchStr, typeDescMap, FieldTypeService) {
 
     for(var fieldName in typeDescMap) {
         var td = typeDescMap[fieldName];
-        if(fieldName.indexOf('_') === 0 || td instanceof Array)
+        if(fieldName.indexOf('_') === 0)
             continue;
+        
+        if(td instanceof Array) {
+            td = td[0];
+        }
 
         var mongoType = FieldTypeService.getSchemaElem(td);
 
@@ -16,12 +20,19 @@ function (searchStr, typeDescMap, FieldTypeService) {
           console.log("No typeMapper for "+td.type+" field "+fieldName);
           continue;
         }
+        var newCond;
         if(mongoType.textIndex) {
-            var newCond = {};
+            newCond = {};
             newCond[fieldName] = {$regex:searchStr, $options:'i'};
+            condList.push(newCond);
+        }
+        else if(td.type === 'reference') {
+            newCond = {};
+            newCond[fieldName+'._disp'] = {$regex:searchStr, $options:'i'};
             condList.push(newCond);
         }
 
     }
+    
     return retCond;
 }

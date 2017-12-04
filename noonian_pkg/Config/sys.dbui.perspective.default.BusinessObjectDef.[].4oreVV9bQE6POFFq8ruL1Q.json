@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:5",
 	"_id": "4oreVV9bQE6POFFq8ruL1Q",
 	"allow_customize": true,
 	"key": "sys.dbui.perspective.default.BusinessObjectDef",
@@ -26,17 +26,10 @@
 			]
 		},
 		"list": {
-			"fields": [
-				"class_name",
-				"doc"
-			],
 			"filter": {
 				"system": {
 					"$isfalse": ""
 				}
-			},
-			"sort": {
-				"class_name": "asc"
 			}
 		},
 		"picker_list": {

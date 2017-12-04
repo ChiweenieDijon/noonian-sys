@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_id": "2jfKy7M9Q6-QIOGOOwrf-Q",
 	"abstract": false,
 	"class_name": "RemotePackageRepository",
@@ -30,6 +30,6 @@
 			"type": "url"
 		}
 	},
-	"doc": "Configures a set of packages on this system to be update-able via a remote noonian package repo (hosted using sys.package_repo)",
+	"doc": "Configures a set of packages on this system to be update-able via a remote noonian package repo (hosted using sys.package_repo)\n @property {object} auth \n @property {string} name \n @property {string[]} package_keys \n @property {reference.<BusinessObjectPackage>[]} packages \n @property {url} url \n",
 	"system": true
 }

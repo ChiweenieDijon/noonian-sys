@@ -1,0 +1,27 @@
+{
+	"__ver": "sys:3",
+	"_id": "2j5YaSJoQ7-W95TeaaEO2A",
+	"definition": [
+		{
+			"isOpen": true,
+			"ref": "sys.dbui.menu.dev_serverside"
+		},
+		{
+			"ref": "sys.dbui.menu.dev_dbui_cust"
+		},
+		{
+			"ref": "dbui.menu.dev_webresource"
+		},
+		{
+			"ref": "sys.dbui.menu.dev_angular"
+		},
+		{
+			"ref": "dbui.menu.dev_admin"
+		}
+	],
+	"doc": "Menu for Noonian system development.",
+	"key": "dbui.menu.sys_dev",
+	"rolespec": [
+		"FnQ_eBYITOSC8kJA4Zul5g"
+	]
+}

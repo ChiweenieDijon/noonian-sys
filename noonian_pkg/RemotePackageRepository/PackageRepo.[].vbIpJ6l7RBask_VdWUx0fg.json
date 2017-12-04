@@ -1,0 +1,20 @@
+{
+	"__ver": "sys:4",
+	"_id": "vbIpJ6l7RBask_VdWUx0fg",
+	"auth": {
+		"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI5NFhVSkVsRlFlYUR4c1ZqMEVMUHNBIiwiaWF0IjoxNDcyMDgxNTA1fQ.qp6HQaVz6xxHx_FzEDSzPWxs5SfvDCheRVCFaIb2BHo"
+	},
+	"name": "PackageRepo",
+	"package_keys": [
+	],
+	"packages": [
+		{
+			"_disp": "Core System",
+			"_id": "7R4cBwsWTSacdSk5ZrAjTw",
+			"key": "sys",
+			"major_version": 0,
+			"minor_version": 64
+		}
+	],
+	"url": "https://pkg.noonian.org"
+}

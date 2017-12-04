@@ -3,7 +3,7 @@ function ($scope, $state, db, DbuiAlert, DbuiAction, NoonI18n, theObject, editPe
     var className = $scope.boClass = $state.params.className;
     $scope.theObject = theObject;
     $scope.editPerspective = editPerspective;
-    var formStatus = $scope.formStatus = {};
+    var formStatus = $scope.formStatus = theObject._formStatus = {};
 
     var boId = $scope.boId = theObject && theObject._id;
     
@@ -32,12 +32,11 @@ function ($scope, $state, db, DbuiAlert, DbuiAction, NoonI18n, theObject, editPe
       
       $scope.theObject.save().then(
         function(result) {
-          DbuiAlert.success('Successfully saved '+className+' '+result._id);
+          DbuiAlert.success('Successfully saved '+className+' "'+result._disp+'"');
+          formStatus.isDirty = false;
+          
           if(!boId) {
             $state.go('dbui.edit', {className:className, id:result._id, perspective:editPerspective.name});
-          }
-          else {
-              formStatus.isDirty = false;
           }
         },
         function(err) {

@@ -143,7 +143,7 @@ function (NoonWebService, NoonI18n, db, $q) {
             cachePromises[className] = cacheTypeInfo({class_name:className,view_or_edit:'view'}, 'view')
                 .then(cacheTypeInfo.bind(null, {class_name:className,view_or_edit:'edit'}, 'edit'))
                 .then(function() {
-                    var typeDescMap = db[className]._bo_meta_data;
+                    var typeDescMap = db[className]._bo_meta_data.type_desc_map;
                     _.forEach(typeDescMap, function(typeDesc) {
                         setCacheWildcardIfNeeded(typeDesc, 'view');
                         setCacheWildcardIfNeeded(typeDesc, 'edit');

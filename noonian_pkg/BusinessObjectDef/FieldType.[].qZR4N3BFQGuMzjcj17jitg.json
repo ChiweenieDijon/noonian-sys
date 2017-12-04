@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:4",
+	"__ver": "sys:6",
 	"_id": "qZR4N3BFQGuMzjcj17jitg",
 	"abstract": false,
 	"class_name": "FieldType",
@@ -37,6 +37,6 @@
 			"type": "function"
 		}
 	},
-	"doc": "A FieldType object defines a valid type for a Business Object field, and provides server-side information/logic for persisting it to MongoDB.  Any time you see \"type\" in a BusinessObjectDef's definition, the value corresponds to one of these.",
+	"doc": "A FieldType object defines a valid type for a Business Object field, and provides server-side information/logic for persisting it to MongoDB.  Any time you see \"type\" in a BusinessObjectDef's definition, the value corresponds to one of these.\n @property {jsdoc} doc \n @property {function} from_db \n @property {function} get_validator \n @property {string} mongo_type \n @property {string} name \n @property {boolean} text_index \n @property {function} to_db \n",
 	"system": true
 }

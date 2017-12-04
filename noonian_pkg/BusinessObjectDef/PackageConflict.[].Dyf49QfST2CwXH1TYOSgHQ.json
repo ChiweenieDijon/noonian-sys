@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:1",
+	"__ver": "sys:3",
 	"_id": "Dyf49QfST2CwXH1TYOSgHQ",
 	"abstract": false,
 	"class_name": "PackageConflict",
@@ -41,6 +41,6 @@
 			"type": "string"
 		}
 	},
-	"doc": "When a package is upgraded or installed, it is possible that conflicting changes have been made to objects that are supposed to be installed:\n1. the version in the package is \"older\" than the object that is installed; i.e. some modifications have been made to the object in the instance, but no modifications have been made to the version in the package.  (conflict_type='independent update').  No merge requried - just leave the existing version in the system; this PackageConflict is merely informational.\n2. the version in the package is divergent from the one installed; i.e. modifications have been made to the object installed AND the package contains its own modifications to the previous version. (conflict_type='divergent')  A merge is required; this PackageConflict contains all the data needed to perform the merge",
+	"doc": "When a package is upgraded or installed, it is possible that conflicting changes have been made to objects that are supposed to be installed:\n1. the version in the package is \"older\" than the object that is installed; i.e. some modifications have been made to the object in the instance, but no modifications have been made to the version in the package.  (conflict_type='independent update').  No merge requried - just leave the existing version in the system; this PackageConflict is merely informational.\n2. the version in the package is divergent from the one installed; i.e. modifications have been made to the object installed AND the package contains its own modifications to the previous version. (conflict_type='divergent')  A merge is required; this PackageConflict contains all the data needed to perform the merge\n @property {string} conflict_type \n @property {datetime} created_date \n @property {object} diff \n @property {object} installed_object \n @property {string} installed_version_id \n @property {object} merged_object \n @property {string} object_class \n @property {string} object_id \n @property {reference.<BusinessObjectPackage>} package \n @property {string} package_version_id \n",
 	"system": true
 }

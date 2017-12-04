@@ -1,0 +1,16 @@
+{
+	"__ver": "sys:1",
+	"_id": "UDVo5w53QzeLoqZ6kjTatQ",
+	"doc": "Renders a table of \"BusinessObject-like\" objects, oriented so that each object is a column\n@param {BusinessObjectLike[]} ngModel - data array that table is bound to\n@param {Perspective} perspective - perspective object driving layout of table and available actions\n@param {Object} objectMetaData - _bo_meta_data describing the objects being displayed\n@param {Object} [config] - extra configuration for driving display and action invocation",
+	"module": {
+		"_disp": "noonian.dbui",
+		"_id": "myP57XGhSNyDKrrcJFvO0Q"
+	},
+	"name": "dbuiVerticalTable",
+	"parameters": [
+		"DbuiAction",
+		"NoonI18n"
+	],
+	"path": "dbui/reusable/core",
+	"type": "directive"
+}

@@ -1,0 +1,34 @@
+{
+	"__ver": "sys:1",
+	"_id": "rsjTdO2pTF-GAqUKmdsy5w",
+	"abstract": false,
+	"class_name": "JsDocConfig",
+	"definition": {
+		"name": {
+			"type": "string"
+		},
+		"output_att": {
+			"type": "attachment"
+		},
+		"output_path": {
+			"type": "path"
+		},
+		"output_type": {
+			"enum": [
+				"filesystem",
+				"noonian",
+				"attachment"
+			],
+			"type": "string"
+		},
+		"template": {
+			"type": "string"
+		},
+		"template_options": {
+			"type": "object"
+		}
+	},
+	"doc": "Configuration for a jsdoc run.  An instance defines template to be used and how the output should be generated.",
+	"superclass": null,
+	"system": true
+}

@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:5",
 	"_id": "pQIx0YDZQJSLi1cNHxwKlA",
 	"abstract": false,
 	"class_name": "TwoFactorAuthImplementation",
@@ -15,6 +15,6 @@
 			"type": "string"
 		}
 	},
-	"doc": "Provides a specific implementation for two-factor Auth",
+	"doc": "Provides a specific implementation for two-factor Auth\n @property {text} doc \n @property {function} factory_fn \n @property {string} name \n",
 	"system": true
 }

@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:10",
+	"__ver": "sys:13",
 	"_id": "w2U0lB56Sq2Mb-6r3WDBsw",
 	"allow_customize": false,
 	"key": "sys.dbui.navbar_menu",
@@ -13,12 +13,14 @@
 				"CodeModule",
 				"DataExport",
 				"DataTrigger",
+				"ScheduleTrigger",
 				"Enumeration",
 				"FieldType",
 				"LabelGroup",
 				"MemberFunction",
 				"QueryOp",
-				"WebService"
+				"WebService",
+				"TwoFactorAuthImplementation"
 			],
 			"title": "Serverside/DB Dev"
 		},
@@ -29,6 +31,7 @@
 				"AngularProvider",
 				"AngularTemplate",
 				"DbuiCustomPage",
+				"DbuiReport",
 				"UiAction"
 			],
 			"title": "Clientside Dev"
@@ -58,7 +61,8 @@
 				"DataAccessControl",
 				"Menu",
 				"Role",
-				"User"
+				"User",
+				"TwoFactorAuthLoginRequest"
 			],
 			"title": "Admin"
 		},
@@ -73,7 +77,8 @@
 				"BusinessObjectPackage",
 				"UpdateLog",
 				"PackageConflict",
-				"RemotePackageRepository"
+				"RemotePackageRepository",
+				"DocTemplate"
 			],
 			"title": "Packaging"
 		}

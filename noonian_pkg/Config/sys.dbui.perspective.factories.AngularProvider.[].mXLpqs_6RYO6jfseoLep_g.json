@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:5",
+	"__ver": "sys:7",
 	"_id": "mXLpqs_6RYO6jfseoLep_g",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.factories.AngularProvider",
@@ -7,25 +7,7 @@
 	],
 	"system": true,
 	"value": {
-		"edit": {
-			"layout": [
-				"module",
-				"path",
-				"name",
-				"type",
-				"doc",
-				"parameters",
-				"function"
-			]
-		},
 		"list": {
-			"fields": [
-				"path",
-				"module",
-				"name",
-				"type",
-				"doc"
-			],
 			"filter": {
 				"$and": [
 					{
@@ -48,21 +30,7 @@
 					}
 				]
 			},
-			"sort": {
-				"path": "asc"
-			},
 			"title": "Angular Factories/Services/Providers"
-		},
-		"view": {
-			"layout": [
-				"module",
-				"path",
-				"name",
-				"type",
-				"doc",
-				"parameters",
-				"function"
-			]
 		}
 	}
 }

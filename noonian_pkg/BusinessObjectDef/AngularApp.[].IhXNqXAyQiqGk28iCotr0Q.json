@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:11",
+	"__ver": "sys:15",
 	"_id": "IhXNqXAyQiqGk28iCotr0Q",
 	"abstract": false,
 	"class_name": "AngularApp",
@@ -45,7 +45,7 @@
 			"type": "reference"
 		}
 	},
-	"doc": "A WebResource that is an angular \"application\".  When resource is requested, the pieces are pulled together into a full html document and served to the client.",
+	"doc": "A WebResource that is an angular \"application\".  When resource is requested, the pieces are pulled together into a full html document and served to the client.\n @property {sourcecode} body HTML body for the app\n @property {function} config_function Function passed to angular.config to initialize the app.\n @property {sourcecode} head HTML head for the app\n @property {reference.<AngularModule>} module Angular module to which the application belongs\n @property {reference.<CssResource>[]} css_dependencies List of CssResources to be served with the app\n @property {reference.<JsResource>[]} js_dependencies List of JsResources to be served with the app",
 	"superclass": {
 		"_disp": "WebResource",
 		"_id": "0TO-sBb1TjeAAzaMgd-8KQ"

@@ -1,0 +1,51 @@
+{
+	"__ver": "sys:5",
+	"_id": "ZQ1ti3KWSUWvUWCU2mDeUA",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.default.JsDocConfig",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				"name",
+				[
+					"output_type",
+					"output_path"
+				],
+				"template",
+				"template_options",
+				"output_att"
+			]
+		},
+		"list": {
+			"fields": [
+				"name",
+				"template",
+				"output_type",
+				"output_path"
+			]
+		},
+		"picker_list": {
+			"fields": [
+				"name",
+				"template",
+				"output_type",
+				"output_path"
+			]
+		},
+		"view": {
+			"layout": [
+				"name",
+				[
+					"output_type",
+					"output_path"
+				],
+				"template",
+				"template_options",
+				"output_att"
+			]
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"__ver": "sys:1",
+	"_id": "9ahYF7VKQYOwLxpow9ZEag",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.sys_dev.DataTrigger",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"list": {
+			"filter": {
+				"key": {
+					"$contains": "^sys\\."
+				}
+			}
+		}
+	}
+}

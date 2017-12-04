@@ -1,0 +1,36 @@
+{
+	"__ver": "sys:3",
+	"_id": "nhFanFqgTmKTfZ1kZFwFDg",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.sys_dev_factories.AngularProvider",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"list": {
+			"filter": {
+				"$and": [
+					{
+						"path": {
+							"$contains": "^dbui/|^noonian/"
+						}
+					},
+					{
+						"$or": [
+							{
+								"type": "factory"
+							},
+							{
+								"type": "service"
+							},
+							{
+								"type": "provider"
+							}
+						]
+					}
+				]
+			},
+			"title": "Angular Factories/Services/Providers"
+		}
+	}
+}

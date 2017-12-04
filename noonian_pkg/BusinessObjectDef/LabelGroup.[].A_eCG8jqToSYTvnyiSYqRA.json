@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:5",
 	"_id": "A_eCG8jqToSYTvnyiSYqRA",
 	"abstract": false,
 	"class_name": "LabelGroup",
@@ -22,6 +22,6 @@
 			"type": "object"
 		}
 	},
-	"doc": "A LabelGroup stores a logical grouping of internationalized labels, associated with a particular language.",
+	"doc": "A LabelGroup stores a logical grouping of internationalized labels, associated with a particular language.\n @property {path} key \n @property {reference.<Language>} language \n @property {boolean} system \n @property {object} value \n",
 	"system": true
 }

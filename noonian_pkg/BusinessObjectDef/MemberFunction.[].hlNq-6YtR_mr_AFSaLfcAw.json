@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_id": "hlNq-6YtR_mr_AFSaLfcAw",
 	"abstract": false,
 	"class_name": "MemberFunction",
@@ -33,6 +33,6 @@
 			"type": "boolean"
 		}
 	},
-	"doc": "Creating one of these effects a \"member\" function of a Business Object.  \nCan be \"static\" (i.e. called like so: db.SomeBo.memberFn(...)), or non-static, callable on instances of the owning business object: (new SomeBo()).memberFn(...)",
+	"doc": "Creating one of these effects a \"member\" function of a Business Object.  \nCan be \"static\" (i.e. called like so: db.SomeBo.memberFn(...)), or non-static, callable on instances of the owning business object: (new SomeBo()).memberFn(...)\n @property {string} applies_to \n @property {reference.<BusinessObjectDef>} business_object \n @property {jsdoc} doc \n @property {function} function \n @property {boolean} is_static \n @property {string} name \n @property {boolean} use_injection \n",
 	"system": true
 }

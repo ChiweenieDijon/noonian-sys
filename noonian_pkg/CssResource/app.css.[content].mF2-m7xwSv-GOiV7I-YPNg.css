@@ -249,6 +249,10 @@ label {
   border-radius: 4px;
 }
 
+label.required-field {
+    color:red;
+}
+
 .query-editor-term div {
   display:inline;
 }

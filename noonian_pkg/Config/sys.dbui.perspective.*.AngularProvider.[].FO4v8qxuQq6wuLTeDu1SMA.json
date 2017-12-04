@@ -1,0 +1,63 @@
+{
+	"__ver": "sys:1",
+	"_id": "FO4v8qxuQq6wuLTeDu1SMA",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.*.AngularProvider",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				"module",
+				"path",
+				"name",
+				"type",
+				"doc",
+				"parameters",
+				"function"
+			]
+		},
+		"list": {
+			"fields": [
+				"path",
+				"module",
+				"name",
+				"type",
+				"doc"
+			],
+			"sort": {
+				"path": "asc"
+			}
+		},
+		"picker_list": {
+			"fields": [
+				"path",
+				"module",
+				"name",
+				"type",
+				"doc"
+			],
+			"sort": {
+				"path": "asc"
+			}
+		},
+		"view": {
+			"layout": [
+				"module",
+				"path",
+				"name",
+				"type",
+				"doc",
+				"parameters",
+				"function"
+			],
+			"related": [
+				{
+					"class": "AngularTemplate",
+					"field": "provider"
+				}
+			]
+		}
+	}
+}

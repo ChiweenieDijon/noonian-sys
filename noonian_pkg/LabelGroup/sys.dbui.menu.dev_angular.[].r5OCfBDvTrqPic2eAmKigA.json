@@ -1,0 +1,21 @@
+{
+	"__ver": "sys:1",
+	"_id": "r5OCfBDvTrqPic2eAmKigA",
+	"key": "sys.dbui.menu.dev_angular",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"_submenu_label": "SYS Angular",
+		"apps": "Applications",
+		"controllers": "Controllers",
+		"directives": "Directives",
+		"factories": "Factories/Services",
+		"filters": "Filters",
+		"modules": "Modules",
+		"templates": "Templates"
+	}
+}

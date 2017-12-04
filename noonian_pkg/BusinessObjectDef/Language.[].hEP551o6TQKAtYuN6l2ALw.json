@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_id": "hEP551o6TQKAtYuN6l2ALw",
 	"abstract": false,
 	"class_name": "Language",
@@ -11,6 +11,6 @@
 			"type": "string"
 		}
 	},
-	"doc": "A human language and its corresponding ISO 639 abbreviation. {@link https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes}",
+	"doc": "A human language and its corresponding ISO 639 abbreviation. {@link https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes}\n @property {string} code \n @property {string} name \n",
 	"system": true
 }

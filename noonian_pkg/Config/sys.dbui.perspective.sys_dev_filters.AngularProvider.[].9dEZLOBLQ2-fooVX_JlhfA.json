@@ -1,0 +1,20 @@
+{
+	"__ver": "sys:1",
+	"_id": "9dEZLOBLQ2-fooVX_JlhfA",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.sys_dev_filters.AngularProvider",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"list": {
+			"filter": {
+				"path": {
+					"$contains": "^dbui/|^noonian/"
+				},
+				"type": "filter"
+			},
+			"title": "Angular Filters"
+		}
+	}
+}

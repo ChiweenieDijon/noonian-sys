@@ -23,6 +23,7 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
         //init the alert queue
         $rootScope.alertMenu = {
             alerts:[],
+            newAlerts:[],
             isOpen:false
         };
         
@@ -134,7 +135,7 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
      * convert an 'abbreviated' version of a perspective layout (e.g. simple string array of field names)
      * into 'normalized' layout (array of rows) 
      */
-    var normalizeLayout = function(layout) {
+    var normalizeLayout = this.normalizeLayout = function(layout) {
       //Crete an array of subsection objects
       var result = [];
       var currSection; //refers to the section being built as we iterate

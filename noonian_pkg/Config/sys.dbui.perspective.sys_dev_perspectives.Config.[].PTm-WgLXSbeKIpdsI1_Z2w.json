@@ -1,0 +1,61 @@
+{
+	"__ver": "sys:1",
+	"_id": "PTm-WgLXSbeKIpdsI1_Z2w",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.sys_dev_perspectives.Config",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				[
+					"key"
+				],
+				[
+					"value"
+				],
+				[
+					"allow_customize",
+					"user"
+				],
+				"rolespec"
+			]
+		},
+		"list": {
+			"fields": [
+				"key",
+				"value"
+			],
+			"filter": {
+				"$or": [
+					{
+						"key": {
+							"$contains": "sys.dbui.perspective"
+						}
+					},
+					{
+						"key": {
+							"$contains": "sys.dbui.displayoptions"
+						}
+					}
+				]
+			},
+			"sort": {
+				"key": "asc"
+			},
+			"title": "Perspectives"
+		},
+		"view": {
+			"layout": [
+				"key",
+				"value",
+				[
+					"allow_customize",
+					"user"
+				],
+				"rolespec"
+			]
+		}
+	}
+}

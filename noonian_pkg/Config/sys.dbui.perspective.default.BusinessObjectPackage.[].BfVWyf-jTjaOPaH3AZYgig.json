@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:5",
+	"__ver": "sys:6",
 	"_id": "BfVWyf-jTjaOPaH3AZYgig",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.BusinessObjectPackage",
@@ -24,6 +24,7 @@
 				],
 				"dependencies",
 				"manifest",
+				"doc_config",
 				"on_install_fn"
 			]
 		},
@@ -61,6 +62,7 @@
 				],
 				"dependencies",
 				"manifest",
+				"doc_config",
 				"on_install_fn"
 			],
 			"recordActions": [
@@ -77,9 +79,9 @@
 					"ws": "pkg/installPackage"
 				},
 				{
-					"icon": "fa-arrow-right",
-					"label": "To Filesystem",
-					"ws": "pkg/toFilesystem"
+					"icon": "fa-files-o",
+					"label": "Generate Documentation",
+					"ws": "pkg/generateDoc"
 				}
 			],
 			"related": [

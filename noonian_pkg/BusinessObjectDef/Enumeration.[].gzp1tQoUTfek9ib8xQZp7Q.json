@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_id": "gzp1tQoUTfek9ib8xQZp7Q",
 	"abstract": false,
 	"class_name": "Enumeration",
@@ -13,6 +13,6 @@
 			}
 		]
 	},
-	"doc": "An Enumeration lists the possible values for a field of \"enum\" type.",
+	"doc": "An Enumeration lists the possible values for a field of \"enum\" type.\n @property {string} name \n @property {string[]} values \n",
 	"system": true
 }

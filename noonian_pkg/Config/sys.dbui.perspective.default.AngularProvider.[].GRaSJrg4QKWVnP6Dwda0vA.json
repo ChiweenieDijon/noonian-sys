@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:6",
+	"__ver": "sys:7",
 	"_id": "GRaSJrg4QKWVnP6Dwda0vA",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.AngularProvider",
@@ -17,6 +17,18 @@
 			]
 		},
 		"list": {
+			"fields": [
+				"path",
+				"module",
+				"name",
+				"type",
+				"doc"
+			],
+			"sort": {
+				"path": "asc"
+			}
+		},
+		"picker_list": {
 			"fields": [
 				"path",
 				"module",

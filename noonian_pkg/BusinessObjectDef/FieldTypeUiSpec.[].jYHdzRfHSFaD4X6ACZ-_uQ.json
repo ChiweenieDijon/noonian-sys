@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:6",
+	"__ver": "sys:8",
 	"_id": "jYHdzRfHSFaD4X6ACZ-_uQ",
 	"abstract": false,
 	"class_name": "FieldTypeUiSpec",
@@ -44,6 +44,6 @@
 			"type": "sourcecode"
 		}
 	},
-	"doc": "A template/function bundle that holds the UI pieces for editing/viewing a field value. A FieldTypeUiSpec applies to a set of FieldTypes based on the value of the fieldtypes array.\nAn empty 'fieldtypes' array implies this UiSpec is applicable universally. (more specific UiSpecs will take precidence)",
+	"doc": "A template/function bundle that holds the UI pieces for editing/viewing a field value. A FieldTypeUiSpec applies to a set of FieldTypes based on the value of the fieldtypes array.\nAn empty 'fieldtypes' array implies this UiSpec is applicable universally. (more specific UiSpecs will take precidence)\n @property {function} controller_fn \n @property {jsdoc} doc \n @property {reference.<FieldType>[]} fieldtypes \n @property {boolean} for_editing \n @property {boolean} for_editing_array \n @property {boolean} for_viewing \n @property {boolean} for_viewing_array \n @property {path} key \n @property {function} link_fn \n @property {sourcecode} template \n",
 	"system": true
 }

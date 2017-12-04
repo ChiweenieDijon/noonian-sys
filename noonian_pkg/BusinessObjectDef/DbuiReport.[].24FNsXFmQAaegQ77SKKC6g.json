@@ -1,0 +1,35 @@
+{
+	"__ver": "sys:2",
+	"_id": "24FNsXFmQAaegQ77SKKC6g",
+	"abstract": false,
+	"class_name": "DbuiReport",
+	"definition": {
+		"doc": {
+			"type": "jsdoc"
+		},
+		"input_perspective": {
+			"type": "object"
+		},
+		"input_typedef": {
+			"type": "object"
+		},
+		"name": {
+			"type": "path"
+		},
+		"output_perspective": {
+			"type": "object"
+		},
+		"output_typedef": {
+			"type": "object"
+		},
+		"web_service": {
+			"denormalize_fields": [
+				"path"
+			],
+			"ref_class": "WebService",
+			"type": "reference"
+		}
+	},
+	"doc": "A DBUI Report screen, built by providing \n- an input type definition and perspective describing the input data structure and the form layout \n- an output type definition and perspective describing the output data structure and the layout\n- a web service that does the actual queryies and aggregation, taking the input data and returning data conforming to the output definition\n @property {jsdoc} doc \n @property {object} input_perspective \n @property {object} input_typedef \n @property {path} name \n @property {object} output_perspective \n @property {object} output_typedef \n @property {reference.<WebService>} web_service \n",
+	"system": true
+}

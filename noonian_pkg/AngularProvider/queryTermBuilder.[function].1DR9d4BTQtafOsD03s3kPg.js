@@ -51,7 +51,15 @@ function (DbuiFieldType, db, $timeout) {
                     }
                 }
                 
-                var opArray = Object.keys(queryClause[fieldSelector]);
+                //In case query is the shorthand equals, 
+                // convert {field:"value"} -> {field:{$eq:"value"}}
+                var opClause = queryClause[fieldSelector];
+                
+                if(!(opClause instanceof Object)) {
+                    queryClause[fieldSelector] = opClause = {$eq:opClause};
+                }
+                
+                var opArray = Object.keys(opClause);
                 
                 if(opArray.length > 1)
                     console.log("WARNING: multi-condition clause being linked to a single queryTermBuilder!!!");
@@ -133,9 +141,9 @@ function (DbuiFieldType, db, $timeout) {
       },
 
       controller:function($scope) {
-        console.log($scope.fieldList);
+        
         $scope.fieldChanged = function(fieldInfo, resetValue) {
-            console.log('fieldChanged', fieldInfo, resetValue);
+            // console.log('fieldChanged', fieldInfo, resetValue);
             
           if(fieldInfo.refPlaceholder) {
             return fieldInfo.expand();
@@ -175,7 +183,7 @@ function (DbuiFieldType, db, $timeout) {
         };
 
         $scope.opChanged = function(resetValue) {
-           console.log('opChanged invoked', resetValue);
+        //   console.log('opChanged invoked', resetValue);
           var term = $scope.term;
           var opInfo = term.opInfo;
 

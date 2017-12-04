@@ -1,0 +1,7 @@
+{
+	"__ver": "sys:1",
+	"_id": "4ErFTHwWQS2ptwkBB1UZWg",
+	"content": "= Package: {{package.name}} ({{package.key}}) =\n:{{package.description}}\n\n== Server-side Contents ==\n=== BusinessObject Classes ===\n{{#businessObjectDefs}}\n==== {{class_name}} ====\n:{{doc}}\n{{/businessObjectDefs}}\n\n=== Web Services ===\n{{#webServices}}\n==== {{path}} ====\n:{{doc}}\n{{/webServices}}\n\n=== Data Triggers === \n{{#dataTriggers}}\n==== {{key}} ====\n:<u>'''{{before_after}}''': {{business_object._disp}} {{#on_create}} CREATE {{/on_create}}  {{#on_update}} UPDATE {{/on_update}} {{#on_delete}}DELETE{{/on_delete}}</u> \n\n:{{doc}}\n{{/dataTriggers}}\n\n== Client-side Contents ==\n=== Perspectives ===\n{{#perspectives}}\n==== {{name}} ====\n{{#classes}}\n * {{.}}\n{{/classes}}\n{{/perspectives}}\n\n=== Custom Pages ===\n{{#customPages}}\n==== {{key}} ====\n:{{doc}}\n{{/customPages}}\n\n=== UI Actions === \n{{#uiActions}}\n==== {{key}} ====\n:{{doc}}\n{{/uiActions}}",
+	"content_type": "text/plain",
+	"key": "sys.package_doc"
+}

@@ -24,7 +24,7 @@ function (config, req, db, _) {
     
     return db.BusinessObjectDef.find({}).then(function(boList) {
         _.forEach(boList, function(bo) {
-            fullBoList[bo.class_name] = true;
+            fullBoList[bo.class_name] = bo._id;
         });
         
         return config.getCustomizedParameter(configKey, req.user._id);
@@ -44,15 +44,43 @@ function (config, req, db, _) {
             menuArr.push(buildSubmenuContainer(categoryObj));
         });
         
-        var uncategorized = Object.keys(fullBoList);
-        if(uncategorized.length) {
-            uncategorized.sort();
-            menuArr.push(buildSubmenuContainer({title:"uncategorized", classes:uncategorized}));
+        
+        //Divvy the ones not covered in sys.dbui.navbarmenu according to package.
+        if(Object.keys(fullBoList).length) {
+            return db.BusinessObjectPackage.find({}, {name:1, 'manifest.BusinessObjectDef':1}).sort({name:1}).then(function(bops) {
+                //map package to classes
+                var pkgToClasses = {};
+                
+                _.forEach(bops, function(bopObj) {
+                    if(bopObj.manifest && bopObj.manifest.BusinessObjectDef) {
+                        var pkgBos = bopObj.manifest.BusinessObjectDef;
+                        _.forEach(fullBoList, function(boId, boClass) {
+                            if(pkgBos[boId]) {
+                                pkgToClasses[bopObj.name] = pkgToClasses[bopObj.name] || [];
+                                pkgToClasses[bopObj.name].push(boClass);
+                                
+                            }
+                        })
+                    }
+                });
+                
+                _.forEach(pkgToClasses, function(classArr, pkgName) {
+                    classArr.sort();
+                    menuArr.push(buildSubmenuContainer({title:pkgName, classes:classArr}));
+                });
+                
+                var remaining = Object.keys(fullBoList);
+                if(remaining.length) {
+                    remaining.sort();
+                    menuArr.push(buildSubmenuContainer({title:"(no package)", classes:remaining}));
+                }
+                
+                return menuArr;
+            });
         }
-        
-        return menuArr
-        
-        
+        else {
+            return menuArr;
+        }
     });
     
 }

@@ -1,19 +1,23 @@
 {
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_id": "Oq6WcNJFSomqJf7Q3R_tyA",
+	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.UiAction",
+	"rolespec": [
+	],
 	"system": true,
 	"value": {
 		"edit": {
 			"layout": [
 				"key",
+				"doc",
 				"function"
 			]
 		},
 		"list": {
 			"fields": [
 				"key",
-				"function"
+				"doc"
 			],
 			"sort": {
 				"key": "asc"
@@ -22,6 +26,7 @@
 		"view": {
 			"layout": [
 				"key",
+				"doc",
 				"function"
 			]
 		}

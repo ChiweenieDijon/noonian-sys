@@ -1,0 +1,18 @@
+{
+	"__ver": "sys:2",
+	"_id": "w3FIbwfYQoKk_QISUEDdKw",
+	"key": "sys.dbui.bo.ScheduleTrigger",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"enabled": "Enabled",
+		"function": "Function",
+		"key": "Key",
+		"last_execution": "Last Execution",
+		"schedule": "Schedule"
+	}
+}

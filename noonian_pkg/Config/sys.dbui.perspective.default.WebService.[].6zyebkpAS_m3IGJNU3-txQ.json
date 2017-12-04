@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:1",
+	"__ver": "sys:4",
 	"_id": "6zyebkpAS_m3IGJNU3-txQ",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.WebService",
@@ -16,6 +16,13 @@
 			]
 		},
 		"list": {
+			"filter": {
+				"path": {
+					"$notcontains": "^/sys/|^/dbui/|^/pkg/"
+				}
+			}
+		},
+		"picker_list": {
 			"fields": [
 				"path",
 				"rolespec",

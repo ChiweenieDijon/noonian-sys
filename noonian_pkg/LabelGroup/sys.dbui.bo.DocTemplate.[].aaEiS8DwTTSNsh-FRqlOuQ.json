@@ -1,0 +1,16 @@
+{
+	"__ver": "sys:1",
+	"_id": "aaEiS8DwTTSNsh-FRqlOuQ",
+	"key": "sys.dbui.bo.DocTemplate",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"content": "Content",
+		"content_type": "Content Type",
+		"key": "Key"
+	}
+}

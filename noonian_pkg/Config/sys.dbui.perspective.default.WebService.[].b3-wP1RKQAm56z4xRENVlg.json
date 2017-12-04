@@ -1,0 +1,24 @@
+{
+	"__ver": "sys:1",
+	"_id": "b3-wP1RKQAm56z4xRENVlg",
+	"key": "sys.dbui.perspective.default.WebService",
+	"system": false,
+	"user": {
+		"_disp": "admin",
+		"_id": "vl22Nf2XTNym2-X90sxOag"
+	},
+	"value": {
+		"list": {
+			"savedQueries": [
+				{
+					"query": {
+						"path": {
+							"$contains": "^/sys/|^/dbui/|^/pkg/"
+						}
+					},
+					"title": "System Webservices"
+				}
+			]
+		}
+	}
+}

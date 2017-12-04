@@ -1,9 +1,19 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_id": "1Ot34-g6Q12L6OoxKi401A",
 	"key": "sys.dbui.perspective.default.TwoFactorAuthLoginRequest",
 	"system": false,
 	"value": {
+		"edit": {
+			"layout": [
+				"code",
+				"created_date",
+				"ip",
+				"modified_date",
+				"user",
+				"validated"
+			]
+		},
 		"list": {
 			"fields": [
 				"code",

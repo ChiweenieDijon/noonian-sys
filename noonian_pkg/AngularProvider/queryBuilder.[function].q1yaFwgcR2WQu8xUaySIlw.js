@@ -30,13 +30,34 @@ function (DbuiFieldType, db) {
           else
             return keyArr[0];
         };
+        
+        //Normalize queries that use the shorthand "$and", e.g.
+        // {field1:cond, field2:cond2} -> {$and:[{field1:cond},{field2:cond2}]}
+        var longhandAnd = function(queryObj) {
+            var keyArr = Object.keys(queryObj);
+            if(keyArr.length > 1) {
+                var termArr = [];
+                _.forEach(keyArr, function(k) {
+                    var t = {};
+                    t[k] = queryObj[k];
+                    termArr.push(t);
+                });
+                return {$and:termArr};
+            }
+            else {
+                return queryObj;
+            }
+        };
+
 
         //$formatter: query -> $viewValue
         ngModel.$formatters.push(function(queryObj) {
-          // console.log('QB: formatting this query to viewValue: ', queryObj);
+        //   console.log('QB: formatting this query to viewValue: ', queryObj);
 
           if(!queryObj)
             return null;
+            
+          queryObj = longhandAnd(queryObj);    
 
           var outerKey = getKey(queryObj);
 

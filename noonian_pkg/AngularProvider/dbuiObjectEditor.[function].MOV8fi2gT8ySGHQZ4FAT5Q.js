@@ -43,8 +43,9 @@ function (Dbui, I18n) {
       var perspective = $scope.perspective;
 
       var className = theObject._bo_meta_data.class_name;
-
-      $scope.labels = I18n.getBoLabelGroup(className);
+      
+      $scope.labelGroup = theObject._bo_meta_data.field_labels;
+      
       $scope.typeDescMap = theObject._bo_meta_data.type_desc_map;
 
 
@@ -81,6 +82,14 @@ function (Dbui, I18n) {
       var fieldCustomizations = perspective.fieldCustomizations || {};
       var displayCheckers = {};
       var contextFields = {}; //maps dotted field names present in fieldCustomizations to the base field name
+      
+      
+      var requiredFields = {};
+      var reqExpression = '';
+      var reqChecker;
+      var reqWatcher = function() {
+          $scope.formStatus.isValid = !!reqChecker($scope.theObject);
+      };
 
       for(var f in fieldCustomizations) {
         if(fieldCustomizations[f].conditionalDisplay) {
@@ -90,7 +99,26 @@ function (Dbui, I18n) {
               contextFields[f] = f.substring(0, dotPos);
           }
         }
+        
+        if(fieldCustomizations[f].required) {
+            requiredFields[f] = true;
+            reqExpression += (reqExpression ? ' && ' : '')+f;
+            $scope.$watch('theObject.'+f, reqWatcher);
+        } 
       }
+      
+      if(reqExpression) {
+          reqChecker = $parse(reqExpression);
+      }
+      
+      $scope.isRequired = function(field) {
+          if(!requiredFields[field]) {
+              return false;
+          }
+          else {
+              return !_.get($scope.theObject, field);
+          }
+      };
 
       $scope.shouldShow  = function(field) {
           if(!$scope.getTypeDesc(field)) {

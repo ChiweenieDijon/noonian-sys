@@ -1,0 +1,18 @@
+{
+	"__ver": "sys:1",
+	"_id": "GtB6L_7wTICVHlmoiKJjCw",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.sys_dev.AngularTemplate",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"list": {
+			"filter": {
+				"path": {
+					"$contains": "^dbui/"
+				}
+			}
+		}
+	}
+}

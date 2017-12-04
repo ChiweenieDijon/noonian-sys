@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:5",
 	"_id": "DJO4J7xRTvydSH_aBCtAFw",
 	"abstract": false,
 	"class_name": "UpdateLog",
@@ -35,6 +35,6 @@
 			"type": "string"
 		}
 	},
-	"doc": "Represents a single data change of a business object in the system - a create, update, or delete.\nStores diff history if \"enableHistory\" is enabled in instance config file",
+	"doc": "Represents a single data change of a business object in the system - a create, update, or delete.\nStores diff history if \"enableHistory\" is enabled in instance config file\n @property {boolean} external_pkg \n @property {string} object_class \n @property {string} object_id \n @property {reference.<BusinessObjectPackage>} package \n @property {object} revert_patch \n @property {datetime} timestamp \n @property {string} update_type \n @property {string} updated_version \n",
 	"system": true
 }

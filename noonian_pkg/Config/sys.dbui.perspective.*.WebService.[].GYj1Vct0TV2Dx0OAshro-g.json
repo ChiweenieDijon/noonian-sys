@@ -1,0 +1,47 @@
+{
+	"__ver": "sys:1",
+	"_id": "GYj1Vct0TV2Dx0OAshro-g",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.*.WebService",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				"path",
+				"doc",
+				"rolespec",
+				"function"
+			]
+		},
+		"list": {
+			"fields": [
+				"path",
+				"rolespec",
+				"doc"
+			],
+			"sort": {
+				"path": "asc"
+			}
+		},
+		"picker_list": {
+			"fields": [
+				"path",
+				"rolespec",
+				"doc"
+			],
+			"sort": {
+				"path": "asc"
+			}
+		},
+		"view": {
+			"layout": [
+				"path",
+				"doc",
+				"rolespec",
+				"function"
+			]
+		}
+	}
+}

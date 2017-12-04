@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:5",
 	"_id": "IG7UUXYwTv6Ffj4o489duA",
 	"abstract": false,
 	"class_name": "Menu",
@@ -9,6 +9,9 @@
 		},
 		"definition_getter": {
 			"type": "function"
+		},
+		"doc": {
+			"type": "jsdoc"
 		},
 		"key": {
 			"separator": ".",
@@ -26,6 +29,6 @@
 			"type": "string"
 		}
 	},
-	"doc": "An ordered grouping of actions and submenus under a key.  Utilized by DBUI for the sidebar menu.",
+	"doc": "An ordered grouping of actions and submenus under a key.  Utilized by DBUI for the sidebar menu.\n @property {object} definition \n @property {function} definition_getter \n @property {jsdoc} doc \n @property {path} key \n @property {rolespec} rolespec \n @property {string} type \n",
 	"system": true
 }

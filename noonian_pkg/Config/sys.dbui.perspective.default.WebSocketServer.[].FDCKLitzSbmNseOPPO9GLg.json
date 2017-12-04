@@ -1,0 +1,34 @@
+{
+	"__ver": "sys:4",
+	"_id": "FDCKLitzSbmNseOPPO9GLg",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.default.WebSocketServer",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				"path",
+				"doc",
+				"on_connect",
+				"rolespec"
+			]
+		},
+		"list": {
+			"fields": [
+				"path",
+				"rolespec",
+				"doc"
+			]
+		},
+		"view": {
+			"layout": [
+				"path",
+				"doc",
+				"on_connect",
+				"rolespec"
+			]
+		}
+	}
+}

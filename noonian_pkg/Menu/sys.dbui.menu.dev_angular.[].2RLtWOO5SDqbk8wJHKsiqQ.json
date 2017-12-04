@@ -1,0 +1,80 @@
+{
+	"__ver": "sys:1",
+	"_id": "2RLtWOO5SDqbk8wJHKsiqQ",
+	"definition": [
+		{
+			"action": {
+				"params": {
+					"className": "AngularApp",
+					"perspective": "sys_dev"
+				},
+				"state": "dbui.list"
+			},
+			"label": "apps"
+		},
+		{
+			"action": {
+				"params": {
+					"className": "AngularModule",
+					"perspective": "sys_dev"
+				},
+				"state": "dbui.list"
+			},
+			"label": "modules"
+		},
+		{
+			"action": {
+				"params": {
+					"className": "AngularTemplate",
+					"perspective": "sys_dev"
+				},
+				"state": "dbui.list"
+			},
+			"label": "templates"
+		},
+		{
+			"action": {
+				"params": {
+					"className": "AngularProvider",
+					"perspective": "sys_dev_factories"
+				},
+				"state": "dbui.list"
+			},
+			"label": "factories"
+		},
+		{
+			"action": {
+				"params": {
+					"className": "AngularProvider",
+					"perspective": "sys_dev_controllers"
+				},
+				"state": "dbui.list"
+			},
+			"label": "controllers"
+		},
+		{
+			"action": {
+				"params": {
+					"className": "AngularProvider",
+					"perspective": "sys_dev_directives"
+				},
+				"state": "dbui.list"
+			},
+			"label": "directives"
+		},
+		{
+			"action": {
+				"params": {
+					"className": "AngularProvider",
+					"perspective": "sys_dev_filters"
+				},
+				"state": "dbui.list"
+			},
+			"label": "filters"
+		}
+	],
+	"key": "sys.dbui.menu.dev_angular",
+	"rolespec": [
+		"FnQ_eBYITOSC8kJA4Zul5g"
+	]
+}

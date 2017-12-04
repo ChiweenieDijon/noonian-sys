@@ -1,0 +1,78 @@
+{
+	"__ver": "sys:1",
+	"_id": "Sr9b366IR1iHf--2Xt0yNA",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.*.DataTrigger",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				[
+					"key"
+				],
+				[
+					"business_object"
+				],
+				[
+					"before_after",
+					"on_delete"
+				],
+				[
+					"on_create",
+					"on_update"
+				],
+				[
+					"doc"
+				],
+				[
+					"action"
+				]
+			]
+		},
+		"list": {
+			"fields": [
+				"key",
+				"business_object",
+				"doc"
+			],
+			"sort": {
+				"key": "asc"
+			}
+		},
+		"picker_list": {
+			"fields": [
+				"key",
+				"business_object"
+			],
+			"sort": {
+				"key": "asc"
+			}
+		},
+		"view": {
+			"layout": [
+				[
+					"key"
+				],
+				[
+					"business_object"
+				],
+				[
+					"before_after",
+					"on_delete"
+				],
+				[
+					"on_create",
+					"on_update"
+				],
+				[
+					"doc"
+				],
+				[
+					"action"
+				]
+			]
+		}
+	}
+}

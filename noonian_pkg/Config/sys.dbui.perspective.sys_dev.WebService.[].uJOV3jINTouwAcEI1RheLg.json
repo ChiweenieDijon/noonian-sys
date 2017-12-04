@@ -1,0 +1,25 @@
+{
+	"__ver": "sys:1",
+	"_id": "uJOV3jINTouwAcEI1RheLg",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.sys_dev.WebService",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"list": {
+			"filter": {
+				"path": {
+					"$contains": "^/sys/|^/dbui/|^/pkg/"
+				}
+			}
+		},
+		"picker_list": {
+			"filter": {
+				"path": {
+					"$contains": "^/sys/|^/dbui/|^/pkg/"
+				}
+			}
+		}
+	}
+}

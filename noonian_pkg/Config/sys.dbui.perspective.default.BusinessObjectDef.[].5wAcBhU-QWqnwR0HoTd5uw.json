@@ -1,0 +1,24 @@
+{
+	"__ver": "sys:1",
+	"_id": "5wAcBhU-QWqnwR0HoTd5uw",
+	"key": "sys.dbui.perspective.default.BusinessObjectDef",
+	"system": false,
+	"user": {
+		"_disp": "admin",
+		"_id": "vl22Nf2XTNym2-X90sxOag"
+	},
+	"value": {
+		"list": {
+			"savedQueries": [
+				{
+					"query": {
+						"system": {
+							"$istrue": true
+						}
+					},
+					"title": "System BO's"
+				}
+			]
+		}
+	}
+}

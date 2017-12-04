@@ -12,7 +12,9 @@ function ($parse, Dbui, NoonI18n) {
       var perspective = $scope.perspective;
     
       var className = theObject._bo_meta_data.class_name;
-      $scope.labels = NoonI18n.getBoLabelGroup(className);
+      
+      $scope.labelGroup = theObject._bo_meta_data.field_labels;
+      
       $scope.typeDescMap = theObject._bo_meta_data.type_desc_map;
     
       $scope.colClass = Dbui.columnClasses;

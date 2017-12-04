@@ -1,0 +1,34 @@
+{
+	"__ver": "sys:2",
+	"_id": "tH1X3z4nTC-IQfUhSUd8_w",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.*.CodeModule",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				"name",
+				"path",
+				"doc",
+				"code"
+			]
+		},
+		"list": {
+			"fields": [
+				"path",
+				"name",
+				"doc"
+			]
+		},
+		"view": {
+			"layout": [
+				"name",
+				"path",
+				"doc",
+				"code"
+			]
+		}
+	}
+}

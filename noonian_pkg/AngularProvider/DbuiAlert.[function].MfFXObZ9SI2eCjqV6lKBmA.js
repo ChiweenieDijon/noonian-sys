@@ -12,12 +12,19 @@ function ($rootScope, $timeout) {
             }
         }
         
+        if(arr.length === 0) {
+            $rootScope.alertMenu.isOpen = false;
+        }
+        $rootScope.alertMenu.newAlerts.splice(0, $rootScope.alertMenu.newAlerts.length);
     };
     
     var dismissDbuiAlerts = function() {
         var arr = $rootScope.alertMenu.alerts;
         arr.splice(0, arr.length);
+        $rootScope.alertMenu.isOpen = false;
     };
+    
+    var lastTimeout;
     
     this.alert = function(type, message, timeout) {
         console.log('DbuiAlert.alert', type, message, timeout);
@@ -38,11 +45,18 @@ function ($rootScope, $timeout) {
         
         // $rootScope.dbui_alerts.push(alertObj);
         $rootScope.alertMenu.alerts.unshift(alertObj);
+        $rootScope.alertMenu.newAlerts.unshift(alertObj);
         $rootScope.alertMenu.showQueue = true;
         
-        // $timeout(closeDbuiAlert.bind(null, alertObj), timeout);
-        $timeout(function() {
+        
+        if(lastTimeout) {
+            $timeout.cancel(lastTimeout);
+        }
+        
+        lastTimeout = $timeout(function() {
             $rootScope.alertMenu.showQueue = false;
+            $rootScope.alertMenu.newAlerts.splice(0, $rootScope.alertMenu.newAlerts.length);
+            lastTimeout = false;
         }, timeout);
         
         

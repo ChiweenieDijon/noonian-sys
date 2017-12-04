@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:20",
+	"__ver": "sys:28",
 	"_id": "5dJkEI1PRmK41Hh2lw2y_w",
 	"doc": "Database access interface.",
 	"module": {
@@ -9,7 +9,11 @@
 	"name": "db",
 	"parameters": [
 		"$http",
-		"$q"
+		"$q",
+		"$injector",
+		"BusinessObjectModelFactory",
+		"TypeDescMap",
+		"BusinessObjectLabelGroup"
 	],
 	"path": "noonian/api",
 	"type": "factory"

@@ -4,7 +4,7 @@ function (value) {
     if(properFormat.test(value)) {
         return value;
     }
-    else {
+    else if(value) {
         var d = new Date(value);
         
         if(d.toString() === 'Invalid Date') {
@@ -20,4 +20,6 @@ function (value) {
         
         return yyyy+'-'+mm+'-'+dd;
     }
+    
+    return null;
 }

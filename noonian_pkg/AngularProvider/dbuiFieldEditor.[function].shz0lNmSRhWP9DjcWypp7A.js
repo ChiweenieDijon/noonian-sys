@@ -11,7 +11,7 @@ function ($compile, $injector, DbuiFieldType) {
             elemId: '<',
             fieldCustomizations: '<?', //From perspective.field_customizations
             contextObject: '<?', 
-            linkStatus: '='
+            linkStatus: '=?'
         },
         
         link: function(scope, iElement, iAttributes, ngModel) {

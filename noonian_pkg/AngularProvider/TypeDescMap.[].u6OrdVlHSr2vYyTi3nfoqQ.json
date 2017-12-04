@@ -1,0 +1,14 @@
+{
+	"__ver": "sys:1",
+	"_id": "u6OrdVlHSr2vYyTi3nfoqQ",
+	"doc": "Returns the constructor for \"type descriptor maps\"; instances are constructed w/ BusinessObjectDef definitions mapping field name to type descriptor, producing a \"live\" TypeDescMap providing a getTypeDescriptor function to recurse into sub-fields\nThe _bo_meta_data.type_desc_map is an instance of TypeDescMap.",
+	"module": {
+		"_disp": "noonian.api",
+		"_id": "NJnfAVnFSmuMcv9voRnaJQ"
+	},
+	"name": "TypeDescMap",
+	"parameters": [
+	],
+	"path": "noonian/api/internal",
+	"type": "factory"
+}

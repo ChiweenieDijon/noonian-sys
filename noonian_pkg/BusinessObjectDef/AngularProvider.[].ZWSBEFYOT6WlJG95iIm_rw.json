@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:9",
+	"__ver": "sys:11",
 	"_id": "ZWSBEFYOT6WlJG95iIm_rw",
 	"abstract": false,
 	"class_name": "AngularProvider",
@@ -38,6 +38,6 @@
 			"type": "string"
 		}
 	},
-	"doc": "An Angular service, factory, provider, controller, directive, or filter.\nBelongs to an AngularModule, and has a name, and a function definition w/ a list of injected parameters.\n{@link https://docs.angularjs.org/guide/providers}\n'service' type: function is a constructor; instance is what is injected into other functions\n'factory' type: function returns value that is injected into other functions\n'provider' type: function is a constructor; an instance of which is accessible to module config (w/ \"Provider\" suffix).  must have $get member which is a factory used when injecting into non-config function.",
+	"doc": "An Angular service, factory, provider, controller, directive, or filter.\nBelongs to an AngularModule, and has a name, and a function definition w/ a list of injected parameters.\n{@link https://docs.angularjs.org/guide/providers}\n - 'service' type: function is a constructor; instance is what is injected into other functions\n - 'factory' type: function returns value that is injected into other functions\n - 'provider' type: function is a constructor; an instance of which is accessible to module config (w/ \"Provider\" suffix).  must have $get member which is a factory used when injecting into non-config function.\n @property {text} doc Documentation for this provider\n @property {function} function Definition function passed to angular to register the provider.\n @property {reference.<AngularModule>} module Module to which this provider belongs\n @property {string} name Name of provider; identifier used to inject into other providers\n @property {string[]} parameters List of function parameters (used for injection - automatically generated upon save)\n @property {path} path A path to associate with the provider for organizational purposes\n @property {string} type Type of provider.",
 	"system": true
 }

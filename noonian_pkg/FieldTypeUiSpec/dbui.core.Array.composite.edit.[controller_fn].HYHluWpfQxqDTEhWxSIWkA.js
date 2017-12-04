@@ -2,7 +2,7 @@ function ($scope, $stateParams, Dbui) {
 
     //Little editable datatable
     
-    var fc = $scope.fieldCustomizations;
+    var fc = $scope.fieldCustomizations || {};
     var td = $scope.typeDesc[0];
     
     var stub = td.construct({});
@@ -22,7 +22,7 @@ function ($scope, $stateParams, Dbui) {
     };
     
     //Config object for 
-    $scope.tableConfig = {
+    $scope.tableConfig = fc.table_config || {
       cellEdit:true,    //allow 'global' edit (all fields editable) TODO configure from fieldCustomizations
       recordActions:[     //actions to be appended to any perspective actions.
           removeAction
@@ -30,9 +30,16 @@ function ($scope, $stateParams, Dbui) {
     };
     
     //Use 'list' perspective for editing an array of composites:
-    Dbui.getPerspective($stateParams.perspective, stub._bo_meta_data.class_name, 'list').then(function(subPerspective) {
-        $scope.subPerspective = subPerspective;
-    });
+    if(fc.list_perspective) {
+        var p = angular.copy(fc.list_perspective);
+        p.layout = Dbui.normalizeLayout(p.layout);
+        $scope.subPerspective = p;
+    }
+    else {
+        Dbui.getPerspective($stateParams.perspective, stub._bo_meta_data.class_name, 'list').then(function(subPerspective) {
+            $scope.subPerspective = subPerspective;
+        });
+    }
     
     
     //Ensure empty array binding when binding.value is null:

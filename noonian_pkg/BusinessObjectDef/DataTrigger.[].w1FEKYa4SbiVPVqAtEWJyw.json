@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:4",
 	"_id": "w1FEKYa4SbiVPVqAtEWJyw",
 	"abstract": false,
 	"class_name": "DataTrigger",
@@ -35,7 +35,7 @@
 			"type": "boolean"
 		}
 	},
-	"doc": "A DataTrigger is a mechanism that allows attaching logic to data changes of a particular class of Busness Object.  The \"action\" field is an injectable function that gets called upon create, update, and/or delete as specifed by the boolean fields.  The \"before_after\" field dictates whether the action is called before or after the Business Object is persisted to MongoDB.  If the action function returns a promise, the system waits until the promise is fulfilled, or fails if the promise is rejected.",
+	"doc": "A DataTrigger is a mechanism that allows attaching logic to data changes of a particular class of Busness Object.  The \"action\" field is an injectable function that gets called upon create, update, and/or delete as specifed by the boolean fields.  The \"before_after\" field dictates whether the action is called before or after the Business Object is persisted to MongoDB.  If the action function returns a promise, the system waits until the promise is fulfilled, or fails if the promise is rejected.\n @property {function} action \n @property {string} before_after \n @property {reference.<BusinessObjectDef>} business_object \n @property {jsdoc} doc \n @property {path} key \n @property {boolean} on_create \n @property {boolean} on_delete \n @property {boolean} on_update \n",
 	"superclass": null,
 	"system": true
 }

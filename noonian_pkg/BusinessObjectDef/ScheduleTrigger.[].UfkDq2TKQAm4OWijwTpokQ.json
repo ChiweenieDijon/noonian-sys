@@ -1,0 +1,46 @@
+{
+	"__ver": "sys:6",
+	"_id": "UfkDq2TKQAm4OWijwTpokQ",
+	"abstract": false,
+	"class_name": "ScheduleTrigger",
+	"definition": {
+		"enabled": {
+			"type": "boolean"
+		},
+		"function": {
+			"applicable": "serverside",
+			"type": "function"
+		},
+		"key": {
+			"type": "path"
+		},
+		"last_execution": {
+			"type": "datetime"
+		},
+		"schedule": {
+			"type": "composite",
+			"type_desc_map": {
+				"day_of_month": {
+					"type": "string"
+				},
+				"day_of_week": {
+					"type": "string"
+				},
+				"hour": {
+					"type": "string"
+				},
+				"minute": {
+					"type": "string"
+				},
+				"month": {
+					"type": "string"
+				},
+				"second": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"doc": "A function that is triggered on a schedule.\nSchedule field usees cron format for the values:\n * - wildcard\n* / n - every n seconds/minutes/hours\na-b range of values between a and b\na,b,c discreet values a,b,c (can be combined w/ range)\n @property {boolean} enabled \n @property {function} function \n @property {path} key \n @property {datetime} last_execution \n @property {composite} schedule \n",
+	"system": true
+}

@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:4",
 	"_id": "8q-MORjBS3qC0Dwh6dTIkw",
 	"abstract": false,
 	"class_name": "JsResource",
@@ -9,7 +9,7 @@
 			"type": "sourcecode"
 		}
 	},
-	"doc": "A WebResource with javascript content.  When resource is requested, \"content\" is served with ContentType \"application/javascript\".",
+	"doc": "A WebResource with javascript content.  When resource is requested, \"content\" is served with ContentType \"application/javascript\".\n @property {sourcecode} content \n",
 	"superclass": {
 		"_disp": "WebResource",
 		"_id": "0TO-sBb1TjeAAzaMgd-8KQ"

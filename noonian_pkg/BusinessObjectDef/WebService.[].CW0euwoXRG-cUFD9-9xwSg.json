@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_id": "CW0euwoXRG-cUFD9-9xwSg",
 	"abstract": false,
 	"class_name": "WebService",
@@ -20,6 +20,6 @@
 			"type": "rolespec"
 		}
 	},
-	"doc": "A function that runs on the server-side, is callable via HTTP request for the \"path\", and returns an arbitrary object (or a promise that eventually resolves to an object) that is serialzed to JSON in the HTTP response.",
+	"doc": "A function that runs on the server-side, is callable via HTTP request for the \"path\", and returns an arbitrary object (or a promise that eventually resolves to an object) that is serialzed to JSON in the HTTP response.\n @property {jsdoc} doc \n @property {function} function \n @property {path} path \n @property {rolespec} rolespec \n",
 	"system": true
 }

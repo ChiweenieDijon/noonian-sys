@@ -1,0 +1,19 @@
+{
+	"__ver": "sys:3",
+	"_id": "IbTRqThxTGSys_M1KRaZoQ",
+	"abstract": false,
+	"class_name": "DocTemplate",
+	"definition": {
+		"content": {
+			"type": "text"
+		},
+		"content_type": {
+			"type": "string"
+		},
+		"key": {
+			"type": "path"
+		}
+	},
+	"doc": "An instance contains template used to generate documentation for a Noonian Package.  Can be used to generate a simple mediawiki summary page.\n @property {text} content \n @property {string} content_type \n @property {path} key \n",
+	"system": true
+}

@@ -1,0 +1,10 @@
+{
+	"__ver": "sys:1",
+	"_id": "2kCebqAhSq23kIfWjZ7H5Q",
+	"allow_customize": false,
+	"key": "sys.dbui.sidebar_menu",
+	"rolespec": [
+	],
+	"system": false,
+	"value": "dbui.menu.default_user"
+}

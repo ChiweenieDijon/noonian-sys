@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:4",
+	"__ver": "sys:5",
 	"_id": "GDzTJ1SERbyhOIKYYkNkNA",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.perspectives.Config",
@@ -28,25 +28,16 @@
 				"value"
 			],
 			"filter": {
-				"$and": [
+				"$or": [
 					{
-						"system": {
-							"$isfalse": ""
+						"key": {
+							"$contains": "sys.dbui.perspective"
 						}
 					},
 					{
-						"$or": [
-							{
-								"key": {
-									"$contains": "sys.dbui.perspective"
-								}
-							},
-							{
-								"key": {
-									"$contains": "sys.dbui.displayoptions"
-								}
-							}
-						]
+						"key": {
+							"$contains": "sys.dbui.displayoptions"
+						}
 					}
 				]
 			},

@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:5",
+	"__ver": "sys:6",
 	"_id": "076TmOduSve4_ZvYrqSLig",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.directives.AngularProvider",
@@ -7,46 +7,14 @@
 	],
 	"system": true,
 	"value": {
-		"edit": {
-			"layout": [
-				"module",
-				"path",
-				"name",
-				"type",
-				"doc",
-				"parameters",
-				"function"
-			]
-		},
 		"list": {
-			"fields": [
-				"path",
-				"module",
-				"name",
-				"type",
-				"doc"
-			],
 			"filter": {
 				"path": {
 					"$notcontains": "^dbui/|^noonian/"
 				},
 				"type": "directive"
 			},
-			"sort": {
-				"path": "asc"
-			},
 			"title": "Angular Directives"
-		},
-		"view": {
-			"layout": [
-				"module",
-				"path",
-				"name",
-				"type",
-				"doc",
-				"parameters",
-				"function"
-			]
 		}
 	}
 }

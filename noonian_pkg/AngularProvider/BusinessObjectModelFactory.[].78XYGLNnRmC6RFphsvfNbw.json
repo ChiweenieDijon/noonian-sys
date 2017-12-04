@@ -1,0 +1,15 @@
+{
+	"__ver": "sys:3",
+	"_id": "78XYGLNnRmC6RFphsvfNbw",
+	"module": {
+		"_disp": "noonian.api",
+		"_id": "NJnfAVnFSmuMcv9voRnaJQ"
+	},
+	"name": "BusinessObjectModelFactory",
+	"parameters": [
+		"TypeDescMap",
+		"BusinessObjectLabelGroup"
+	],
+	"path": "noonian/api/internal",
+	"type": "factory"
+}

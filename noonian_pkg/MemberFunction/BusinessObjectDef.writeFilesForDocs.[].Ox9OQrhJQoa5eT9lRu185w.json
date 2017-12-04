@@ -1,0 +1,13 @@
+{
+	"__ver": "sys:2",
+	"_id": "Ox9OQrhJQoa5eT9lRu185w",
+	"applies_to": "server",
+	"business_object": {
+		"_disp": "BusinessObjectDef",
+		"_id": "R1r6pCVESdma9hj8GrfMaQ"
+	},
+	"doc": "Outputs files to outputDir for consumption by jsdoc.\n@param idList\n@param outputDir\n@return promise fulfilled when files are written; resolved to table of all FieldType names referenced in the list.",
+	"is_static": true,
+	"name": "writeFilesForDocs",
+	"use_injection": true
+}

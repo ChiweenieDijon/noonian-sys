@@ -1,0 +1,16 @@
+{
+	"__ver": "sys:1",
+	"_id": "aGUQwyKpQnCfPcU_qdVV2A",
+	"module": {
+		"_disp": "noonian.dbui",
+		"_id": "myP57XGhSNyDKrrcJFvO0Q"
+	},
+	"name": "vertical_table.html",
+	"path": "dbui/reusable/core",
+	"provider": {
+		"_disp": "dbuiObjectTable",
+		"_id": "9en21yAeQAOdV_Uxm_C9sQ"
+	},
+	"rolespec": [
+	]
+}

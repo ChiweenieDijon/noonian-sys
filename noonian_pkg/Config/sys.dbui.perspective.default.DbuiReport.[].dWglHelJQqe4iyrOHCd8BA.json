@@ -1,0 +1,40 @@
+{
+	"__ver": "sys:1",
+	"_id": "dWglHelJQqe4iyrOHCd8BA",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.default.DbuiReport",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				"name",
+				"doc",
+				"web_service",
+				"input_typedef",
+				"input_perspective",
+				"output_typedef",
+				"output_perspective"
+			]
+		},
+		"list": {
+			"fields": [
+				"name",
+				"doc",
+				"web_service"
+			]
+		},
+		"view": {
+			"layout": [
+				"name",
+				"doc",
+				"web_service",
+				"input_typedef",
+				"input_perspective",
+				"output_typedef",
+				"output_perspective"
+			]
+		}
+	}
+}

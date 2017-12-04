@@ -1,0 +1,19 @@
+{
+	"__ver": "sys:1",
+	"_id": "CcqJZREmRe-xdYeP74D6TQ",
+	"key": "sys.dbui.bo.JsDocConfig",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"name": "Name",
+		"output_att": "Output Att",
+		"output_path": "Output Path",
+		"output_type": "Output Type",
+		"template": "Template",
+		"template_options": "Template Options"
+	}
+}

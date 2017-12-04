@@ -1,0 +1,22 @@
+<div>
+    <div class="col-md-12 dbui-header">
+      <h3>{{reportLabels._report_title}}</h3>
+    </div>
+    <div class="row"><div class="col-md-12 "><p>{{reportLabels._report_desc}}</p></div></div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1" ng-if="inputObj && reportLabels">
+            <dbui-object-editor the-object="inputObj" perspective="inputPerspective"></dbui-object-editor>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1" ng-if="inputObj && reportLabels">
+            <button class="btn btn-primary btn-block" ng-click="submit()">Submit</button>
+        </div>
+    </div>
+    
+    <div ng-if="resultObj">
+        <dbui-object-viewer the-object="resultObj" perspective="outputPerspective"></dbui-object-viewer> 
+    </div>
+    
+
+</div>

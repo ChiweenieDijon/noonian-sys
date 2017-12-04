@@ -1,9 +1,12 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:6",
 	"_id": "uEaZJyjDQXWMs-vNQrjiyQ",
 	"abstract": false,
 	"class_name": "UiAction",
 	"definition": {
+		"doc": {
+			"type": "jsdoc"
+		},
 		"function": {
 			"applicable": "clientside",
 			"type": "function"
@@ -13,6 +16,6 @@
 			"type": "path"
 		}
 	},
-	"doc": "A UiAction is a piece of functionality that can be tied to the click of a menu item or a button.",
+	"doc": "A UiAction is a piece of functionality that can be tied to the click of a menu item or a button.\n @property {jsdoc} doc \n @property {function} function \n @property {path} key \n",
 	"system": true
 }

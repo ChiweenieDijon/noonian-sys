@@ -1,11 +1,17 @@
 function ($scope, $stateParams, db, Dbui, DbuiObjectPicker, DbuiAction, NoonWebService) {
     var td = $scope.typeDesc;
     var refClass = td.ref_class;
-
+    var fc = $scope.fieldCustomizations;
+    
     $scope.getRefs = function(val) {
+        
       //Text search for val; limit to a handful, sort so that those with _disp values containing val are at the top.
     //   return db[refClass].find({$fulltextsearch:val}, {}, {limit:10}).$promise;
-      return NoonWebService.call('dbui/getReferenceTypeahead', {class_name:refClass, search_term:val});
+        var query = {class_name:refClass, search_term:val};
+        if(fc && fc.filter) {
+            query.filter = fc.filter;
+        }
+        return NoonWebService.call('dbui/getReferenceTypeahead', query);
     };
 
     $scope.onSelect = function($item) {

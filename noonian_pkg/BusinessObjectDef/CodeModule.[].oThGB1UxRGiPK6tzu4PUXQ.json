@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:4",
 	"_id": "oThGB1UxRGiPK6tzu4PUXQ",
 	"abstract": false,
 	"class_name": "CodeModule",
@@ -18,6 +18,6 @@
 			"type": "path"
 		}
 	},
-	"doc": "A server-side code module; injectable into data trigger and web service functions.",
+	"doc": "A server-side code module; injectable into data trigger and web service functions.\n @property {function} code \n @property {jsdoc} doc \n @property {string} name \n @property {path} path \n",
 	"system": true
 }

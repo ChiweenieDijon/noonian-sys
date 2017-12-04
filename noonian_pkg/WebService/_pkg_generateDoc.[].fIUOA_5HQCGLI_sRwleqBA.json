@@ -1,0 +1,8 @@
+{
+	"__ver": "sys:1",
+	"_id": "fIUOA_5HQCGLI_sRwleqBA",
+	"doc": "Called via button on BusinessObjectPackage; builds jsdoc documentation using configuration from referenced JsDocConfig object",
+	"path": "/pkg/generateDoc",
+	"rolespec": [
+	]
+}

@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:11",
+	"__ver": "sys:12",
 	"_id": "NsTdpPyyQhWREbMKoDr5wA",
 	"module": {
 		"_disp": "noonian.dbui",
@@ -9,6 +9,6 @@
 	"parameters": [
 		"$rootScope"
 	],
-	"path": "/dbui/core",
+	"path": "dbui/core",
 	"type": "directive"
 }

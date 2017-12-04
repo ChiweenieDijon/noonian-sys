@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:10",
 	"_id": "R1r6pCVESdma9hj8GrfMaQ",
 	"abstract": false,
 	"class_name": "BusinessObjectDef",
@@ -25,6 +25,6 @@
 			"type": "boolean"
 		}
 	},
-	"doc": "Defines a class of Business Object by describing its composition.  Definition is a data \"schema\", with a structure similar to that used in the mongoose library {@link http://mongoosejs.com/docs/guide.html}.  The types available for defining fields are not limited to the standard JSON primitives; rather, fields are typed according to {@link FieldType} objects.",
+	"doc": "Defines a class of Business Object by describing its composition.  Definition is a data \"schema\", with a structure similar to that used in the mongoose library {@link http://mongoosejs.com/docs/guide.html}.  The types available for defining fields are not limited to the standard JSON primitives; rather, fields are typed according to {@link FieldType} objects. \n@property {boolean} abstract Indicates that other classes will inherit from this one\n @property {string} class_name Name of this class\n @property {object} definition Maps object's property names to their respective type descriptors.\n @property {jsdoc} doc Documentation\n @property {reference.<BusinessObjectDef>} superclass Reference to this class's parent class\n @property {boolean} system Is a \"system\" class - mainly used for filtering out Noonian/DBUI internal classes",
 	"system": true
 }

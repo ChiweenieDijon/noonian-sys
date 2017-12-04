@@ -1,0 +1,17 @@
+{
+	"__ver": "sys:1",
+	"_id": "S-1zFOn_TlaNqHU25xtKMA",
+	"key": "sys.dbui.bo.WebSocketServer",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"doc": "Doc",
+		"on_connect": "On Connect",
+		"path": "Path",
+		"rolespec": "Rolespec"
+	}
+}

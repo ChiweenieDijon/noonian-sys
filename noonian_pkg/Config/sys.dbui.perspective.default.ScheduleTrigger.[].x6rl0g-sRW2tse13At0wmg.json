@@ -1,0 +1,40 @@
+{
+	"__ver": "sys:6",
+	"_id": "x6rl0g-sRW2tse13At0wmg",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.default.ScheduleTrigger",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"edit": {
+			"layout": [
+				[
+					"key",
+					"enabled"
+				],
+				"schedule",
+				"function"
+			]
+		},
+		"list": {
+			"fields": [
+				"key",
+				"schedule",
+				"enabled",
+				"last_execution"
+			]
+		},
+		"view": {
+			"layout": [
+				[
+					"key",
+					"enabled"
+				],
+				"last_execution",
+				"schedule",
+				"function"
+			]
+		}
+	}
+}

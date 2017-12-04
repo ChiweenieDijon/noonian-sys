@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:4",
+	"__ver": "sys:6",
 	"_id": "_kXc9xmXRK25KE0qkjrXVg",
 	"abstract": false,
 	"class_name": "DbuiCustomPage",
@@ -22,7 +22,7 @@
 			"type": "rolespec"
 		}
 	},
-	"doc": "A \"custom page\" accessible within the DBUI interface by navigating to the state \"dbui.custompage\", with a \"key\" parameter matching a DbuiCustomPage's key field.",
+	"doc": "A \"custom page\" accessible within the DBUI interface by navigating to the state \"dbui.custompage\", with a \"key\" parameter matching a DbuiCustomPage's key field.\n @property {sourcecode} body \n @property {function} controller \n @property {jsdoc} doc \n @property {path} key \n @property {rolespec} rolespec \n",
 	"superclass": null,
 	"system": true
 }

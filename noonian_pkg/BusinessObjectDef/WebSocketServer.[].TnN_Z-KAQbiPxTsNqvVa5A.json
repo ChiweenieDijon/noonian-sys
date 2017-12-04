@@ -1,0 +1,23 @@
+{
+	"__ver": "sys:2",
+	"_id": "TnN_Z-KAQbiPxTsNqvVa5A",
+	"abstract": false,
+	"class_name": "WebSocketServer",
+	"definition": {
+		"doc": {
+			"type": "jsdoc"
+		},
+		"on_connect": {
+			"applicable": "serverside",
+			"type": "function"
+		},
+		"path": {
+			"type": "path"
+		},
+		"rolespec": {
+			"type": "rolespec"
+		}
+	},
+	"doc": "A web socket server.  To use add enableWebSockets:true to instance config.\n @property {jsdoc} doc \n @property {function} on_connect - called when this path is requested; injected param \"ws\" is the WebSocket object conforming to the WHATWG websocket api\n @property {path} path \n @property {rolespec} rolespec",
+	"system": true
+}

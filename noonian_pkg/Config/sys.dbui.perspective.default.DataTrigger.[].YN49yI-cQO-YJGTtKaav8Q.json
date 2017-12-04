@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_id": "YN49yI-cQO-YJGTtKaav8Q",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.DataTrigger",
@@ -32,18 +32,10 @@
 			]
 		},
 		"list": {
-			"fields": [
-				"key",
-				"business_object",
-				"doc"
-			],
 			"filter": {
 				"key": {
 					"$notcontains": "^sys\\."
 				}
-			},
-			"sort": {
-				"key": "asc"
 			}
 		},
 		"picker_list": {
