@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:5",
+	"__ver": "sys:6",
 	"_id": "57ILg9OpRKW_mlCRHlbzgA",
 	"editors": [
 		{
@@ -44,6 +44,11 @@
 			"_disp": "object",
 			"_id": "uMEzxXwVSgmj_dbfeY-fLA",
 			"name": "object"
+		},
+		{
+			"_disp": "composite",
+			"_id": "ePi7MsceQMqn3qnVBlHkNA",
+			"name": "composite"
 		}
 	],
 	"for_array": false,

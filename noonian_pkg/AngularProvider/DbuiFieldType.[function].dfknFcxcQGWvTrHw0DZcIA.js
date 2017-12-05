@@ -253,6 +253,36 @@ function (NoonWebService, NoonI18n, db, $q) {
 
       };
       
+      
+      var expandCompPlaceholder = function(fieldList, boLabelGroup) {
+        var myPos;
+        for(myPos=0; myPos < fieldList.length ; myPos++) {
+          if(fieldList[myPos] === this)
+            break;
+        }
+        //Remove the placeholder
+        fieldList.splice(myPos, 1);
+
+        //Insert the items for the ref fields
+        var namePrefix = this.fieldName;
+        var compTd = this.td.type_desc_map;
+
+        var compFieldList = Object.keys(compTd);
+
+        for(var i=0; i < compFieldList.length; i++) {
+          var compFieldName = compFieldList[i];
+          var qualifiedSubfield = namePrefix+compFieldName;
+          var fi = {
+            fieldName:qualifiedSubfield,
+            fieldLabel: boLabelGroup[namePrefix.substring(0, namePrefix.length-1)]+'.'+(boLabelGroup[qualifiedSubfield] || compFieldName),
+            td:compTd[compFieldName]
+          };
+
+          fieldList.splice(myPos, 0, fi);
+        }
+
+      };
+      
     /**
      * DbuiFieldType.getAugmentedFieldList
      *  returns a promise -> array of objects describing the fields of bo className
@@ -282,14 +312,20 @@ function (NoonWebService, NoonI18n, db, $q) {
           if(searchableOnly && !getOpList(td)) 
             continue;
 
-          
-          var fieldLabel = boLabelGroup._abbreviated[f] || boLabelGroup[f] || f;
+          boLabelGroup[f] = boLabelGroup[f] || f;
+          var fieldLabel = boLabelGroup._abbreviated[f] || boLabelGroup[f];
           var fieldInfo = {
             fieldName:f,
             fieldLabel:fieldLabel,
             td:td
           };
           resultList.push(fieldInfo);
+          
+          //reference and composite expandable placeholders work for arrays too:
+          var isArray = td instanceof Array;
+          if(isArray) {
+              td = td[0];
+          }
 
           if(td.type === 'reference' && (!denormOnly || td.denormalize_fields)) {
             var fiPlaceholder = {
@@ -301,6 +337,17 @@ function (NoonWebService, NoonI18n, db, $q) {
 
             fiPlaceholder.expand = expandRefPlaceholder.bind(fiPlaceholder, resultList, boLabelGroup, denormOnly);
             resultList.push(fiPlaceholder);
+          }
+          else if(td.type === 'composite') {
+              var fiPlaceholder = {
+                  fieldName:f+'.',
+                  fieldLabel:fieldLabel+'...',
+                  td:td,
+                  refPlaceholder:true
+              };
+
+              fiPlaceholder.expand = expandCompPlaceholder.bind(fiPlaceholder, resultList, boLabelGroup);
+              resultList.push(fiPlaceholder);
           }
 
         }//end typeDescMap iteration
