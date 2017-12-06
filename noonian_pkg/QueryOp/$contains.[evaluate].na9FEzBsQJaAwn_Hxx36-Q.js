@@ -6,7 +6,7 @@ function (expressionValue, testValue) {
         
     if(testValue && testValue instanceof Array) {
         for(var i=0; i < testValue.length; i++) {
-            if(testValue[i]._id === expId)
+            if(testValue[i] && testValue[i]._id === expId)
                 return true;
         }
     }   
