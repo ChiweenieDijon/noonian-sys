@@ -1,0 +1,11 @@
+{
+	"__ver": "sys:1",
+	"_id": "1XEio144ShOw4ucu5jcUzQ",
+	"name": "PhoneContactType",
+	"values": [
+		"mobile",
+		"home",
+		"work",
+		"other"
+	]
+}

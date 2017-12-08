@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:6",
+	"__ver": "sys:7",
 	"_id": "57ILg9OpRKW_mlCRHlbzgA",
 	"editors": [
 		{
@@ -49,6 +49,11 @@
 			"_disp": "composite",
 			"_id": "ePi7MsceQMqn3qnVBlHkNA",
 			"name": "composite"
+		},
+		{
+			"_disp": "phone_contact",
+			"_id": "KDQEYYhJT0KtqH4GpREmSQ",
+			"name": "phone_contact"
 		}
 	],
 	"for_array": false,
