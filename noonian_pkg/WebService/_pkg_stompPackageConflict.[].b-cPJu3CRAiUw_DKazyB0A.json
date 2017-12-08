@@ -1,0 +1,9 @@
+{
+	"__ver": "sys:2",
+	"_id": "b-cPJu3CRAiUw_DKazyB0A",
+	"doc": "Called from a PackageConflict record; \nInstalls the \"Merged Object\" into the system, with no version id merging.",
+	"path": "/pkg/stompPackageConflict",
+	"rolespec": [
+		"FnQ_eBYITOSC8kJA4Zul5g"
+	]
+}
