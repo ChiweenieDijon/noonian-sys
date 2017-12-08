@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_id": "w3FIbwfYQoKk_QISUEDdKw",
 	"key": "sys.dbui.bo.ScheduleTrigger",
 	"language": {
@@ -9,6 +9,22 @@
 	},
 	"system": false,
 	"value": {
+		"#schedule": {
+			"_tooltip": {
+				"day_of_month": "1-31",
+				"day_of_week": "0-7 (0 or 7 is sunday)",
+				"hour": "0-23",
+				"minute": "0-59",
+				"month": "1-12",
+				"second": "0-59"
+			},
+			"day_of_month": "Day Of Month",
+			"day_of_week": "Day Of Week",
+			"hour": "Hour",
+			"minute": "Minute",
+			"month": "Month",
+			"second": "Second"
+		},
 		"enabled": "Enabled",
 		"function": "Function",
 		"key": "Key",
