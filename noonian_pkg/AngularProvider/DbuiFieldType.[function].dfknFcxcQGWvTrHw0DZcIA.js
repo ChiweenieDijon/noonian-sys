@@ -61,7 +61,7 @@ function (NoonWebService, NoonI18n, db, $q) {
         // console.log('cacheTypeInfo', wsParams, viewEdit);
         return NoonWebService.call('dbui/getFieldTypeMetadata', wsParams).then(function(resultObj) {
             
-            _.forEach(resultObj.result, function(specObj) {
+            _.forEach(resultObj.specObjects, function(specObj) {
                 var typeList;
                 if(specObj.fieldtypes && specObj.fieldtypes.length) {
                     typeList = specObj.fieldtypes;
