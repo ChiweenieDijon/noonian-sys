@@ -18,11 +18,14 @@ function ($scope, $state, db, DbuiAlert, DbuiAction, NoonI18n, theObject, editPe
     
     $scope.setPageTitle(title);
     
+    $rootScope.watchFormStatus(formStatus);
+    
     var deRegister = $rootScope.$on('$stateChangeStart', function(event, toState, toParams){
         if(formStatus.isDirty && !confirm('Are you sure you want to navigate away without saving?')){
             event.preventDefault();
         }
         else {
+            $rootScope.unwatchFormStatus(formStatus);
             deRegister();
         }
     });
