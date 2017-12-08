@@ -177,6 +177,7 @@ function ($http, $q, $rootScope, NoonWebService,DbuiFieldType, DbuiAction, NoonI
      * Dbui.getPerspective
      */
     this.getPerspective = function(name, className, type) {
+      name = name || 'default';
 
       var key = name+'/'+className+'/'+type;
       
