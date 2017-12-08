@@ -1,14 +1,25 @@
 function ($scope, phoneFormatFilter) {
-    $scope.$watch('binding.value', function(value) {
-        if(value) {
-            //remove all non-digits
-            var pieces = value.split(/\D/);
-            value = pieces.join('');
-            var proper = phoneFormatFilter(value);
-            
-            if(proper !== $scope.binding.value) {
-                $scope.binding.value = proper;
+    
+    
+    
+    $scope.prettyNumber = function(dispValue) {
+        if(angular.isDefined(dispValue)) {
+            //Setter
+            if(dispValue) {
+                var pieces = dispValue.split(/\D/);
+                $scope.binding.value = pieces.join('');
+            }
+            else if($scope.binding.value) {
+                $scope.binding.value = '';
             }
         }
-    }); 
+        else {
+            //getter
+            if($scope.binding.value) {
+                return phoneFormatFilter($scope.binding.value);
+            }
+            return '';
+        }
+    };
+    
 }
