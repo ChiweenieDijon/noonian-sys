@@ -52,8 +52,8 @@ function (DbuiAction, NoonI18n) {
         var objectMetaData = $scope.objectMetaData;
         var config = $scope.config || {};
         
-        $scope.labels = NoonI18n.getBoLabelGroup(objectMetaData.class_name);
-        
+        // $scope.labels = NoonI18n.getBoLabelGroup(objectMetaData.class_name);
+        // $scope.labels = objectMetaData.field_labels;
         
         
         
@@ -70,13 +70,15 @@ function (DbuiAction, NoonI18n) {
         };
         
         $scope.getFieldLabel = function(field) {
-            var labels = $scope.labels;
+            return objectMetaData.field_labels && objectMetaData.field_labels.getLabel(field) || field;
             
-            if(labels) {
-                return (labels._abbreviated && labels._abbreviated[field]) || labels[field] || field;
-            }
+            // var labels = $scope.labels;
+            
+            // if(labels) {
+            //     return (labels._abbreviated && labels._abbreviated[field]) || labels[field] || field;
+            // }
         
-            return fieldName;
+            // return field;
         };
         
         //////////////////////////////////////////
@@ -175,9 +177,14 @@ function (DbuiAction, NoonI18n) {
         };
         
         var editing = {};
-        $scope.editing = function(obj, field) {
-            return obj.$$hashKey === editing.item && field === editing.field;
-        };
+        if(config.alwaysEdit) {
+            $scope.editing = function() {return true;};
+        }
+        else {
+            $scope.editing = function(obj, field) {
+                return obj.$$hashKey === editing.item && field === editing.field;
+            };
+        }
         
         $scope.cellClicked = function(obj, field) {
             if(allowEdit(field)) {
