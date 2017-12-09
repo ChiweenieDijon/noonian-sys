@@ -13,5 +13,9 @@ function (fieldName) {
     innerClause[fieldName] = '';
     ret.$or.push(innerClause);
     
+    innerClause = {};
+    innerClause[fieldName] = {$size:0};
+    ret.$or.push(innerClause);
+    
     return ret;
 }

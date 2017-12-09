@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:4",
 	"_id": "5BKy2VxhTRqkuRDx74Byzg",
 	"key": "sys.dbui.bo.FieldType",
 	"language": {
@@ -9,6 +9,7 @@
 	},
 	"system": true,
 	"value": {
+		"composite_def": "Composite Definition",
 		"doc": "Documentation",
 		"from_db": "From Db",
 		"get_validator": "Get Validator",

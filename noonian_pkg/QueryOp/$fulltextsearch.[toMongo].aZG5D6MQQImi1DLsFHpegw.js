@@ -1,7 +1,8 @@
 function (searchStr, typeDescMap, FieldTypeService) {
 
     var retCond = {$or:[
-        {__disp:{$regex:searchStr, $options:'i'}}
+        {__disp:{$regex:searchStr, $options:'i'}},
+        {__match_text:{$regex:searchStr, $options:'i'}}
     ]};
     var condList = retCond.$or;
 

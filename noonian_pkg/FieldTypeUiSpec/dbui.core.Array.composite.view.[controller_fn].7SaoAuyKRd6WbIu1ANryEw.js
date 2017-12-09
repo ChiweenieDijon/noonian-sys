@@ -2,7 +2,7 @@ function ($scope, $stateParams, Dbui) {
     console.log('dbui.core.Array.composite.view', $scope);
     //Little editable datatable
     
-    var fc = $scope.fieldCustomizations;
+    var fc = $scope.fieldCustomizations || {};
     var td = $scope.typeDesc[0];
     
     var stub = td.construct({});

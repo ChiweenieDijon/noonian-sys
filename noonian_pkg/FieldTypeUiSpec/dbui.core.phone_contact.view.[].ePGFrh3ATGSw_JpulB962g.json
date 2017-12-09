@@ -1,0 +1,16 @@
+{
+	"__ver": "sys:2",
+	"_id": "ePGFrh3ATGSw_JpulB962g",
+	"fieldtypes": [
+		{
+			"_disp": "phone_contact",
+			"_id": "KDQEYYhJT0KtqH4GpREmSQ",
+			"name": "phone_contact"
+		}
+	],
+	"for_editing": false,
+	"for_editing_array": false,
+	"for_viewing": true,
+	"for_viewing_array": false,
+	"key": "dbui.core.phone_contact.view"
+}

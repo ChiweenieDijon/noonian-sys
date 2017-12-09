@@ -74,8 +74,30 @@ function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider, 
         resolve: {
             //IF DBUI SILENTLY FAILS TO LOAD:
             // check these injected providers for errors arising from using identifiers that haven't been declared
-            initApi: function(db, NoonAuth, Dbui) {
+            initApi: function(db, NoonAuth, Dbui, $rootScope) {
                 console.log('Initializing "dbui" ui-router state...');
+                
+                //set up dirty form warning
+                var watchingFormStatuses = [];
+                $rootScope.watchFormStatus = function(formStatus) {
+                    watchingFormStatuses.push(formStatus);
+                };
+                $rootScope.unwatchFormStatus = function(formStatus) {
+                    var pos = watchingFormStatuses.indexOf(formStatus);
+                    if(pos > -1) {
+                        watchingFormStatuses.splice(pos, 1);
+                    }
+                };
+                window.onbeforeunload = function() {
+                    var warn = null;
+                    _.forEach(watchingFormStatuses, function(fs) {
+                        if(fs.isDirty) {
+                            warn = 'Are you sure you want to navigate away without saving?'
+                        }
+                    });
+                    return warn;
+                }
+                
                 return db.init().then(NoonAuth.init).then(Dbui.init);
             }
         }

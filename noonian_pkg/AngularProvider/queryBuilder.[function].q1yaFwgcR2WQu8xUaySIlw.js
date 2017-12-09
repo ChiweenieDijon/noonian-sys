@@ -34,7 +34,12 @@ function (DbuiFieldType, db) {
         //Normalize queries that use the shorthand "$and", e.g.
         // {field1:cond, field2:cond2} -> {$and:[{field1:cond},{field2:cond2}]}
         var longhandAnd = function(queryObj) {
-            var keyArr = Object.keys(queryObj);
+            var keyArr = [];
+            _.forEach(Object.keys(queryObj), function(k) {
+               if(k.indexOf('$$') !== 0)  {
+                   keyArr.push(k);
+               }
+            });
             if(keyArr.length > 1) {
                 var termArr = [];
                 _.forEach(keyArr, function(k) {
@@ -112,7 +117,7 @@ function (DbuiFieldType, db) {
 
         //$parser: $viewValue -> query term
         ngModel.$parsers.push(function(vv) {
-          // console.log('QB: parsing view value: ', vv);
+        //   console.log('QB: parsing view value: ', vv);
           if(!vv || !vv.clauseGroups)
             return null;
 

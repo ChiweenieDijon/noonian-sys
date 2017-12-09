@@ -1,8 +1,10 @@
 {
-	"__ver": "sys:4",
+	"__ver": "sys:5",
 	"_id": "m7poGk4CSBKCO1X_X29-Vw",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.FieldType",
+	"rolespec": [
+	],
 	"system": true,
 	"value": {
 		"edit": {
@@ -25,7 +27,8 @@
 				],
 				[
 					"from_db"
-				]
+				],
+				"composite_def"
 			]
 		},
 		"list": {
@@ -67,7 +70,8 @@
 				],
 				[
 					"from_db"
-				]
+				],
+				"composite_def"
 			],
 			"related": [
 				{

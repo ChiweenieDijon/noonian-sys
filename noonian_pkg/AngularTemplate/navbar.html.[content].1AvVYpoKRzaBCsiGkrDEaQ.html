@@ -77,8 +77,8 @@
       
       <!-- Right-hand side of navbar-->
       <ul class="nav navbar-nav navbar-right">
-        <li ng-show="loggedIn && !sidebarMenuList.length" class="hidden-xs"><p class="navbar-text">Hello {{ currentUser.name }}</p> </li>
-        <li ng-if="loggedIn && sidebarMenuList.length"  class="dropdown" uib-dropdown>
+        <li ng-show="loggedIn && (!sidebarMenuList.length || sidebarMenuList.length === 1)" class="hidden-xs"><p class="navbar-text">Hello {{ currentUser.name }}</p> </li>
+        <li ng-if="loggedIn && sidebarMenuList.length > 1"  class="dropdown" uib-dropdown>
             <a class="dropdown-toggle" role="button" uib-dropdown-toggle>
                 Hello {{ currentUser.name }}
             </a>

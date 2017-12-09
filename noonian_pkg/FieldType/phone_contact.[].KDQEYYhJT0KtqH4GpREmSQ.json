@@ -1,0 +1,17 @@
+{
+	"__ver": "sys:3",
+	"_id": "KDQEYYhJT0KtqH4GpREmSQ",
+	"composite_def": {
+		"number": {
+			"type": "phone"
+		},
+		"type": {
+			"enum": "PhoneContactType",
+			"type": "enum"
+		}
+	},
+	"doc": "A list of phone numbers and their respective types (mobile, home, work, etc.)",
+	"mongo_type": "Mixed",
+	"name": "phone_contact",
+	"text_index": false
+}

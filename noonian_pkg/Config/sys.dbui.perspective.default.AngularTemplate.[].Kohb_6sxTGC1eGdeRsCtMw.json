@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:5",
+	"__ver": "sys:12",
 	"_id": "Kohb_6sxTGC1eGdeRsCtMw",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.AngularTemplate",
@@ -7,6 +7,9 @@
 	],
 	"system": true,
 	"value": {
+		"edit": {
+			"": ""
+		},
 		"list": {
 			"filter": {
 				"path": {
@@ -15,15 +18,7 @@
 			}
 		},
 		"view": {
-			"layout": [
-				"content",
-				"module",
-				"provider",
-				"doc",
-				"name",
-				"path",
-				"rolespec"
-			]
+			"": ""
 		}
 	}
 }

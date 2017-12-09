@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:4",
 	"_id": "hIGoBem9TQinCMTZh-tCTQ",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.PackageConflict",
@@ -71,6 +71,11 @@
 					"icon": "fa-level-down",
 					"label": "Install Merged",
 					"ws": "pkg/resolvePackageConflict"
+				},
+				{
+					"icon": "fa-exclamation-triangle",
+					"label": "Stomp Local",
+					"ws": "/pkg/stompPackageConflict"
 				}
 			]
 		}
