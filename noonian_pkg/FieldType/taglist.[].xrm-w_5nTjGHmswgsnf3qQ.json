@@ -1,0 +1,8 @@
+{
+	"__ver": "sys:1",
+	"_id": "xrm-w_5nTjGHmswgsnf3qQ",
+	"doc": "An array of strings",
+	"mongo_type": "Mixed",
+	"name": "taglist",
+	"text_index": false
+}
