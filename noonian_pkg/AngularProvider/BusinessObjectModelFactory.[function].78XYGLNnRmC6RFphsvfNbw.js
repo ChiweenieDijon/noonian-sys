@@ -97,7 +97,16 @@ function (TypeDescMap,BusinessObjectLabelGroup) {
         //Wire up _disp getter
         if(definition._disp) {
             try {
-                BusinessObjectModel.prototype._disp_template = _.template(definition._disp);
+                var templateString, options;
+                if(typeof definition._disp === 'string') {
+                  templateString = definition._disp;
+                }
+                else {
+                  templateString = definition._disp.template;
+                  options = definition._disp.options || {variable:'bo'};
+                }
+        
+                BusinessObjectModel.prototype._disp_template = _.template(templateString, options);
             }
             catch(err) {
                 console.error('ERROR COMPILING _disp TEMPLATE for '+name, definition._disp, err);

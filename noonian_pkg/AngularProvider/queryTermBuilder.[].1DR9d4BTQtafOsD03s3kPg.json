@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:25",
+	"__ver": "sys:33",
 	"_id": "1DR9d4BTQtafOsD03s3kPg",
 	"doc": "A piece of queryBuilder - a directive for editing an individual term of a query  (a field+op+value chunk: e.g. {\"some_field\":{$eq:\"some value\"}})",
 	"module": {

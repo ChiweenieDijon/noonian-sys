@@ -144,10 +144,13 @@ function (DbuiFieldType, db, $timeout) {
         
         $scope.fieldChanged = function(fieldInfo, resetValue) {
             // console.log('fieldChanged', fieldInfo, resetValue);
-            
+          
           if(fieldInfo.refPlaceholder) {
             return fieldInfo.expand();
           }
+          
+          $scope.fieldFilter = '';
+          processFilter();
 
           $scope.fieldSelectorOpen = false;
 
@@ -214,8 +217,49 @@ function (DbuiFieldType, db, $timeout) {
                 $scope.fieldEditorVisible = $scope.fieldEditorTypeDesc && $scope.term.opInfo && $scope.term.opInfo.editor;
             });
           }
-        }
+        };
+        
+        $scope.fieldFilter = '';
+        var processFilter = function() {
+            var fieldList = $scope.fieldList;
+            var filter = $scope.fieldFilter;
+            for(var i=0; i < fieldList.length; i++) {
+                var fi = fieldList[i];
+                if(
+                    !filter ||
+                    fi.fieldName.toLowerCase().indexOf(filter) > -1 ||
+                    fi.fieldLabel.toLowerCase().indexOf(filter) > -1
+                ) {
+                    fi.hidden = false;
+                }
+                else {
+                    fi.hidden = true;
+                }
+            }
+        };
 
+        $scope.keypress = function(evt) {    
+            var k = (''+evt.key).toLowerCase();
+            $scope.fieldFilter += k;
+            processFilter();
+        };
+        $scope.keydown = function(evt) {
+            if(evt.keyCode == 8) {
+                var f = $scope.fieldFilter;
+                $scope.fieldFilter = f.substring(0, f.length-1);
+                processFilter();
+            }
+            else if(evt.keyCode === 27) {
+                //escape
+                $scope.fieldFilter = '';
+                processFilter();
+            }
+        };
+        
+        $scope.clearFilter = function() {
+            $scope.fieldFilter = '';
+            processFilter();
+        };
 
 
       }

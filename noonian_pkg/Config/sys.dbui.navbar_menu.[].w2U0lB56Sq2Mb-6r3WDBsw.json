@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:13",
+	"__ver": "sys:14",
 	"_id": "w2U0lB56Sq2Mb-6r3WDBsw",
 	"allow_customize": false,
 	"key": "sys.dbui.navbar_menu",
@@ -20,6 +20,7 @@
 				"MemberFunction",
 				"QueryOp",
 				"WebService",
+				"WebSocketServer",
 				"TwoFactorAuthImplementation"
 			],
 			"title": "Serverside/DB Dev"
@@ -78,7 +79,8 @@
 				"UpdateLog",
 				"PackageConflict",
 				"RemotePackageRepository",
-				"DocTemplate"
+				"DocTemplate",
+				"JsDocConfig"
 			],
 			"title": "Packaging"
 		}

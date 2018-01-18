@@ -1,8 +1,10 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_id": "Wno7cIleSF6nmkMi4vu_jA",
 	"allow_customize": false,
 	"key": "sys.enablePackaging",
+	"rolespec": [
+	],
 	"system": false,
-	"value": true
+	"value": false
 }

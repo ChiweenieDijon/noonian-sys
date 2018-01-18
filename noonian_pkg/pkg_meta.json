@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:57",
+	"__ver": "sys:60",
 	"_id": "7R4cBwsWTSacdSk5ZrAjTw",
 	"build_config": {
 		"exclude": [
@@ -21,11 +21,11 @@
 		},
 		"AngularModule": {
 			"NJnfAVnFSmuMcv9voRnaJQ": "sys:8",
-			"myP57XGhSNyDKrrcJFvO0Q": "sys:68"
+			"myP57XGhSNyDKrrcJFvO0Q": "sys:71"
 		},
 		"AngularProvider": {
 			"-WzjxRZhT-CoPcBycQAiOg": "sys:11",
-			"1DR9d4BTQtafOsD03s3kPg": "sys:25",
+			"1DR9d4BTQtafOsD03s3kPg": "sys:33",
 			"1KOgLhmgQj2AUKYIxflYqA": "sys:26",
 			"2UpyXO5lR3qV-oce53G_7A": "sys:41",
 			"3Viz_TmyQRqPGTDKMEhv2A": "sys:7",
@@ -33,7 +33,7 @@
 			"3j9njXR_Qri6Ce8kubk9nw": "sys:5",
 			"5W1f4vxWTte-kQvjjgpyLA": "sys:37",
 			"5dJkEI1PRmK41Hh2lw2y_w": "sys:28",
-			"78XYGLNnRmC6RFphsvfNbw": "sys:3",
+			"78XYGLNnRmC6RFphsvfNbw": "sys:5",
 			"7UVBjiqKRueVphLN5EtfLg": "sys:31",
 			"7jHQrtYKQxSzW_pRHAd9RA": "sys:15",
 			"9en21yAeQAOdV_Uxm_C9sQ": "sys:41",
@@ -88,7 +88,7 @@
 			"aGUQwyKpQnCfPcU_qdVV2A": "sys:1",
 			"c-Sh5WEEQqW1adX257yZVQ": "sys:17",
 			"hbhKtxpDQLaUvyA7hogLWw": "sys:22",
-			"iMYbBIZHRvqnpf6mAmeBBw": "sys:8",
+			"iMYbBIZHRvqnpf6mAmeBBw": "sys:17",
 			"kX5Bln7MQ7evgGJJm9QhUw": "sys:9",
 			"lRoO3i4TTsi142xvw7vnIA": "sys:17",
 			"nFlRtvy8T4WjgiUECbROSw": "sys:5",
@@ -139,7 +139,7 @@
 			"pQIx0YDZQJSLi1cNHxwKlA": "sys:5",
 			"pzaSsQYLT7uvOx6Trp1wMw": "sys:4",
 			"qZR4N3BFQGuMzjcj17jitg": "sys:7",
-			"rVjuQcaKTzi2KV5qbWdP3Q": "sys:7",
+			"rVjuQcaKTzi2KV5qbWdP3Q": "sys:10",
 			"rsjTdO2pTF-GAqUKmdsy5w": "sys:1",
 			"uEaZJyjDQXWMs-vNQrjiyQ": "sys:6",
 			"w1FEKYa4SbiVPVqAtEWJyw": "sys:4"
@@ -151,7 +151,6 @@
 			"pwMVRvdjSU-2Ak0BWDA6AA": "sys:5"
 		},
 		"Config": {
-			"-H2Rcmo1Sriv9cRoQiYxGQ": "deleted",
 			"076TmOduSve4_ZvYrqSLig": "sys:6",
 			"0KZWeNuMSJyW7QImA9AndA": "sys:1",
 			"0tydbMgIRdudkdXTyXt7qA": "sys:2",
@@ -191,9 +190,8 @@
 			"Hj3COO0iQyufTftJqfUt_Q": "sys:4",
 			"HjJ3QzvGSda4mliXCksO_A": "sys:1",
 			"I5AizP_DTgqHdp3MFvdsrw": "sys:3",
-			"I_f0Ld-gSp2MtcPoVF9YaQ": "sys:28",
+			"I_f0Ld-gSp2MtcPoVF9YaQ": "sys:34",
 			"J9SNvBpBQAGYMkbPYRYPrA": "sys:1",
-			"JJi5XuAaRjOKGr6kK7UR-A": "deleted",
 			"Kohb_6sxTGC1eGdeRsCtMw": "sys:12",
 			"KpTzs_FUS9ylachpjVI_XA": "sys:3",
 			"LO0K56w7R4GWv3LZ7-tGJg": "sys:1",
@@ -209,7 +207,7 @@
 			"TceD89EZTVa-uQncdIxkbA": "sys:1",
 			"UjovAxBVSKqtzY5vANXK_g": "sys:1",
 			"VF_QRD_FS1KVfVSVRaEmOA": "sys:2",
-			"Wno7cIleSF6nmkMi4vu_jA": "sys:2",
+			"Wno7cIleSF6nmkMi4vu_jA": "sys:3",
 			"Xhs0pIeIQ-WP_jsX6j9Mag": "sys:6",
 			"XlkTgxHAQRSiic10iuV_Ig": "sys:2",
 			"Y-hXaNJuSNm5F-SS5dTZsQ": "sys:1",
@@ -218,7 +216,7 @@
 			"YN49yI-cQO-YJGTtKaav8Q": "sys:2",
 			"ZIyLu8ZCQV2K6GS2XqqbEA": "sys:4",
 			"ZQ1ti3KWSUWvUWCU2mDeUA": "sys:5",
-			"ZcYFrLsyQpSLpykRLi-nEA": "sys:1",
+			"ZcYFrLsyQpSLpykRLi-nEA": "deleted",
 			"b3-wP1RKQAm56z4xRENVlg": "sys:1",
 			"cSzNMWAYT2Whr1OqDdHGyg": "sys:2",
 			"cqb0vgELTiyDb6zfI6Tavg": "sys:7",
@@ -247,9 +245,8 @@
 			"spHxGeTiRsGzocGsaIIEMg": "sys:2",
 			"tH1X3z4nTC-IQfUhSUd8_w": "sys:2",
 			"uJOV3jINTouwAcEI1RheLg": "sys:1",
-			"uPQXlOglR9yDx4p_ZEmV3g": "deleted",
 			"vDdUnL3nQ6a1e9nTNiqLog": "sys:1",
-			"w2U0lB56Sq2Mb-6r3WDBsw": "sys:13",
+			"w2U0lB56Sq2Mb-6r3WDBsw": "sys:14",
 			"x6rl0g-sRW2tse13At0wmg": "sys:6",
 			"xcvMD6R0TmO0rycK3Vd1rA": "sys:2",
 			"xmAXxOxKReCjsdFT3pu59w": "sys:2",
@@ -259,7 +256,7 @@
 			"zqq006kzRgiWjMdclIEQ7Q": "sys:3"
 		},
 		"CssResource": {
-			"5Aeg3b-LRlaZ75IcNGqD3w": "deleted",
+			"YaSNWS_JT06boJn36ExwJg": "sys:2",
 			"mF2-m7xwSv-GOiV7I-YPNg": "sys:25",
 			"o4W541R8SOaAsLdTAFRwBw": "sys:4",
 			"rTEg0q5bQbiYsTXNOFCBvQ": "sys:3"
@@ -285,6 +282,7 @@
 		},
 		"Enumeration": {
 			"1XEio144ShOw4ucu5jcUzQ": "sys:1",
+			"VRW9rDSYRbunKfI3x6Ri1g": "sys:1",
 			"aGtg2ZyaRACD6m0S-ulCog": "sys:1",
 			"ziaKbpUeTYC8t691DU1tug": "sys:1"
 		},
@@ -309,13 +307,14 @@
 			"e-rYyVWHQoKi1om5SUBMcA": "sys:2",
 			"ePi7MsceQMqn3qnVBlHkNA": "sys:5",
 			"gxJBuQp7RkKLIV0cazfFnA": "sys:1",
-			"jOZVJVLOTmGK6Ppf7JNnCw": "sys:1",
+			"jOZVJVLOTmGK6Ppf7JNnCw": "sys:2",
 			"lpmwbanlQH20mCWioX0H1g": "sys:3",
 			"nplFum9LRdWvt5TW1LyulQ": "sys:8",
 			"uMEzxXwVSgmj_dbfeY-fLA": "sys:5",
 			"uavtEE5AT2q5WcEcsWYTpw": "sys:3",
 			"vOaH1F-HRhefePjYFAGCBA": "sys:1",
 			"vxlB7gSPTWqq98tG5lCcPQ": "sys:2",
+			"xrm-w_5nTjGHmswgsnf3qQ": "sys:1",
 			"z_2NESmpQ-29ACeUMhflNQ": "sys:3"
 		},
 		"FieldTypeUiSpec": {
@@ -325,7 +324,8 @@
 			"3G2t7niJSRmrRluTIU9cSg": "sys:8",
 			"3puRzrB0QWKw9aKe7RVZ9g": "sys:10",
 			"3y_egv2CQ1aiRhukfvJIRg": "sys:4",
-			"7SaoAuyKRd6WbIu1ANryEw": "sys:2",
+			"6l8d66e6RaeO2zNwVE9YAQ": "sys:1",
+			"7SaoAuyKRd6WbIu1ANryEw": "sys:3",
 			"8wYs5LGeTUKpwZ4rnT5yJw": "sys:6",
 			"9uHrzJ-IQPqu-IK3bywR3A": "sys:19",
 			"BvydEKALTzK9ALeB_zibrg": "sys:5",
@@ -349,6 +349,7 @@
 			"Z758y2u8Tb6kTGT17ngymQ": "sys:4",
 			"Za2of_r5Qk2Uo5jkZOvgMg": "sys:4",
 			"_nWPVWaMRlezcACfs6ZLHw": "sys:9",
+			"axRxZrD6QYKj-kLfH0ec5w": "sys:19",
 			"chdRzdWGRbWw-4eOY2bnWA": "sys:4",
 			"e9vFlgCpSPaPzAGGPNA9Ug": "sys:3",
 			"ePGFrh3ATGSw_JpulB962g": "sys:2",
@@ -382,6 +383,7 @@
 			"WGmUTuiGS5KfXGYV_sUHeQ": "sys:3",
 			"YHk7GG6fQIKjEFXm7zTmFg": "sys:4",
 			"cevOr03VSL6fKgpPRnXYVQ": "sys:1",
+			"hQHlhZirSpKSYcHK_cUrzA": "sys:1",
 			"mmYBlEfVRi2WM5nGcfm0VA": "sys:4",
 			"obYp82hZTaWS6ABYtZ2eJA": "sys:4",
 			"omuJBnPOSYC6z4RH26g_xA": "sys:1"
@@ -406,6 +408,7 @@
 			"EWIt-os4Q4Cez3WAYSicBg": "deleted",
 			"LKubEUuoQtOlBpvsmH6opg": "sys:1",
 			"NhgQZhe2SlSXrY8IJlW0-g": "sys:2",
+			"OeYPLQ5hTqGaYOczH6rmqQ": "sys:1",
 			"Q8e8BUTARj6S6PCQs827wg": "sys:7",
 			"QGiwBe2MRDGQaJczxQJhcw": "sys:4",
 			"S-1zFOn_TlaNqHU25xtKMA": "sys:1",
@@ -675,7 +678,7 @@
 			"Ga845hr7TvOvAA5hLSs77A": "sys:1",
 			"N-PdnQsoQUGvHJV2XkqiUw": "sys:2",
 			"Q8zKUPQpQ463QrxTG3Fo2Q": "sys:3",
-			"UJ2ZLOfVTYa8BGzohg9QKg": "sys:10",
+			"UJ2ZLOfVTYa8BGzohg9QKg": "sys:11",
 			"X0qnD1lBQUy1B_7v2gOAdg": "sys:1",
 			"XSLnZYP0QeudDfrQ0zpNxg": "sys:2",
 			"ZEhDBfiSSVWSThJ7JWDRVg": "sys:4",
@@ -683,7 +686,7 @@
 			"claxRaq5Sl6999g5ADvFBA": "sys:1",
 			"eOnt26G2TES8-45sIWf4lg": "sys:2",
 			"fS3K_3xCRByFHjbFDnpguw": "sys:2",
-			"fsAeeW_cSkKcRq_Z1f3BFg": "sys:10",
+			"fsAeeW_cSkKcRq_Z1f3BFg": "sys:11",
 			"gk5NKp1mS5mukraeQEPXxw": "sys:3",
 			"jsEir8gmRbicBtWdCGzjmA": "sys:1",
 			"na9FEzBsQJaAwn_Hxx36-Q": "sys:2",
@@ -709,11 +712,7 @@
 			"vbIpJ6l7RBask_VdWUx0fg": "sys:4"
 		},
 		"Role": {
-			"FnQ_eBYITOSC8kJA4Zul5g": "sys:1",
-			"XXcEtJJ7TwSHOXlwJjz7cA": "deleted"
-		},
-		"ScheduleTrigger": {
-			"75h3lMjSSg-X8rRdBpS67A": "deleted"
+			"FnQ_eBYITOSC8kJA4Zul5g": "sys:1"
 		},
 		"TwoFactorAuthImplementation": {
 			"GaulTlfcRgGe0DkrJcq_tQ": "sys:4",
@@ -725,7 +724,7 @@
 			"zIbWSxNgRiGVY_G7j_jYsA": "sys:1"
 		},
 		"User": {
-			"68J3HOTcSUOm6DRlj9VfNg": "deleted",
+			"UO_aGVVDTcStJ37Fj3lDMg": "sys:1",
 			"vl22Nf2XTNym2-X90sxOag": "sys:3"
 		},
 		"WebService": {
@@ -753,15 +752,16 @@
 			"oYBiiisfSu6pOQWFerHCHg": "sys:10",
 			"rR1feiTrQP6WDbkV_3s3rg": "sys:3",
 			"rVM06exeQXWZPYBFnq6n0g": "sys:6",
+			"v42RTwwjQLOZ4uyOY80ZwQ": "sys:7",
 			"v7m93WESQVyYqXfZE9XN4Q": "sys:1",
 			"w-lHVPreRRSku89vhlyagA": "sys:2"
 		}
 	},
-	"minor_version": 65,
+	"minor_version": 66,
 	"name": "Core System",
 	"package_file": {
-		"attachment_id": "TBW95Tv9ShaBVJkK60AaLw",
-		"filename": "sys.0.65.json",
+		"attachment_id": "OpeAjP9OQVqNYTW0T7Lkxw",
+		"filename": "sys.0.66.json",
 		"type": "application/json"
 	}
 }

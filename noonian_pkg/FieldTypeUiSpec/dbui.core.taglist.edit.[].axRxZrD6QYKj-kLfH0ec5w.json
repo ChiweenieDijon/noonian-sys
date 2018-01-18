@@ -1,0 +1,17 @@
+{
+	"__ver": "sys:19",
+	"_id": "axRxZrD6QYKj-kLfH0ec5w",
+	"doc": "",
+	"fieldtypes": [
+		{
+			"_disp": "taglist",
+			"_id": "xrm-w_5nTjGHmswgsnf3qQ",
+			"name": "taglist"
+		}
+	],
+	"for_editing": true,
+	"for_editing_array": false,
+	"for_viewing": false,
+	"for_viewing_array": false,
+	"key": "dbui.core.taglist.edit"
+}

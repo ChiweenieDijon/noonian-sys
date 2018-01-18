@@ -1,0 +1,13 @@
+{
+	"__ver": "sys:31",
+	"_id": "I_f0Ld-gSp2MtcPoVF9YaQ",
+	"key": "sys.user.preferences",
+	"system": false,
+	"user": {
+		"_disp": "admin",
+		"_id": "vl22Nf2XTNym2-X90sxOag"
+	},
+	"value": {
+		"selected_sidebar_menu": "dbui.menu.dev"
+	}
+}
