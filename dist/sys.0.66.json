@@ -21,11 +21,11 @@
 		},
 		"AngularModule": {
 			"NJnfAVnFSmuMcv9voRnaJQ": "sys:8",
-			"myP57XGhSNyDKrrcJFvO0Q": "sys:68"
+			"myP57XGhSNyDKrrcJFvO0Q": "sys:71"
 		},
 		"AngularProvider": {
 			"-WzjxRZhT-CoPcBycQAiOg": "sys:11",
-			"1DR9d4BTQtafOsD03s3kPg": "sys:25",
+			"1DR9d4BTQtafOsD03s3kPg": "sys:33",
 			"1KOgLhmgQj2AUKYIxflYqA": "sys:26",
 			"2UpyXO5lR3qV-oce53G_7A": "sys:41",
 			"3Viz_TmyQRqPGTDKMEhv2A": "sys:7",
@@ -33,7 +33,7 @@
 			"3j9njXR_Qri6Ce8kubk9nw": "sys:5",
 			"5W1f4vxWTte-kQvjjgpyLA": "sys:37",
 			"5dJkEI1PRmK41Hh2lw2y_w": "sys:28",
-			"78XYGLNnRmC6RFphsvfNbw": "sys:3",
+			"78XYGLNnRmC6RFphsvfNbw": "sys:5",
 			"7UVBjiqKRueVphLN5EtfLg": "sys:31",
 			"7jHQrtYKQxSzW_pRHAd9RA": "sys:15",
 			"9en21yAeQAOdV_Uxm_C9sQ": "sys:41",
@@ -88,7 +88,7 @@
 			"aGUQwyKpQnCfPcU_qdVV2A": "sys:1",
 			"c-Sh5WEEQqW1adX257yZVQ": "sys:17",
 			"hbhKtxpDQLaUvyA7hogLWw": "sys:22",
-			"iMYbBIZHRvqnpf6mAmeBBw": "sys:8",
+			"iMYbBIZHRvqnpf6mAmeBBw": "sys:17",
 			"kX5Bln7MQ7evgGJJm9QhUw": "sys:9",
 			"lRoO3i4TTsi142xvw7vnIA": "sys:17",
 			"nFlRtvy8T4WjgiUECbROSw": "sys:5",
@@ -139,7 +139,7 @@
 			"pQIx0YDZQJSLi1cNHxwKlA": "sys:5",
 			"pzaSsQYLT7uvOx6Trp1wMw": "sys:4",
 			"qZR4N3BFQGuMzjcj17jitg": "sys:7",
-			"rVjuQcaKTzi2KV5qbWdP3Q": "sys:7",
+			"rVjuQcaKTzi2KV5qbWdP3Q": "sys:10",
 			"rsjTdO2pTF-GAqUKmdsy5w": "sys:1",
 			"uEaZJyjDQXWMs-vNQrjiyQ": "sys:6",
 			"w1FEKYa4SbiVPVqAtEWJyw": "sys:4"
@@ -151,7 +151,6 @@
 			"pwMVRvdjSU-2Ak0BWDA6AA": "sys:5"
 		},
 		"Config": {
-			"-H2Rcmo1Sriv9cRoQiYxGQ": "deleted",
 			"076TmOduSve4_ZvYrqSLig": "sys:6",
 			"0KZWeNuMSJyW7QImA9AndA": "sys:1",
 			"0tydbMgIRdudkdXTyXt7qA": "sys:2",
@@ -191,9 +190,8 @@
 			"Hj3COO0iQyufTftJqfUt_Q": "sys:4",
 			"HjJ3QzvGSda4mliXCksO_A": "sys:1",
 			"I5AizP_DTgqHdp3MFvdsrw": "sys:3",
-			"I_f0Ld-gSp2MtcPoVF9YaQ": "sys:28",
+			"I_f0Ld-gSp2MtcPoVF9YaQ": "sys:34",
 			"J9SNvBpBQAGYMkbPYRYPrA": "sys:1",
-			"JJi5XuAaRjOKGr6kK7UR-A": "deleted",
 			"Kohb_6sxTGC1eGdeRsCtMw": "sys:12",
 			"KpTzs_FUS9ylachpjVI_XA": "sys:3",
 			"LO0K56w7R4GWv3LZ7-tGJg": "sys:1",
@@ -209,7 +207,7 @@
 			"TceD89EZTVa-uQncdIxkbA": "sys:1",
 			"UjovAxBVSKqtzY5vANXK_g": "sys:1",
 			"VF_QRD_FS1KVfVSVRaEmOA": "sys:2",
-			"Wno7cIleSF6nmkMi4vu_jA": "sys:2",
+			"Wno7cIleSF6nmkMi4vu_jA": "sys:3",
 			"Xhs0pIeIQ-WP_jsX6j9Mag": "sys:6",
 			"XlkTgxHAQRSiic10iuV_Ig": "sys:2",
 			"Y-hXaNJuSNm5F-SS5dTZsQ": "sys:1",
@@ -218,7 +216,7 @@
 			"YN49yI-cQO-YJGTtKaav8Q": "sys:2",
 			"ZIyLu8ZCQV2K6GS2XqqbEA": "sys:4",
 			"ZQ1ti3KWSUWvUWCU2mDeUA": "sys:5",
-			"ZcYFrLsyQpSLpykRLi-nEA": "sys:1",
+			"ZcYFrLsyQpSLpykRLi-nEA": "deleted",
 			"b3-wP1RKQAm56z4xRENVlg": "sys:1",
 			"cSzNMWAYT2Whr1OqDdHGyg": "sys:2",
 			"cqb0vgELTiyDb6zfI6Tavg": "sys:7",
@@ -247,9 +245,8 @@
 			"spHxGeTiRsGzocGsaIIEMg": "sys:2",
 			"tH1X3z4nTC-IQfUhSUd8_w": "sys:2",
 			"uJOV3jINTouwAcEI1RheLg": "sys:1",
-			"uPQXlOglR9yDx4p_ZEmV3g": "deleted",
 			"vDdUnL3nQ6a1e9nTNiqLog": "sys:1",
-			"w2U0lB56Sq2Mb-6r3WDBsw": "sys:13",
+			"w2U0lB56Sq2Mb-6r3WDBsw": "sys:14",
 			"x6rl0g-sRW2tse13At0wmg": "sys:6",
 			"xcvMD6R0TmO0rycK3Vd1rA": "sys:2",
 			"xmAXxOxKReCjsdFT3pu59w": "sys:2",
@@ -259,7 +256,7 @@
 			"zqq006kzRgiWjMdclIEQ7Q": "sys:3"
 		},
 		"CssResource": {
-			"5Aeg3b-LRlaZ75IcNGqD3w": "deleted",
+			"YaSNWS_JT06boJn36ExwJg": "sys:2",
 			"mF2-m7xwSv-GOiV7I-YPNg": "sys:25",
 			"o4W541R8SOaAsLdTAFRwBw": "sys:4",
 			"rTEg0q5bQbiYsTXNOFCBvQ": "sys:3"
@@ -285,6 +282,7 @@
 		},
 		"Enumeration": {
 			"1XEio144ShOw4ucu5jcUzQ": "sys:1",
+			"VRW9rDSYRbunKfI3x6Ri1g": "sys:1",
 			"aGtg2ZyaRACD6m0S-ulCog": "sys:1",
 			"ziaKbpUeTYC8t691DU1tug": "sys:1"
 		},
@@ -309,13 +307,14 @@
 			"e-rYyVWHQoKi1om5SUBMcA": "sys:2",
 			"ePi7MsceQMqn3qnVBlHkNA": "sys:5",
 			"gxJBuQp7RkKLIV0cazfFnA": "sys:1",
-			"jOZVJVLOTmGK6Ppf7JNnCw": "sys:1",
+			"jOZVJVLOTmGK6Ppf7JNnCw": "sys:2",
 			"lpmwbanlQH20mCWioX0H1g": "sys:3",
 			"nplFum9LRdWvt5TW1LyulQ": "sys:8",
 			"uMEzxXwVSgmj_dbfeY-fLA": "sys:5",
 			"uavtEE5AT2q5WcEcsWYTpw": "sys:3",
 			"vOaH1F-HRhefePjYFAGCBA": "sys:1",
 			"vxlB7gSPTWqq98tG5lCcPQ": "sys:2",
+			"xrm-w_5nTjGHmswgsnf3qQ": "sys:1",
 			"z_2NESmpQ-29ACeUMhflNQ": "sys:3"
 		},
 		"FieldTypeUiSpec": {
@@ -325,7 +324,8 @@
 			"3G2t7niJSRmrRluTIU9cSg": "sys:8",
 			"3puRzrB0QWKw9aKe7RVZ9g": "sys:10",
 			"3y_egv2CQ1aiRhukfvJIRg": "sys:4",
-			"7SaoAuyKRd6WbIu1ANryEw": "sys:2",
+			"6l8d66e6RaeO2zNwVE9YAQ": "sys:1",
+			"7SaoAuyKRd6WbIu1ANryEw": "sys:3",
 			"8wYs5LGeTUKpwZ4rnT5yJw": "sys:6",
 			"9uHrzJ-IQPqu-IK3bywR3A": "sys:19",
 			"BvydEKALTzK9ALeB_zibrg": "sys:5",
@@ -349,6 +349,7 @@
 			"Z758y2u8Tb6kTGT17ngymQ": "sys:4",
 			"Za2of_r5Qk2Uo5jkZOvgMg": "sys:4",
 			"_nWPVWaMRlezcACfs6ZLHw": "sys:9",
+			"axRxZrD6QYKj-kLfH0ec5w": "sys:19",
 			"chdRzdWGRbWw-4eOY2bnWA": "sys:4",
 			"e9vFlgCpSPaPzAGGPNA9Ug": "sys:3",
 			"ePGFrh3ATGSw_JpulB962g": "sys:2",
@@ -382,6 +383,7 @@
 			"WGmUTuiGS5KfXGYV_sUHeQ": "sys:3",
 			"YHk7GG6fQIKjEFXm7zTmFg": "sys:4",
 			"cevOr03VSL6fKgpPRnXYVQ": "sys:1",
+			"hQHlhZirSpKSYcHK_cUrzA": "sys:1",
 			"mmYBlEfVRi2WM5nGcfm0VA": "sys:4",
 			"obYp82hZTaWS6ABYtZ2eJA": "sys:4",
 			"omuJBnPOSYC6z4RH26g_xA": "sys:1"
@@ -406,6 +408,7 @@
 			"EWIt-os4Q4Cez3WAYSicBg": "deleted",
 			"LKubEUuoQtOlBpvsmH6opg": "sys:1",
 			"NhgQZhe2SlSXrY8IJlW0-g": "sys:2",
+			"OeYPLQ5hTqGaYOczH6rmqQ": "sys:1",
 			"Q8e8BUTARj6S6PCQs827wg": "sys:7",
 			"QGiwBe2MRDGQaJczxQJhcw": "sys:4",
 			"S-1zFOn_TlaNqHU25xtKMA": "sys:1",
@@ -675,7 +678,7 @@
 			"Ga845hr7TvOvAA5hLSs77A": "sys:1",
 			"N-PdnQsoQUGvHJV2XkqiUw": "sys:2",
 			"Q8zKUPQpQ463QrxTG3Fo2Q": "sys:3",
-			"UJ2ZLOfVTYa8BGzohg9QKg": "sys:10",
+			"UJ2ZLOfVTYa8BGzohg9QKg": "sys:11",
 			"X0qnD1lBQUy1B_7v2gOAdg": "sys:1",
 			"XSLnZYP0QeudDfrQ0zpNxg": "sys:2",
 			"ZEhDBfiSSVWSThJ7JWDRVg": "sys:4",
@@ -683,7 +686,7 @@
 			"claxRaq5Sl6999g5ADvFBA": "sys:1",
 			"eOnt26G2TES8-45sIWf4lg": "sys:2",
 			"fS3K_3xCRByFHjbFDnpguw": "sys:2",
-			"fsAeeW_cSkKcRq_Z1f3BFg": "sys:10",
+			"fsAeeW_cSkKcRq_Z1f3BFg": "sys:11",
 			"gk5NKp1mS5mukraeQEPXxw": "sys:3",
 			"jsEir8gmRbicBtWdCGzjmA": "sys:1",
 			"na9FEzBsQJaAwn_Hxx36-Q": "sys:2",
@@ -709,11 +712,7 @@
 			"vbIpJ6l7RBask_VdWUx0fg": "sys:4"
 		},
 		"Role": {
-			"FnQ_eBYITOSC8kJA4Zul5g": "sys:1",
-			"XXcEtJJ7TwSHOXlwJjz7cA": "deleted"
-		},
-		"ScheduleTrigger": {
-			"75h3lMjSSg-X8rRdBpS67A": "deleted"
+			"FnQ_eBYITOSC8kJA4Zul5g": "sys:1"
 		},
 		"TwoFactorAuthImplementation": {
 			"GaulTlfcRgGe0DkrJcq_tQ": "sys:4",
@@ -725,7 +724,7 @@
 			"zIbWSxNgRiGVY_G7j_jYsA": "sys:1"
 		},
 		"User": {
-			"68J3HOTcSUOm6DRlj9VfNg": "deleted",
+			"UO_aGVVDTcStJ37Fj3lDMg": "sys:1",
 			"vl22Nf2XTNym2-X90sxOag": "sys:3"
 		},
 		"WebService": {
@@ -753,11 +752,12 @@
 			"oYBiiisfSu6pOQWFerHCHg": "sys:10",
 			"rR1feiTrQP6WDbkV_3s3rg": "sys:3",
 			"rVM06exeQXWZPYBFnq6n0g": "sys:6",
+			"v42RTwwjQLOZ4uyOY80ZwQ": "sys:7",
 			"v7m93WESQVyYqXfZE9XN4Q": "sys:1",
 			"w-lHVPreRRSku89vhlyagA": "sys:2"
 		}
 	},
-	"minor_version": 65,
+	"minor_version": 66,
 	"name": "Core System"
 },
 "business_objects":[
@@ -2042,7 +2042,7 @@
 },
 {
 	"__disp": "TestObject",
-	"__ver": "sys:7",
+	"__ver": "sys:10",
 	"_class": "BusinessObjectDef",
 	"_id": "rVjuQcaKTzi2KV5qbWdP3Q",
 	"abstract": false,
@@ -2084,7 +2084,8 @@
 			}
 		],
 		"test": {
-			"type": "phone_contact"
+			"enum": "TestEnum",
+			"type": "duration"
 		}
 	},
 	"doc": "For testing only; shouldn't end up in package\n @property {date} date \n @property {string} first_name \n @property {string} last_name \n\n @property {composite} comp \n\n @property {reference.<BusinessObjectDef>[]} refArr \n\n @property {phone} test \n",
@@ -2295,7 +2296,7 @@
 },
 {
 	"__t": "AngularModule",
-	"__ver": "sys:68",
+	"__ver": "sys:71",
 	"_class": "AngularModule",
 	"_id": "myP57XGhSNyDKrrcJFvO0Q",
 	"config_function": null,
@@ -2304,15 +2305,19 @@
 			"_disp": "bootstrap.min.css",
 			"_id": "o4W541R8SOaAsLdTAFRwBw",
 			"name": "bootstrap.min.css",
-			"path": "bower_components/bootstrap/dist/css",
-			"ref_class": null
+			"path": "bower_components/bootstrap/dist/css"
 		},
 		{
 			"_disp": "font-awesome.min.css",
 			"_id": "rTEg0q5bQbiYsTXNOFCBvQ",
 			"name": "font-awesome.min.css",
-			"path": "bower_components/font-awesome/css",
-			"ref_class": null
+			"path": "bower_components/font-awesome/css"
+		},
+		{
+			"_disp": "ng-tags-input.min.css",
+			"_id": "YaSNWS_JT06boJn36ExwJg",
+			"name": "ng-tags-input.min.css",
+			"path": "bower_components/ng-tags-input"
 		}
 	],
 	"doc": "Module containing all services, controllers, directives for serving up the Noonian DBUI.",
@@ -2321,58 +2326,58 @@
 		"ui.router",
 		"ui.bootstrap",
 		"ui.bootstrap.modal",
-		"ui.ace"
+		"ui.ace",
+		"ngTagsInput"
 	],
 	"js_dependencies": [
 		{
 			"_disp": "ace.js",
 			"_id": "GUOAqvm-T0K8quHjSH-P8w",
 			"name": "ace.js",
-			"path": "bower_components/ace-builds/src-min-noconflict",
-			"ref_class": null
+			"path": "bower_components/ace-builds/src-min-noconflict"
 		},
 		{
 			"_disp": "angular-cookies.min.js",
 			"_id": "obYp82hZTaWS6ABYtZ2eJA",
 			"name": "angular-cookies.min.js",
-			"path": "bower_components/angular-cookies",
-			"ref_class": null
+			"path": "bower_components/angular-cookies"
 		},
 		{
 			"_disp": "ui-bootstrap-tpls.js",
 			"_id": "GABEyCzfTNSuQeo0b1H6TA",
 			"name": "ui-bootstrap-tpls.js",
-			"path": "bower_components/angular-bootstrap",
-			"ref_class": null
+			"path": "bower_components/angular-bootstrap"
 		},
 		{
 			"_disp": "angular-ui-router.min.js",
 			"_id": "mmYBlEfVRi2WM5nGcfm0VA",
 			"name": "angular-ui-router.min.js",
-			"path": "bower_components/angular-ui-router/release",
-			"ref_class": null
+			"path": "bower_components/angular-ui-router/release"
 		},
 		{
 			"_disp": "ui-ace.min.js",
 			"_id": "WGmUTuiGS5KfXGYV_sUHeQ",
 			"name": "ui-ace.min.js",
-			"path": "bower_components/angular-ui-ace",
-			"ref_class": null
+			"path": "bower_components/angular-ui-ace"
 		},
 		{
 			"_disp": "ext-language_tools.js",
 			"_id": "cevOr03VSL6fKgpPRnXYVQ",
 			"name": "ext-language_tools.js",
-			"path": "bower_components/ace-builds/src-min-noconflict",
-			"ref_class": null
+			"path": "bower_components/ace-builds/src-min-noconflict"
+		},
+		{
+			"_disp": "ng-tags-input.min.js",
+			"_id": "hQHlhZirSpKSYcHK_cUrzA",
+			"name": "ng-tags-input.min.js",
+			"path": "bower_components/ng-tags-input"
 		}
 	],
 	"mod_dependencies": [
 		{
 			"_disp": "noonian.api",
 			"_id": "NJnfAVnFSmuMcv9voRnaJQ",
-			"name": "noonian.api",
-			"ref_class": null
+			"name": "noonian.api"
 		}
 	],
 	"name": "noonian.dbui",
@@ -2401,11 +2406,11 @@
 	"type": "controller"
 },
 {
-	"__ver": "sys:25",
+	"__ver": "sys:33",
 	"_class": "AngularProvider",
 	"_id": "1DR9d4BTQtafOsD03s3kPg",
 	"doc": "A piece of queryBuilder - a directive for editing an individual term of a query  (a field+op+value chunk: e.g. {\"some_field\":{$eq:\"some value\"}})",
-	"function": "function (DbuiFieldType, db, $timeout) {\n    return {\n      templateUrl: 'dbui/core/helper/querybuilder_term.html',\n      restrict: 'E',\n      scope: {\n        fieldList: '<' //the augmented field list from Dbui.getAugmentedFieldList\n      },\n      require: 'ngModel',\n\n      link: function(scope, element, attrs, ngModel) {\n\n        //viewValue: {field:'name_of_field.possiblydotted', op:{op:'$someOp', ...}, value:'value from fieldeditor'}\n        //modelValue: a valid mongo query term, e.g.\n        //  {'field':{$op:'value'}}  <-- returned from DbuiTypeService\n\n        var retainHashKey = function(src, dest) {\n          //WTF: Retain $$hashKey so iteration in QueryBuilder template doesn't throw into an infinite format/parse loop!\n          if(src && src.$$hashKey)\n            dest.$$hashKey = src.$$hashKey;\n        };\n\n\n        //Turn a {'field':{'$op':'value'}} \"queryClause\" into a {fieldInfo:..., opInfo:..., value:'value'} \"flattened\" clause\n        var flattenQueryClause = function(queryClause) {\n            \n            var fieldList = scope.fieldList;\n            \n            var term = {};\n            \n            for(var fieldSelector in queryClause) {\n                //Scan past any junk:\n                if(fieldSelector.indexOf('$$') === 0) { //if the incoming query is on a $scope, it gets a $$hashkey key.\n                    continue;\n                }\n                \n                var dotPos = fieldSelector.indexOf('.');\n                var fieldBase = false;\n                if(dotPos > -1) {\n                    fieldBase = fieldSelector.substring(0, dotPos+1);\n                }\n                \n                //Scan through fieldList to find matching fieldInfo\n                for(var i=0; i < scope.fieldList.length; i++) {\n                    var fi = scope.fieldList[i];\n                    if(fi.fieldName === fieldSelector) {\n                        term.fieldInfo = fi;\n                    }\n                    else if(fieldBase && fi.refPlaceholder && fi.fieldName === fieldBase) {\n                        fi.expand();\n                        i--;\n                    }\n                }\n                \n                //In case query is the shorthand equals, \n                // convert {field:\"value\"} -> {field:{$eq:\"value\"}}\n                var opClause = queryClause[fieldSelector];\n                \n                if(!(opClause instanceof Object)) {\n                    queryClause[fieldSelector] = opClause = {$eq:opClause};\n                }\n                \n                var opArray = Object.keys(opClause);\n                \n                if(opArray.length > 1)\n                    console.log(\"WARNING: multi-condition clause being linked to a single queryTermBuilder!!!\");\n                    \n                    if(opArray.length > 0) {\n                        term.opInfo = DbuiFieldType.getOpInfo(term.fieldInfo.td, opArray[0]);\n                        term.value = queryClause[fieldSelector][opArray[0]];\n                    }\n                    \n                    break;\n            }\n            \n            return term;\n        };\n\n        //$formatter: query term -> $viewValue\n        ngModel.$formatters.push(function(queryClause) {\n          // console.log('TB: formatting this clause to viewValue:', queryClause);\n\n\n          var newViewValue = queryClause ? flattenQueryClause(queryClause) : {};\n          // console.log('TB: heres what it came up with: ', newViewValue);\n\n          retainHashKey(queryClause, newViewValue);\n\n          return newViewValue;\n\n        });\n\n        //$parser: $viewValue -> query term\n        ngModel.$parsers.push(function(viewValue) {\n          // console.log('TB: parsing this viewValue into a clause:', viewValue);\n\n          if(!viewValue || !viewValue.fieldInfo || !viewValue.opInfo)\n            return null;\n\n          var fieldName = viewValue.fieldInfo.fieldName;\n          var op = viewValue.opInfo.op;\n          var value = viewValue.value;\n\n          //Unflatten viewValue: {'field':{'$op':'the value'}}\n          var queryClause = {};\n          queryClause[fieldName] = {};\n          queryClause[fieldName][op] = value !== undefined ? value : true;\n\n\n          retainHashKey(viewValue, queryClause);\n\n          return queryClause;\n\n        });\n\n        //$watch: our scope -> $viewValue\n        // ***it's important to watch ALL of scope that affects ngModel in a single expression;\n        //  otherwise, you may get competing $setViewValue calls that stomp on one another\n        // ***also important: don't assign the scope object directly as the view value!\n        scope.$watch('term', function() {\n          //When any part of the term changes ('true' param below is deep watch)\n          //  replace the viewValue object with a new object\n          var term = scope.term;\n          var newViewValue = {fieldInfo:term.fieldInfo, opInfo:term.opInfo, value:term.value};\n          retainHashKey(term, newViewValue);\n          // console.log('TB: scope watch invoked -> setting view value: ', newViewValue);\n\n          ngModel.$setViewValue(newViewValue);\n        }, true );\n\n        //$render: $viewValue -> our scope\n        ngModel.$render = function() {\n          // console.log('TB: rendering this viewValue to scope:', ngModel.$viewValue);\n          //scope object can refer directly to the ngModel viewValue (just not the other way around!)\n\n          var term = scope.term = ngModel.$viewValue;\n          // console.log(\"rendering \", term);\n          //Make sure UI elements are synced up to this view value:\n          scope.fieldChanged(term.fieldInfo, false);\n        };\n\n      },\n\n      controller:function($scope) {\n        \n        $scope.fieldChanged = function(fieldInfo, resetValue) {\n            // console.log('fieldChanged', fieldInfo, resetValue);\n            \n          if(fieldInfo.refPlaceholder) {\n            return fieldInfo.expand();\n          }\n\n          $scope.fieldSelectorOpen = false;\n\n          var term = $scope.term;\n          term.fieldInfo = fieldInfo;\n\n          //Update the OpList so that the op selector shows the appropriate ops for this field type:\n          if(fieldInfo && fieldInfo.td) {\n            var opList = $scope.opList = DbuiFieldType.getOpList(fieldInfo.td);\n            \n            //Make sure the term.opInfo is valid...\n            var foundIt = false;\n            var currOp = term.opInfo ? term.opInfo.op : null;\n            for(var i=0; i < opList.length; i++) {\n              if(opList[i].op === currOp) {\n                foundIt = true;\n                term.opInfo = opList[i];\n                break;\n              }\n            }\n            if(!foundIt) {\n              term.opInfo = opList[0];\n            }\n            $scope.opChanged(resetValue);\n          }\n\n          if(resetValue)\n            $scope.term.value = undefined;\n        };\n\n        var fundamentalTypeDesc = function(td) {\n          return td instanceof Array ? td[0] : td;\n        };\n\n        $scope.opChanged = function(resetValue) {\n        //   console.log('opChanged invoked', resetValue);\n          var term = $scope.term;\n          var opInfo = term.opInfo;\n\n          if(opInfo) {\n\n            var currType = $scope.fieldEditorTypeDesc ? $scope.fieldEditorTypeDesc.type : false;\n            \n            \n            //If the op requires a specific editor, set the scope's typeDesc so that it is used...\n            if(typeof opInfo.editor === 'boolean')\n              $scope.fieldEditorTypeDesc = fundamentalTypeDesc(term.fieldInfo.td);\n            else //editor is a typedesc object\n              $scope.fieldEditorTypeDesc = opInfo.editor;\n            \n            // if(currType !== $scope.fieldEditorTypeDesc.type) {\n                // $scope.fieldEditorVisible = false;\n            // }\n              \n\n            //Nullify term value if type changed\n            if(resetValue && ($scope.fieldEditorTypeDesc.type !== currType || !opInfo.editor)) {\n              $scope.term.value = undefined;\n            }\n            \n            //Coax angular into destroying the fieldEditor directive so it can be rebuilt using the new fieldEditorTypeDesc\n            $scope.fieldEditorVisible = false;\n            $timeout(function() {\n                $scope.fieldEditorVisible = $scope.fieldEditorTypeDesc && $scope.term.opInfo && $scope.term.opInfo.editor;\n            });\n          }\n        }\n\n\n\n      }\n    };\n  }",
+	"function": "function (DbuiFieldType, db, $timeout) {\n    return {\n      templateUrl: 'dbui/core/helper/querybuilder_term.html',\n      restrict: 'E',\n      scope: {\n        fieldList: '<' //the augmented field list from Dbui.getAugmentedFieldList\n      },\n      require: 'ngModel',\n\n      link: function(scope, element, attrs, ngModel) {\n\n        //viewValue: {field:'name_of_field.possiblydotted', op:{op:'$someOp', ...}, value:'value from fieldeditor'}\n        //modelValue: a valid mongo query term, e.g.\n        //  {'field':{$op:'value'}}  <-- returned from DbuiTypeService\n\n        var retainHashKey = function(src, dest) {\n          //WTF: Retain $$hashKey so iteration in QueryBuilder template doesn't throw into an infinite format/parse loop!\n          if(src && src.$$hashKey)\n            dest.$$hashKey = src.$$hashKey;\n        };\n\n\n        //Turn a {'field':{'$op':'value'}} \"queryClause\" into a {fieldInfo:..., opInfo:..., value:'value'} \"flattened\" clause\n        var flattenQueryClause = function(queryClause) {\n            \n            var fieldList = scope.fieldList;\n            \n            var term = {};\n            \n            for(var fieldSelector in queryClause) {\n                //Scan past any junk:\n                if(fieldSelector.indexOf('$$') === 0) { //if the incoming query is on a $scope, it gets a $$hashkey key.\n                    continue;\n                }\n                \n                var dotPos = fieldSelector.indexOf('.');\n                var fieldBase = false;\n                if(dotPos > -1) {\n                    fieldBase = fieldSelector.substring(0, dotPos+1);\n                }\n                \n                //Scan through fieldList to find matching fieldInfo\n                for(var i=0; i < scope.fieldList.length; i++) {\n                    var fi = scope.fieldList[i];\n                    if(fi.fieldName === fieldSelector) {\n                        term.fieldInfo = fi;\n                    }\n                    else if(fieldBase && fi.refPlaceholder && fi.fieldName === fieldBase) {\n                        fi.expand();\n                        i--;\n                    }\n                }\n                \n                //In case query is the shorthand equals, \n                // convert {field:\"value\"} -> {field:{$eq:\"value\"}}\n                var opClause = queryClause[fieldSelector];\n                \n                if(!(opClause instanceof Object)) {\n                    queryClause[fieldSelector] = opClause = {$eq:opClause};\n                }\n                \n                var opArray = Object.keys(opClause);\n                \n                if(opArray.length > 1)\n                    console.log(\"WARNING: multi-condition clause being linked to a single queryTermBuilder!!!\");\n                    \n                    if(opArray.length > 0) {\n                        term.opInfo = DbuiFieldType.getOpInfo(term.fieldInfo.td, opArray[0]);\n                        term.value = queryClause[fieldSelector][opArray[0]];\n                    }\n                    \n                    break;\n            }\n            \n            return term;\n        };\n\n        //$formatter: query term -> $viewValue\n        ngModel.$formatters.push(function(queryClause) {\n          // console.log('TB: formatting this clause to viewValue:', queryClause);\n\n\n          var newViewValue = queryClause ? flattenQueryClause(queryClause) : {};\n          // console.log('TB: heres what it came up with: ', newViewValue);\n\n          retainHashKey(queryClause, newViewValue);\n\n          return newViewValue;\n\n        });\n\n        //$parser: $viewValue -> query term\n        ngModel.$parsers.push(function(viewValue) {\n          // console.log('TB: parsing this viewValue into a clause:', viewValue);\n\n          if(!viewValue || !viewValue.fieldInfo || !viewValue.opInfo)\n            return null;\n\n          var fieldName = viewValue.fieldInfo.fieldName;\n          var op = viewValue.opInfo.op;\n          var value = viewValue.value;\n\n          //Unflatten viewValue: {'field':{'$op':'the value'}}\n          var queryClause = {};\n          queryClause[fieldName] = {};\n          queryClause[fieldName][op] = value !== undefined ? value : true;\n\n\n          retainHashKey(viewValue, queryClause);\n\n          return queryClause;\n\n        });\n\n        //$watch: our scope -> $viewValue\n        // ***it's important to watch ALL of scope that affects ngModel in a single expression;\n        //  otherwise, you may get competing $setViewValue calls that stomp on one another\n        // ***also important: don't assign the scope object directly as the view value!\n        scope.$watch('term', function() {\n          //When any part of the term changes ('true' param below is deep watch)\n          //  replace the viewValue object with a new object\n          var term = scope.term;\n          var newViewValue = {fieldInfo:term.fieldInfo, opInfo:term.opInfo, value:term.value};\n          retainHashKey(term, newViewValue);\n          // console.log('TB: scope watch invoked -> setting view value: ', newViewValue);\n\n          ngModel.$setViewValue(newViewValue);\n        }, true );\n\n        //$render: $viewValue -> our scope\n        ngModel.$render = function() {\n          // console.log('TB: rendering this viewValue to scope:', ngModel.$viewValue);\n          //scope object can refer directly to the ngModel viewValue (just not the other way around!)\n\n          var term = scope.term = ngModel.$viewValue;\n          // console.log(\"rendering \", term);\n          //Make sure UI elements are synced up to this view value:\n          scope.fieldChanged(term.fieldInfo, false);\n        };\n\n      },\n\n      controller:function($scope) {\n        \n        $scope.fieldChanged = function(fieldInfo, resetValue) {\n            // console.log('fieldChanged', fieldInfo, resetValue);\n          \n          if(fieldInfo.refPlaceholder) {\n            return fieldInfo.expand();\n          }\n          \n          $scope.fieldFilter = '';\n          processFilter();\n\n          $scope.fieldSelectorOpen = false;\n\n          var term = $scope.term;\n          term.fieldInfo = fieldInfo;\n\n          //Update the OpList so that the op selector shows the appropriate ops for this field type:\n          if(fieldInfo && fieldInfo.td) {\n            var opList = $scope.opList = DbuiFieldType.getOpList(fieldInfo.td);\n            \n            //Make sure the term.opInfo is valid...\n            var foundIt = false;\n            var currOp = term.opInfo ? term.opInfo.op : null;\n            for(var i=0; i < opList.length; i++) {\n              if(opList[i].op === currOp) {\n                foundIt = true;\n                term.opInfo = opList[i];\n                break;\n              }\n            }\n            if(!foundIt) {\n              term.opInfo = opList[0];\n            }\n            $scope.opChanged(resetValue);\n          }\n\n          if(resetValue)\n            $scope.term.value = undefined;\n        };\n\n        var fundamentalTypeDesc = function(td) {\n          return td instanceof Array ? td[0] : td;\n        };\n\n        $scope.opChanged = function(resetValue) {\n        //   console.log('opChanged invoked', resetValue);\n          var term = $scope.term;\n          var opInfo = term.opInfo;\n\n          if(opInfo) {\n\n            var currType = $scope.fieldEditorTypeDesc ? $scope.fieldEditorTypeDesc.type : false;\n            \n            \n            //If the op requires a specific editor, set the scope's typeDesc so that it is used...\n            if(typeof opInfo.editor === 'boolean')\n              $scope.fieldEditorTypeDesc = fundamentalTypeDesc(term.fieldInfo.td);\n            else //editor is a typedesc object\n              $scope.fieldEditorTypeDesc = opInfo.editor;\n            \n            // if(currType !== $scope.fieldEditorTypeDesc.type) {\n                // $scope.fieldEditorVisible = false;\n            // }\n              \n\n            //Nullify term value if type changed\n            if(resetValue && ($scope.fieldEditorTypeDesc.type !== currType || !opInfo.editor)) {\n              $scope.term.value = undefined;\n            }\n            \n            //Coax angular into destroying the fieldEditor directive so it can be rebuilt using the new fieldEditorTypeDesc\n            $scope.fieldEditorVisible = false;\n            $timeout(function() {\n                $scope.fieldEditorVisible = $scope.fieldEditorTypeDesc && $scope.term.opInfo && $scope.term.opInfo.editor;\n            });\n          }\n        };\n        \n        $scope.fieldFilter = '';\n        var processFilter = function() {\n            var fieldList = $scope.fieldList;\n            var filter = $scope.fieldFilter;\n            for(var i=0; i < fieldList.length; i++) {\n                var fi = fieldList[i];\n                if(\n                    !filter ||\n                    fi.fieldName.toLowerCase().indexOf(filter) > -1 ||\n                    fi.fieldLabel.toLowerCase().indexOf(filter) > -1\n                ) {\n                    fi.hidden = false;\n                }\n                else {\n                    fi.hidden = true;\n                }\n            }\n        };\n\n        $scope.keypress = function(evt) {    \n            var k = (''+evt.key).toLowerCase();\n            $scope.fieldFilter += k;\n            processFilter();\n        };\n        $scope.keydown = function(evt) {\n            if(evt.keyCode == 8) {\n                var f = $scope.fieldFilter;\n                $scope.fieldFilter = f.substring(0, f.length-1);\n                processFilter();\n            }\n            else if(evt.keyCode === 27) {\n                //escape\n                $scope.fieldFilter = '';\n                processFilter();\n            }\n        };\n        \n        $scope.clearFilter = function() {\n            $scope.fieldFilter = '';\n            processFilter();\n        };\n\n\n      }\n    };\n  }",
 	"module": {
 		"_disp": "noonian.dbui",
 		"_id": "myP57XGhSNyDKrrcJFvO0Q"
@@ -2556,10 +2561,10 @@
 	"type": "factory"
 },
 {
-	"__ver": "sys:3",
+	"__ver": "sys:5",
 	"_class": "AngularProvider",
 	"_id": "78XYGLNnRmC6RFphsvfNbw",
-	"function": "function (TypeDescMap,BusinessObjectLabelGroup) {\n    \n    var BusinessObjectModelFactory = {};\n    \n    \n    /**\n     * Factory for building a business object model\n     * @param definition\n     * @param name \n     * @param fieldLabels\n     * @param id\n     * @param superModel\n     * @param instanceFunctions\n     * @param modelFunctions\n     */\n    BusinessObjectModelFactory.getConstructor = function(definition, name, fieldLabels, id, superModel, instanceFunctions, modelFunctions) {\n        \n        \n        /**\n         * BusinessObjectModel constructor\n         * This is what will ultimately accessed via the db.XyzBusinessObject API.\n         * @constructor\n         */\n        var BusinessObjectModel = function(initObj) {\n            if(!this || !(this instanceof BusinessObjectModel)) {\n                return new BusinessObjectModel(initObj);\n            }\n            this.initialize(initObj);\n        };\n        \n        //Separate out initialize function to allow constructing a stub that is \n        // populated asynchronously on response from web service\n        Object.defineProperty(BusinessObjectModel.prototype, 'initialize', {\n            enumerable:false,writable:false,\n            value:function(initObj) {\n                var THIS = this;\n                if(initObj) {\n                  this._id = initObj._id;\n                  this.__ver = initObj.__ver;\n                  this.__t = initObj.__t;\n                  \n                  _.forEach(this._bo_meta_data.type_desc_map, function(td, fieldName) {\n                    if(td.construct) {\n                      THIS[fieldName] = td.construct(initObj[fieldName]);\n                    }\n                    else if(initObj.hasOwnProperty(fieldName)) {\n                      THIS[fieldName] = initObj[fieldName];\n                    }\n                  });\n                }\n            }\n        });\n        \n        \n        \n        //Create the _bo_meta_data object\n        var boMetaData = {\n            type_desc_map: new TypeDescMap(definition)\n        };\n        \n        id && (boMetaData.bod_id = id);\n        name && (boMetaData.class_name = name);\n        fieldLabels && (boMetaData.field_labels = new BusinessObjectLabelGroup(boMetaData.type_desc_map, fieldLabels));\n        \n        //Merge in superclass type descriptors\n        if(superModel) {\n            _.merge(boMetaData.type_desc_map, superModel._bo_meta_data.type_desc_map);\n        }\n        \n        \n        var propertyConfig = { enumerable:false, writable:false, value:boMetaData };\n        Object.defineProperty(BusinessObjectModel, '_bo_meta_data', propertyConfig);\n        Object.defineProperty(BusinessObjectModel.prototype, '_bo_meta_data', propertyConfig);\n        \n        \n        //Assign the \"static\" member functions to the constructor\n        if(modelFunctions) {\n            _.forEach(modelFunctions, function(fn, propertyName) {\n                Object.defineProperty(BusinessObjectModel, propertyName, {\n                    enumerable:false, writable:false,\n                    value: fn\n                });\n            });\n        }\n        \n        //Assign \"instance\" member functions to the prototype\n        if(instanceFunctions) {\n            _.forEach(instanceFunctions, function(fn, propertyName) {\n                Object.defineProperty(BusinessObjectModel.prototype, propertyName, {\n                    enumerable:false, writable:false,\n                    value: fn\n                });\n            });\n        }\n        \n        \n        //Wire up _disp getter\n        if(definition._disp) {\n            try {\n                BusinessObjectModel.prototype._disp_template = _.template(definition._disp);\n            }\n            catch(err) {\n                console.error('ERROR COMPILING _disp TEMPLATE for '+name, definition._disp, err);\n            }\n        }\n        \n        Object.defineProperty(BusinessObjectModel.prototype, '_disp', {\n            get: function() {\n                var td = this._bo_meta_data.type_desc_map || {};\n                \n                if(this._disp_template) {\n                    try {\n                        return this._disp_template(this);\n                    }\n                    catch(err) {}\n                }\n                else if(td.name) {\n                    if(this.name) return ''+this.name;\n                }\n                else if(td.key) {\n                    if(this.key) return ''+this.key;\n                }\n                else if(td.title) {\n                    if(this.title) return ''+this.title;\n                }\n                \n                return this._bo_meta_data.class_name+'['+this._id+']';\n            }\n        });\n        \n        \n        //Process composite field types as special subtypes.  To set a composite field value, you must instantiate a special \"sub-model\"\n        _.forEach(boMetaData.type_desc_map, function(td, fieldName) {\n            if(td.type === 'composite' || (td instanceof Array && td[0].type === 'composite') ) {\n                \n                var myTd = td instanceof Array ? td[0] : td;\n                \n                //Define \"sub-model\" constructor to allow for creation of objects that can be assigned to this field\n                BusinessObjectModel[fieldName] = BusinessObjectModelFactory.getConstructor(\n                        myTd.type_desc_map,\n                        name+'#'+fieldName, \n                        fieldLabels ? fieldLabels['#'+fieldName] : null\n                );\n                \n                //TODO: deprecate these construct() functions somehow... \n                //Make constructor accessible via the type descriptor\n                Object.defineProperty(myTd, 'construct', {\n                    enumerable:false, writable:false, value:BusinessObjectModel[fieldName]\n                });\n                \n    \n                if(td instanceof Array) {\n                    Object.defineProperty(td, 'construct', {\n                        enumerable:false, writable:false,\n                        value:function(initArr) {\n                            var thisTd = this[0];\n                            var ret = [];\n                            _.forEach(initArr, function(initObj) {\n                                ret.push(thisTd.construct(initObj));\n                            });\n                            \n                            return ret;\n                        }\n                    });\n                }\n            }\n        });//end type_desc_map iteration\n        \n        Object.freeze(BusinessObjectModel);\n        \n        \n        return BusinessObjectModel;\n    }; //end getConstructor definition\n    \n    \n      \n      \n    return BusinessObjectModelFactory;\n}",
+	"function": "function (TypeDescMap,BusinessObjectLabelGroup) {\n    \n    var BusinessObjectModelFactory = {};\n    \n    \n    /**\n     * Factory for building a business object model\n     * @param definition\n     * @param name \n     * @param fieldLabels\n     * @param id\n     * @param superModel\n     * @param instanceFunctions\n     * @param modelFunctions\n     */\n    BusinessObjectModelFactory.getConstructor = function(definition, name, fieldLabels, id, superModel, instanceFunctions, modelFunctions) {\n        \n        \n        /**\n         * BusinessObjectModel constructor\n         * This is what will ultimately accessed via the db.XyzBusinessObject API.\n         * @constructor\n         */\n        var BusinessObjectModel = function(initObj) {\n            if(!this || !(this instanceof BusinessObjectModel)) {\n                return new BusinessObjectModel(initObj);\n            }\n            this.initialize(initObj);\n        };\n        \n        //Separate out initialize function to allow constructing a stub that is \n        // populated asynchronously on response from web service\n        Object.defineProperty(BusinessObjectModel.prototype, 'initialize', {\n            enumerable:false,writable:false,\n            value:function(initObj) {\n                var THIS = this;\n                if(initObj) {\n                  this._id = initObj._id;\n                  this.__ver = initObj.__ver;\n                  this.__t = initObj.__t;\n                  \n                  _.forEach(this._bo_meta_data.type_desc_map, function(td, fieldName) {\n                    if(td.construct) {\n                      THIS[fieldName] = td.construct(initObj[fieldName]);\n                    }\n                    else if(initObj.hasOwnProperty(fieldName)) {\n                      THIS[fieldName] = initObj[fieldName];\n                    }\n                  });\n                }\n            }\n        });\n        \n        \n        \n        //Create the _bo_meta_data object\n        var boMetaData = {\n            type_desc_map: new TypeDescMap(definition)\n        };\n        \n        id && (boMetaData.bod_id = id);\n        name && (boMetaData.class_name = name);\n        fieldLabels && (boMetaData.field_labels = new BusinessObjectLabelGroup(boMetaData.type_desc_map, fieldLabels));\n        \n        //Merge in superclass type descriptors\n        if(superModel) {\n            _.merge(boMetaData.type_desc_map, superModel._bo_meta_data.type_desc_map);\n        }\n        \n        \n        var propertyConfig = { enumerable:false, writable:false, value:boMetaData };\n        Object.defineProperty(BusinessObjectModel, '_bo_meta_data', propertyConfig);\n        Object.defineProperty(BusinessObjectModel.prototype, '_bo_meta_data', propertyConfig);\n        \n        \n        //Assign the \"static\" member functions to the constructor\n        if(modelFunctions) {\n            _.forEach(modelFunctions, function(fn, propertyName) {\n                Object.defineProperty(BusinessObjectModel, propertyName, {\n                    enumerable:false, writable:false,\n                    value: fn\n                });\n            });\n        }\n        \n        //Assign \"instance\" member functions to the prototype\n        if(instanceFunctions) {\n            _.forEach(instanceFunctions, function(fn, propertyName) {\n                Object.defineProperty(BusinessObjectModel.prototype, propertyName, {\n                    enumerable:false, writable:false,\n                    value: fn\n                });\n            });\n        }\n        \n        \n        //Wire up _disp getter\n        if(definition._disp) {\n            try {\n                var templateString, options;\n                if(typeof definition._disp === 'string') {\n                  templateString = definition._disp;\n                }\n                else {\n                  templateString = definition._disp.template;\n                  options = definition._disp.options || {variable:'bo'};\n                }\n        \n                BusinessObjectModel.prototype._disp_template = _.template(templateString, options);\n            }\n            catch(err) {\n                console.error('ERROR COMPILING _disp TEMPLATE for '+name, definition._disp, err);\n            }\n        }\n        \n        Object.defineProperty(BusinessObjectModel.prototype, '_disp', {\n            get: function() {\n                var td = this._bo_meta_data.type_desc_map || {};\n                \n                if(this._disp_template) {\n                    try {\n                        return this._disp_template(this);\n                    }\n                    catch(err) {}\n                }\n                else if(td.name) {\n                    if(this.name) return ''+this.name;\n                }\n                else if(td.key) {\n                    if(this.key) return ''+this.key;\n                }\n                else if(td.title) {\n                    if(this.title) return ''+this.title;\n                }\n                \n                return this._bo_meta_data.class_name+'['+this._id+']';\n            }\n        });\n        \n        \n        //Process composite field types as special subtypes.  To set a composite field value, you must instantiate a special \"sub-model\"\n        _.forEach(boMetaData.type_desc_map, function(td, fieldName) {\n            if(td.type === 'composite' || (td instanceof Array && td[0].type === 'composite') ) {\n                \n                var myTd = td instanceof Array ? td[0] : td;\n                \n                //Define \"sub-model\" constructor to allow for creation of objects that can be assigned to this field\n                BusinessObjectModel[fieldName] = BusinessObjectModelFactory.getConstructor(\n                        myTd.type_desc_map,\n                        name+'#'+fieldName, \n                        fieldLabels ? fieldLabels['#'+fieldName] : null\n                );\n                \n                //TODO: deprecate these construct() functions somehow... \n                //Make constructor accessible via the type descriptor\n                Object.defineProperty(myTd, 'construct', {\n                    enumerable:false, writable:false, value:BusinessObjectModel[fieldName]\n                });\n                \n    \n                if(td instanceof Array) {\n                    Object.defineProperty(td, 'construct', {\n                        enumerable:false, writable:false,\n                        value:function(initArr) {\n                            var thisTd = this[0];\n                            var ret = [];\n                            _.forEach(initArr, function(initObj) {\n                                ret.push(thisTd.construct(initObj));\n                            });\n                            \n                            return ret;\n                        }\n                    });\n                }\n            }\n        });//end type_desc_map iteration\n        \n        Object.freeze(BusinessObjectModel);\n        \n        \n        return BusinessObjectModel;\n    }; //end getConstructor definition\n    \n    \n      \n      \n    return BusinessObjectModelFactory;\n}",
 	"module": {
 		"_disp": "noonian.api",
 		"_id": "NJnfAVnFSmuMcv9voRnaJQ"
@@ -3583,10 +3588,10 @@
 },
 {
 	"__t": "AngularTemplate",
-	"__ver": "sys:8",
+	"__ver": "sys:17",
 	"_class": "AngularTemplate",
 	"_id": "iMYbBIZHRvqnpf6mAmeBBw",
-	"content": "<form class=\"form-inline\">\n  <div class=\"form-group query-editor-term\">\n    <!-- <select class=\"form-control\" ng-change=\"fieldChanged(true)\" ng-model=\"term.fieldInfo\" ng-options=\"fi as fi.fieldLabel for fi in fieldList\"></select> -->\n    <div class=\"form-control\" uib-dropdown auto-close=\"disabled\" is-open=\"fieldSelectorOpen\">\n      <a href uib-dropdown-toggle >\n        {{term.fieldInfo.fieldLabel}} &nbsp;&nbsp;<span class=\"fa fa-lg fa-caret-down\"></span>&nbsp;&nbsp;\n      </a>\n      <ul uib-dropdown-menu class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"single-button\">\n        <li ng-repeat=\"fi in fieldList\" role=\"menuitem\">\n          <a href ng-click=\"fieldChanged(fi, true)\">{{fi.fieldLabel}}</a>\n        </li>\n      </ul>\n    </div>\n\n    <select class=\"form-control\" ng-model=\"term.opInfo\" ng-change=\"opChanged(true)\" ng-options=\"opObj as opObj.label for opObj in opList track by opObj.op\"></select>\n    <span ng-if=\"fieldEditorVisible\">\n      <dbui-field-editor ng-model=\"term.value\" type-desc=\"fieldEditorTypeDesc\"></dbui-field-editor>\n    </span>\n  </div>\n</form>\n",
+	"content": "<form class=\"form-inline\">\n  <div class=\"form-group query-editor-term\">\n    <!-- <select class=\"form-control\" ng-change=\"fieldChanged(true)\" ng-model=\"term.fieldInfo\" ng-options=\"fi as fi.fieldLabel for fi in fieldList\"></select> -->\n    <div class=\"form-control\" uib-dropdown auto-close=\"disabled\" is-open=\"fieldSelectorOpen\" ng-keypress=\"keypress($event)\" ng-keydown=\"keydown($event)\">\n      <a href uib-dropdown-toggle >\n        {{term.fieldInfo.fieldLabel}} &nbsp;&nbsp;<span class=\"fa fa-lg fa-caret-down\"></span>&nbsp;&nbsp;\n      </a>\n      <ul uib-dropdown-menu class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"single-button\" >\n        <li ng-repeat=\"fi in fieldList\" role=\"menuitem\" ng-hide=\"fi.hidden\">\n          <a href ng-click=\"fieldChanged(fi, true)\">{{fi.fieldLabel}}</a>\n        </li>\n        <li>\n            <a href ng-show=\"fieldFilter\" ng-click=\"clearFilter()\"><i>clear filter \"{{fieldFilter}}\"</i></a>\n        </li>\n      </ul>\n    </div>\n\n    <select class=\"form-control\" ng-model=\"term.opInfo\" ng-change=\"opChanged(true)\" ng-options=\"opObj as opObj.label for opObj in opList track by opObj.op\"></select>\n    <span ng-if=\"fieldEditorVisible\">\n      <dbui-field-editor ng-model=\"term.value\" type-desc=\"fieldEditorTypeDesc\"></dbui-field-editor>\n    </span>\n  </div>\n</form>\n",
 	"doc": "Input for a single query term: a dropdown of field names, a dropdown for operations, and, if applicable, a dbui-field-editor appropriate to the operation.",
 	"module": {
 		"_disp": "noonian.dbui",
@@ -5304,7 +5309,7 @@
 	}
 },
 {
-	"__ver": "sys:28",
+	"__ver": "sys:34",
 	"_class": "Config",
 	"_id": "I_f0Ld-gSp2MtcPoVF9YaQ",
 	"key": "sys.user.preferences",
@@ -5800,13 +5805,15 @@
 	}
 },
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_class": "Config",
 	"_id": "Wno7cIleSF6nmkMi4vu_jA",
 	"allow_customize": false,
 	"key": "sys.enablePackaging",
+	"rolespec": [
+	],
 	"system": false,
-	"value": true
+	"value": false
 },
 {
 	"__ver": "sys:6",
@@ -6206,16 +6213,6 @@
 			]
 		}
 	}
-},
-{
-	"__ver": "sys:1",
-	"_class": "Config",
-	"_id": "ZcYFrLsyQpSLpykRLi-nEA",
-	"allow_customize": false,
-	"key": "dummy",
-	"rolespec": [
-	],
-	"system": false
 },
 {
 	"__ver": "sys:1",
@@ -7339,7 +7336,7 @@
 	}
 },
 {
-	"__ver": "sys:13",
+	"__ver": "sys:14",
 	"_class": "Config",
 	"_id": "w2U0lB56Sq2Mb-6r3WDBsw",
 	"allow_customize": false,
@@ -7361,6 +7358,7 @@
 				"MemberFunction",
 				"QueryOp",
 				"WebService",
+				"WebSocketServer",
 				"TwoFactorAuthImplementation"
 			],
 			"title": "Serverside/DB Dev"
@@ -7419,7 +7417,8 @@
 				"UpdateLog",
 				"PackageConflict",
 				"RemotePackageRepository",
-				"DocTemplate"
+				"DocTemplate",
+				"JsDocConfig"
 			],
 			"title": "Packaging"
 		}
@@ -7613,6 +7612,17 @@
 },
 {
 	"__t": "CssResource",
+	"__ver": "sys:2",
+	"_class": "CssResource",
+	"_id": "YaSNWS_JT06boJn36ExwJg",
+	"doc": "SHADOW",
+	"name": "ng-tags-input.min.css",
+	"path": "bower_components/ng-tags-input",
+	"rolespec": [
+	]
+},
+{
+	"__t": "CssResource",
 	"__ver": "sys:25",
 	"_class": "CssResource",
 	"_id": "mF2-m7xwSv-GOiV7I-YPNg",
@@ -7796,6 +7806,17 @@
 		"home",
 		"work",
 		"other"
+	]
+},
+{
+	"__ver": "sys:1",
+	"_class": "Enumeration",
+	"_id": "VRW9rDSYRbunKfI3x6Ri1g",
+	"name": "TestEnum",
+	"values": [
+		"blabber1",
+		"kibbers",
+		"floopy"
 	]
 },
 {
@@ -8047,13 +8068,14 @@
 	"text_index": false
 },
 {
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_class": "FieldType",
 	"_id": "jOZVJVLOTmGK6Ppf7JNnCw",
 	"doc": "Represents a duration of time",
 	"mongo_type": "Mixed",
 	"name": "duration",
-	"text_index": false
+	"text_index": false,
+	"to_db": "function (value) {\n    if(value && (value.number == null)) {\n        return null;\n    }\n    return value;\n}"
 },
 {
 	"__pkg": "sys",
@@ -8116,6 +8138,15 @@
 	"doc": "An arbitrary file attachment.  The actual content of the file is stored in mongoDB's special collections \"fs.files\" and \"fs.chunks\", with the value of an \"attachment\" type field being a reference to the object in fs.files.",
 	"mongo_type": "Mixed",
 	"name": "attachment",
+	"text_index": false
+},
+{
+	"__ver": "sys:1",
+	"_class": "FieldType",
+	"_id": "xrm-w_5nTjGHmswgsnf3qQ",
+	"doc": "An array of strings",
+	"mongo_type": "Mixed",
+	"name": "taglist",
 	"text_index": false
 },
 {
@@ -8252,10 +8283,30 @@
 	"template": "<div>\n    <span ng-show=\"displayValue\" title=\"{{displayValue}}\">\n\t<pre>{{ abbreviated && displayValue.length > 30 ? displayValue.substring(0, 30)+'...' : displayValue}}</pre>\n\t</span>\n</div>"
 },
 {
-	"__ver": "sys:2",
+	"__ver": "sys:1",
+	"_class": "FieldTypeUiSpec",
+	"_id": "6l8d66e6RaeO2zNwVE9YAQ",
+	"controller_fn": null,
+	"doc": "Simple comma-separated list display of values.  Labels are internationalized using the \"db.enum.<EnumName>\" LabelGroup, if present.",
+	"fieldtypes": [
+		{
+			"_disp": "taglist",
+			"_id": "xrm-w_5nTjGHmswgsnf3qQ",
+			"name": "taglist"
+		}
+	],
+	"for_editing": false,
+	"for_editing_array": false,
+	"for_viewing": true,
+	"for_viewing_array": false,
+	"key": "dbui.core.taglist.view",
+	"template": "<div class=\"dbui-view-container\">\n  <span ng-repeat=\"item in displayValue\">\n    <strong>{{item}}</strong><span ng-if=\"!$last\">, </span>\n  </span>\n</div>"
+},
+{
+	"__ver": "sys:3",
 	"_class": "FieldTypeUiSpec",
 	"_id": "7SaoAuyKRd6WbIu1ANryEw",
-	"controller_fn": "function ($scope, $stateParams, Dbui) {\n    console.log('dbui.core.Array.composite.view', $scope);\n    //Little editable datatable\n    \n    var fc = $scope.fieldCustomizations || {};\n    var td = $scope.typeDesc[0];\n    \n    var stub = td.construct({});\n    \n    $scope.objMetaData = stub._bo_meta_data;\n    \n    \n    //Action object to remove an item from the array:\n    var removeAction = {\n      icon:'fa-remove',\n      fn:function(args) {\n        if(args) {\n          $scope.binding.value.splice(args.index, 1);\n        }\n        return true;\n      }\n    };\n    \n    //Config object for \n    $scope.tableConfig = fc.table_config || {\n      cellEdit:false,    //allow 'global' edit (all fields editable) TODO configure from fieldCustomizations\n      recordActions:[]\n    };\n    \n    //Use 'list' perspective for editing an array of composites:\n    if(fc.list_perspective) {\n        var p = angular.copy(fc.list_perspective);\n        $scope.subPerspective = p;\n    }\n    else {\n        Dbui.getPerspective($stateParams.perspective, stub._bo_meta_data.class_name, 'list').then(function(subPerspective) {\n            $scope.subPerspective = subPerspective;\n        });\n    }\n    \n    \n    //Ensure empty array binding when binding.value is null:\n    var unwatchFn = $scope.$watch('displayValue', function(newBinding) {\n        if(!newBinding) {\n            $scope.displayValue = [];\n        }\n        unwatchFn();\n    });\n    \n\n}",
+	"controller_fn": "function ($scope, $stateParams, Dbui) {\n    //console.log('dbui.core.Array.composite.view', $scope);\n    //Little editable datatable\n    \n    var fc = $scope.fieldCustomizations || {};\n    var td = $scope.typeDesc[0];\n    \n    var stub = td.construct({});\n    \n    $scope.objMetaData = stub._bo_meta_data;\n    \n    \n    //Action object to remove an item from the array:\n    var removeAction = {\n      icon:'fa-remove',\n      fn:function(args) {\n        if(args) {\n          $scope.binding.value.splice(args.index, 1);\n        }\n        return true;\n      }\n    };\n    \n    //Config object for \n    $scope.tableConfig = fc.table_config || {\n      cellEdit:false,    //allow 'global' edit (all fields editable) TODO configure from fieldCustomizations\n      recordActions:[]\n    };\n    \n    //Use 'list' perspective for editing an array of composites:\n    if(fc.list_perspective) {\n        var p = angular.copy(fc.list_perspective);\n        $scope.subPerspective = p;\n    }\n    else {\n        Dbui.getPerspective($stateParams.perspective, stub._bo_meta_data.class_name, 'list').then(function(subPerspective) {\n            $scope.subPerspective = subPerspective;\n        });\n    }\n    \n    \n    //Ensure empty array binding when binding.value is null:\n    var unwatchFn = $scope.$watch('displayValue', function(newBinding) {\n        if(!newBinding) {\n            $scope.displayValue = [];\n        }\n        unwatchFn();\n    });\n    \n\n}",
 	"fieldtypes": [
 		{
 			"_disp": "composite",
@@ -8730,6 +8781,26 @@
 	"for_viewing_array": false,
 	"key": "dbui.core.enum.view",
 	"template": "<div>\n  <span>{{labelFor[displayValue]}}</span>\n</div>"
+},
+{
+	"__ver": "sys:19",
+	"_class": "FieldTypeUiSpec",
+	"_id": "axRxZrD6QYKj-kLfH0ec5w",
+	"controller_fn": "function ($scope, NoonWebService) {\n    var td = $scope.typeDesc;\n    var fc = $scope.fieldCustomizations || {};\n    var contextObject = $scope.contextObject;\n    // console.log($scope);\n    \n    $scope.placeholderText = fc.placeholder || 'Add a tag';\n    \n    $scope.getAutocomplete = function(val) {\n        \n        var query = {\n            class_name:contextObject._bo_meta_data.class_name,\n            type_desc:td, \n            search_term:val, \n            field_customizations:fc,\n            exclude:$scope.binding.value,\n            field_name:$scope.elemId\n        };\n        \n        return NoonWebService.call('dbui/getTaglistTypeahead', query);\n    };\n\n}",
+	"doc": "",
+	"fieldtypes": [
+		{
+			"_disp": "taglist",
+			"_id": "xrm-w_5nTjGHmswgsnf3qQ",
+			"name": "taglist"
+		}
+	],
+	"for_editing": true,
+	"for_editing_array": false,
+	"for_viewing": false,
+	"for_viewing_array": false,
+	"key": "dbui.core.taglist.edit",
+	"template": "<div class=\"dbui-edit-field-taglist\">\n\t<tags-input ng-model=\"binding.value\" use-strings=\"true\" placeholder=\"{{placeholderText}}\">\n        <auto-complete source=\"getAutocomplete($query)\"></auto-complete>\n    </tags-input>\n</div>"
 },
 {
 	"__ver": "sys:4",
@@ -9261,6 +9332,18 @@
 },
 {
 	"__t": "JsResource",
+	"__ver": "sys:1",
+	"_class": "JsResource",
+	"_id": "hQHlhZirSpKSYcHK_cUrzA",
+	"content": null,
+	"doc": "\"Shadow\" record for file on filesystem.",
+	"name": "ng-tags-input.min.js",
+	"path": "bower_components/ng-tags-input",
+	"rolespec": [
+	]
+},
+{
+	"__t": "JsResource",
 	"__ver": "sys:4",
 	"_class": "JsResource",
 	"_id": "mmYBlEfVRi2WM5nGcfm0VA",
@@ -9654,6 +9737,23 @@
 		"doc": "Documentation",
 		"function": "Function",
 		"key": "Key"
+	}
+},
+{
+	"__ver": "sys:1",
+	"_class": "LabelGroup",
+	"_id": "OeYPLQ5hTqGaYOczH6rmqQ",
+	"key": "db.enum.TestEnum",
+	"language": {
+		"_disp": "English",
+		"_id": "-9vPfv2lEeSFtiimx_V4dw",
+		"code": "en"
+	},
+	"system": false,
+	"value": {
+		"blabber1": "Blabber 1",
+		"floopy": "Floopy",
+		"kibbers": "Kibbers"
 	}
 },
 {
@@ -13022,14 +13122,14 @@
 },
 {
 	"__pkg": "sys",
-	"__ver": "sys:10",
+	"__ver": "sys:11",
 	"_class": "QueryOp",
 	"_id": "UJ2ZLOfVTYa8BGzohg9QKg",
 	"evaluate": "function (expressionValue, testValue) {\n    return testValue == null || testValue == '' || (testValue instanceof Array && !testValue.length);\n}",
 	"for_array": false,
 	"name": "$empty",
 	"stringify": "function () {\n    return \"is empty\";\n}",
-	"toMongo": "function (fieldName) {\n    var ret = {$or:[]};\n    \n    var innerClause = {};\n    innerClause[fieldName] = {$exists:false};\n    ret.$or.push(innerClause);\n    \n    innerClause = {};\n    innerClause[fieldName] = null;\n    ret.$or.push(innerClause);\n    \n    innerClause = {};\n    innerClause[fieldName] = '';\n    ret.$or.push(innerClause);\n    \n    innerClause = {};\n    innerClause[fieldName] = {$size:0};\n    ret.$or.push(innerClause);\n    \n    return ret;\n}",
+	"toMongo": "function (fieldName) {\n    var ret = {$or:[]};\n    \n    var innerClause = {};\n    innerClause[fieldName] = {$exists:false};\n    ret.$or.push(innerClause);\n    \n    innerClause = {};\n    innerClause[fieldName] = null;\n    ret.$or.push(innerClause);\n    \n    innerClause = {};\n    innerClause[fieldName] = '';\n    ret.$or.push(innerClause);\n    \n    // innerClause = {};\n    // innerClause[fieldName] = {$size:0};\n    // ret.$or.push(innerClause);\n    \n    return ret;\n}",
 	"types": [
 	]
 },
@@ -13140,14 +13240,14 @@
 },
 {
 	"__pkg": "sys",
-	"__ver": "sys:10",
+	"__ver": "sys:11",
 	"_class": "QueryOp",
 	"_id": "fsAeeW_cSkKcRq_Z1f3BFg",
 	"evaluate": "function (expressionValue, testValue) {\n    return testValue != null && testValue != '' && !(testValue instanceof Array && testValue.length === 0);\n}",
 	"for_array": false,
 	"name": "$notempty",
 	"stringify": "function () {\n    return \"is not empty\";\n}",
-	"toMongo": "function (fieldName) {\n    \n    var ret = { $nor:[{},{},{},{}]};\n    \n    ret.$nor[0][fieldName] = {$exists:false};\n    ret.$nor[1][fieldName] = '';\n    ret.$nor[2][fieldName] = null;\n    ret.$nor[3][fieldName] = {$size:0};\n    \n    return ret;\n}",
+	"toMongo": "function (fieldName) {\n    \n    var ret = { $nor:[{},{},{}]};\n    \n    ret.$nor[0][fieldName] = {$exists:false};\n    ret.$nor[1][fieldName] = '';\n    ret.$nor[2][fieldName] = null;\n    // ret.$nor[3][fieldName] = {$size:0};\n    \n    return ret;\n}",
 	"types": [
 	]
 },
@@ -13869,6 +13969,17 @@
 	"key": "dbui.export_csv"
 },
 {
+	"__ver": "sys:1",
+	"_class": "User",
+	"_id": "UO_aGVVDTcStJ37Fj3lDMg",
+	"name": "test",
+	"password": {
+		"hash": "$2a$10$VWRHFRPnf6/elrZRqi30NO.BiusFu6P27.m1SEzBlJwifMOOFkd0e"
+	},
+	"roles": [
+	]
+},
+{
 	"__pkg": "sys",
 	"__ver": "sys:3",
 	"_class": "User",
@@ -14139,6 +14250,16 @@
 	"_id": "rVM06exeQXWZPYBFnq6n0g",
 	"function": "function (db, auth, req, Q, _) {\n    \n    \n    return auth.getCurrentUser(req).then(function(currUser) {\n        var ENGLISH_ID='-9vPfv2lEeSFtiimx_V4dw';\n        var language = (currUser.language && currUser.language._id) || ENGLISH_ID;\n        \n        return Q.all([\n            db.BusinessObjectDef.find({}).lean().exec(),\n            db.MemberFunction.find({applies_to:{$in:['client', 'both']}}).lean().exec(),\n            db.LabelGroup.find({key:/^sys\\.dbui\\.bo\\..+/, language:language}).lean().exec()\n        ]);\n    })\n    .then(function(resultArr) {\n        var allBods = resultArr[0];\n        var memberFns = resultArr[1];\n        var labelGroups = resultArr[2];\n        \n        var bodMap = _.indexBy(allBods, '_id');\n        _.forEach(memberFns, function(memFn) {\n            if(memFn.business_object && memFn.business_object._id) {\n                var bod = bodMap[memFn.business_object._id];\n                bod._member_functions = bod._member_functions || [];\n                bod._member_functions.push(memFn);\n                delete memFn.business_object;\n                delete memFn.applies_to;\n            }\n        });\n        bodMap = _.indexBy(allBods, 'class_name');\n        _.forEach(labelGroups, function(lg) {\n            var className = lg.key.split('.').pop();\n            if(bodMap[className]) {\n                bodMap[className]._field_labels =  lg.value;\n            }\n        });\n        \n        return {result:allBods};\n    });\n}",
 	"path": "/dbui/getSysMetadata",
+	"rolespec": [
+	]
+},
+{
+	"__disp": "/dbui/getTaglistTypeahead",
+	"__ver": "sys:7",
+	"_class": "WebService",
+	"_id": "v42RTwwjQLOZ4uyOY80ZwQ",
+	"function": "function (db, queryParams, _, Q) {\n    var td = queryParams.type_desc;\n    var searchTerm = queryParams.search_term;\n    var className = queryParams.class_name;\n    var fieldName = queryParams.field_name;\n    var exclude = queryParams.exclude;\n    \n    \n    if(!td || !searchTerm || !className || !db[className]) {\n        throw new Error('missing required parameters');\n    }\n    try {\n        td = JSON.parse(td);\n        // console.log('td: %j', td);\n    }\n    catch(err) {\n        console.error(err);\n    }\n    \n    if(!(exclude instanceof Array)) {\n        exclude = exclude ? [exclude] : [];\n    }\n    var excludeMap = _.indexBy(exclude);\n    \n    var queryObj = {};\n    queryObj[fieldName] = {$regex:searchTerm, $options:'i'};\n    \n    var queryProjection = {};\n    queryProjection[fieldName] = 1;\n    \n    var promises = [\n        db[className].find(queryObj, queryProjection).lean().exec()\n    ];\n    \n    if(td.enum) {\n        promises.push(db.Enumeration.findOne({name:td.enum}).lean().exec());\n    }\n    \n    return Q.all(promises).then(function(resultArr) {\n        var peerRecords = resultArr[0];\n        var enumValues = resultArr[1];\n        \n        var regex = new RegExp(searchTerm);\n        \n        var ret = [];\n        const appendValue = function(v) {\n            if(!excludeMap[v] && regex.test(v)) {\n                ret.push(v);\n            }\n        };\n        if(enumValues && enumValues.values) {\n            _.forEach(enumValues.values, appendValue);\n        }\n        \n        _.forEach(peerRecords, function(pr) {\n            _.forEach(pr[fieldName], appendValue);\n        });\n        \n        return ret;\n    });\n    \n}",
+	"path": "/dbui/getTaglistTypeahead",
 	"rolespec": [
 	]
 },
