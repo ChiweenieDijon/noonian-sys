@@ -1,20 +1,31 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_id": "qqVlSIILTbiGNUzOtHQqcg",
+	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.User",
+	"rolespec": [
+	],
 	"system": true,
 	"value": {
 		"edit": {
 			"layout": [
-				"name",
-				"roles",
+				[
+					"name",
+					"disabled"
+				],
+				[
+					"roles",
+					"reset_required"
+				],
 				"password"
 			]
 		},
 		"list": {
 			"fields": [
 				"name",
-				"roles"
+				"roles",
+				"disabled",
+				"reset_required"
 			],
 			"sort": {
 				"name": "asc"
@@ -31,9 +42,15 @@
 		},
 		"view": {
 			"layout": [
-				"name",
-				"roles",
-				"password"
+				[
+					"name",
+					"disabled"
+				],
+				[
+					"roles",
+					"reset_required"
+				],
+				"last_login"
 			]
 		}
 	}

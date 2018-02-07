@@ -1,6 +1,7 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:4",
 	"_id": "fiWfHKZ8QS6-SezUmvfSmQ",
+	"doc": "Get an internationalized LabelGroup\n@param key key of label group\n@param language_code optional language code.  if not present, language of current user is used",
 	"path": "/sys/i18n/getLabelGroup",
 	"rolespec": [
 	]

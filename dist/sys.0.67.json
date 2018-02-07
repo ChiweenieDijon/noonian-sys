@@ -50,7 +50,7 @@
 			"UDVo5w53QzeLoqZ6kjTatQ": "sys:1",
 			"UEzEc9S3SnidfoZ6EefZqQ": "sys:5",
 			"V5AIrjQIRVSPYBI5V2zs4w": "sys:26",
-			"VMylLXsAQSOLI94A-RQgTA": "sys:17",
+			"VMylLXsAQSOLI94A-RQgTA": "sys:18",
 			"VwZdmM7bSeOfdacXJQNeUA": "sys:1",
 			"YKldolloSTitGHf7Wz64PQ": "sys:2",
 			"_28vJLv9Tt6HzXexuNITlA": "sys:12",
@@ -109,7 +109,7 @@
 			"9nPBq3cpRbm5MyhyxSnZjA": "sys:2",
 			"A_eCG8jqToSYTvnyiSYqRA": "sys:5",
 			"CW0euwoXRG-cUFD9-9xwSg": "sys:4",
-			"DJO4J7xRTvydSH_aBCtAFw": "sys:5",
+			"DJO4J7xRTvydSH_aBCtAFw": "sys:7",
 			"Dyf49QfST2CwXH1TYOSgHQ": "sys:3",
 			"G6NlMXjRQEeiqdsC6PP-Dw": "sys:14",
 			"IG7UUXYwTv6Ffj4o489duA": "sys:5",
@@ -126,7 +126,7 @@
 			"_K5c8nuqSHOof2sQkwfYBQ": "sys:2",
 			"_kXc9xmXRK25KE0qkjrXVg": "sys:6",
 			"ddY7PaHnQsGCChSZfL12wg": "sys:4",
-			"eTt1sebpTOOicLafo-B1PQ": "sys:4",
+			"eTt1sebpTOOicLafo-B1PQ": "sys:6",
 			"fz7jb19XR5K4aclPQdkjIw": "sys:1",
 			"gzp1tQoUTfek9ib8xQZp7Q": "sys:2",
 			"hEP551o6TQKAtYuN6l2ALw": "sys:4",
@@ -190,7 +190,7 @@
 			"Hj3COO0iQyufTftJqfUt_Q": "sys:4",
 			"HjJ3QzvGSda4mliXCksO_A": "sys:1",
 			"I5AizP_DTgqHdp3MFvdsrw": "sys:3",
-			"I_f0Ld-gSp2MtcPoVF9YaQ": "sys:34",
+			"I_f0Ld-gSp2MtcPoVF9YaQ": "sys:36",
 			"J9SNvBpBQAGYMkbPYRYPrA": "sys:1",
 			"Kohb_6sxTGC1eGdeRsCtMw": "sys:12",
 			"KpTzs_FUS9ylachpjVI_XA": "sys:3",
@@ -238,9 +238,9 @@
 			"o7ujH63ISeu4gR7Bjrrrgw": "sys:1",
 			"oot_vdKQTJqqhk2oqw97-g": "sys:1",
 			"qIDNRLywS_O0_Qhakttgkw": "sys:2",
-			"qqVlSIILTbiGNUzOtHQqcg": "sys:2",
+			"qqVlSIILTbiGNUzOtHQqcg": "sys:4",
 			"r9W5VcpNRcuPQDVqYcGCGg": "sys:1",
-			"sQDsv1FXThuAxLRiAKJQIA": "sys:8",
+			"sQDsv1FXThuAxLRiAKJQIA": "sys:10",
 			"s_sYihekR-CwwhMvagVpRQ": "sys:6",
 			"spHxGeTiRsGzocGsaIIEMg": "sys:2",
 			"tH1X3z4nTC-IQfUhSUd8_w": "sys:2",
@@ -406,7 +406,7 @@
 			"CoWMlx_mQjCR23MRd_OMNA": "sys:3",
 			"E-a8Xpq1Tja5pjgokvJu1A": "sys:1",
 			"EWIt-os4Q4Cez3WAYSicBg": "deleted",
-			"LKubEUuoQtOlBpvsmH6opg": "sys:1",
+			"LKubEUuoQtOlBpvsmH6opg": "sys:3",
 			"NhgQZhe2SlSXrY8IJlW0-g": "sys:2",
 			"OeYPLQ5hTqGaYOczH6rmqQ": "sys:1",
 			"Q8e8BUTARj6S6PCQs827wg": "sys:7",
@@ -418,7 +418,7 @@
 			"V_SaiCYWR5yl9o006_soMA": "sys:1",
 			"Y-CAFkrLQDaUXl3yZAUpyw": "sys:2",
 			"_DrkA3czQUup-f2KiH-fCw": "sys:2",
-			"_QrXcqXVTjqddtOxKYlG9g": "sys:1",
+			"_QrXcqXVTjqddtOxKYlG9g": "sys:2",
 			"_Tbit9I7QJ-Qv4c6PI25Sg": "sys:5",
 			"_qEUjNuUQEiXNCKHLEQIeg": "sys:2",
 			"a5b6nZpERjiEGIJyV0DugA": "sys:3",
@@ -735,6 +735,7 @@
 			"Enqql7tlRMCPLm2kCsIDvg": "sys:34",
 			"GXO11xYsQLKmo_4Ohy-eaQ": "sys:10",
 			"IeZLWhf8TEygSbIiXxU37A": "sys:6",
+			"Kgh686IiRCCrZdXIScjVNg": "sys:12",
 			"OsHGskAGTUWcWsUUMDkVLA": "sys:3",
 			"SUUJLgaBQSmM-hi3AyGP0A": "sys:14",
 			"SyEf04PFRfKB6f-MOH3QBg": "sys:2",
@@ -745,7 +746,7 @@
 			"bl7smamMSomv6EqTsuHCCg": "sys:11",
 			"cCrZOnWwSeO0dxcvJOfUBA": "sys:1",
 			"fIUOA_5HQCGLI_sRwleqBA": "sys:1",
-			"fiWfHKZ8QS6-SezUmvfSmQ": "sys:3",
+			"fiWfHKZ8QS6-SezUmvfSmQ": "sys:4",
 			"gvfgQ7NmQB-IfJSvKxyE6w": "sys:1",
 			"jD8x-SVrQBmD38_K0rzFqA": "sys:1",
 			"lh4L_i9JQM2YIhtbmLtcUw": "sys:1",
@@ -757,7 +758,7 @@
 			"w-lHVPreRRSku89vhlyagA": "sys:2"
 		}
 	},
-	"minor_version": 66,
+	"minor_version": 67,
 	"name": "Core System"
 },
 "business_objects":[
@@ -1003,7 +1004,7 @@
 },
 {
 	"__disp": "UpdateLog",
-	"__ver": "sys:5",
+	"__ver": "sys:7",
 	"_class": "BusinessObjectDef",
 	"_id": "DJO4J7xRTvydSH_aBCtAFw",
 	"abstract": false,
@@ -1012,7 +1013,13 @@
 		"external_pkg": {
 			"type": "boolean"
 		},
+		"incorporated": {
+			"type": "string"
+		},
 		"object_class": {
+			"type": "string"
+		},
+		"object_disp": {
 			"type": "string"
 		},
 		"object_id": {
@@ -1040,7 +1047,7 @@
 			"type": "string"
 		}
 	},
-	"doc": "Represents a single data change of a business object in the system - a create, update, or delete.\nStores diff history if \"enableHistory\" is enabled in instance config file\n @property {boolean} external_pkg \n @property {string} object_class \n @property {string} object_id \n @property {reference.<BusinessObjectPackage>} package \n @property {object} revert_patch \n @property {datetime} timestamp \n @property {string} update_type \n @property {string} updated_version \n",
+	"doc": "Represents a single data change of a business object in the system - a create, update, or delete.\nStores diff history if \"enableHistory\" is enabled in instance config file\n @property {boolean} external_pkg \n @property {string} object_class \n @property {string} object_id \n @property {reference.<BusinessObjectPackage>} package \n @property {object} revert_patch \n @property {datetime} timestamp \n @property {string} update_type \n @property {string} updated_version \n\n @property {string} incorporated \n\n @property {string} object_disp \n",
 	"system": true
 },
 {
@@ -1658,18 +1665,24 @@
 {
 	"__disp": "User",
 	"__pkg": "sys",
-	"__ver": "sys:4",
+	"__ver": "sys:6",
 	"_class": "BusinessObjectDef",
 	"_id": "eTt1sebpTOOicLafo-B1PQ",
 	"abstract": false,
 	"class_name": "User",
 	"definition": {
+		"disabled": {
+			"type": "boolean"
+		},
 		"language": {
 			"denormalize_fields": [
 				"code"
 			],
 			"ref_class": "Language",
 			"type": "reference"
+		},
+		"last_login": {
+			"type": "datetime"
 		},
 		"name": {
 			"type": "string"
@@ -1678,6 +1691,9 @@
 			"hash": true,
 			"type": "password"
 		},
+		"reset_required": {
+			"type": "boolean"
+		},
 		"roles": [
 			{
 				"ref_class": "Role",
@@ -1685,7 +1701,7 @@
 			}
 		]
 	},
-	"doc": "A user of the system.  Contains login information, language for I18n, and roles.\n @property {reference.<Language>} language \n @property {string} name \n @property {password} password \n @property {reference.<Role>[]} roles \n",
+	"doc": "A user of the system.  Contains login information, language for I18n, and roles.\n @property {reference.<Language>} language \n @property {string} name \n @property {password} password \n @property {reference.<Role>[]} roles \n\n @property {boolean} disabled \n @property {datetime} last_login \n\n @property {boolean} reset_required \n",
 	"system": true
 },
 {
@@ -2894,11 +2910,11 @@
 	"type": "service"
 },
 {
-	"__ver": "sys:17",
+	"__ver": "sys:18",
 	"_class": "AngularProvider",
 	"_id": "VMylLXsAQSOLI94A-RQgTA",
 	"doc": "Provides interface for retrieving internationalized labels.",
-	"function": "function (NoonWebService, $q) {\n    \n    var lgCache = {};\n\n    var callAndStub = function(ws, params) {\n        var deferred = $q.defer();\n        var stub = {$promise:deferred.promise};\n        \n        NoonWebService.call(ws, params).then(\n            function(resp) {\n                var result = resp.result;\n                for(var k in result) {\n  \t\t\t\t\tstub[k] = result[k];\n  \t\t\t\t}\n  \t\t\t\t//'fake' an array if needed\n  \t\t\t\tif(result instanceof Array) {\n  \t\t\t\t    stub.length = result.length;\n  \t\t\t\t}\n  \t\t\t\tdeferred.resolve(stub);\n            },\n            \n            function(err) {\n                deferred.reject(err);\n            }\n        );\n        \n        return stub;\n    };\n    \n\n\treturn {\n\t    getLabelGroup: function(key) {\n\t        if(!lgCache[key]) {\n\t            var stub = callAndStub('/sys/i18n/getLabelGroup', {key:key});\n\t            lgCache[key] = stub;\n\t            return stub;\n            }\n            else {\n              return lgCache[key];\n            }\n            \n        },\n        \n        getBoLabelGroup: function(className) {\n            if(!lgCache[className]) {\n\t            var stub = callAndStub('/sys/i18n/getBoLabelGroup', {className:className});\n\t            lgCache[className] = stub;\n\t            return stub;\n            }\n            else {\n              return lgCache[className];\n            }\n          },\n        \n        getEnumerationValues: function(enumName) {\n            var cacheKey = 'enum|'+enumName;\n            if(!lgCache[cacheKey]) {\n                var stub = callAndStub('/sys/i18n/getEnumerationValues', {name:enumName});\n                lgCache[cacheKey] = stub;\n                return stub;\n            }\n            else {\n                return lgCache[cacheKey];\n            }\n        }\n          \n          \n\t};\n\n}",
+	"function": "function (NoonWebService, $q) {\n    \n    var lgCache = {};\n\n    var callAndStub = function(ws, params) {\n        var deferred = $q.defer();\n        var stub = {$promise:deferred.promise};\n        \n        NoonWebService.call(ws, params).then(\n            function(resp) {\n                var result = resp.result;\n                for(var k in result) {\n  \t\t\t\t\tstub[k] = result[k];\n  \t\t\t\t}\n  \t\t\t\t//'fake' an array if needed\n  \t\t\t\tif(result instanceof Array) {\n  \t\t\t\t    stub.length = result.length;\n  \t\t\t\t}\n  \t\t\t\tdeferred.resolve(stub);\n            },\n            \n            function(err) {\n                deferred.reject(err);\n            }\n        );\n        \n        return stub;\n    };\n    \n\n\treturn {\n\t    _cache:lgCache,\n\t    \n\t    getLabelGroup: function(key) {\n\t        if(!lgCache[key]) {\n\t            var stub = callAndStub('/sys/i18n/getLabelGroup', {key:key});\n\t            lgCache[key] = stub;\n\t            return stub;\n            }\n            else {\n              return lgCache[key];\n            }\n            \n        },\n        \n        getBoLabelGroup: function(className) {\n            if(!lgCache[className]) {\n\t            var stub = callAndStub('/sys/i18n/getBoLabelGroup', {className:className});\n\t            lgCache[className] = stub;\n\t            return stub;\n            }\n            else {\n              return lgCache[className];\n            }\n          },\n        \n        getEnumerationValues: function(enumName) {\n            var cacheKey = 'enum|'+enumName;\n            if(!lgCache[cacheKey]) {\n                var stub = callAndStub('/sys/i18n/getEnumerationValues', {name:enumName});\n                lgCache[cacheKey] = stub;\n                return stub;\n            }\n            else {\n                return lgCache[cacheKey];\n            }\n        }\n          \n          \n\t};\n\n}",
 	"module": {
 		"_disp": "noonian.api",
 		"_id": "NJnfAVnFSmuMcv9voRnaJQ"
@@ -5309,7 +5325,7 @@
 	}
 },
 {
-	"__ver": "sys:34",
+	"__ver": "sys:36",
 	"_class": "Config",
 	"_id": "I_f0Ld-gSp2MtcPoVF9YaQ",
 	"key": "sys.user.preferences",
@@ -7006,23 +7022,34 @@
 },
 {
 	"__pkg": "sys",
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_class": "Config",
 	"_id": "qqVlSIILTbiGNUzOtHQqcg",
+	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.User",
+	"rolespec": [
+	],
 	"system": true,
 	"value": {
 		"edit": {
 			"layout": [
-				"name",
-				"roles",
+				[
+					"name",
+					"disabled"
+				],
+				[
+					"roles",
+					"reset_required"
+				],
 				"password"
 			]
 		},
 		"list": {
 			"fields": [
 				"name",
-				"roles"
+				"roles",
+				"disabled",
+				"reset_required"
 			],
 			"sort": {
 				"name": "asc"
@@ -7039,9 +7066,15 @@
 		},
 		"view": {
 			"layout": [
-				"name",
-				"roles",
-				"password"
+				[
+					"name",
+					"disabled"
+				],
+				[
+					"roles",
+					"reset_required"
+				],
+				"last_login"
 			]
 		}
 	}
@@ -7068,7 +7101,7 @@
 	}
 },
 {
-	"__ver": "sys:8",
+	"__ver": "sys:10",
 	"_class": "Config",
 	"_id": "sQDsv1FXThuAxLRiAKJQIA",
 	"allow_customize": false,
@@ -7084,7 +7117,10 @@
 					"update_type"
 				],
 				[
-					"object_class",
+					"object_disp",
+					"object_class"
+				],
+				[
 					"object_id",
 					"updated_version"
 				],
@@ -7092,6 +7128,7 @@
 					"package",
 					"external_pkg"
 				],
+				"incorporated",
 				"revert_patch"
 			]
 		},
@@ -7099,10 +7136,11 @@
 			"fields": [
 				"timestamp",
 				"object_class",
-				"object_id",
+				"object_disp",
 				"update_type",
 				"package",
-				"external_pkg"
+				"external_pkg",
+				"incorporated"
 			],
 			"recordActions": [
 				"view",
@@ -7123,7 +7161,10 @@
 					"update_type"
 				],
 				[
-					"object_class",
+					"object_disp",
+					"object_class"
+				],
+				[
 					"object_id",
 					"updated_version"
 				],
@@ -7131,6 +7172,7 @@
 					"package",
 					"external_pkg"
 				],
+				"incorporated",
 				"revert_patch"
 			],
 			"recordActions": [
@@ -9700,7 +9742,7 @@
 	}
 },
 {
-	"__ver": "sys:1",
+	"__ver": "sys:3",
 	"_class": "LabelGroup",
 	"_id": "LKubEUuoQtOlBpvsmH6opg",
 	"key": "sys.dbui.bo.UpdateLog",
@@ -9712,7 +9754,9 @@
 	"system": false,
 	"value": {
 		"external_pkg": "External Pkg",
+		"incorporated": "Incorporated",
 		"object_class": "Object Class",
+		"object_disp": "Object Disp",
 		"object_id": "Object Id",
 		"package": "Package",
 		"revert_patch": "Revert Patch",
@@ -9946,7 +9990,7 @@
 },
 {
 	"__pkg": "sys",
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_class": "LabelGroup",
 	"_id": "_QrXcqXVTjqddtOxKYlG9g",
 	"key": "sys.dbui.bo.User",
@@ -9957,9 +10001,12 @@
 	},
 	"system": true,
 	"value": {
+		"disabled": "Is Disabled",
 		"language": "Language",
+		"last_login": "Last Login",
 		"name": "Name",
 		"password": "Password",
+		"reset_required": "Password Reset Required",
 		"roles": "Assigned Roles"
 	}
 },
@@ -13920,7 +13967,7 @@
 			"_id": "7R4cBwsWTSacdSk5ZrAjTw",
 			"key": "sys",
 			"major_version": 0,
-			"minor_version": 64
+			"minor_version": 66
 		}
 	],
 	"url": "https://pkg.noonian.org"
@@ -14072,6 +14119,16 @@
 	]
 },
 {
+	"__disp": "/gitTesting",
+	"__ver": "sys:12",
+	"_class": "WebService",
+	"_id": "Kgh686IiRCCrZdXIScjVNg",
+	"function": "function (nodeRequire) {\n    const path = nodeRequire('path');\n    const NodeGit = nodeRequire('nodegit');\n    \n    var repoPath = path.resolve('../noonian-avp');\n    console.log(repoPath);\n    \n    NodeGit.Repository.open(repoPath).then(function(repo) {\n        \n        // repo.getCurrentBranch().then(function(reference){\n        //     console.log(\"%j\", reference.name());\n        // });\n        \n        repo.getStatus().then(function(statuses) {\n            function statusToText(status) {\n                var words = [];\n                if (status.isNew()) { words.push(\"NEW\"); }\n                if (status.isModified()) { words.push(\"MODIFIED\"); }\n                if (status.isTypechange()) { words.push(\"TYPECHANGE\"); }\n                if (status.isRenamed()) { words.push(\"RENAMED\"); }\n                if (status.isIgnored()) { words.push(\"IGNORED\"); }\n        \n                return words.join(\" \");\n              }\n        \n              statuses.forEach(function(file) {\n                console.log(file.path() + \" \" + statusToText(file));\n              });\n        });\n    });\n    \n    return {message:'yep'};\n}",
+	"path": "/gitTesting",
+	"rolespec": [
+	]
+},
+{
 	"__disp": "/pkg/runUpdate",
 	"__ver": "sys:3",
 	"_class": "WebService",
@@ -14181,10 +14238,11 @@
 },
 {
 	"__disp": "/sys/i18n/getLabelGroup",
-	"__ver": "sys:3",
+	"__ver": "sys:4",
 	"_class": "WebService",
 	"_id": "fiWfHKZ8QS6-SezUmvfSmQ",
-	"function": "function (auth, req, queryParams, I18n) {\n    \n    return auth.getCurrentUser(req).then(function(currentUser) {\n        return I18n.getLabelGroup(queryParams.key, currentUser).then(function(lg) {\n            return {result:lg};\n        });\n    });\n    \n    \n}",
+	"doc": "Get an internationalized LabelGroup\n@param key key of label group\n@param language_code optional language code.  if not present, language of current user is used",
+	"function": "function (auth, req, queryParams, I18n, Q) {\n    var lang = queryParams.language_code;\n    \n    var firstPromise;\n    \n    if(lang) {\n        firstPromise = db.Language.findOne({code:lang}, {_id:1}).lean.exec().then(function(result) {\n            return {language:result};\n        });\n    }\n    else {\n        firstPromise = auth.getCurrentUser(req); \n    }\n    \n    return firstPromise.then(function(currentUser) {\n        return I18n.getLabelGroup(queryParams.key, currentUser).then(function(lg) {\n            return {result:lg};\n        });\n    });\n    \n    \n}",
 	"path": "/sys/i18n/getLabelGroup",
 	"rolespec": [
 	]
