@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:8",
+	"__ver": "sys:10",
 	"_id": "sQDsv1FXThuAxLRiAKJQIA",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.UpdateLog",
@@ -14,7 +14,10 @@
 					"update_type"
 				],
 				[
-					"object_class",
+					"object_disp",
+					"object_class"
+				],
+				[
 					"object_id",
 					"updated_version"
 				],
@@ -22,6 +25,7 @@
 					"package",
 					"external_pkg"
 				],
+				"incorporated",
 				"revert_patch"
 			]
 		},
@@ -29,10 +33,11 @@
 			"fields": [
 				"timestamp",
 				"object_class",
-				"object_id",
+				"object_disp",
 				"update_type",
 				"package",
-				"external_pkg"
+				"external_pkg",
+				"incorporated"
 			],
 			"recordActions": [
 				"view",
@@ -53,7 +58,10 @@
 					"update_type"
 				],
 				[
-					"object_class",
+					"object_disp",
+					"object_class"
+				],
+				[
 					"object_id",
 					"updated_version"
 				],
@@ -61,6 +69,7 @@
 					"package",
 					"external_pkg"
 				],
+				"incorporated",
 				"revert_patch"
 			],
 			"recordActions": [
