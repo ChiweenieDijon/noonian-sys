@@ -29,6 +29,8 @@ function (NoonWebService, $q) {
     
 
 	return {
+	    _cache:lgCache,
+	    
 	    getLabelGroup: function(key) {
 	        if(!lgCache[key]) {
 	            var stub = callAndStub('/sys/i18n/getLabelGroup', {key:key});
