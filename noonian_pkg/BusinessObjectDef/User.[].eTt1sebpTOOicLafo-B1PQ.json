@@ -1,15 +1,21 @@
 {
-	"__ver": "sys:4",
+	"__ver": "sys:6",
 	"_id": "eTt1sebpTOOicLafo-B1PQ",
 	"abstract": false,
 	"class_name": "User",
 	"definition": {
+		"disabled": {
+			"type": "boolean"
+		},
 		"language": {
 			"denormalize_fields": [
 				"code"
 			],
 			"ref_class": "Language",
 			"type": "reference"
+		},
+		"last_login": {
+			"type": "datetime"
 		},
 		"name": {
 			"type": "string"
@@ -18,6 +24,9 @@
 			"hash": true,
 			"type": "password"
 		},
+		"reset_required": {
+			"type": "boolean"
+		},
 		"roles": [
 			{
 				"ref_class": "Role",
@@ -25,6 +34,6 @@
 			}
 		]
 	},
-	"doc": "A user of the system.  Contains login information, language for I18n, and roles.\n @property {reference.<Language>} language \n @property {string} name \n @property {password} password \n @property {reference.<Role>[]} roles \n",
+	"doc": "A user of the system.  Contains login information, language for I18n, and roles.\n @property {reference.<Language>} language \n @property {string} name \n @property {password} password \n @property {reference.<Role>[]} roles \n\n @property {boolean} disabled \n @property {datetime} last_login \n\n @property {boolean} reset_required \n",
 	"system": true
 }

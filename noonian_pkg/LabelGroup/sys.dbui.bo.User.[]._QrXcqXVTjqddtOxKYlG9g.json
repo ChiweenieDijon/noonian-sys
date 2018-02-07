@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_id": "_QrXcqXVTjqddtOxKYlG9g",
 	"key": "sys.dbui.bo.User",
 	"language": {
@@ -9,9 +9,12 @@
 	},
 	"system": true,
 	"value": {
+		"disabled": "Is Disabled",
 		"language": "Language",
+		"last_login": "Last Login",
 		"name": "Name",
 		"password": "Password",
+		"reset_required": "Password Reset Required",
 		"roles": "Assigned Roles"
 	}
 }
