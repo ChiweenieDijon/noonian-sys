@@ -1,0 +1,16 @@
+{
+	"__ver": "sys:1",
+	"_id": "VUj_uPYiRrq2AEiv6AUQpw",
+	"fieldtypes": [
+		{
+			"_disp": "relative_duration",
+			"_id": "9JdLDyJxStK3LCtyYHELRA",
+			"name": "relative_duration"
+		}
+	],
+	"for_editing": false,
+	"for_editing_array": false,
+	"for_viewing": true,
+	"for_viewing_array": false,
+	"key": "dbui.core.relative_duration.view"
+}

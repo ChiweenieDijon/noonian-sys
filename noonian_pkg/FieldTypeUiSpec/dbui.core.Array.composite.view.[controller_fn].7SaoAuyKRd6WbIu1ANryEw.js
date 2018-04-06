@@ -1,5 +1,5 @@
 function ($scope, $stateParams, Dbui) {
-    console.log('dbui.core.Array.composite.view', $scope);
+    //console.log('dbui.core.Array.composite.view', $scope);
     //Little editable datatable
     
     var fc = $scope.fieldCustomizations || {};
