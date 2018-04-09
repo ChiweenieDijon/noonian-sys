@@ -1,0 +1,9 @@
+<div >
+  <input class="form-control" style="width:30%;display:inline-block" type="number" step="any" ng-model="number" elem-id="{{elemId}}.number">
+  <select class="form-control" style="width:30%;display:inline-block" ng-options="unit.value as unit.label for unit in units" ng-model="unit" elem-id="{{elemId}}.unit"></select>
+  <select class="form-control" ng-show="selectDirection" style="width:30%;display:inline-block" ng-model="timeDirection">
+      <option value="past">In the Past</option>
+      <option value="future">In the Future</option>
+  </select>
+  <p class="form-control-static" style="display:inline-block" ng-show="showPastIndicator">(in the past)</p>
+</div>

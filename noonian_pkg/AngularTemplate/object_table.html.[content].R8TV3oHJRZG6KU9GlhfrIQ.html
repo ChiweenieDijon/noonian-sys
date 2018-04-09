@@ -11,27 +11,27 @@
               <span ng-if="tableActions.length" uib-dropdown>
                 <a href id="cog-button" uib-dropdown-toggle ><i class="fa fa-2x fa-cog"></i></a>
                 <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="cog-button">
-                  <li role="menuitem" ng-repeat="action in tableActions"><a href ng-click="invokeTableAction(action)"> <i ng-if="action.icon" ng-class="action.icon" class="fa"></i> {{action.label}}</a><div ng-hide="$last" class="divider"></div></li>
+                  <li role="menuitem" ng-repeat="action in tableActions"><a href ng-click="invokeTableAction(action)" ng-class="'action_'+action.id" > <i ng-if="action.icon" ng-class="action.icon" class="fa"></i> {{action.label}}</a><div ng-hide="$last" class="divider"></div></li>
                 </ul>
               </span>
               <span ng-if="!tableActions.length"><i class="fa fa-2x fa-cog"></i></span>
             </th>
             <th ng-repeat="f in perspective.fields">
-              <a href="" ng-if="allowSort" ng-click="colHeaderClick($event, f)" on-right-click="colHeaderRightClick($event, f)">{{getFieldLabel(f)}}</a>
+              <a href="" ng-class="'colheader_'+f" ng-if="allowSort" ng-click="colHeaderClick($event, f)" on-right-click="colHeaderRightClick($event, f)">{{getFieldLabel(f)}}</a>
               <span ng-if="!allowSort">{{getFieldLabel(f)}}</span> &nbsp; <i class="fa fa-sm" ng-class="columnDecorations[f]"></i>
             </th>
           </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="dataObj in objectArray">
+            <tr ng-repeat="dataObj in objectArray" id="tablerow_{{dataObj._id}}">
 
-              <td class="text-center">
+              <td class="text-center tablecell_actions">
                 <span ng-repeat="action in recordActions">
-                  <a href="" class="datatable_btn" ng-click="invokeRecordAction(dataObj, action, $parent.$index)"><i ng-class="action.icon" class="fa fa-2x"></i></a>
+                  <a href="" class="datatable_btn" ng-class="'action_'+action.id" ng-click="invokeRecordAction(dataObj, action, $parent.$index)"><i ng-class="action.icon" class="fa fa-2x"></i></a>
                 </span>
               </td>
 
-              <td ng-repeat="field in perspective.fields">
+              <td ng-repeat="field in perspective.fields" ng-class="'tablecell_'+field">
                 <dbui-field-viewer ng-if="!(editing(dataObj, field) || getValue(dataObj, field) == null)" type-desc="getTypeDesc(field)"  display-value="getValue(dataObj, field)" abbreviated="true" field-customizations="perspective.fieldCustomizations[field]" ng-click="cellClicked(dataObj, field)"></dbui-field-viewer>
                 <div class="text-center" ng-if="allowEdit(field) && !editing(dataObj, field) && getValue(dataObj, field) == null">
                   <a href="" class="datatable_btn" ng-click="cellClicked(dataObj, field)"><i class="fa fa-2x fa-edit"></i></a>

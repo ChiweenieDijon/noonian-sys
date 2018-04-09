@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:12",
+	"__ver": "sys:15",
 	"_id": "nWxgcco1SJWxxpgCW1TjYg",
 	"doc": "Renders the pieces of the objectBrowser: a query-builder/search box, a dbui-object-table, and a paginator.",
 	"module": {

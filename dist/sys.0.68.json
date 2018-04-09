@@ -16,7 +16,7 @@
 	"major_version": 0,
 	"manifest": {
 		"AngularApp": {
-			"HvpsexNtTOyRCzDDd4GNsg": "sys:57",
+			"HvpsexNtTOyRCzDDd4GNsg": "sys:58",
 			"kRd_Ft64QFey_at4tgphXA": "sys:27"
 		},
 		"AngularModule": {
@@ -34,7 +34,7 @@
 			"5W1f4vxWTte-kQvjjgpyLA": "sys:37",
 			"5dJkEI1PRmK41Hh2lw2y_w": "sys:28",
 			"78XYGLNnRmC6RFphsvfNbw": "sys:5",
-			"7UVBjiqKRueVphLN5EtfLg": "sys:31",
+			"7UVBjiqKRueVphLN5EtfLg": "sys:32",
 			"7jHQrtYKQxSzW_pRHAd9RA": "sys:15",
 			"9en21yAeQAOdV_Uxm_C9sQ": "sys:41",
 			"Gh1s8LuGThywzsMA7BIMjg": "sys:12",
@@ -82,21 +82,21 @@
 			"DochseC4RXmnUQc1xnjZkQ": "sys:8",
 			"JlYdHTiWRoGbI81O-VPkXg": "sys:7",
 			"MbVLEC9ETmapSheNd_78Dg": "sys:10",
-			"R8TV3oHJRZG6KU9GlhfrIQ": "sys:14",
+			"R8TV3oHJRZG6KU9GlhfrIQ": "sys:17",
 			"XSx9nqdyQeuaytKKJmsEtw": "sys:1",
 			"ZLuRTnxQRiuqsSqzmbL8Jw": "sys:10",
 			"aGUQwyKpQnCfPcU_qdVV2A": "sys:1",
 			"c-Sh5WEEQqW1adX257yZVQ": "sys:17",
-			"hbhKtxpDQLaUvyA7hogLWw": "sys:22",
+			"hbhKtxpDQLaUvyA7hogLWw": "sys:23",
 			"iMYbBIZHRvqnpf6mAmeBBw": "sys:17",
 			"kX5Bln7MQ7evgGJJm9QhUw": "sys:9",
-			"lRoO3i4TTsi142xvw7vnIA": "sys:17",
+			"lRoO3i4TTsi142xvw7vnIA": "sys:18",
 			"nFlRtvy8T4WjgiUECbROSw": "sys:5",
-			"nWxgcco1SJWxxpgCW1TjYg": "sys:12",
-			"nlXSAaacSla8tUPF9oYF7A": "sys:6",
+			"nWxgcco1SJWxxpgCW1TjYg": "sys:15",
+			"nlXSAaacSla8tUPF9oYF7A": "sys:7",
 			"qwW8v9NIReKHdrGiRZl9tg": "sys:10",
 			"r4BrmS_bRVWPqcl-NAQYiQ": "sys:1",
-			"rnTzkxz-SoayJMPtHFEPcA": "sys:11",
+			"rnTzkxz-SoayJMPtHFEPcA": "sys:12",
 			"xQhrwwpWR-uqqlbCrQ95xw": "sys:6"
 		},
 		"BusinessObjectDef": {
@@ -190,7 +190,6 @@
 			"Hj3COO0iQyufTftJqfUt_Q": "sys:4",
 			"HjJ3QzvGSda4mliXCksO_A": "sys:1",
 			"I5AizP_DTgqHdp3MFvdsrw": "sys:3",
-			"I_f0Ld-gSp2MtcPoVF9YaQ": "sys:36",
 			"J9SNvBpBQAGYMkbPYRYPrA": "sys:1",
 			"Kohb_6sxTGC1eGdeRsCtMw": "sys:12",
 			"KpTzs_FUS9ylachpjVI_XA": "sys:3",
@@ -216,7 +215,6 @@
 			"YN49yI-cQO-YJGTtKaav8Q": "sys:2",
 			"ZIyLu8ZCQV2K6GS2XqqbEA": "sys:4",
 			"ZQ1ti3KWSUWvUWCU2mDeUA": "sys:5",
-			"ZcYFrLsyQpSLpykRLi-nEA": "deleted",
 			"b3-wP1RKQAm56z4xRENVlg": "sys:1",
 			"cSzNMWAYT2Whr1OqDdHGyg": "sys:2",
 			"cqb0vgELTiyDb6zfI6Tavg": "sys:7",
@@ -288,6 +286,7 @@
 		},
 		"FieldType": {
 			"2RQWYKymQMmfYqEGxXVtoA": "sys:1",
+			"9JdLDyJxStK3LCtyYHELRA": "sys:1",
 			"9_TB_-ppQnCpm3EKkO8naw": "sys:2",
 			"DDssakmDQoeACryXT377xw": "sys:2",
 			"EaQUGA7oS7qKanG4QbvYbQ": "sys:4",
@@ -326,6 +325,7 @@
 			"3y_egv2CQ1aiRhukfvJIRg": "sys:4",
 			"6l8d66e6RaeO2zNwVE9YAQ": "sys:1",
 			"7SaoAuyKRd6WbIu1ANryEw": "sys:3",
+			"7nl5KmidRWWKQd_Ew6uLWg": "sys:1",
 			"8wYs5LGeTUKpwZ4rnT5yJw": "sys:6",
 			"9uHrzJ-IQPqu-IK3bywR3A": "sys:19",
 			"BvydEKALTzK9ALeB_zibrg": "sys:5",
@@ -343,6 +343,7 @@
 			"QyMv30pcQse-jnzkfWucLg": "sys:15",
 			"SkSJmUFsQ2O7xgNpyQf5Vg": "sys:4",
 			"T7NihP3ySOSCy3Z-DKrweA": "sys:7",
+			"VUj_uPYiRrq2AEiv6AUQpw": "sys:1",
 			"WGbVcsKwRWe3KL1p8OqS9A": "sys:10",
 			"XBBQrHkGT_K4MPJTItuYcQ": "sys:10",
 			"Y3uU16OvRQGDqyKMxt8RNA": "sys:5",
@@ -399,13 +400,11 @@
 			"5BKy2VxhTRqkuRDx74Byzg": "sys:4",
 			"7NOuKKSLSxytgyMyw3mm2w": "sys:2",
 			"7cawn4f9SneVXCAMIViLmQ": "sys:3",
-			"8DShs7YTQf26hn73nut7Xg": "deleted",
 			"8X3sML8-SS6icy3ql5brQg": "sys:4",
 			"8ztMXn4uQ-CZFu8GyFEVhg": "sys:1",
 			"CcqJZREmRe-xdYeP74D6TQ": "sys:1",
 			"CoWMlx_mQjCR23MRd_OMNA": "sys:3",
 			"E-a8Xpq1Tja5pjgokvJu1A": "sys:1",
-			"EWIt-os4Q4Cez3WAYSicBg": "deleted",
 			"LKubEUuoQtOlBpvsmH6opg": "sys:3",
 			"NhgQZhe2SlSXrY8IJlW0-g": "sys:2",
 			"OeYPLQ5hTqGaYOczH6rmqQ": "sys:1",
@@ -435,7 +434,6 @@
 			"l007C5XJRNyhqfXK-65DFw": "sys:1",
 			"m4wYLW6UQeW429OeHQAQfw": "sys:5",
 			"mttLJj-BSYS3LobLEoa1bA": "sys:1",
-			"nFdA13T_QHeyoHhs6ueUGg": "deleted",
 			"nMTPxjuoR2G44yeWPo5TUQ": "sys:1",
 			"oyTJzYryQ0CN4fhqSE8-Qg": "sys:2",
 			"pq7sOK1ATRONqjsKnQ-e_A": "sys:3",
@@ -648,7 +646,7 @@
 			"RSc8RWl_RCa0rJgZAQae5w": "sys:19",
 			"Rk-_b0GMSI2IrwAJjZwqzw": "sys:1",
 			"bcle51paSiSQ9WaJ1uBxRQ": "sys:6",
-			"d-IVhuAdQlilU16t8Xyd-w": "sys:36",
+			"d-IVhuAdQlilU16t8Xyd-w": "sys:37",
 			"gmqHd9JrSjGwXTnXsBsIPw": "sys:1",
 			"t14zSWV5SPa7k6brh4HFxg": "sys:12",
 			"tDmzVEMjQ0Ky1lpYoLnvCQ": "sys:1"
@@ -724,8 +722,7 @@
 			"zIbWSxNgRiGVY_G7j_jYsA": "sys:1"
 		},
 		"User": {
-			"UO_aGVVDTcStJ37Fj3lDMg": "sys:1",
-			"vl22Nf2XTNym2-X90sxOag": "sys:3"
+			"vl22Nf2XTNym2-X90sxOag": "sys:4"
 		},
 		"WebService": {
 			"5TmX2XybS4WCYB8wS_g1uA": "sys:1",
@@ -752,13 +749,13 @@
 			"lh4L_i9JQM2YIhtbmLtcUw": "sys:1",
 			"oYBiiisfSu6pOQWFerHCHg": "sys:10",
 			"rR1feiTrQP6WDbkV_3s3rg": "sys:3",
-			"rVM06exeQXWZPYBFnq6n0g": "sys:6",
+			"rVM06exeQXWZPYBFnq6n0g": "sys:16",
 			"v42RTwwjQLOZ4uyOY80ZwQ": "sys:7",
 			"v7m93WESQVyYqXfZE9XN4Q": "sys:1",
 			"w-lHVPreRRSku89vhlyagA": "sys:2"
 		}
 	},
-	"minor_version": 67,
+	"minor_version": 68,
 	"name": "Core System"
 },
 "business_objects":[
@@ -2213,10 +2210,10 @@
 },
 {
 	"__t": "AngularApp",
-	"__ver": "sys:57",
+	"__ver": "sys:58",
 	"_class": "AngularApp",
 	"_id": "HvpsexNtTOyRCzDDd4GNsg",
-	"body": " <!-- navbar at the top -->\n<div ui-view=\"navBar\"></div>\n<div style=\"margin-top:-20px;\">\n<breadcrumb-bar ng-show=\"userPrefs.enable_breadcrumb_bar\"></breadcrumb-bar>\n</div>\n<div class=\"container-fluid\">\n    \n    <div class=\"row\">\n        \n        <!-- CSS makes this invisible when smaller than md threshold; replaced w/ navbar button. -->\n        <div class=\"col-md-2 hidden-xs hidden-sm\" ng-hide=\"sidebarCollapsed\"> \n            <div class=\"sidebar_main\" ui-view=\"sideBar\"></div>\n        </div>\n        <div class=\"col-md-1\" ng-show=\"sidebarCollapsed\"></div>\n\n        <div class=\"col-md-10 \">\n            <div ui-view=\"mainContainer\"></div>\n        </div>\n  </div>\n  \n</div>\n\n<div id=\"alerts-queue\"  ng-show=\"alertMenu.showQueue\">\n    <div uib-alert ng-repeat=\"alert in alertMenu.newAlerts\" ng-class=\"'alert-'+alert.type\" ng-click=\"closeDbuiAlert(alert)\" close=\"closeDbuiAlert(alert)\">\n        {{alert.msg}}\n    </div>\n</div>",
+	"body": " <!-- navbar at the top -->\n<div ui-view=\"navBar\"></div>\n<div style=\"margin-top:-20px;\">\n<!--<breadcrumb-bar ng-show=\"userPrefs.enable_breadcrumb_bar\"></breadcrumb-bar>-->\n</div>\n<div class=\"container-fluid\">\n    \n    <div class=\"row\">\n        \n        <!-- CSS makes this invisible when smaller than md threshold; replaced w/ navbar button. -->\n        <div class=\"col-md-2 hidden-xs hidden-sm\" ng-hide=\"sidebarCollapsed\"> \n            <div class=\"sidebar_main\" ui-view=\"sideBar\"></div>\n        </div>\n        <div class=\"col-md-1\" ng-show=\"sidebarCollapsed\"></div>\n\n        <div class=\"col-md-10 \">\n            <div ui-view=\"mainContainer\"></div>\n        </div>\n  </div>\n  \n</div>\n\n<div id=\"alerts-queue\"  ng-show=\"alertMenu.showQueue\">\n    <div uib-alert ng-repeat=\"alert in alertMenu.newAlerts\" ng-class=\"'alert-'+alert.type\" ng-click=\"closeDbuiAlert(alert)\" close=\"closeDbuiAlert(alert)\">\n        {{alert.msg}}\n    </div>\n</div>",
 	"config_function": "function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider, $controllerProvider) {\n    console.log('noonian.dbui config()');\n    var appUrlBase = '/dbui/index';\n    \n    $urlRouterProvider\n      .otherwise(appUrlBase);\n    \n    $locationProvider.html5Mode({enabled:true, requireBase:true});\n\n    // $httpProvider.interceptors.push('NoonAuthInterceptor');\n    \n    //Allow dynamical adding of controllers...\n    //noonianAppModule.registerController = $controllerProvider.register;\n\n    //Function used by DBUI to query for theObject for className/id stateParams\n    var resolveTheObject = function($stateParams, db) {\n        return db.init().then(function() {\n            \n          var className = $stateParams.className;\n          var boId = $stateParams.id;\n          if(className) {\n             var Model = db[className];\n              if(boId && Model) {\n                return Model.findOne({_id:boId}).$promise;\n              }\n              else if(Model) {\n                  if($stateParams.copyObject) {\n                      var templateObj = _.clone($stateParams.copyObject);\n                      delete templateObj._id;\n                      return new Model(templateObj);\n                  }\n                  else {\n                      return new Model({});\n                  }\n              }\n              else {\n                return null;\n              }\n          }\n    \n          return null;\n        });\n      \n    };\n    \n    \n    var resolvePerspectiveObj = function(perspectiveType, $stateParams, Dbui) {\n      var className = $stateParams.className;\n      var perspectiveName = $stateParams.perspective || 'default';\n\n      if(className) {\n        return Dbui.getPerspective(perspectiveName, className, perspectiveType);\n      }\n      else {\n        return null;\n      }\n\n    };\n    \n    $stateProvider\n      .state('dbui', {\n        abstract:true,\n        views: {\n          'navBar' : {\n            templateUrl: 'dbui/core/navbar.html'\n          },\n          'sideBar' : {\n            templateUrl: 'dbui/core/sidebar.html'\n          },\n          'mainContainer' : {\n            template: '<ui-view/>' //Child states populate this\n          }\n        },\n        resolve: {\n            //IF DBUI SILENTLY FAILS TO LOAD:\n            // check these injected providers for errors arising from using identifiers that haven't been declared\n            initApi: function(db, NoonAuth, Dbui, $rootScope) {\n                console.log('Initializing \"dbui\" ui-router state...');\n                \n                //set up dirty form warning\n                var watchingFormStatuses = [];\n                $rootScope.watchFormStatus = function(formStatus) {\n                    watchingFormStatuses.push(formStatus);\n                };\n                $rootScope.unwatchFormStatus = function(formStatus) {\n                    var pos = watchingFormStatuses.indexOf(formStatus);\n                    if(pos > -1) {\n                        watchingFormStatuses.splice(pos, 1);\n                    }\n                };\n                window.onbeforeunload = function() {\n                    var warn = null;\n                    _.forEach(watchingFormStatuses, function(fs) {\n                        if(fs.isDirty) {\n                            warn = 'Are you sure you want to navigate away without saving?'\n                        }\n                    });\n                    return warn;\n                }\n                \n                return db.init().then(NoonAuth.init).then(Dbui.init);\n            }\n        }\n      })\n      .state('dbui.home', {\n        url:appUrlBase,\n        templateUrl: 'dbui/core/state/home.html',\n        controller:'dbui_HomePageCtrl'\n      })\n    //   .state('dbui.login', {\n    //     url:appUrlBase+'/login',\n    //     templateUrl: 'dbui/core/login.html'\n    //   })\n      .state('dbui.list', {\n        url:appUrlBase+'/list/:className/:perspective',\n        templateUrl: 'dbui/core/state/list.html',\n        controller:'dbui_ListCtrl',\n        resolve: {\n          listPerspective:  function($stateParams, Dbui, DbuiFieldType) {\n            return DbuiFieldType.cacheTypeInfoForClass($stateParams.className, 'view')\n                .then(resolvePerspectiveObj.bind(null,'list', $stateParams, Dbui));\n          }\n        }\n      })\n      .state('dbui.folders', {\n        url:appUrlBase+'/folders/:className/:perspective',\n        templateUrl: 'dbui/core/state/folders.html',\n        controller:'dbui_FoldersCtrl',\n        resolve: {\n          folderPerspective:  function($stateParams, Dbui, DbuiFieldType) {\n            return DbuiFieldType.cacheTypeInfoForClass($stateParams.className, 'view')\n                .then(resolvePerspectiveObj.bind(null,'folder', $stateParams, Dbui));\n          }\n        }\n      })\n      .state('dbui.view', {\n        url:appUrlBase+'/view/:className/:id/:perspective',\n        templateUrl: 'dbui/core/state/view.html',\n        controller:'dbui_ViewCtrl',\n        resolve: {\n          theObject: resolveTheObject,\n          viewPerspective:  function($stateParams, Dbui, DbuiFieldType) {\n            return DbuiFieldType.cacheTypeInfoForClass($stateParams.className, 'view')\n                .then(resolvePerspectiveObj.bind(null,'view', $stateParams, Dbui));\n          }\n        }\n      })\n      .state('dbui.edit', {\n        url:appUrlBase+'/edit/:className/:id/:perspective',\n        templateUrl: 'dbui/core/state/edit.html',\n        controller:'dbui_EditCtrl',\n        resolve: {\n          theObject: resolveTheObject,\n          editPerspective:  function($stateParams, Dbui, DbuiFieldType) {\n            return DbuiFieldType.cacheTypeInfoForClass($stateParams.className, 'edit')\n                .then(resolvePerspectiveObj.bind(null, 'edit', $stateParams, Dbui));\n          }\n        }\n      })\n      .state('dbui.create', {\n        url:appUrlBase+'/create/:className/:perspective',\n        templateUrl: 'dbui/core/state/edit.html',\n        controller:'dbui_EditCtrl',\n        resolve: {\n          theObject: resolveTheObject,\n          editPerspective:  function($stateParams, Dbui, DbuiFieldType) {\n            return DbuiFieldType.cacheTypeInfoForClass($stateParams.className, 'edit')\n                .then(resolvePerspectiveObj.bind(null, 'edit', $stateParams, Dbui));\n          }\n        },\n        params:{\n            copyObject:null\n        }\n      })\n      .state('dbui.custompage', {\n        url:appUrlBase+'/custompage/:key',\n        templateUrl: 'dbui/core/state/custompage.html',\n        params:{\n          id:null,\n          key:null,\n          resourcePath:null,\n          perspective:null,\n          extraParams:null\n        }\n      })\n      ;\n}",
 	"css_dependencies": [
 		{
@@ -2594,11 +2591,11 @@
 	"type": "factory"
 },
 {
-	"__ver": "sys:31",
+	"__ver": "sys:32",
 	"_class": "AngularProvider",
 	"_id": "7UVBjiqKRueVphLN5EtfLg",
 	"doc": "Extends the NoonAction service to add DBUI specifics\n1) invokeAction is called w/ perspective and context bo, in addition to actionObj and argsObj.  Parameters are added depending on action type and provided perspective and context bo\n2) when any action returns object w/ 'message', 'error' or 'warning' properties, alert is rendered in UI via DbuiAlert service\n3) when any action returns object w/ 'action' property, action object is invoked, allowing for chaining behavior (e.g. webservice responding w/ re-direct)",
-	"function": "function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state, db) {\n\n    var derivedService = Object.create(NoonAction);\n    \n    var dbuiCoreActions = {\n      'new':{\n        label:'New',\n        state:'dbui.create',\n        icon:'fa-plus-square'\n      },\n      'duplicate':{\n        label:'Duplicate',\n        icon:'fa-copy',\n        fn: function(args) {\n            $state.go('dbui.create', {className:args.className, perspective:args.perspective, copyObject:args.targetObj});\n        }\n      },\n      'list':{\n        label:'List',\n        state:'dbui.list',\n        icon:'fa-list'\n      },\n      'folder_list':{\n        label:'List',\n        state:'dbui.folders',\n        icon:'fa-folder-o'\n      },\n      'view':{\n        label:'View',\n        state:'dbui.view',\n        icon:'fa-eye'\n      },\n      'edit':{\n        label:'Edit',\n        state:'dbui.edit',\n        icon:'fa-pencil-square-o'\n      },\n      'delete':{\n        label:'Delete',\n        icon:'fa-times-circle',\n        fn: function(args) {\n          if(window.confirm('Are you sure you wish to delete this record?')) {\n            return args.targetObj.remove().then(function() {\n              $state.go('dbui.list', {className:args.className, perspective:args.perspective});\n            },\n            function(err) {\n              alert('error deleting: '+err);\n            });\n          }\n\n          return null;\n        }\n      },\n      'dialog-view': {\n        label:'View',\n        icon:'fa-eye',\n        fn: function(args) {\n\n          var modalInstance;\n          var scope = $rootScope.$new(true);\n\n          var className = scope.boClass = args.className;\n          var perspectiveName = scope.perspectiveName = args.perspective;\n          var boId = scope.boId = args.targetObj._id || args.targetObj;\n\n          modalInstance = $uibModal.open({\n            templateUrl:'dbui/core/view-dialog.html',\n            controller:'dbui_ViewCtrl',\n            size:'lg',\n            scope: scope,\n            resolve: {\n              theObject: function() {\n                return db[className].findOne({_id:boId}).$promise;\n              },\n              viewPerspective:  function(Dbui) {\n                return Dbui.getPerspective(perspectiveName, className, 'dialog-view');\n              }\n            }\n          });\n        }\n      }\n\n    };\n    \n    /**\n     * DbuiAction.init\n     */\n    derivedService.init = function() {\n        NoonAction.registerAliases(dbuiCoreActions);\n        \n    };\n    \n    \n    \n    /**\n     * DbuiAction.invokeAction\n     * Invokes actionObj, adding in parameters from $stateParams and contextBo.\n     * How contextBo is added to params is dependent on the type of action:\n     *   state and ws actions -> \"id\" is populated w/ contextBo._id \n     *   fn and UiAction actions -> \"targetObj\" is populated w/ contextBo\n     */\n    derivedService.invokeAction = function(perspectiveObj, contextBo, actionObj, argsObj) {\n        \n        // console.log('DbuiAction.invokeAction', perspectiveObj, actionObj, contextBo);\n        if(!actionObj) {\n            throw new Error('null actionObj not allowed');\n        }\n        \n      //Append the standard DBUI params to the action object\n      var params = actionObj.params ? _.clone(actionObj.params) : {};\n      \n      //Always pass className and perspective:\n      if(!params.className) {\n          params.className = $stateParams.className;\n      }\n      if(!params.perspective) {\n          if(perspectiveObj) {\n              params.perspective = perspectiveObj.name;\n          }\n          else {\n              params.perspective = $stateParams.perspective || 'default';  \n          }\n      }\n      \n      \n      //depending on type of action, we add either targetId or targetObj\n      if(actionObj.state || actionObj.ws) {\n          if(contextBo && contextBo._id)\n            params.id = contextBo._id;\n          else\n            params.id = contextBo;\n      }\n      else if(actionObj.fn || actionObj.ui_action) {\n          params.targetObj = contextBo;\n          params.perspectiveObj = perspectiveObj;\n      }\n      \n      \n      //Anything in argsObj supercedes the actionObj.params\n      if(argsObj) {\n          _.assign(params, argsObj);\n      }\n      \n      return NoonAction.invoke(actionObj, params).then(\n          function(result) {\n            if(result) {\n              if(result.error) {\n                // alert(result.error);\n                DbuiAlert.danger(result.error);\n              }\n              \n              if(result.message) {\n                // alert(result.message);\n                DbuiAlert.success(result.message);\n              }\n              \n              if(result.warning) {\n                  DbuiAlert.warning(result.warning);\n              }\n              \n              if(result.action) {\n                  console.log('Chaining action: ', result.action);\n                  return NoonAction.invoke(result.action);\n              }\n            }\n            \n            return result;\n          },\n          function(err) {\n              var msg = 'Error invoking action';\n              console.log('DbuiAction: '+msg, actionObj, err);\n              DbuiAlert.danger(msg+' '+err);\n          }\n\n        );\n    };\n    \n    return derivedService;\n}",
+	"function": "function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state, db) {\n\n    var derivedService = Object.create(NoonAction);\n    \n    var dbuiCoreActions = {\n      'new':{\n        label:'New',\n        state:'dbui.create',\n        icon:'fa-plus-square',\n        id:'new'\n      },\n      'duplicate':{\n        label:'Duplicate',\n        icon:'fa-copy',\n        id:'duplicate',\n        fn: function(args) {\n            $state.go('dbui.create', {className:args.className, perspective:args.perspective, copyObject:args.targetObj});\n        }\n      },\n      'list':{\n        label:'List',\n        state:'dbui.list',\n        icon:'fa-list',\n        id:'list'\n      },\n      'folder_list':{\n        label:'List',\n        state:'dbui.folders',\n        icon:'fa-folder-o',\n        id:'folder_list'\n      },\n      'view':{\n        label:'View',\n        state:'dbui.view',\n        icon:'fa-eye',\n        id:'view'\n      },\n      'edit':{\n        label:'Edit',\n        state:'dbui.edit',\n        icon:'fa-pencil-square-o',\n        id:'edit'\n      },\n      'delete':{\n        label:'Delete',\n        icon:'fa-times-circle',\n        id:'delete',\n        fn: function(args) {\n          if(window.confirm('Are you sure you wish to delete this record?')) {\n            return args.targetObj.remove().then(function() {\n              $state.go('dbui.list', {className:args.className, perspective:args.perspective});\n            },\n            function(err) {\n              alert('error deleting: '+err);\n            });\n          }\n\n          return null;\n        }\n      },\n      'dialog-view': {\n        label:'View',\n        icon:'fa-eye',\n        id:'dialog-view',\n        fn: function(args) {\n\n          var modalInstance;\n          var scope = $rootScope.$new(true);\n\n          var className = scope.boClass = args.className;\n          var perspectiveName = scope.perspectiveName = args.perspective;\n          var boId = scope.boId = args.targetObj._id || args.targetObj;\n\n          modalInstance = $uibModal.open({\n            templateUrl:'dbui/core/view-dialog.html',\n            controller:'dbui_ViewCtrl',\n            size:'lg',\n            scope: scope,\n            resolve: {\n              theObject: function() {\n                return db[className].findOne({_id:boId}).$promise;\n              },\n              viewPerspective:  function(Dbui) {\n                return Dbui.getPerspective(perspectiveName, className, 'dialog-view');\n              }\n            }\n          });\n        }\n      }\n\n    };\n    \n    /**\n     * DbuiAction.init\n     */\n    derivedService.init = function() {\n        NoonAction.registerAliases(dbuiCoreActions);\n        \n    };\n    \n    \n    \n    /**\n     * DbuiAction.invokeAction\n     * Invokes actionObj, adding in parameters from $stateParams and contextBo.\n     * How contextBo is added to params is dependent on the type of action:\n     *   state and ws actions -> \"id\" is populated w/ contextBo._id \n     *   fn and UiAction actions -> \"targetObj\" is populated w/ contextBo\n     */\n    derivedService.invokeAction = function(perspectiveObj, contextBo, actionObj, argsObj) {\n        \n        // console.log('DbuiAction.invokeAction', perspectiveObj, actionObj, contextBo);\n        if(!actionObj) {\n            throw new Error('null actionObj not allowed');\n        }\n        \n      //Append the standard DBUI params to the action object\n      var params = actionObj.params ? _.clone(actionObj.params) : {};\n      \n      //Always pass className and perspective:\n      if(!params.className) {\n          params.className = $stateParams.className;\n      }\n      if(!params.perspective) {\n          if(perspectiveObj) {\n              params.perspective = perspectiveObj.name;\n          }\n          else {\n              params.perspective = $stateParams.perspective || 'default';  \n          }\n      }\n      \n      \n      //depending on type of action, we add either targetId or targetObj\n      if(actionObj.state || actionObj.ws) {\n          if(contextBo && contextBo._id)\n            params.id = contextBo._id;\n          else\n            params.id = contextBo;\n      }\n      else if(actionObj.fn || actionObj.ui_action) {\n          params.targetObj = contextBo;\n          params.perspectiveObj = perspectiveObj;\n      }\n      \n      \n      //Anything in argsObj supercedes the actionObj.params\n      if(argsObj) {\n          _.assign(params, argsObj);\n      }\n      \n      return NoonAction.invoke(actionObj, params).then(\n          function(result) {\n            if(result) {\n              if(result.error) {\n                // alert(result.error);\n                DbuiAlert.danger(result.error);\n              }\n              \n              if(result.message) {\n                // alert(result.message);\n                DbuiAlert.success(result.message);\n              }\n              \n              if(result.warning) {\n                  DbuiAlert.warning(result.warning);\n              }\n              \n              if(result.action) {\n                  console.log('Chaining action: ', result.action);\n                  return NoonAction.invoke(result.action);\n              }\n            }\n            \n            return result;\n          },\n          function(err) {\n              var msg = 'Error invoking action';\n              console.log('DbuiAction: '+msg, actionObj, err);\n              DbuiAlert.danger(msg+' '+err);\n          }\n\n        );\n    };\n    \n    return derivedService;\n}",
 	"module": {
 		"_disp": "noonian.dbui",
 		"_id": "myP57XGhSNyDKrrcJFvO0Q"
@@ -3485,10 +3482,10 @@
 },
 {
 	"__t": "AngularTemplate",
-	"__ver": "sys:14",
+	"__ver": "sys:17",
 	"_class": "AngularTemplate",
 	"_id": "R8TV3oHJRZG6KU9GlhfrIQ",
-	"content": "<div>\n\n  <div class=\"row dbui-table-data\">\n    <div class=\"col-xs-12\">\n\n      <table class=\"table table-striped table-hover\">\n        <col style=\"width:8%\"/>\n        <thead>\n          <tr>\n            <th class=\"text-center\">\n              <span ng-if=\"tableActions.length\" uib-dropdown>\n                <a href id=\"cog-button\" uib-dropdown-toggle ><i class=\"fa fa-2x fa-cog\"></i></a>\n                <ul class=\"dropdown-menu\" uib-dropdown-menu role=\"menu\" aria-labelledby=\"cog-button\">\n                  <li role=\"menuitem\" ng-repeat=\"action in tableActions\"><a href ng-click=\"invokeTableAction(action)\"> <i ng-if=\"action.icon\" ng-class=\"action.icon\" class=\"fa\"></i> {{action.label}}</a><div ng-hide=\"$last\" class=\"divider\"></div></li>\n                </ul>\n              </span>\n              <span ng-if=\"!tableActions.length\"><i class=\"fa fa-2x fa-cog\"></i></span>\n            </th>\n            <th ng-repeat=\"f in perspective.fields\">\n              <a href=\"\" ng-if=\"allowSort\" ng-click=\"colHeaderClick($event, f)\" on-right-click=\"colHeaderRightClick($event, f)\">{{getFieldLabel(f)}}</a>\n              <span ng-if=\"!allowSort\">{{getFieldLabel(f)}}</span> &nbsp; <i class=\"fa fa-sm\" ng-class=\"columnDecorations[f]\"></i>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n            <tr ng-repeat=\"dataObj in objectArray\">\n\n              <td class=\"text-center\">\n                <span ng-repeat=\"action in recordActions\">\n                  <a href=\"\" class=\"datatable_btn\" ng-click=\"invokeRecordAction(dataObj, action, $parent.$index)\"><i ng-class=\"action.icon\" class=\"fa fa-2x\"></i></a>\n                </span>\n              </td>\n\n              <td ng-repeat=\"field in perspective.fields\">\n                <dbui-field-viewer ng-if=\"!(editing(dataObj, field) || getValue(dataObj, field) == null)\" type-desc=\"getTypeDesc(field)\"  display-value=\"getValue(dataObj, field)\" abbreviated=\"true\" field-customizations=\"perspective.fieldCustomizations[field]\" ng-click=\"cellClicked(dataObj, field)\"></dbui-field-viewer>\n                <div class=\"text-center\" ng-if=\"allowEdit(field) && !editing(dataObj, field) && getValue(dataObj, field) == null\">\n                  <a href=\"\" class=\"datatable_btn\" ng-click=\"cellClicked(dataObj, field)\"><i class=\"fa fa-2x fa-edit\"></i></a>\n                </div>\n                <dbui-field-editor ng-if=\"editing(dataObj, field)\" type-desc=\"getTypeDesc(field)\" ng-model=\"dataObj[field]\" field-customizations=\"perspective.fieldCustomizations[fieldName]\"></dbui-field-editor>\n              </td>\n\n            </tr>\n        </tbody>\n      </table>\n\n    </div>\n  </div>\n\n</div>\n",
+	"content": "<div>\n\n  <div class=\"row dbui-table-data\">\n    <div class=\"col-xs-12\">\n\n      <table class=\"table table-striped table-hover\">\n        <col style=\"width:8%\"/>\n        <thead>\n          <tr>\n            <th class=\"text-center\">\n              <span ng-if=\"tableActions.length\" uib-dropdown>\n                <a href id=\"cog-button\" uib-dropdown-toggle ><i class=\"fa fa-2x fa-cog\"></i></a>\n                <ul class=\"dropdown-menu\" uib-dropdown-menu role=\"menu\" aria-labelledby=\"cog-button\">\n                  <li role=\"menuitem\" ng-repeat=\"action in tableActions\"><a href ng-click=\"invokeTableAction(action)\" ng-class=\"'action_'+action.id\" > <i ng-if=\"action.icon\" ng-class=\"action.icon\" class=\"fa\"></i> {{action.label}}</a><div ng-hide=\"$last\" class=\"divider\"></div></li>\n                </ul>\n              </span>\n              <span ng-if=\"!tableActions.length\"><i class=\"fa fa-2x fa-cog\"></i></span>\n            </th>\n            <th ng-repeat=\"f in perspective.fields\">\n              <a href=\"\" ng-class=\"'colheader_'+f\" ng-if=\"allowSort\" ng-click=\"colHeaderClick($event, f)\" on-right-click=\"colHeaderRightClick($event, f)\">{{getFieldLabel(f)}}</a>\n              <span ng-if=\"!allowSort\">{{getFieldLabel(f)}}</span> &nbsp; <i class=\"fa fa-sm\" ng-class=\"columnDecorations[f]\"></i>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n            <tr ng-repeat=\"dataObj in objectArray\" id=\"tablerow_{{dataObj._id}}\">\n\n              <td class=\"text-center tablecell_actions\">\n                <span ng-repeat=\"action in recordActions\">\n                  <a href=\"\" class=\"datatable_btn\" ng-class=\"'action_'+action.id\" ng-click=\"invokeRecordAction(dataObj, action, $parent.$index)\"><i ng-class=\"action.icon\" class=\"fa fa-2x\"></i></a>\n                </span>\n              </td>\n\n              <td ng-repeat=\"field in perspective.fields\" ng-class=\"'tablecell_'+field\">\n                <dbui-field-viewer ng-if=\"!(editing(dataObj, field) || getValue(dataObj, field) == null)\" type-desc=\"getTypeDesc(field)\"  display-value=\"getValue(dataObj, field)\" abbreviated=\"true\" field-customizations=\"perspective.fieldCustomizations[field]\" ng-click=\"cellClicked(dataObj, field)\"></dbui-field-viewer>\n                <div class=\"text-center\" ng-if=\"allowEdit(field) && !editing(dataObj, field) && getValue(dataObj, field) == null\">\n                  <a href=\"\" class=\"datatable_btn\" ng-click=\"cellClicked(dataObj, field)\"><i class=\"fa fa-2x fa-edit\"></i></a>\n                </div>\n                <dbui-field-editor ng-if=\"editing(dataObj, field)\" type-desc=\"getTypeDesc(field)\" ng-model=\"dataObj[field]\" field-customizations=\"perspective.fieldCustomizations[fieldName]\"></dbui-field-editor>\n              </td>\n\n            </tr>\n        </tbody>\n      </table>\n\n    </div>\n  </div>\n\n</div>\n",
 	"doc": "Renders table of objects complete with clickable headers, tableActions, and recordActions.",
 	"module": {
 		"_disp": "noonian.dbui",
@@ -3584,10 +3581,10 @@
 },
 {
 	"__t": "AngularTemplate",
-	"__ver": "sys:22",
+	"__ver": "sys:23",
 	"_class": "AngularTemplate",
 	"_id": "hbhKtxpDQLaUvyA7hogLWw",
-	"content": "<div ng-form=\"editorForm\">\n<div ng-repeat=\"sec in perspective.layout\" class=\"dbui-subsection-container\" id=\"{{sec.section_id}}\">\n    \n  <div class=\"dbui-subsection-header\" ng-if=\"sec.subheading\" ng-click=\"sec.isHidden = !sec.isHidden\">\n      <h4>{{labelGroup._subheading[sec.subheading] ? labelGroup._subheading[sec.subheading] : sec.subheading}} <i class=\"pull-right glyphicon\" ng-class=\"{'glyphicon-chevron-down': !sec.isHidden, 'glyphicon-chevron-right': sec.isHidden}\"></i></h4>\n  </div>\n  <div ng-hide=\"sec.isHidden\" class=\"form-horizontal\">\n    <div class=\"row\" ng-repeat=\"r in sec.rows\">\n      \n        <div class=\"{{colClass.top[r.length]}}\" ng-repeat=\"fieldName in r\">\n          <div class=\"form-group\" ng-show=\"shouldShow(fieldName)\">\n\n            <label for=\"{{fieldName}}\" class=\"{{colClass.label[r.length]}} control-label\" uib-tooltip=\"{{labelGroup._tooltip[fieldName]}}\" ng-class=\"{'required-field':isRequired(fieldName)}\" tooltip-placement=\"bottom\"> {{ labelGroup.getLabel(fieldName) }}</label>\n            <dbui-field-editor fieldtype=\"{{getTypeDesc(fieldName).type}}\" type-desc=\"getTypeDesc(fieldName)\" elem-id=\"fieldName\" ng-model=\"getterSetter[fieldName]\" ng-model-options=\"{ getterSetter: true }\" class=\"{{colClass.value[r.length]}} dbui-edit-container\" field-customizations=\"perspective.fieldCustomizations[fieldName]\" context-object=\"theObject\" link-status=\"linkStatus[fieldName]\"></dbui-field-editor>\n\n          </div>\n        </div>\n      \n    </div>\n  </div>\n</div>\n</div>",
+	"content": "<div ng-form=\"editorForm\">\n<div ng-repeat=\"sec in perspective.layout\" class=\"dbui-subsection-container\" id=\"{{sec.section_id}}\">\n    \n  <div class=\"dbui-subsection-header\" ng-if=\"sec.subheading\" ng-click=\"sec.isHidden = !sec.isHidden\">\n      <h4>{{labelGroup._subheading[sec.subheading] ? labelGroup._subheading[sec.subheading] : sec.subheading}} <i class=\"pull-right glyphicon\" ng-class=\"{'glyphicon-chevron-down': !sec.isHidden, 'glyphicon-chevron-right': sec.isHidden}\"></i></h4>\n  </div>\n  <div ng-hide=\"sec.isHidden\" class=\"form-horizontal\">\n    <div class=\"row\" ng-repeat=\"r in sec.rows\">\n      \n        <div class=\"{{colClass.top[r.length]}}\" ng-repeat=\"fieldName in r\">\n          <div class=\"form-group\" ng-class=\"'field-editor-container_'+fieldName\" ng-show=\"shouldShow(fieldName)\">\n\n            <label for=\"{{fieldName}}\" class=\"{{colClass.label[r.length]}} control-label\" uib-tooltip=\"{{labelGroup._tooltip[fieldName]}}\" ng-class=\"{'required-field':isRequired(fieldName)}\" tooltip-placement=\"bottom\"> {{ labelGroup.getLabel(fieldName) }}</label>\n            <dbui-field-editor fieldtype=\"{{getTypeDesc(fieldName).type}}\" type-desc=\"getTypeDesc(fieldName)\" elem-id=\"fieldName\" ng-model=\"getterSetter[fieldName]\" ng-model-options=\"{ getterSetter: true }\" class=\"{{colClass.value[r.length]}} dbui-edit-container\" field-customizations=\"perspective.fieldCustomizations[fieldName]\" context-object=\"theObject\" link-status=\"linkStatus[fieldName]\"></dbui-field-editor>\n\n          </div>\n        </div>\n      \n    </div>\n  </div>\n</div>\n</div>",
 	"doc": "Renders, according to perspective layout, editors for theObject's fields using dbui-field-editors.",
 	"module": {
 		"_disp": "noonian.dbui",
@@ -3644,10 +3641,10 @@
 },
 {
 	"__t": "AngularTemplate",
-	"__ver": "sys:17",
+	"__ver": "sys:18",
 	"_class": "AngularTemplate",
 	"_id": "lRoO3i4TTsi142xvw7vnIA",
-	"content": "<div>\n\t<div class=\"row\">\n\t\t<div class=\"col-sm-12 col-md-12 col-lg-12 dbui-header\">\n\t\t\t<h3 ng-if=\"boId\">Edit {{labels[boClass] || boClass}} <small>{{boId}}</small></h3>\n\t\t\t<h3 ng-if=\"!boId\">New {{labels[boClass] || boClass}}</h3>\n\t\t\t<button type=\"button\" ng-repeat=\"action in actionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n\t\t</div> \n\t</div>\n\t\n\t<div class=\"action-bar-upper\" ng-class=\"{'save-warn':(formStatus.isDirty)}\" ng-show=\"recordActionList.length > 0\">\n      <button type=\"button\" ng-repeat=\"action in recordActionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n    </div>\n  \n\n    <div class=\"dbui-form-container\">\n      <dbui-object-editor the-object=\"theObject\" perspective=\"editPerspective\" form-status=\"formStatus\"></dbui-object-editor>\n    </div>\n  \n    <div class=\"action-bar-lower\" ng-class=\"{'save-warn':(formStatus.isDirty)}\" ng-show=\"recordActionList.length > 0\">\n      <button type=\"button\" ng-repeat=\"action in recordActionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n    </div>\n\n    <!-- related -->\n    <dbui-related-viewer ng-if=\"theObject._id && editPerspective.related\" the-object=\"theObject\" perspective-name=\"editPerspective.name\" related-spec=\"editPerspective.related\"></dbui-related-viewer>\n</div>\n",
+	"content": "<div>\n\t<div class=\"row\">\n\t\t<div class=\"col-sm-12 col-md-12 col-lg-12 dbui-header\">\n\t\t\t<h3 ng-if=\"boId\">Edit {{labels[boClass] || boClass}} <small>{{boId}}</small></h3>\n\t\t\t<h3 ng-if=\"!boId\">New {{labels[boClass] || boClass}}</h3>\n\t\t\t<button type=\"button\" ng-repeat=\"action in actionList\" class=\"btn btn-action\" ng-class=\"'action_'+action.id\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n\t\t</div> \n\t</div>\n\t\n\t<div class=\"action-bar-upper\" ng-class=\"{'save-warn':(formStatus.isDirty)}\" ng-show=\"recordActionList.length > 0\">\n      <button type=\"button\" ng-repeat=\"action in recordActionList\" class=\"btn btn-action\" ng-class=\"'action_'+action.id\"  ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n    </div>\n  \n\n    <div class=\"dbui-form-container\">\n      <dbui-object-editor the-object=\"theObject\" perspective=\"editPerspective\" form-status=\"formStatus\"></dbui-object-editor>\n    </div>\n  \n    <div class=\"action-bar-lower\" ng-class=\"{'save-warn':(formStatus.isDirty)}\" ng-show=\"recordActionList.length > 0\">\n      <button type=\"button\" ng-repeat=\"action in recordActionList\" class=\"btn btn-action\" ng-class=\"'action_'+action.id\"  ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n    </div>\n\n    <!-- related -->\n    <dbui-related-viewer ng-if=\"theObject._id && editPerspective.related\" the-object=\"theObject\" perspective-name=\"editPerspective.name\" related-spec=\"editPerspective.related\"></dbui-related-viewer>\n</div>\n",
 	"doc": "The base template that is rendered for ui-router states dbui.edit and dbui.create",
 	"module": {
 		"_disp": "noonian.dbui",
@@ -3679,10 +3676,10 @@
 },
 {
 	"__t": "AngularTemplate",
-	"__ver": "sys:12",
+	"__ver": "sys:15",
 	"_class": "AngularTemplate",
 	"_id": "nWxgcco1SJWxxpgCW1TjYg",
-	"content": "<div>\n  <!-- Search box / query builder -->\n  <div class=\"row\" ng-if=\"enableSearch\">\n    <div ng-switch=\"perspective.isAdvancedSearch\">\n      <div ng-switch-when=\"true\">\n        <div class=\"col-sm-9\" >\n          <query-builder bo-class=\"boClass\" ng-model=\"perspective.filter\" on-close=\"advancedSearch(false)\"></query-builder>\n          <button type=\"button\" class=\"btn btn-default\" ng-click=\"execSearch()\"><i class=\"fa fa-lg fa-search\"></i></button>\n          <div class=\"pull-right\" uib-dropdown ng-show=\"perspective.savedQueries\">\n            <button type=\"button\" class=\"btn btn-default\" uib-dropdown-toggle><i class=\"fa fa-lg fa-ellipsis-h\"></i></button>\n            <ul class=\"dropdown-menu\" uib-dropdown-menu>\n                <li ng-repeat=\"sq in perspective.savedQueries\"><a href ng-click=\"loadQuery(sq.query)\">{{sq.title}}</a></li>\n            </ul>\n          </div>\n          <button type=\"button\" class=\"btn btn-default pull-right\" ng-click=\"saveQuery()\" uib-tooltip=\"Save Query\"><i class=\"fa fa-lg fa-save\"></i></button>\n        </div>\n      </div>\n      <div class=\"col-sm-4\" ng-switch-default>\n        <div class=\"input-group\">\n          <span class=\"input-group-btn\">\n            <button type=\"button\" class=\"btn btn-default\" ng-click=\"execSearch()\"><i class=\"fa fa-lg fa-search\"></i></button>\n          </span>\n          <input type=\"text\" id=\"searchBox\" class=\"form-control\" placeholder=\"text search\" ng-model=\"perspective.searchString\" ng-change=\"searchStringChanged()\" />\n          <span class=\"input-group-btn\" ng-show=\"enableQuery\">\n            <button type=\"button\" class=\"btn btn-default\" ng-click=\"advancedSearch(true)\"><i class=\"fa fa-lg fa-cubes\"></i></button>\n          </span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- actual table data -->\n  <dbui-object-table ng-model=\"dataArray\" object-meta-data=\"objectMetaData\" perspective=\"perspective\" config=\"objectTableConfig\"></dbui-object-table>\n\n  <!-- footer: filter, summary, paginator -->\n  <div ng-show=\"filterDescription\" class=\"row\" >\n    <div class=\"col-xs-12 text-center\">\n      Filter: <strong>{{filterDescription}}</strong>\n    </div>\n  </div>\n\n  <div class=\"row\" >\n    <div class=\"col-xs-12 text-center\">\n      <span ng-show=\"dataLoading\"><i class=\"fa fa-spinner fa-pulse\"></i> loading...</span><span ng-show=\"!dataLoading\"><strong>{{pageState.totalRecords}} records total</strong> <span ng-show=\"pageState.totalPages > 1\"> (Showing {{pageState.rangeStart}} to {{pageState.rangeEnd}})</span></span>\n    </div>\n  </div>\n\n  <div ng-show=\"pageState.totalPages > 1\" class=\"row\">\n    <div class=\"col-xs-12 text-center\">\n      <ul uib-pagination ng-model=\"pageState.current\" ng-change=\"pageChanged()\" class=\"pagination-sm\" boundary-links=\"true\"\n        total-items=\"pageState.totalRecords\" items-per-page=\"pageState.pageSize\" max-size=\"10\"\n        previous-text=\"&lsaquo;\" next-text=\"&rsaquo;\" first-text=\"&laquo;\" last-text=\"&raquo;\">\n      </ul>\n    </div>\n  </div>\n\n</div>\n",
+	"content": "<div>\n  <!-- Search box / query builder -->\n  <div class=\"row\" ng-if=\"enableSearch\">\n    <div ng-switch=\"perspective.isAdvancedSearch\">\n      <div ng-switch-when=\"true\">\n        <div class=\"col-sm-9\" >\n          <query-builder bo-class=\"boClass\" ng-model=\"perspective.filter\" on-close=\"advancedSearch(false)\"></query-builder>\n          <button type=\"button\" class=\"btn btn-default\" ng-click=\"execSearch()\"><i class=\"fa fa-lg fa-search\"></i></button>\n          <div class=\"pull-right\" uib-dropdown ng-show=\"perspective.savedQueries\">\n            <button type=\"button\" class=\"btn btn-default\" uib-dropdown-toggle><i class=\"fa fa-lg fa-ellipsis-h\"></i></button>\n            <ul class=\"dropdown-menu\" uib-dropdown-menu>\n                <li ng-repeat=\"sq in perspective.savedQueries\"><a href ng-click=\"loadQuery(sq.query)\">{{sq.title}}</a></li>\n            </ul>\n          </div>\n          <button type=\"button\" class=\"btn btn-default pull-right\" ng-click=\"saveQuery()\" uib-tooltip=\"Save Query\"><i class=\"fa fa-lg fa-save\"></i></button>\n        </div>\n      </div>\n      <div class=\"col-sm-4\" ng-switch-default>\n        <div class=\"input-group\">\n          <span class=\"input-group-btn\">\n            <button type=\"button\" id=\"searchbox-submit\" class=\"btn btn-default\" ng-click=\"execSearch()\"><i class=\"fa fa-lg fa-search\"></i></button>\n          </span>\n          <input type=\"text\" id=\"searchBox\" class=\"form-control\" placeholder=\"text search\" ng-model=\"perspective.searchString\" ng-change=\"searchStringChanged()\" />\n          <span class=\"input-group-btn\" ng-show=\"enableQuery\">\n            <button type=\"button\" id=\"search-advanced\" class=\"btn btn-default\" ng-click=\"advancedSearch(true)\"><i class=\"fa fa-lg fa-cubes\"></i></button>\n          </span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- actual table data -->\n  <dbui-object-table ng-model=\"dataArray\" object-meta-data=\"objectMetaData\" perspective=\"perspective\" config=\"objectTableConfig\"></dbui-object-table>\n\n  <!-- footer: filter, summary, paginator -->\n  <div ng-show=\"filterDescription\" class=\"row\" >\n    <div class=\"col-xs-12 text-center\">\n      Filter: <span style=\"font-weight:bold\" class=\"filter-description\">{{filterDescription}}</span>\n    </div>\n  </div>\n\n  <div class=\"row\" >\n    <div class=\"col-xs-12 text-center\">\n      <span ng-show=\"dataLoading\"><i class=\"fa fa-spinner fa-pulse\"></i> loading...</span><span class=\"count-description\" ng-show=\"!dataLoading\"><span style=\"font-weight:bold\">{{pageState.totalRecords}} records total</span> <span ng-show=\"pageState.totalPages > 1\"> (Showing {{pageState.rangeStart}} to {{pageState.rangeEnd}})</span></span>\n    </div>\n  </div>\n\n  <div ng-show=\"pageState.totalPages > 1\" class=\"row\">\n    <div class=\"col-xs-12 text-center\">\n      <ul uib-pagination ng-model=\"pageState.current\" ng-change=\"pageChanged()\" class=\"pagination-sm\" boundary-links=\"true\"\n        total-items=\"pageState.totalRecords\" items-per-page=\"pageState.pageSize\" max-size=\"10\"\n        previous-text=\"&lsaquo;\" next-text=\"&rsaquo;\" first-text=\"&laquo;\" last-text=\"&raquo;\">\n      </ul>\n    </div>\n  </div>\n\n</div>\n",
 	"doc": "Renders the pieces of the objectBrowser: a query-builder/search box, a dbui-object-table, and a paginator.",
 	"module": {
 		"_disp": "noonian.dbui",
@@ -3699,10 +3696,10 @@
 },
 {
 	"__t": "AngularTemplate",
-	"__ver": "sys:6",
+	"__ver": "sys:7",
 	"_class": "AngularTemplate",
 	"_id": "nlXSAaacSla8tUPF9oYF7A",
-	"content": "<div>\n\n  <div class=\"row\">\n    <div class=\"col-xs-12 dbui-header\">\n      <h3 ng-hide=\"listPerspective.title\">{{labels[boClass] || boClass}} List </h3>\n      <h3 ng-show=\"listPerspective.title\">{{listPerspective.title}}</h3>\n      <button type=\"button\" ng-repeat=\"action in actionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n    </div>\n  </div>\n\n  <dbui-business-object-browser bo-class=\"boClass\" perspective=\"listPerspective\" enable-query=\"true\" enable-search=\"true\" ></dbui-business-object-browser>\n\n</div>\n",
+	"content": "<div>\n\n  <div class=\"row\">\n    <div class=\"col-xs-12 dbui-header\">\n      <h3 ng-hide=\"listPerspective.title\">{{labels[boClass] || boClass}} List </h3>\n      <h3 ng-show=\"listPerspective.title\">{{listPerspective.title}}</h3>\n      <button type=\"button\" ng-repeat=\"action in actionList\" class=\"btn btn-action\" ng-class=\"'action_'+action.id\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n    </div>\n  </div>\n\n  <dbui-business-object-browser bo-class=\"boClass\" perspective=\"listPerspective\" enable-query=\"true\" enable-search=\"true\" ></dbui-business-object-browser>\n\n</div>\n",
 	"doc": "The base template that is rendered for ui-router state dbui.list.",
 	"module": {
 		"_disp": "noonian.dbui",
@@ -3754,10 +3751,10 @@
 },
 {
 	"__t": "AngularTemplate",
-	"__ver": "sys:11",
+	"__ver": "sys:12",
 	"_class": "AngularTemplate",
 	"_id": "rnTzkxz-SoayJMPtHFEPcA",
-	"content": "<div>\n   <div class=\"row\">\n    <div class=\"col-sm-12 col-md-12 col-lg-12 dbui-header\">\n      <h3>View {{labels[boClass] || boClass}} <small uib-tooltip=\"Version: {{theObject.__ver}}\" tooltip-placement=\"bottom-right\">{{theObject._id}}</small></h3>\n      <div style=\"padding-left:12px; font-style:italic\">{{theObject._disp}}</div>\n      <button type=\"button\" ng-repeat=\"action in actionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n    </div>\n  </div>\n\n  \n  <div class=\"action-bar-upper\" ng-show=\"recordActionList.length > 0\">\n      <button type=\"button\" ng-repeat=\"action in recordActionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n  </div>\n  \n\n  <div class=\"dbui-form-container\">\n    <dbui-object-viewer the-object=\"theObject\" perspective=\"viewPerspective\"></dbui-object-viewer>\n  </div>\n  \n  <div class=\"action-bar-lower\" ng-show=\"recordActionList.length > 0\">\n      <button type=\"button\" ng-repeat=\"action in recordActionList\" class=\"btn btn-action\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n  </div>\n\n  <!-- related -->\n  <dbui-related-viewer ng-if=\"viewPerspective.related\" the-object=\"theObject\" perspective-name=\"viewPerspective.name\" related-spec=\"viewPerspective.related\"></dbui-related-viewer>\n</div>",
+	"content": "<div>\n   <div class=\"row\">\n    <div class=\"col-sm-12 col-md-12 col-lg-12 dbui-header\">\n      <h3>View {{labels[boClass] || boClass}} <small uib-tooltip=\"Version: {{theObject.__ver}}\" tooltip-placement=\"bottom-right\">{{theObject._id}}</small></h3>\n      <div style=\"padding-left:12px; font-style:italic\">{{theObject._disp}}</div>\n      <button type=\"button\" ng-repeat=\"action in actionList\" class=\"btn btn-action\" ng-class=\"'action_'+action.id\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n    </div>\n  </div>\n\n  \n  <div class=\"action-bar-upper\" ng-show=\"recordActionList.length > 0\">\n      <button type=\"button\" ng-repeat=\"action in recordActionList\" class=\"btn btn-action\" ng-class=\"'action_'+action.id\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n  </div>\n  \n\n  <div class=\"dbui-form-container\">\n    <dbui-object-viewer the-object=\"theObject\" perspective=\"viewPerspective\"></dbui-object-viewer>\n  </div>\n  \n  <div class=\"action-bar-lower\" ng-show=\"recordActionList.length > 0\">\n      <button type=\"button\" ng-repeat=\"action in recordActionList\" class=\"btn btn-action\" ng-class=\"'action_'+action.id\" ng-click=\"invokeAction(action)\"><i class=\"fa fa-lg\" ng-class=\"action.icon\" ></i> {{ action.label }}</button>\n  </div>\n\n  <!-- related -->\n  <dbui-related-viewer ng-if=\"viewPerspective.related\" the-object=\"theObject\" perspective-name=\"viewPerspective.name\" related-spec=\"viewPerspective.related\"></dbui-related-viewer>\n</div>",
 	"doc": "The base template that is rendered for ui-router state dbui.view.",
 	"module": {
 		"_disp": "noonian.dbui",
@@ -5322,20 +5319,6 @@
 				"day_of_week"
 			]
 		}
-	}
-},
-{
-	"__ver": "sys:36",
-	"_class": "Config",
-	"_id": "I_f0Ld-gSp2MtcPoVF9YaQ",
-	"key": "sys.user.preferences",
-	"system": false,
-	"user": {
-		"_disp": "admin",
-		"_id": "vl22Nf2XTNym2-X90sxOag"
-	},
-	"value": {
-		"selected_sidebar_menu": "dbui.menu.sys_dev"
 	}
 },
 {
@@ -7898,6 +7881,16 @@
 	"text_index": false
 },
 {
+	"__ver": "sys:1",
+	"_class": "FieldType",
+	"_id": "9JdLDyJxStK3LCtyYHELRA",
+	"doc": "Represents a duration of time, relative to \"now\".\nStores a date and a preferred duration unit (years, months, days, etc.)",
+	"mongo_type": "Mixed",
+	"name": "relative_duration",
+	"text_index": false,
+	"to_db": "function (value) {\n    if(value && (value.date == null)) {\n        return null;\n    }\n    return value;\n}"
+},
+{
 	"__pkg": "sys",
 	"__ver": "sys:2",
 	"_class": "FieldType",
@@ -8364,6 +8357,25 @@
 	"template": "<div ng-if=\"displayValue && subPerspective\">\n    <dbui-object-table ng-if=\"subPerspective.orientation !== 'vertical'\" ng-model=\"displayValue\" perspective=\"subPerspective\" object-meta-data=\"objMetaData\" config=\"tableConfig\"></dbui-object-table>\n    <dbui-vertical-table ng-if=\"subPerspective.orientation === 'vertical'\" ng-model=\"displayValue\" perspective=\"subPerspective\" object-meta-data=\"objMetaData\" config=\"tableConfig\"></dbui-vertical-table>\n</div>"
 },
 {
+	"__ver": "sys:1",
+	"_class": "FieldTypeUiSpec",
+	"_id": "7nl5KmidRWWKQd_Ew6uLWg",
+	"fieldtypes": [
+		{
+			"_disp": "relative_duration",
+			"_id": "9JdLDyJxStK3LCtyYHELRA",
+			"name": "relative_duration"
+		}
+	],
+	"for_editing": true,
+	"for_editing_array": false,
+	"for_viewing": false,
+	"for_viewing_array": false,
+	"key": "dbui.core.relative_duration.edit",
+	"link_fn": "function (scope, ngModel, NoonI18n) {\n    \n    // console.log('relative_duration editor');\n    \n    const td = scope.typeDesc;\n    \n    if(!td.direction) {\n        scope.selectDirection = true;\n    }\n    \n    var initUnit = false;\n    \n    NoonI18n.getEnumerationValues('TimeDuration').$promise.then(function(enumValues) {\n        \n        if(td.units && td.units.length) {\n            scope.units = [];\n            \n            //the strings in td.units become keys in keepVals:\n            var keepVals = _.indexBy(td.units);\n            \n            //iterate through enumValues - retain order specified in TimeDuration enumeration.\n            for(let i=0; i < enumValues.length; i++) {\n                var curr = enumValues[i];\n                if(keepVals[curr.value]) {\n                    scope.units.push(curr);\n                }\n            }\n        }\n        else {\n            //No filtering of units specified in typeDesc\n            scope.units = enumValues;\n        }\n        \n        if(initUnit) {\n            scope.unit = scope.units[0].value;\n        }\n        \n    });\n    \n    \n    //1. Wire up converter for ng-model object  {date, unit}\n    //   --> internal $viewValue representation {number, unit, direction}\n    ngModel.$formatters.push(function(modelValue) {\n        // console.log('relative_duration: Formatting model', modelValue);\n        var viewValue;\n        \n        if(modelValue && modelValue.date) {\n            viewValue = {\n                unit:modelValue.unit\n            };\n            \n            var now = moment();\n            var targetDate = moment(modelValue.date);\n            \n            var diff = targetDate.diff(now, modelValue.unit);\n            \n            if(diff < 0) {\n                //targetDate is BEFORE now\n                viewValue.direction = 'past';\n                viewValue.number = -diff;\n            }\n            else {\n                viewValue.direction = 'future';\n                viewValue.number = diff;\n            }\n        }\n        else {\n            viewValue = {\n                direction: td.direction || 'past'\n            }\n            \n            if(scope.units) {\n               viewValue.unit = units[0].value;\n            }\n            else {\n                initUnit = true;\n            }\n        }\n        \n        return viewValue;\n        \n    });\n    \n    //2. Wire up converter for internal $viewValue representation  {number, unit, direction}\n    //  --> ng-model object {date, unit}\n    ngModel.$parsers.push(function(viewValue) {\n        if(viewValue.number != null) {\n            const modelObj = {\n                unit:viewValue.unit\n            };\n            \n            if(viewValue.direction === 'past') {\n                modelObj.date = moment().subtract(viewValue.number, viewValue.unit).format();\n            }\n            else {\n                modelObj.date = moment().add(viewValue.number, viewValue.unit).format();\n            }\n            \n            return modelObj;\n        }\n        \n        //Don't want to default to \"0 days ago\" if 0 wasn't actually filled in\n        return null;\n    });\n    \n    //3. Wire up trigger for scope object --> $viewValue\n    scope.$watch('unit+number+timeDirection', function() {\n        //must *replace* the viewValue object in order for change to propogate to ng-model!\n        if(scope.number != null) {\n            const vv = {\n                number:scope.number,\n                unit:scope.unit,\n                direction:scope.timeDirection\n            };\n            \n            //Special case: picker is limited to future dates,\n            //  but we're dealing with a past date.\n            if(td.direction === 'future' && vv.direction === 'past') {\n                //reset the direction if the unit or number changed\n                if(vv.number !== ngModel.$viewValue.number || vv.unit !== ngModel.$viewValue.unit) {\n                    vv.direction = 'future';\n                    scope.showPastIndicator = false;\n                }\n            }\n            \n            ngModel.$setViewValue(vv);\n        }\n    }, \n    true);\n    \n    //4. Wire up callback for $viewValue update --> scope object\n    ngModel.$render = function() {\n        const vv = ngModel.$viewValue;\n        scope.number = vv.number;\n        scope.unit   = vv.unit;\n        scope.timeDirection = vv.direction;\n        \n        //Special case: typeDesc limited direction picker to future,\n        //  but that future date has passed\n        if(td.direction === 'future' && vv.direction === 'past') {\n            scope.showPastIndicator = true;\n        }\n        else {\n            scope.showPastIndicator = false;\n        }\n    };\n    \n    \n    return false;\n}",
+	"template": "<div >\n  <input class=\"form-control\" style=\"width:30%;display:inline-block\" type=\"number\" step=\"any\" ng-model=\"number\" elem-id=\"{{elemId}}.number\">\n  <select class=\"form-control\" style=\"width:30%;display:inline-block\" ng-options=\"unit.value as unit.label for unit in units\" ng-model=\"unit\" elem-id=\"{{elemId}}.unit\"></select>\n  <select class=\"form-control\" ng-show=\"selectDirection\" style=\"width:30%;display:inline-block\" ng-model=\"timeDirection\">\n      <option value=\"past\">In the Past</option>\n      <option value=\"future\">In the Future</option>\n  </select>\n  <p class=\"form-control-static\" style=\"display:inline-block\" ng-show=\"showPastIndicator\">(in the past)</p>\n</div>"
+},
+{
 	"__ver": "sys:6",
 	"_class": "FieldTypeUiSpec",
 	"_id": "8wYs5LGeTUKpwZ4rnT5yJw",
@@ -8695,6 +8707,25 @@
 	"for_viewing_array": false,
 	"key": "dbui.core.boolean.edit",
 	"template": "<div class=\"dbui-edit-field-boolean col-sm-2 col-md-2 col-lg-2\">\n\t<input ng-if=\"!typeDesc.subtype\" type=\"checkbox\" class=\"form-control\" id=\"{{elemId}}\" ng-model=\"binding.value\">\n\t<select ng-if=\"typeDesc.subtype == 'trinary' \" class=\"form-control\" id=\"{{elemId}}\" ng-model=\"binding.value\"\n\t    ng-options=\"val.value as val.label for val in booleanValues\">\n\t</select>\n</div>"
+},
+{
+	"__ver": "sys:1",
+	"_class": "FieldTypeUiSpec",
+	"_id": "VUj_uPYiRrq2AEiv6AUQpw",
+	"controller_fn": "function (NoonI18n) {\n    NoonI18n.getEnumerationValues('TimeDuration')\n      .$promise.then(function(result) {\n        var labelMap = _.indexBy(result, 'value');\n        var dv = $scope.displayValue;\n        \n        if(dv && dv.date) {\n            var now = moment();\n            \n            var targetDate = moment(dv.date);\n            var unit = dv.unit || 'hours';\n            var unitLabel = labelMap[unit].label;\n            \n            var diff = targetDate.diff(now, unit);\n            \n            if(diff < 0) {\n                //targetDate is BEFORE now\n                $scope.dispString = (-diff)+' '+unitLabel+' Ago';\n            }\n            else {\n                $scope.dispString = 'In '+diff+' '+unitLabel;\n            }\n        }\n        \n    });\n}",
+	"fieldtypes": [
+		{
+			"_disp": "relative_duration",
+			"_id": "9JdLDyJxStK3LCtyYHELRA",
+			"name": "relative_duration"
+		}
+	],
+	"for_editing": false,
+	"for_editing_array": false,
+	"for_viewing": true,
+	"for_viewing_array": false,
+	"key": "dbui.core.relative_duration.view",
+	"template": "<div>\n  <span>{{dispString}}</span>\n</div>"
 },
 {
 	"__ver": "sys:10",
@@ -12210,7 +12241,7 @@
 },
 {
 	"__disp": "AngularApp.serveContent",
-	"__ver": "sys:36",
+	"__ver": "sys:37",
 	"_class": "MemberFunction",
 	"_id": "d-IVhuAdQlilU16t8Xyd-w",
 	"applies_to": "server",
@@ -12218,7 +12249,7 @@
 		"_disp": "AngularApp",
 		"_id": "IhXNqXAyQiqGk28iCotr0Q"
 	},
-	"function": "function (db, Q, _, config) {\n    /**\n     * AngularApp.serveContent\n     * \n     */ \n    return function (outStream) {\n        var appObj = this;\n        var myPath = this.path;\n        var moduleObj;\n        \n        var initialPromise;\n        if(appObj.module) {\n            initialPromise = db.AngularModule.findOne({_id:appObj.module._id}).exec();\n        }\n        else {\n            initialPromise = Q(false);\n        }\n        \n        return initialPromise.then(function(result) {\n            if(result) {\n                moduleObj = result;\n                return moduleObj.getDependencyTags();\n            }\n            else {\n                return {css:'',js:''};\n            }\n        })\n        .then(function(moduleDepTags) {\n            \n            if(typeof outStream.type === 'function') {\n                outStream.type('html');\n            }\n            \n            var moduleName = moduleObj ? moduleObj.name : appObj._id;\n            \n            var header = '<!doctype html>';\n            \n            header += '<html ng-app=\"'+moduleName+'\">';\n            \n            \n            header += '<head>'\n            header += '<base href=\"'+config.serverConf.urlBase+'/\">';\n            \n            header += moduleDepTags.css; //Css dependencies of AngularModule's\n            \n            header += appObj.head+'\\n';\n            \n            outStream.write(header);\n            \n            if(appObj.css_dependencies && appObj.css_dependencies.length) {\n                _.forEach(appObj.css_dependencies, function(cssDep) {\n                    outStream.write('<link rel=\"stylesheet\" href=\"'+cssDep.path+'/'+cssDep.name+'\">\\n');\n                });\n            }\n            \n            outStream.write('</head>');\n            \n            outStream.write('<body>'+appObj.body+'\\n'+moduleDepTags.js+'\\n');\n            \n            if(appObj.js_dependencies && appObj.js_dependencies.length) {\n                _.forEach(appObj.js_dependencies, function(jsDep) {\n                    outStream.write('<script src=\"'+jsDep.path+'/'+jsDep.name+'\"></script>\\n');\n                });\n            }\n            \n            if(appObj.config_function) {\n                outStream.write('<script type=\"text/javascript\">\\n');\n                \n                outStream.write('angular.module(');\n                if(moduleObj) {\n                    outStream.write('\\''+moduleName+'\\'');\n                }\n                else{\n                    outStream.write('\\''+moduleName+'\\', []');\n                }\n                outStream.write(').config('+appObj.config_function+');\\n');\n                \n                outStream.write('</script>');\n            }\n            \n            outStream.write('</body></html>');\n            \n            return outStream.end();\n            \n        });\n        \n    }\n}",
+	"function": "function (db, Q, _, config) {\n    /**\n     * AngularApp.serveContent\n     * \n     */ \n    return function (outStream) {\n        var appObj = this;\n        var myPath = this.path;\n        var moduleObj;\n        \n        var initialPromise;\n        if(appObj.module) {\n            initialPromise = db.AngularModule.findOne({_id:appObj.module._id}).exec();\n        }\n        else {\n            initialPromise = Q(false);\n        }\n        \n        return initialPromise.then(function(result) {\n            if(result) {\n                moduleObj = result;\n                return moduleObj.getDependencyTags();\n            }\n            else {\n                return {css:'',js:''};\n            }\n        })\n        .then(function(moduleDepTags) {\n            \n            if(typeof outStream.type === 'function') {\n                outStream.type('html');\n            }\n            \n            var moduleName = moduleObj ? moduleObj.name : appObj._id;\n            \n            var header = '<!doctype html>';\n            \n            header += '<html ng-app=\"'+moduleName+'\">';\n            \n            \n            header += '<head>'\n            header += '<base href=\"'+config.serverConf.urlBase+'/\">';\n            \n            header += moduleDepTags.css; //Css dependencies of AngularModule's\n            \n            header += appObj.head+'\\n';\n            \n            outStream.write(header);\n            \n            if(appObj.css_dependencies && appObj.css_dependencies.length) {\n                _.forEach(appObj.css_dependencies, function(cssDep) {\n                    outStream.write('<link rel=\"stylesheet\" href=\"'+cssDep.path+'/'+cssDep.name+'\">\\n');\n                });\n            }\n            \n            outStream.write('</head>\\n');\n            \n            var addBodyTag = (appObj.body.substring(0, 5) !== '<body');\n            \n            if(addBodyTag) {\n                outStream.write('<body>\\n');\n            }\n            else {\n                appObj.body = appObj.body.replace('</body>', '');\n            }\n            \n            outStream.write(appObj.body+'\\n'+moduleDepTags.js+'\\n');\n            \n            if(appObj.js_dependencies && appObj.js_dependencies.length) {\n                _.forEach(appObj.js_dependencies, function(jsDep) {\n                    outStream.write('<script src=\"'+jsDep.path+'/'+jsDep.name+'\"></script>\\n');\n                });\n            }\n            \n            if(appObj.config_function) {\n                outStream.write('<script type=\"text/javascript\">\\n');\n                \n                outStream.write('angular.module(');\n                if(moduleObj) {\n                    outStream.write('\\''+moduleName+'\\'');\n                }\n                else{\n                    outStream.write('\\''+moduleName+'\\', []');\n                }\n                outStream.write(').config('+appObj.config_function+');\\n');\n                \n                outStream.write('</script>');\n            }\n            \n            outStream.write('</body></html>');\n            \n            return outStream.end();\n            \n        });\n        \n    }\n}",
 	"is_static": false,
 	"name": "serveContent",
 	"use_injection": true
@@ -13967,7 +13998,7 @@
 			"_id": "7R4cBwsWTSacdSk5ZrAjTw",
 			"key": "sys",
 			"major_version": 0,
-			"minor_version": 66
+			"minor_version": 67
 		}
 	],
 	"url": "https://pkg.noonian.org"
@@ -14016,21 +14047,11 @@
 	"key": "dbui.export_csv"
 },
 {
-	"__ver": "sys:1",
-	"_class": "User",
-	"_id": "UO_aGVVDTcStJ37Fj3lDMg",
-	"name": "test",
-	"password": {
-		"hash": "$2a$10$VWRHFRPnf6/elrZRqi30NO.BiusFu6P27.m1SEzBlJwifMOOFkd0e"
-	},
-	"roles": [
-	]
-},
-{
 	"__pkg": "sys",
-	"__ver": "sys:3",
+	"__ver": "sys:4",
 	"_class": "User",
 	"_id": "vl22Nf2XTNym2-X90sxOag",
+	"last_login": "2018-03-15T22:22:12.476Z",
 	"name": "admin",
 	"password": {
 		"hash": "$2a$10$upi6IEXcAO71HY.NzpT33ePm58Pf4Oxo8Flf8K6iOWqyPrQjFyh9G"
@@ -14303,10 +14324,10 @@
 },
 {
 	"__disp": "/dbui/getSysMetadata",
-	"__ver": "sys:6",
+	"__ver": "sys:16",
 	"_class": "WebService",
 	"_id": "rVM06exeQXWZPYBFnq6n0g",
-	"function": "function (db, auth, req, Q, _) {\n    \n    \n    return auth.getCurrentUser(req).then(function(currUser) {\n        var ENGLISH_ID='-9vPfv2lEeSFtiimx_V4dw';\n        var language = (currUser.language && currUser.language._id) || ENGLISH_ID;\n        \n        return Q.all([\n            db.BusinessObjectDef.find({}).lean().exec(),\n            db.MemberFunction.find({applies_to:{$in:['client', 'both']}}).lean().exec(),\n            db.LabelGroup.find({key:/^sys\\.dbui\\.bo\\..+/, language:language}).lean().exec()\n        ]);\n    })\n    .then(function(resultArr) {\n        var allBods = resultArr[0];\n        var memberFns = resultArr[1];\n        var labelGroups = resultArr[2];\n        \n        var bodMap = _.indexBy(allBods, '_id');\n        _.forEach(memberFns, function(memFn) {\n            if(memFn.business_object && memFn.business_object._id) {\n                var bod = bodMap[memFn.business_object._id];\n                bod._member_functions = bod._member_functions || [];\n                bod._member_functions.push(memFn);\n                delete memFn.business_object;\n                delete memFn.applies_to;\n            }\n        });\n        bodMap = _.indexBy(allBods, 'class_name');\n        _.forEach(labelGroups, function(lg) {\n            var className = lg.key.split('.').pop();\n            if(bodMap[className]) {\n                bodMap[className]._field_labels =  lg.value;\n            }\n        });\n        \n        return {result:allBods};\n    });\n}",
+	"function": "function (db, auth, req, Q, _) {\n    var isAdmin;\n    \n    return auth.getCurrentUser(req).then(function(currUser) {\n        const ENGLISH_ID='-9vPfv2lEeSFtiimx_V4dw';\n        const language = (currUser.language && currUser.language._id) || ENGLISH_ID;\n        \n        const myRoles = _.pluck(currUser.roles, '_id');\n        isAdmin = myRoles.indexOf('FnQ_eBYITOSC8kJA4Zul5g') > -1;\n        \n        return Q.all([\n            db.BusinessObjectDef.find({}).lean().exec(),\n            db.MemberFunction.find({applies_to:{$in:['client', 'both']}}).lean().exec(),\n            db.LabelGroup.find({key:/^sys\\.dbui\\.bo\\..+/, language:language}).lean().exec(),\n            isAdmin ? [] : db.DataAccessControl.find({rolespec:{$satisfiedBy:myRoles}}).lean().exec()\n        ]);\n    })\n    .then(function([allBods, memberFns,labelGroups,dacList]) {\n        \n        if(!isAdmin) {\n            //Special processing for non-admin users:\n            \n            //(1) compute permission summary from DACs\n            const dacMap = {};\n            for(var dac of dacList) {\n                let boId = dac.business_object._id;\n                let m = dacMap[boId] = dacMap[boId] || {};\n                let isConditional = !!dac.condition;\n                \n                let permission = isConditional ? 'conditional' : true;\n                let c,r,u,d;\n                isConditional ? ({c,r,u,d} = m) : (c=r=u=d=true);\n                \n                dac.allow_create && (m.c = c || permission);\n                dac.allow_read   && (m.r = r || permission);\n                dac.allow_update && (m.u = u || permission);\n                dac.allow_delete && (m.d = d || permission);\n            }\n            console.log('DAC MAP: %j', dacMap);\n            \n            //(2) filter out BOD list to include only those w/ some permission\n            //    and augment w/ permission description\n            var filteredList = [];\n            for(let bo of allBods) {\n                let perm = dacMap[bo._id]; \n                if(perm) {\n                    bo._access_permissions = {create:perm.c,read:perm.r,update:perm.u,delete:perm.d};\n                    filteredList.push(bo);\n                }\n            }\n            allBods = filteredList;\n        }\n        else {\n            //Is an admin: augment w/ fully permissive \n            let perm = {create:true,read:true,update:true,delete:true};\n            for(let bo of allBods) {\n                bo._access_permissions = perm;\n            }\n        }\n        \n        var bodMap = _.indexBy(allBods, '_id');\n        _.forEach(memberFns, function(memFn) {\n            if(memFn.business_object && memFn.business_object._id) {\n                var bod = bodMap[memFn.business_object._id];\n                bod._member_functions = bod._member_functions || [];\n                bod._member_functions.push(memFn);\n                delete memFn.business_object;\n                delete memFn.applies_to;\n            }\n        });\n        bodMap = _.indexBy(allBods, 'class_name');\n        _.forEach(labelGroups, function(lg) {\n            var className = lg.key.split('.').pop();\n            if(bodMap[className]) {\n                bodMap[className]._field_labels =  lg.value;\n            }\n        });\n        \n        return {result:allBods};\n    });\n}",
 	"path": "/dbui/getSysMetadata",
 	"rolespec": [
 	]

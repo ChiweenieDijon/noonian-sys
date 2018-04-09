@@ -53,9 +53,18 @@ function (db, Q, _, config) {
                 });
             }
             
-            outStream.write('</head>');
+            outStream.write('</head>\n');
             
-            outStream.write('<body>'+appObj.body+'\n'+moduleDepTags.js+'\n');
+            var addBodyTag = (appObj.body.substring(0, 5) !== '<body');
+            
+            if(addBodyTag) {
+                outStream.write('<body>\n');
+            }
+            else {
+                appObj.body = appObj.body.replace('</body>', '');
+            }
+            
+            outStream.write(appObj.body+'\n'+moduleDepTags.js+'\n');
             
             if(appObj.js_dependencies && appObj.js_dependencies.length) {
                 _.forEach(appObj.js_dependencies, function(jsDep) {

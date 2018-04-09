@@ -8,7 +8,7 @@
     <div class="row" ng-repeat="r in sec.rows">
       
         <div class="{{colClass.top[r.length]}}" ng-repeat="fieldName in r">
-          <div class="form-group" ng-show="shouldShow(fieldName)">
+          <div class="form-group" ng-class="'field-editor-container_'+fieldName" ng-show="shouldShow(fieldName)">
 
             <label for="{{fieldName}}" class="{{colClass.label[r.length]}} control-label" uib-tooltip="{{labelGroup._tooltip[fieldName]}}" ng-class="{'required-field':isRequired(fieldName)}" tooltip-placement="bottom"> {{ labelGroup.getLabel(fieldName) }}</label>
             <dbui-field-editor fieldtype="{{getTypeDesc(fieldName).type}}" type-desc="getTypeDesc(fieldName)" elem-id="fieldName" ng-model="getterSetter[fieldName]" ng-model-options="{ getterSetter: true }" class="{{colClass.value[r.length]}} dbui-edit-container" field-customizations="perspective.fieldCustomizations[fieldName]" context-object="theObject" link-status="linkStatus[fieldName]"></dbui-field-editor>

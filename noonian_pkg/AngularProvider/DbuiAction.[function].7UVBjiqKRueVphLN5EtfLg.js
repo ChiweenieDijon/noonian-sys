@@ -6,11 +6,13 @@ function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state
       'new':{
         label:'New',
         state:'dbui.create',
-        icon:'fa-plus-square'
+        icon:'fa-plus-square',
+        id:'new'
       },
       'duplicate':{
         label:'Duplicate',
         icon:'fa-copy',
+        id:'duplicate',
         fn: function(args) {
             $state.go('dbui.create', {className:args.className, perspective:args.perspective, copyObject:args.targetObj});
         }
@@ -18,26 +20,31 @@ function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state
       'list':{
         label:'List',
         state:'dbui.list',
-        icon:'fa-list'
+        icon:'fa-list',
+        id:'list'
       },
       'folder_list':{
         label:'List',
         state:'dbui.folders',
-        icon:'fa-folder-o'
+        icon:'fa-folder-o',
+        id:'folder_list'
       },
       'view':{
         label:'View',
         state:'dbui.view',
-        icon:'fa-eye'
+        icon:'fa-eye',
+        id:'view'
       },
       'edit':{
         label:'Edit',
         state:'dbui.edit',
-        icon:'fa-pencil-square-o'
+        icon:'fa-pencil-square-o',
+        id:'edit'
       },
       'delete':{
         label:'Delete',
         icon:'fa-times-circle',
+        id:'delete',
         fn: function(args) {
           if(window.confirm('Are you sure you wish to delete this record?')) {
             return args.targetObj.remove().then(function() {
@@ -54,6 +61,7 @@ function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state
       'dialog-view': {
         label:'View',
         icon:'fa-eye',
+        id:'dialog-view',
         fn: function(args) {
 
           var modalInstance;

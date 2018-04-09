@@ -1,0 +1,8 @@
+{
+	"__ver": "sys:1",
+	"_id": "9JdLDyJxStK3LCtyYHELRA",
+	"doc": "Represents a duration of time, relative to \"now\".\nStores a date and a preferred duration unit (years, months, days, etc.)",
+	"mongo_type": "Mixed",
+	"name": "relative_duration",
+	"text_index": false
+}
