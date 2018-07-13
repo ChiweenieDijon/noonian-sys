@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_id": "0tydbMgIRdudkdXTyXt7qA",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.RemotePackageRepository",
@@ -38,6 +38,7 @@
 			"recordActions": [
 				"edit",
 				"delete",
+				"duplicate",
 				{
 					"icon": "fa-bolt",
 					"label": "Run Update",
