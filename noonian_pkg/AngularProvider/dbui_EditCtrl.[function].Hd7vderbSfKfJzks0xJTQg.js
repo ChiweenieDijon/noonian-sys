@@ -84,6 +84,7 @@ function ($scope, $state, db, DbuiAlert, DbuiAction, NoonI18n, theObject, editPe
     
     if(editPerspective.recordActions) {
         $scope.recordActionList = DbuiAction.unaliasActionList(editPerspective.recordActions, specialActions);
+        DbuiAction.processActionVisibility($scope.recordActionList, theObject);
     }
 
     

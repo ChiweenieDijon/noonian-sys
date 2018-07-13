@@ -23,7 +23,10 @@ function ($stateParams, $scope, DbuiAction, NoonI18n, theObject, viewPerspective
     
     if(viewPerspective.recordActions) {
         $scope.recordActionList = DbuiAction.unaliasActionList(viewPerspective.recordActions);
+        DbuiAction.processActionVisibility($scope.recordActionList, theObject);
     }
+    
+    
     
     if($scope.setPageTitle)
         $scope.setPageTitle('View '+theObject._disp);

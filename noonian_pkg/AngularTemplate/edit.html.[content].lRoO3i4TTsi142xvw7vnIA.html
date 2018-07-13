@@ -8,7 +8,7 @@
 	</div>
 	
 	<div class="action-bar-upper" ng-class="{'save-warn':(formStatus.isDirty)}" ng-show="recordActionList.length > 0">
-      <button type="button" ng-repeat="action in recordActionList" class="btn btn-action" ng-class="'action_'+action.id"  ng-click="invokeAction(action)"><i class="fa fa-lg" ng-class="action.icon" ></i> {{ action.label }}</button>
+      <button type="button" ng-repeat="action in recordActionList" class="btn btn-action" ng-class="'action_'+action.id"  ng-click="invokeAction(action)" ng-hide="action.isHidden"><i class="fa fa-lg" ng-class="action.icon" ></i> {{ action.label }}</button>
     </div>
   
 

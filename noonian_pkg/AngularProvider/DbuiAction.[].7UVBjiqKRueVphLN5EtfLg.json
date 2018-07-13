@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:32",
+	"__ver": "sys:36",
 	"_id": "7UVBjiqKRueVphLN5EtfLg",
 	"doc": "Extends the NoonAction service to add DBUI specifics\n1) invokeAction is called w/ perspective and context bo, in addition to actionObj and argsObj.  Parameters are added depending on action type and provided perspective and context bo\n2) when any action returns object w/ 'message', 'error' or 'warning' properties, alert is rendered in UI via DbuiAlert service\n3) when any action returns object w/ 'action' property, action object is invoked, allowing for chaining behavior (e.g. webservice responding w/ re-direct)",
 	"module": {
@@ -15,7 +15,9 @@
 		"$rootScope",
 		"$uibModal",
 		"$state",
-		"db"
+		"$parse",
+		"db",
+		"NoonAuth"
 	],
 	"path": "dbui/api",
 	"type": "factory"

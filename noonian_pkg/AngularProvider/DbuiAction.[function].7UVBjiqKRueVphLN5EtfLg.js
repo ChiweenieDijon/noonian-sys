@@ -1,4 +1,4 @@
-function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state, db) {
+function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state, $parse, db, NoonAuth) {
 
     var derivedService = Object.create(NoonAction);
     
@@ -30,6 +30,7 @@ function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state
         id:'folder_list'
       },
       'view':{
+        display_condition:'_id',
         label:'View',
         state:'dbui.view',
         icon:'fa-eye',
@@ -42,6 +43,7 @@ function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state
         id:'edit'
       },
       'delete':{
+        display_condition:'_id',
         label:'Delete',
         icon:'fa-times-circle',
         id:'delete',
@@ -181,6 +183,52 @@ function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state
           }
 
         );
+    };
+    
+    
+    var noonContext;
+    const getNoonContext = function() {
+        if(!noonContext) {
+            noonContext = {
+                currentUser:NoonAuth.getCurrentUser(),
+                userPreferences:$rootScope.userPrefs
+            };
+        }
+        return noonContext;
+    }
+    
+    /**
+     * Set isHidden for any actions that have visiblityCondition expression set
+     */
+    derivedService.processActionVisibility = function(actionList, contextObject) {
+        contextObject = contextObject || {};
+        _.forEach(actionList, function(a) {
+            if(a.display_condition && !a.shouldShow) {
+                try {
+                    
+                    a.shouldShow = $parse(a.display_condition);
+                    a.requireNoonContext = (a.display_condition.indexOf('$noonContext') > -1);
+                    
+                } catch (e) {
+                    console.error(e);
+                }
+            }
+            
+            if(a.requireNoonContext) {
+                contextObject.$noonContext = getNoonContext();
+            }
+            
+            if(a.shouldShow && !a.shouldShow(contextObject)) {
+                a.isHidden = true;
+                delete contextObject.$noonContext;
+            }
+            else {
+                a.isHidden = false;
+            }
+            
+            
+            
+        });
     };
     
     return derivedService;
