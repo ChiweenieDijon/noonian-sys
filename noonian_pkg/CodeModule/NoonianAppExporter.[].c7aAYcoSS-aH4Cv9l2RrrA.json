@@ -1,0 +1,7 @@
+{
+	"__ver": "sys:4",
+	"_id": "c7aAYcoSS-aH4Cv9l2RrrA",
+	"doc": "Tool to export AngularApp's and related files to the filesystem",
+	"name": "NoonianAppExporter",
+	"path": "sys/app"
+}

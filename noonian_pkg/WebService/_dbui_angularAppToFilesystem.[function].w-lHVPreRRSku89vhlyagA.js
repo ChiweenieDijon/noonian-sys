@@ -1,7 +1,4 @@
-function (queryParams) {
-    var appId = queryParams.appId;
+function (NoonianAppExporter) {
     
-    return {
-        warning:"TO IMPLEMENT! "+appId
-    };
+    return NoonianAppExporter.exportApp('HvpsexNtTOyRCzDDd4GNsg','/tmp/noonian_export_test');
 }
