@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:6",
+	"__ver": "sys:8",
 	"_id": "_kXc9xmXRK25KE0qkjrXVg",
 	"abstract": false,
 	"class_name": "DbuiCustomPage",
@@ -18,11 +18,31 @@
 		"key": {
 			"type": "path"
 		},
+		"params": [
+			{
+				"type": "composite",
+				"type_desc_map": {
+					"name": {
+						"type": "string"
+					},
+					"type": {
+						"enum": [
+							"string-like",
+							"object"
+						],
+						"type": "string"
+					}
+				}
+			}
+		],
 		"rolespec": {
 			"type": "rolespec"
+		},
+		"state_name": {
+			"type": "path"
 		}
 	},
-	"doc": "A \"custom page\" accessible within the DBUI interface by navigating to the state \"dbui.custompage\", with a \"key\" parameter matching a DbuiCustomPage's key field.\n @property {sourcecode} body \n @property {function} controller \n @property {jsdoc} doc \n @property {path} key \n @property {rolespec} rolespec \n",
+	"doc": "A \"custom page\" accessible within the DBUI interface by navigating to the state \"dbui.custompage\", with a \"key\" parameter matching a DbuiCustomPage's key field.\n @property {sourcecode} body \n @property {function} controller \n @property {jsdoc} doc \n @property {path} key \n @property {rolespec} rolespec \n\n @property {composite[]} params \n\n @property {path} state_name \n",
 	"superclass": null,
 	"system": true
 }

@@ -1,5 +1,5 @@
 function ($scope, $state, $stateParams) {
-    // console.log('dbui_CustomPageCtrl invoked for', $stateParams.resourcePath);
+    // console.log('dbui_CustomPageCtrl invoked for', $state);
     // $scope.resourcePath = decodeURIComponent($stateParams.resourcePath);
     if($stateParams.key) {
         $scope.pageKey = $stateParams.key;

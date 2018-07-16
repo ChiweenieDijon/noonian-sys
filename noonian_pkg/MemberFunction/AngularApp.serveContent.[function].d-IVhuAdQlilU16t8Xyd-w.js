@@ -19,6 +19,7 @@ function (db, Q, _, config) {
         return initialPromise.then(function(result) {
             if(result) {
                 moduleObj = result;
+                //getDependencyTags recurses dependency tree to build full list of css and js dependencies
                 return moduleObj.getDependencyTags();
             }
             else {
@@ -41,16 +42,47 @@ function (db, Q, _, config) {
             header += '<head>'
             header += '<base href="'+config.serverConf.urlBase+'/">';
             
-            header += moduleDepTags.css; //Css dependencies of AngularModule's
+            
+            //Module CSS dependencies
+            header += moduleDepTags.css;
             
             header += appObj.head+'\n';
             
             outStream.write(header);
             
+            
+            //App CSS dependencies
             if(appObj.css_dependencies && appObj.css_dependencies.length) {
                 _.forEach(appObj.css_dependencies, function(cssDep) {
                     outStream.write('<link rel="stylesheet" href="'+cssDep.path+'/'+cssDep.name+'">\n');
                 });
+            }
+            
+            //Module JS dependencies
+            outStream.write('\n'+moduleDepTags.js+'\n');
+            
+            //App JS dependencies
+            if(appObj.js_dependencies && appObj.js_dependencies.length) {
+                _.forEach(appObj.js_dependencies, function(jsDep) {
+                    outStream.write('<script src="'+jsDep.path+'/'+jsDep.name+'"></script>\n');
+                });
+            }
+            
+            //App's config function            
+            if(appObj.config_function) {
+                outStream.write('<script type="text/javascript">\n');
+                
+                outStream.write('angular.module(');
+                if(moduleObj) {
+                    outStream.write('\''+moduleName+'\'');
+                }
+                else{
+                    //Define module here if it isn't part of a pre-defined one
+                    outStream.write('\''+moduleName+'\', []');
+                }
+                outStream.write(').config('+appObj.config_function+');\n');
+                
+                outStream.write('</script>');
             }
             
             outStream.write('</head>\n');
@@ -64,28 +96,17 @@ function (db, Q, _, config) {
                 appObj.body = appObj.body.replace('</body>', '');
             }
             
-            outStream.write(appObj.body+'\n'+moduleDepTags.js+'\n');
+            outStream.write(appObj.body+'\n');
             
-            if(appObj.js_dependencies && appObj.js_dependencies.length) {
-                _.forEach(appObj.js_dependencies, function(jsDep) {
-                    outStream.write('<script src="'+jsDep.path+'/'+jsDep.name+'"></script>\n');
-                });
-            }
+            // outStream.write(appObj.body+'\n'+moduleDepTags.js+'\n');
             
-            if(appObj.config_function) {
-                outStream.write('<script type="text/javascript">\n');
-                
-                outStream.write('angular.module(');
-                if(moduleObj) {
-                    outStream.write('\''+moduleName+'\'');
-                }
-                else{
-                    outStream.write('\''+moduleName+'\', []');
-                }
-                outStream.write(').config('+appObj.config_function+');\n');
-                
-                outStream.write('</script>');
-            }
+            // if(appObj.js_dependencies && appObj.js_dependencies.length) {
+            //     _.forEach(appObj.js_dependencies, function(jsDep) {
+            //         outStream.write('<script src="'+jsDep.path+'/'+jsDep.name+'"></script>\n');
+            //     });
+            // }
+            
+
             
             outStream.write('</body></html>');
             

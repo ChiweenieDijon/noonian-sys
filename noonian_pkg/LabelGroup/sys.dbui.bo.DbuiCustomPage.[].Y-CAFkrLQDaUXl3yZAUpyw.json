@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_id": "Y-CAFkrLQDaUXl3yZAUpyw",
 	"key": "sys.dbui.bo.DbuiCustomPage",
 	"language": {
@@ -9,9 +9,15 @@
 	},
 	"system": true,
 	"value": {
+		"#params": {
+			"name": "Name",
+			"type": "Type"
+		},
 		"body": "Body",
 		"controller": "Controller",
 		"doc": "Documentation",
-		"key": "Key"
+		"key": "Key",
+		"params": "State Parameters",
+		"state_name": "State Name"
 	}
 }

@@ -1,13 +1,19 @@
 {
-	"__ver": "sys:4",
+	"__ver": "sys:5",
 	"_id": "hJiZxpRJRp-7ihmjq5qpMQ",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.DbuiCustomPage",
+	"rolespec": [
+	],
 	"system": true,
 	"value": {
 		"edit": {
 			"layout": [
-				"key",
+				[
+					"key",
+					"state_name"
+				],
+				"params",
 				"doc",
 				"controller",
 				"body"
@@ -16,12 +22,17 @@
 		"list": {
 			"fields": [
 				"key",
+				"state_name",
 				"doc"
 			]
 		},
 		"view": {
 			"layout": [
-				"key",
+				[
+					"key",
+					"state_name"
+				],
+				"params",
 				"doc",
 				"controller",
 				"body"

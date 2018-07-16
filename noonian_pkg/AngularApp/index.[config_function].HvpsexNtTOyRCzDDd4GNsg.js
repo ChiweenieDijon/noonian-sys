@@ -1,4 +1,4 @@
-function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider, $controllerProvider) {
+function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider, $controllerProvider, dbuiCustomStatesProvider) {
     console.log('noonian.dbui config()');
     var appUrlBase = '/dbui/index';
     
@@ -182,6 +182,34 @@ function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider, 
           perspective:null,
           extraParams:null
         }
-      })
-      ;
+      });
+      
+      
+      const customStates = dbuiCustomStatesProvider.$get();
+      if(customStates && customStates.length) {
+          //Custom states data is provided via server-side generated js (/dbui/customStatesProvider)
+          //  this is to support direct linking to custom page w/in the app
+          //  it needs to be set up in config phase, otherwise UI-router would attempt to transition to state before its defined.  (setup in run phase using a dynamic $http call would be too late)
+          _.forEach(customStates, cs => {
+              var stateDef = {
+                  url:appUrlBase+'/custompage/:key',
+                  templateUrl: 'dbui/core/state/custompage.html',
+                  params:{
+                      key:cs.key
+                  }
+              };
+              _.forEach(cs.params, p => {
+                  if(p.type === 'string-like') {
+                      stateDef.url += '/:'+p.name;
+                  }
+                  else {
+                      stateDef.params = stateDef.params || {};
+                      stateDef.params[p.name] = null;
+                  }
+              });
+              console.log('adding state ', cs, stateDef)
+              $stateProvider.state('dbui.'+cs.state_name, stateDef);
+          })
+          
+      }
 }

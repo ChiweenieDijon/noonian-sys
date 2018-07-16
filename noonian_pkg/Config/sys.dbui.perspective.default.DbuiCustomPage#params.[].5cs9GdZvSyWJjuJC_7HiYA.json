@@ -1,0 +1,17 @@
+{
+	"__ver": "sys:2",
+	"_id": "5cs9GdZvSyWJjuJC_7HiYA",
+	"allow_customize": false,
+	"key": "sys.dbui.perspective.default.DbuiCustomPage#params",
+	"rolespec": [
+	],
+	"system": false,
+	"value": {
+		"list": {
+			"fields": [
+				"name",
+				"type"
+			]
+		}
+	}
+}
