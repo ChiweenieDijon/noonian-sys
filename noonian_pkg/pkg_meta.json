@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:69",
+	"__ver": "sys:70",
 	"_id": "7R4cBwsWTSacdSk5ZrAjTw",
 	"build_config": {
 		"exclude": [
@@ -16,7 +16,7 @@
 	"major_version": 0,
 	"manifest": {
 		"AngularApp": {
-			"HvpsexNtTOyRCzDDd4GNsg": "sys:58",
+			"HvpsexNtTOyRCzDDd4GNsg": "sys:77",
 			"kRd_Ft64QFey_at4tgphXA": "sys:27"
 		},
 		"AngularModule": {
@@ -24,7 +24,7 @@
 			"myP57XGhSNyDKrrcJFvO0Q": "sys:71"
 		},
 		"AngularProvider": {
-			"-WzjxRZhT-CoPcBycQAiOg": "sys:11",
+			"-WzjxRZhT-CoPcBycQAiOg": "sys:12",
 			"1DR9d4BTQtafOsD03s3kPg": "sys:33",
 			"1KOgLhmgQj2AUKYIxflYqA": "sys:26",
 			"2UpyXO5lR3qV-oce53G_7A": "sys:41",
@@ -34,11 +34,11 @@
 			"5W1f4vxWTte-kQvjjgpyLA": "sys:37",
 			"5dJkEI1PRmK41Hh2lw2y_w": "sys:28",
 			"78XYGLNnRmC6RFphsvfNbw": "sys:5",
-			"7UVBjiqKRueVphLN5EtfLg": "sys:32",
+			"7UVBjiqKRueVphLN5EtfLg": "sys:36",
 			"7jHQrtYKQxSzW_pRHAd9RA": "sys:15",
 			"9en21yAeQAOdV_Uxm_C9sQ": "sys:41",
 			"Gh1s8LuGThywzsMA7BIMjg": "sys:12",
-			"Hd7vderbSfKfJzks0xJTQg": "sys:18",
+			"Hd7vderbSfKfJzks0xJTQg": "sys:19",
 			"I_Fy8QWkTdiSj9Bz3A-jNw": "sys:86",
 			"Ik05NEwxTJitCXy7seb6rQ": "sys:1",
 			"LsujDPMnQ8aJ268YxHkBPA": "sys:5",
@@ -56,7 +56,7 @@
 			"_28vJLv9Tt6HzXexuNITlA": "sys:12",
 			"dfknFcxcQGWvTrHw0DZcIA": "sys:52",
 			"eoefRk8MQQqLX-MFLYPdSQ": "sys:8",
-			"ezSJbZ-NQ52ZgnKLWh1Ebw": "sys:4",
+			"ezSJbZ-NQ52ZgnKLWh1Ebw": "sys:6",
 			"hCyhlFUVRg-I67dGF-RcjQ": "sys:2",
 			"jXqx7LOLRl6ZoWUORs8nPA": "sys:39",
 			"mZ9F54oASxS70Cwk1eodeA": "sys:3",
@@ -90,13 +90,13 @@
 			"hbhKtxpDQLaUvyA7hogLWw": "sys:23",
 			"iMYbBIZHRvqnpf6mAmeBBw": "sys:17",
 			"kX5Bln7MQ7evgGJJm9QhUw": "sys:9",
-			"lRoO3i4TTsi142xvw7vnIA": "sys:18",
+			"lRoO3i4TTsi142xvw7vnIA": "sys:20",
 			"nFlRtvy8T4WjgiUECbROSw": "sys:5",
 			"nWxgcco1SJWxxpgCW1TjYg": "sys:15",
 			"nlXSAaacSla8tUPF9oYF7A": "sys:7",
 			"qwW8v9NIReKHdrGiRZl9tg": "sys:10",
 			"r4BrmS_bRVWPqcl-NAQYiQ": "sys:1",
-			"rnTzkxz-SoayJMPtHFEPcA": "sys:12",
+			"rnTzkxz-SoayJMPtHFEPcA": "sys:13",
 			"xQhrwwpWR-uqqlbCrQ95xw": "sys:6"
 		},
 		"BusinessObjectDef": {
@@ -124,7 +124,7 @@
 			"ZWSBEFYOT6WlJG95iIm_rw": "sys:11",
 			"_7EZRGUeRYaiyU-YSZonhQ": "sys:4",
 			"_K5c8nuqSHOof2sQkwfYBQ": "sys:2",
-			"_kXc9xmXRK25KE0qkjrXVg": "sys:6",
+			"_kXc9xmXRK25KE0qkjrXVg": "sys:8",
 			"ddY7PaHnQsGCChSZfL12wg": "sys:4",
 			"eTt1sebpTOOicLafo-B1PQ": "sys:6",
 			"fz7jb19XR5K4aclPQdkjIw": "sys:1",
@@ -147,19 +147,21 @@
 		"CodeModule": {
 			"9f_aeR8HQE-HqePHGgquNg": "sys:14",
 			"X9yUXbrtRx6hKYrMbkzFIw": "sys:15",
+			"c7aAYcoSS-aH4Cv9l2RrrA": "sys:4",
 			"iV-ugHjjQo29KbS3E0UxQg": "sys:17",
 			"pwMVRvdjSU-2Ak0BWDA6AA": "sys:5"
 		},
 		"Config": {
 			"076TmOduSve4_ZvYrqSLig": "sys:6",
 			"0KZWeNuMSJyW7QImA9AndA": "sys:1",
-			"0tydbMgIRdudkdXTyXt7qA": "sys:2",
+			"0tydbMgIRdudkdXTyXt7qA": "sys:3",
 			"1Ot34-g6Q12L6OoxKi401A": "sys:3",
 			"1nme6hlATsews3AMdvHyaA": "sys:3",
 			"2kCebqAhSq23kIfWjZ7H5Q": "sys:1",
 			"301VFkFiQ16jsquLcxaS_g": "sys:1",
 			"447ODSNfR4S1BcDTKHehoA": "sys:1",
 			"4oreVV9bQE6POFFq8ruL1Q": "sys:5",
+			"5cs9GdZvSyWJjuJC_7HiYA": "sys:2",
 			"5wAcBhU-QWqnwR0HoTd5uw": "sys:1",
 			"6VBJYXFFQyq9ODPG8dZMSg": "sys:1",
 			"6eMazeR1Q_yJMeYWnj0VhQ": "sys:3",
@@ -224,7 +226,7 @@
 			"eSAFk0BgQ7iKh-q9q02ZUw": "sys:2",
 			"g7Eq-Ra_Qc2oJFqjM8AoBQ": "sys:1",
 			"hIGoBem9TQinCMTZh-tCTQ": "sys:4",
-			"hJiZxpRJRp-7ihmjq5qpMQ": "sys:4",
+			"hJiZxpRJRp-7ihmjq5qpMQ": "sys:5",
 			"if2R-LabRcyDzpX_5X_ucQ": "sys:2",
 			"jSJbDp6BReSLHQW54XyBvQ": "sys:1",
 			"knpIXitAQh2Mf2d6ctQOow": "sys:3",
@@ -259,6 +261,10 @@
 			"o4W541R8SOaAsLdTAFRwBw": "sys:4",
 			"rTEg0q5bQbiYsTXNOFCBvQ": "sys:3"
 		},
+		"DataAccessControl": {
+			"t30QrsdZTyCwg6uKmmYMfg": "sys:1",
+			"xrPuDwMmS26cp_JrXvVJRg": "sys:1"
+		},
 		"DataExport": {
 			"Vs_E0HrSSk6_aNtNUvexaw": "sys:1"
 		},
@@ -272,8 +278,9 @@
 		},
 		"DbuiCustomPage": {
 			"2fHM4oJ_TUKJth8FgnTr0g": "sys:5",
+			"LB2Xr2qBSPyvxHuTwdJaKQ": "sys:2",
 			"g8O7qmAZQ-Khw4FHXQdlfg": "sys:1",
-			"wGwX2SpXRjWE7iLAAQkROQ": "sys:5"
+			"wGwX2SpXRjWE7iLAAQkROQ": "sys:7"
 		},
 		"DocTemplate": {
 			"4ErFTHwWQS2ptwkBB1UZWg": "sys:1"
@@ -415,7 +422,7 @@
 			"TS9SHirsQXKol9WBYFN-ZA": "sys:1",
 			"U4yGzcuDQh2rjSA7O3s7Tw": "sys:1",
 			"V_SaiCYWR5yl9o006_soMA": "sys:1",
-			"Y-CAFkrLQDaUXl3yZAUpyw": "sys:2",
+			"Y-CAFkrLQDaUXl3yZAUpyw": "sys:4",
 			"_DrkA3czQUup-f2KiH-fCw": "sys:2",
 			"_QrXcqXVTjqddtOxKYlG9g": "sys:2",
 			"_Tbit9I7QJ-Qv4c6PI25Sg": "sys:5",
@@ -646,7 +653,7 @@
 			"RSc8RWl_RCa0rJgZAQae5w": "sys:19",
 			"Rk-_b0GMSI2IrwAJjZwqzw": "sys:1",
 			"bcle51paSiSQ9WaJ1uBxRQ": "sys:6",
-			"d-IVhuAdQlilU16t8Xyd-w": "sys:37",
+			"d-IVhuAdQlilU16t8Xyd-w": "sys:38",
 			"gmqHd9JrSjGwXTnXsBsIPw": "sys:1",
 			"t14zSWV5SPa7k6brh4HFxg": "sys:12",
 			"tDmzVEMjQ0Ky1lpYoLnvCQ": "sys:1"
@@ -710,7 +717,8 @@
 			"vbIpJ6l7RBask_VdWUx0fg": "sys:4"
 		},
 		"Role": {
-			"FnQ_eBYITOSC8kJA4Zul5g": "sys:1"
+			"FnQ_eBYITOSC8kJA4Zul5g": "sys:1",
+			"vZnQ6fGnTKiEWWy9k2gyqg": "sys:1"
 		},
 		"TwoFactorAuthImplementation": {
 			"GaulTlfcRgGe0DkrJcq_tQ": "sys:4",
@@ -722,7 +730,7 @@
 			"zIbWSxNgRiGVY_G7j_jYsA": "sys:1"
 		},
 		"User": {
-			"vl22Nf2XTNym2-X90sxOag": "sys:4"
+			"vl22Nf2XTNym2-X90sxOag": "sys:10"
 		},
 		"WebService": {
 			"5TmX2XybS4WCYB8wS_g1uA": "sys:1",
@@ -733,6 +741,7 @@
 			"GXO11xYsQLKmo_4Ohy-eaQ": "sys:10",
 			"IeZLWhf8TEygSbIiXxU37A": "sys:6",
 			"Kgh686IiRCCrZdXIScjVNg": "sys:12",
+			"KwOpx2idREyjG8IkQgPZjQ": "sys:4",
 			"OsHGskAGTUWcWsUUMDkVLA": "sys:3",
 			"SUUJLgaBQSmM-hi3AyGP0A": "sys:14",
 			"SyEf04PFRfKB6f-MOH3QBg": "sys:2",
@@ -752,14 +761,14 @@
 			"rVM06exeQXWZPYBFnq6n0g": "sys:16",
 			"v42RTwwjQLOZ4uyOY80ZwQ": "sys:7",
 			"v7m93WESQVyYqXfZE9XN4Q": "sys:1",
-			"w-lHVPreRRSku89vhlyagA": "sys:2"
+			"w-lHVPreRRSku89vhlyagA": "sys:3"
 		}
 	},
-	"minor_version": 68,
+	"minor_version": 69,
 	"name": "Core System",
 	"package_file": {
-		"attachment_id": "82ENKo6RSbu6iUgp2ayUiA",
-		"filename": "sys.0.68.json",
+		"attachment_id": "CGknaywxSSKK9OqQm9xzSw",
+		"filename": "sys.0.69.json",
 		"type": "application/json"
 	}
 }
