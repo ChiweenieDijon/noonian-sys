@@ -21,6 +21,13 @@ function (getInputStream, outputStream, className, params, db, i18n, nodeRequire
             
             return '';
         },
+        datetime: function(val) {
+            if(val) {
+                return moment(val).format('LLL');
+            }
+            
+            return '';
+        },
         reference: function(val) {
             return val ? val._disp : '';
         },

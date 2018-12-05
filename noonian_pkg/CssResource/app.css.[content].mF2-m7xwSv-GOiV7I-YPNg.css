@@ -423,6 +423,8 @@ a.accordion-toggle:hover {
 .dbui-field-viewer pre {
   white-space: pre-line;
   word-break:normal;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 /*
@@ -513,8 +515,10 @@ a.accordion-toggle:hover {
  }
 
  .physical_address_editor label {
-  margin-right:10px;
-  margin-left:20px;
+      margin-right: 10px;
+    margin-left: 10px;
+    min-width: 45px;
+    text-align: right;
  }
 
 
