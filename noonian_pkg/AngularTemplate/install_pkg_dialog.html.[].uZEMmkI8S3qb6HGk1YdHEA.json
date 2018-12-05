@@ -1,0 +1,12 @@
+{
+	"__ver": "sys:1",
+	"_id": "uZEMmkI8S3qb6HGk1YdHEA",
+	"module": {
+		"_disp": "noonian.api",
+		"_id": "NJnfAVnFSmuMcv9voRnaJQ"
+	},
+	"name": "install_pkg_dialog.html",
+	"path": "sys/packaging",
+	"rolespec": [
+	]
+}

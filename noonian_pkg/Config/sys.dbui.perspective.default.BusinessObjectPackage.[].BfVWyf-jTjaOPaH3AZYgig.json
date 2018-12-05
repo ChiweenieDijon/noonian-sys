@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:6",
+	"__ver": "sys:9",
 	"_id": "BfVWyf-jTjaOPaH3AZYgig",
 	"allow_customize": false,
 	"key": "sys.dbui.perspective.default.BusinessObjectPackage",
@@ -11,13 +11,10 @@
 			"layout": [
 				"package_file",
 				"key",
-				[
-					"name",
-					"enable_building"
-				],
+				"name",
 				"description",
 				"build_config",
-				"installed_version",
+				"version",
 				[
 					"major_version",
 					"minor_version"
@@ -29,33 +26,35 @@
 			]
 		},
 		"list": {
+			"actions": [
+				"new",
+				{
+					"icon": "fa-download",
+					"label": "Install Package",
+					"ui_action": "sys.packaging.install_package"
+				}
+			],
 			"fields": [
 				"key",
 				"name",
-				"enable_building",
-				"major_version",
-				"minor_version"
+				"version"
 			]
 		},
 		"picker_list": {
 			"fields": [
 				"key",
 				"name",
-				"major_version",
-				"minor_version"
+				"version"
 			]
 		},
 		"view": {
 			"layout": [
 				"package_file",
 				"key",
-				[
-					"name",
-					"enable_building"
-				],
+				"name",
 				"description",
 				"build_config",
-				"installed_version",
+				"version",
 				[
 					"major_version",
 					"minor_version"
