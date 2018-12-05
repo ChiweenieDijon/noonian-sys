@@ -101,6 +101,40 @@ function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state
     };
     
     
+        const handleActionError = function(err) {
+        var msg = 'Error invoking action';
+        console.log('DbuiAction: '+msg, this, err);
+        DbuiAlert.danger(msg+' '+err);
+    };
+    
+    /**
+     * An action can resolve to special DBUI instructions:
+     * alert, action chain
+     */
+    const handleActionResult = function(result) {
+        if(result) {
+          if(result.error) {
+            // alert(result.error);
+            DbuiAlert.danger(result.error);
+          }
+          
+          if(result.message) {
+            // alert(result.message);
+            DbuiAlert.success(result.message);
+          }
+          
+          if(result.warning) {
+              DbuiAlert.warning(result.warning);
+          }
+          
+          if(result.action) {
+              console.log('Chaining action: ', result.action);
+              return NoonAction.invoke(result.action).then(handleActionResult, handleActionError.bind(result.action));
+          }
+        }
+        
+        return result;
+    };
     
     /**
      * DbuiAction.invokeAction
@@ -152,36 +186,7 @@ function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state
       }
       
       return NoonAction.invoke(actionObj, params).then(
-          function(result) {
-            if(result) {
-              if(result.error) {
-                // alert(result.error);
-                DbuiAlert.danger(result.error);
-              }
-              
-              if(result.message) {
-                // alert(result.message);
-                DbuiAlert.success(result.message);
-              }
-              
-              if(result.warning) {
-                  DbuiAlert.warning(result.warning);
-              }
-              
-              if(result.action) {
-                  console.log('Chaining action: ', result.action);
-                  return NoonAction.invoke(result.action);
-              }
-            }
-            
-            return result;
-          },
-          function(err) {
-              var msg = 'Error invoking action';
-              console.log('DbuiAction: '+msg, actionObj, err);
-              DbuiAlert.danger(msg+' '+err);
-          }
-
+          handleActionResult, handleActionError.bind(actionObj)
         );
     };
     
