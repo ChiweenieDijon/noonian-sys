@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_id": "YKldolloSTitGHf7Wz64PQ",
 	"doc": "Returns the constructor for a \"BusinessObjectLabelGroup\". Instances provide a getLabel accessor function to recurse into sub-fields\nA BO's _bo_meta_data.field_labels is an instance of BusinessObjectLabelGroup.",
 	"module": {
