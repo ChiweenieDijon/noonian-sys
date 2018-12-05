@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:4",
+	"__ver": "sys:8",
 	"_id": "QLN_PHr_Tj6nzgzrHA4XdQ",
 	"abstract": false,
 	"class_name": "BusinessObjectPackage",
@@ -7,6 +7,19 @@
 		"build_config": {
 			"type": "object"
 		},
+		"changelog": [
+			{
+				"type": "composite",
+				"type_desc_map": {
+					"change_text": {
+						"type": "text"
+					},
+					"version": {
+						"type": "string"
+					}
+				}
+			}
+		],
 		"dependencies": {
 			"type": "object"
 		},
@@ -19,9 +32,6 @@
 		},
 		"enable_building": {
 			"type": "boolean"
-		},
-		"installed_version": {
-			"type": "string"
 		},
 		"key": {
 			"seperator": ".",
@@ -45,9 +55,12 @@
 		},
 		"package_file": {
 			"type": "attachment"
+		},
+		"version": {
+			"type": "string"
 		}
 	},
-	"doc": "A \"package\" of Business Objects.  Facilitates the grouping of arbitrary business objects into sharable, versionable data packages.\n @property {object} build_config \n @property {object} dependencies \n @property {string} description \n @property {reference.<JsDocConfig>} doc_config \n @property {boolean} enable_building \n @property {string} installed_version \n @property {path} key \n @property {integer} major_version \n @property {object} manifest \n @property {integer} minor_version \n @property {string} name \n @property {function} on_install_fn \n @property {attachment} package_file \n",
+	"doc": "A \"package\" of Business Objects.  Facilitates the grouping of arbitrary business objects into sharable, versionable data packages.\n @property {object} build_config \n @property {object} dependencies \n @property {string} description \n @property {reference.<JsDocConfig>} doc_config \n @property {boolean} enable_building \n @property {string} installed_version \n @property {path} key \n @property {integer} major_version \n @property {object} manifest \n @property {integer} minor_version \n @property {string} name \n @property {function} on_install_fn \n @property {attachment} package_file \n\n @property {composite[]} changelog \n\n @property {string} version \n",
 	"superclass": null,
 	"system": true
 }

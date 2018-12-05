@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:4",
+	"__ver": "sys:6",
 	"_id": "8X3sML8-SS6icy3ql5brQg",
 	"key": "sys.dbui.bo.BusinessObjectPackage",
 	"language": {
@@ -18,6 +18,8 @@
 		"manifest": "Manifest",
 		"minor_version": "Minor Version",
 		"name": "Name",
-		"package_file": "Package File"
+		"on_install_fn": "Install Function",
+		"package_file": "Package File",
+		"version": "Version"
 	}
 }

@@ -81,14 +81,14 @@ function () {
                 return RefModel._bo_meta_data.field_labels.getLabel(subPath, abbreviated);
             }
             else if(localTd.type === 'composite') {
-                var subLabelgroupKey = '#'+fieldName;
+                var subLabelgroupKey = '#'+localField;
                 
-                if(!this.fieldLabels[subLabelgroupKey]) {
+                if(!this[subLabelgroupKey]) {
                     console.error('labelgroup missing for composite field', this);
                     return path;
                 }
                 
-                return this.fieldLabels[subLabelgroupKey].getLabel(subPath, abbreviated);
+                return this[subLabelgroupKey].getLabel(subPath, abbreviated);
             }
             else {
               //dotted into a non-reference/composite or a non-existent field:

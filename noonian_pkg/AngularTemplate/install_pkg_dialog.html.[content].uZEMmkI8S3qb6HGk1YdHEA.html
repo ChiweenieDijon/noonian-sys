@@ -1,0 +1,101 @@
+<div class="modal-header">
+    <h3 class="modal-title">Install Package</h3>
+</div>
+<div class="modal-body">
+    <span ng-show="waiting" class="ng-hide"><i class="fa fa-2x fa-spinner fa-pulse"></i> {{waiting}}</span>
+    <div ng-show="!checkResult && !waiting">
+        <uib-tabset>
+            <uib-tab heading="Upload File">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="pkgFile">Package File</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="file" id="pkgFile" accept=".json" onchange="angular.element(this).scope().fileChanged(this)">
+                            <p class="help-block">Select the file to upload for install on this Noonian instance.</p>
+                        </div>
+                    </div>
+                    
+                    <!--<button class="btn btn-default" ng-disabled="!fileObj" ng-click="uploadFile()">Upload File</button>-->
+                </form>
+            </uib-tab>
+            
+            <uib-tab heading="From Repository">
+                <p>Coming soon...</p>
+            </uib-tab>
+        </uib-tabset>
+    </div>
+    <div ng-show="checkResult">
+        
+        <h4>{{checkResult.key}} </h4>
+        <div class="form-horizontal" style="padding:10px; border: solid 1px #ccc">
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-weight:bold">{{checkResult.name}}</p>
+                    <p>{{checkResult.description}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Version</label>
+                        <div class="col-sm-9">
+                            <p class="form-control-static">{{checkResult.target_version}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" ng-show="checkResult.installed_version">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Installed Version</label>
+                        <div class="col-sm-9">
+                            <p class="form-control-static">{{checkResult.installed_version}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div ng-show="checkResult.dependency_resolution">
+            <h4>Dependencies</h4>
+            <table class="table table-bordered" ng-show="checkResult.dependency_resolution.npm">
+                <thead><tr><th>NPM</th></tr></thead>
+                <tbody>
+                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.npm.to_install"><td>Install <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
+                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.npm.to_upgrade"><td>Upgrade <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
+                </tbody>
+            </table>
+            
+            <table class="table table-bordered" ng-show="checkResult.dependency_resolution.bower">
+                <thead><tr><th>Bower</th></tr></thead>
+                <tbody>
+                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.bower.to_install"><td>Install <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
+                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.bower.to_upgrade"><td>Upgrade <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
+                </tbody>
+            </table>
+            
+            <table class="table table-bordered" ng-show="checkResult.dependency_resolution.noonian">
+                <thead><tr><th>Noonian</th></tr></thead>
+                <tbody>
+                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.noonian.to_install"><td>Install <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
+                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.noonian.to_upgrade"><td>Upgrade <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div ng-if="paramsObj">
+            <h4>Parameters</h4>
+             <dbui-object-editor the-object="paramsObj" perspective="paramsPerspective" form-status="paramFormStatus"></dbui-object-editor>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-block btn-danger" ng-disabled="!installReady" ng-click="install()">Install</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="modal-footer">
+    <!--<button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>-->
+    <button class="btn btn-warning" type="button" ng-click="$dismiss()">Cancel</button>
+</div>
