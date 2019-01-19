@@ -3,9 +3,18 @@
 	"_id": "7R4cBwsWTSacdSk5ZrAjTw",
 	"build_config": {
 		"exclude": [
-			"TestObject"
+			"TestObject",
+			"User",
+			{
+				"class_name": "Config",
+				"condition": {
+					"key": "sys.user.preferences"
+				}
+			}
 		]
 	},
+	"changelog": [
+	],
 	"description": "The foundational package for Noonian.",
 	"doc_config": {
 		"_disp": "JsdocTest",
@@ -17,7 +26,7 @@
 	"manifest": {
 		"AngularApp": {
 			"HvpsexNtTOyRCzDDd4GNsg": "sys:77",
-			"kRd_Ft64QFey_at4tgphXA": "sys:27"
+			"kRd_Ft64QFey_at4tgphXA": "sys:34"
 		},
 		"AngularModule": {
 			"NJnfAVnFSmuMcv9voRnaJQ": "sys:8",
@@ -34,7 +43,7 @@
 			"5W1f4vxWTte-kQvjjgpyLA": "sys:37",
 			"5dJkEI1PRmK41Hh2lw2y_w": "sys:28",
 			"78XYGLNnRmC6RFphsvfNbw": "sys:5",
-			"7UVBjiqKRueVphLN5EtfLg": "sys:36",
+			"7UVBjiqKRueVphLN5EtfLg": "sys:37",
 			"7jHQrtYKQxSzW_pRHAd9RA": "sys:15",
 			"9en21yAeQAOdV_Uxm_C9sQ": "sys:41",
 			"Gh1s8LuGThywzsMA7BIMjg": "sys:12",
@@ -52,7 +61,7 @@
 			"V5AIrjQIRVSPYBI5V2zs4w": "sys:26",
 			"VMylLXsAQSOLI94A-RQgTA": "sys:18",
 			"VwZdmM7bSeOfdacXJQNeUA": "sys:1",
-			"YKldolloSTitGHf7Wz64PQ": "sys:2",
+			"YKldolloSTitGHf7Wz64PQ": "sys:4",
 			"_28vJLv9Tt6HzXexuNITlA": "sys:12",
 			"dfknFcxcQGWvTrHw0DZcIA": "sys:52",
 			"eoefRk8MQQqLX-MFLYPdSQ": "sys:8",
@@ -97,6 +106,7 @@
 			"qwW8v9NIReKHdrGiRZl9tg": "sys:10",
 			"r4BrmS_bRVWPqcl-NAQYiQ": "sys:1",
 			"rnTzkxz-SoayJMPtHFEPcA": "sys:13",
+			"uZEMmkI8S3qb6HGk1YdHEA": "sys:2",
 			"xQhrwwpWR-uqqlbCrQ95xw": "sys:6"
 		},
 		"BusinessObjectDef": {
@@ -109,7 +119,7 @@
 			"9nPBq3cpRbm5MyhyxSnZjA": "sys:2",
 			"A_eCG8jqToSYTvnyiSYqRA": "sys:5",
 			"CW0euwoXRG-cUFD9-9xwSg": "sys:4",
-			"DJO4J7xRTvydSH_aBCtAFw": "sys:7",
+			"DJO4J7xRTvydSH_aBCtAFw": "sys:8",
 			"Dyf49QfST2CwXH1TYOSgHQ": "sys:3",
 			"G6NlMXjRQEeiqdsC6PP-Dw": "sys:14",
 			"IG7UUXYwTv6Ffj4o489duA": "sys:5",
@@ -117,11 +127,11 @@
 			"IfDt7M3yTMOt6D2BkMP66A": "sys:8",
 			"IhXNqXAyQiqGk28iCotr0Q": "sys:15",
 			"LHh5ZfA6Swq6cHb3CcmCgA": "sys:4",
-			"QLN_PHr_Tj6nzgzrHA4XdQ": "sys:4",
+			"QLN_PHr_Tj6nzgzrHA4XdQ": "sys:9",
 			"R1r6pCVESdma9hj8GrfMaQ": "sys:10",
 			"TnN_Z-KAQbiPxTsNqvVa5A": "sys:2",
 			"UfkDq2TKQAm4OWijwTpokQ": "sys:6",
-			"ZWSBEFYOT6WlJG95iIm_rw": "sys:11",
+			"ZWSBEFYOT6WlJG95iIm_rw": "sys:13",
 			"_7EZRGUeRYaiyU-YSZonhQ": "sys:4",
 			"_K5c8nuqSHOof2sQkwfYBQ": "sys:2",
 			"_kXc9xmXRK25KE0qkjrXVg": "sys:8",
@@ -139,7 +149,6 @@
 			"pQIx0YDZQJSLi1cNHxwKlA": "sys:5",
 			"pzaSsQYLT7uvOx6Trp1wMw": "sys:4",
 			"qZR4N3BFQGuMzjcj17jitg": "sys:7",
-			"rVjuQcaKTzi2KV5qbWdP3Q": "sys:10",
 			"rsjTdO2pTF-GAqUKmdsy5w": "sys:1",
 			"uEaZJyjDQXWMs-vNQrjiyQ": "sys:6",
 			"w1FEKYa4SbiVPVqAtEWJyw": "sys:4"
@@ -152,6 +161,7 @@
 			"pwMVRvdjSU-2Ak0BWDA6AA": "sys:5"
 		},
 		"Config": {
+			"-lfYRd-AQxCyb2GhW2Eszw": "sys:1",
 			"076TmOduSve4_ZvYrqSLig": "sys:6",
 			"0KZWeNuMSJyW7QImA9AndA": "sys:1",
 			"0tydbMgIRdudkdXTyXt7qA": "sys:3",
@@ -159,7 +169,6 @@
 			"1nme6hlATsews3AMdvHyaA": "sys:3",
 			"2kCebqAhSq23kIfWjZ7H5Q": "sys:1",
 			"301VFkFiQ16jsquLcxaS_g": "sys:1",
-			"447ODSNfR4S1BcDTKHehoA": "sys:1",
 			"4oreVV9bQE6POFFq8ruL1Q": "sys:5",
 			"5cs9GdZvSyWJjuJC_7HiYA": "sys:2",
 			"5wAcBhU-QWqnwR0HoTd5uw": "sys:1",
@@ -173,7 +182,7 @@
 			"9dEZLOBLQ2-fooVX_JlhfA": "sys:1",
 			"9oX9EoUoSFitZ_YRpTmm9w": "sys:1",
 			"BVZPlBKCSVaoqTN8h3lvTA": "sys:3",
-			"BfVWyf-jTjaOPaH3AZYgig": "sys:6",
+			"BfVWyf-jTjaOPaH3AZYgig": "sys:9",
 			"CMHfC8YPTO6sEeNhLZmTVA": "sys:2",
 			"CVk1ivsMS0qS1kCvrEk0dg": "sys:3",
 			"Cu-EL7B2SZyDpkAj_QzZIg": "sys:6",
@@ -187,7 +196,7 @@
 			"FO4v8qxuQq6wuLTeDu1SMA": "sys:1",
 			"GDzTJ1SERbyhOIKYYkNkNA": "sys:5",
 			"GRaSJrg4QKWVnP6Dwda0vA": "sys:7",
-			"GYj1Vct0TV2Dx0OAshro-g": "sys:1",
+			"GYj1Vct0TV2Dx0OAshro-g": "sys:2",
 			"GtB6L_7wTICVHlmoiKJjCw": "sys:1",
 			"Hj3COO0iQyufTftJqfUt_Q": "sys:4",
 			"HjJ3QzvGSda4mliXCksO_A": "sys:1",
@@ -224,7 +233,7 @@
 			"dWglHelJQqe4iyrOHCd8BA": "sys:1",
 			"dkwBaED1TUSMvFlVkNOwKw": "sys:1",
 			"eSAFk0BgQ7iKh-q9q02ZUw": "sys:2",
-			"g7Eq-Ra_Qc2oJFqjM8AoBQ": "sys:1",
+			"g7Eq-Ra_Qc2oJFqjM8AoBQ": "deleted",
 			"hIGoBem9TQinCMTZh-tCTQ": "sys:4",
 			"hJiZxpRJRp-7ihmjq5qpMQ": "sys:5",
 			"if2R-LabRcyDzpX_5X_ucQ": "sys:2",
@@ -257,7 +266,7 @@
 		},
 		"CssResource": {
 			"YaSNWS_JT06boJn36ExwJg": "sys:2",
-			"mF2-m7xwSv-GOiV7I-YPNg": "sys:25",
+			"mF2-m7xwSv-GOiV7I-YPNg": "sys:26",
 			"o4W541R8SOaAsLdTAFRwBw": "sys:4",
 			"rTEg0q5bQbiYsTXNOFCBvQ": "sys:3"
 		},
@@ -266,7 +275,7 @@
 			"xrPuDwMmS26cp_JrXvVJRg": "sys:1"
 		},
 		"DataExport": {
-			"Vs_E0HrSSk6_aNtNUvexaw": "sys:1"
+			"Vs_E0HrSSk6_aNtNUvexaw": "sys:2"
 		},
 		"DataTrigger": {
 			"-aT_dJmKS5uF3MP_nVLLIg": "sys:2",
@@ -343,7 +352,7 @@
 			"FKpvB_JNSoOF2tVEuXEkIQ": "sys:2",
 			"HYHluWpfQxqDTEhWxSIWkA": "sys:10",
 			"JUG__Q2uSEaMeHlf4NXebQ": "sys:36",
-			"L3YQRK0mSJGE1EK4_FDCCg": "sys:2",
+			"L3YQRK0mSJGE1EK4_FDCCg": "sys:3",
 			"LT7gGfGtSX6ruO8MqG-C0w": "sys:2",
 			"NpOPK9reRguXCb0M8WqvIA": "sys:8",
 			"QYBXXHdmQzuWMhjDeBgVLA": "sys:1",
@@ -407,7 +416,7 @@
 			"5BKy2VxhTRqkuRDx74Byzg": "sys:4",
 			"7NOuKKSLSxytgyMyw3mm2w": "sys:2",
 			"7cawn4f9SneVXCAMIViLmQ": "sys:3",
-			"8X3sML8-SS6icy3ql5brQg": "sys:4",
+			"8X3sML8-SS6icy3ql5brQg": "sys:6",
 			"8ztMXn4uQ-CZFu8GyFEVhg": "sys:1",
 			"CcqJZREmRe-xdYeP74D6TQ": "sys:1",
 			"CoWMlx_mQjCR23MRd_OMNA": "sys:3",
@@ -433,7 +442,7 @@
 			"cT9jjW3gTUe-gLlyRxID2w": "sys:1",
 			"djHBYpkcRWuo5vHgCSsvqw": "sys:1",
 			"e-ykFDhbSWOeb7oxA8E_iQ": "sys:1",
-			"f5jWkW__R7GMilAtgyOsjA": "sys:1",
+			"f5jWkW__R7GMilAtgyOsjA": "deleted",
 			"fVVSdgdOSgGPZjlhkT8ZGA": "sys:1",
 			"fphmOTaoTjeuZwiJ3A_eeA": "sys:1",
 			"ioOrOL6zRmKDinIvZqAeFA": "sys:1",
@@ -543,7 +552,7 @@
 			"-9vYFv2lEeSFtiimx_V4dw": "sys:1",
 			"-9vYUv2lEeSFtiimx_V4dw": "sys:1",
 			"-9vY_P2lEeSFtiimx_V4dw": "sys:1",
-			"-9vYjv2lEeSFtiimx_V4dw": "sys:1",
+			"-9vYjv2lEeSFtiimx_V4dw": "sys:3",
 			"-9vYwP2lEeSFtiimx_V4dw": "sys:1",
 			"-9vZ4v2lEeSFtiimx_V4dw": "sys:1",
 			"-9vZOP2lEeSFtiimx_V4dw": "sys:1",
@@ -583,10 +592,10 @@
 			"-9vjBv2lEeSFtiimx_V4dw": "sys:1",
 			"-9vjQv2lEeSFtiimx_V4dw": "sys:1",
 			"-9vjfv2lEeSFtiimx_V4dw": "sys:1",
-			"-9vjuv2lEeSFtiimx_V4dw": "sys:1",
+			"-9vjuv2lEeSFtiimx_V4dw": "sys:2",
 			"-9vk3P2lEeSFtiimx_V4dw": "sys:1",
 			"-9vkKP2lEeSFtiimx_V4dw": "sys:1",
-			"-9vkZP2lEeSFtiimx_V4dw": "sys:1",
+			"-9vkZP2lEeSFtiimx_V4dw": "sys:2",
 			"-9vkoP2lEeSFtiimx_V4dw": "sys:1",
 			"-9vl_v2lEeSFtiimx_V4dw": "sys:1",
 			"-9vlaP2lEeSFtiimx_V4dw": "sys:1",
@@ -640,9 +649,32 @@
 			"-9vzPP2lEeSFtiimx_V4dw": "sys:1",
 			"-9vzbv2lEeSFtiimx_V4dw": "sys:1",
 			"-9vzqv2lEeSFtiimx_V4dw": "sys:1",
+			"35h56bGXTnWeSsGhSN6QLg": "sys:1",
+			"3AmDv83VTyOTZLTfLDBrAQ": "sys:1",
+			"3O8VSz5QQNG3KcvonLJ5Kg": "sys:1",
 			"3sYTbZcQQDig4jSSYIuH7A": "sys:1",
+			"5BLKqdkhRRCmLV3egGyUjw": "sys:1",
+			"67_depbpSvapJdJVcqutwA": "sys:1",
+			"8SS-RtbuQ8aeOXCpvfdIyA": "sys:1",
+			"9IwiLwanRvC2I7xa8At5vQ": "sys:1",
+			"AE13wg62SyWYxSeaXm-IKg": "sys:1",
 			"E5VRsTHzR3GUKGcPAWZT-Q": "sys:1",
+			"Gb4bdjSoTTOEqh0z1eaUUw": "sys:1",
+			"K-xjF8tGT5OaY1RDNIRw1w": "sys:1",
+			"Mov30kihSTOR-DidfnWGKg": "sys:1",
 			"Ory8fkpLRRSbnSf0K8_WeA": "sys:1",
+			"Q5S_T6C1RjSyz9EfHVdTIw": "sys:1",
+			"Qjd0duhvRpeRNMSgWUeHzw": "sys:1",
+			"WWJNtFv1R_iDQf5VSSs0zA": "sys:1",
+			"XVwG-FX4R3GASjjCGL3I8w": "sys:1",
+			"YOEVImE_TTmqC_5lJZMkUQ": "sys:1",
+			"ZF4sBPeSSSizSh9JBQsntg": "sys:1",
+			"ZyvL2DqGQ5WhSAV86qWDIw": "sys:1",
+			"acMNkG57RKWBfng2FbOBPg": "deleted",
+			"cNM3bt46T3C5mwjgSqZnww": "sys:1",
+			"kpex3Nf8Qb2dUh5TKu7yDg": "deleted",
+			"tZCo03RySUKuZykcZFnYOw": "deleted",
+			"w4A1K5ARRIGGYGXsZDNiTg": "sys:1",
 			"wrR1NSqvQ_qVsXiJKkA_xw": "sys:1"
 		},
 		"MemberFunction": {
@@ -718,7 +750,7 @@
 		},
 		"Role": {
 			"FnQ_eBYITOSC8kJA4Zul5g": "sys:1",
-			"vZnQ6fGnTKiEWWy9k2gyqg": "sys:1"
+			"vZnQ6fGnTKiEWWy9k2gyqg": "deleted"
 		},
 		"TwoFactorAuthImplementation": {
 			"GaulTlfcRgGe0DkrJcq_tQ": "sys:4",
@@ -726,13 +758,16 @@
 		},
 		"UiAction": {
 			"i8CPDhK4SXKT7tT8JknLQw": "sys:1",
+			"i9IyWncoTpGmb4M0kT_UPQ": "sys:2",
 			"nCpVSR9XR3CrhRBRNDNtPw": "sys:8",
-			"zIbWSxNgRiGVY_G7j_jYsA": "sys:1"
+			"zIbWSxNgRiGVY_G7j_jYsA": "sys:1",
+			"zd0dwbHnRR605jMa_mW81Q": "sys:1"
 		},
 		"User": {
-			"vl22Nf2XTNym2-X90sxOag": "sys:10"
+			"vl22Nf2XTNym2-X90sxOag": "sys:26"
 		},
 		"WebService": {
+			"3JFCqjtrTuyxcelC77-FCQ": "sys:4",
 			"5TmX2XybS4WCYB8wS_g1uA": "sys:1",
 			"7ugMfTjtQtyPiOiCpci9hA": "sys:4",
 			"9G9tifuVToCBntbpzatynA": "sys:3",
@@ -744,10 +779,11 @@
 			"KwOpx2idREyjG8IkQgPZjQ": "sys:4",
 			"OsHGskAGTUWcWsUUMDkVLA": "sys:3",
 			"SUUJLgaBQSmM-hi3AyGP0A": "sys:14",
-			"SyEf04PFRfKB6f-MOH3QBg": "sys:2",
+			"SyEf04PFRfKB6f-MOH3QBg": "sys:3",
 			"Tjiak1GXQq2BArAt7X9gew": "sys:2",
 			"UbKQqqY7SAWn6IrffevzFQ": "sys:7",
 			"_ody1b4bSw2XY7xo1FycqQ": "sys:1",
+			"aVvXfsYRTc2f2_bZv-v3uw": "sys:1",
 			"b-cPJu3CRAiUw_DKazyB0A": "sys:2",
 			"bl7smamMSomv6EqTsuHCCg": "sys:11",
 			"cCrZOnWwSeO0dxcvJOfUBA": "sys:1",
@@ -764,8 +800,9 @@
 			"w-lHVPreRRSku89vhlyagA": "sys:3"
 		}
 	},
-	"minor_version": 69,
-	"name": "Core System"
+	"minor_version": 71,
+	"name": "Core System",
+	"version": "0.71.0"
 },
 "business_objects":[
 {
@@ -1010,7 +1047,7 @@
 },
 {
 	"__disp": "UpdateLog",
-	"__ver": "sys:7",
+	"__ver": "sys:8",
 	"_class": "BusinessObjectDef",
 	"_id": "DJO4J7xRTvydSH_aBCtAFw",
 	"abstract": false,
@@ -1049,11 +1086,15 @@
 			],
 			"type": "string"
 		},
+		"updated_by": {
+			"ref_class": "User",
+			"type": "reference"
+		},
 		"updated_version": {
 			"type": "string"
 		}
 	},
-	"doc": "Represents a single data change of a business object in the system - a create, update, or delete.\nStores diff history if \"enableHistory\" is enabled in instance config file\n @property {boolean} external_pkg \n @property {string} object_class \n @property {string} object_id \n @property {reference.<BusinessObjectPackage>} package \n @property {object} revert_patch \n @property {datetime} timestamp \n @property {string} update_type \n @property {string} updated_version \n\n @property {string} incorporated \n\n @property {string} object_disp \n",
+	"doc": "Represents a single data change of a business object in the system - a create, update, or delete.\nStores diff history if \"enableHistory\" is enabled in instance config file\n @property {boolean} external_pkg \n @property {string} object_class \n @property {string} object_id \n @property {reference.<BusinessObjectPackage>} package \n @property {object} revert_patch \n @property {datetime} timestamp \n @property {string} update_type \n @property {string} updated_version \n\n @property {string} incorporated \n\n @property {string} object_disp \n\n @property {reference.<User>} updated_by \n",
 	"system": true
 },
 {
@@ -1326,7 +1367,7 @@
 {
 	"__disp": "BusinessObjectPackage",
 	"__pkg": "sys",
-	"__ver": "sys:4",
+	"__ver": "sys:9",
 	"_class": "BusinessObjectDef",
 	"_id": "QLN_PHr_Tj6nzgzrHA4XdQ",
 	"abstract": false,
@@ -1335,6 +1376,19 @@
 		"build_config": {
 			"type": "object"
 		},
+		"changelog": [
+			{
+				"type": "composite",
+				"type_desc_map": {
+					"change_text": {
+						"type": "text"
+					},
+					"version": {
+						"type": "string"
+					}
+				}
+			}
+		],
 		"dependencies": {
 			"type": "object"
 		},
@@ -1344,12 +1398,6 @@
 		"doc_config": {
 			"ref_class": "JsDocConfig",
 			"type": "reference"
-		},
-		"enable_building": {
-			"type": "boolean"
-		},
-		"installed_version": {
-			"type": "string"
 		},
 		"key": {
 			"seperator": ".",
@@ -1373,9 +1421,12 @@
 		},
 		"package_file": {
 			"type": "attachment"
+		},
+		"version": {
+			"type": "string"
 		}
 	},
-	"doc": "A \"package\" of Business Objects.  Facilitates the grouping of arbitrary business objects into sharable, versionable data packages.\n @property {object} build_config \n @property {object} dependencies \n @property {string} description \n @property {reference.<JsDocConfig>} doc_config \n @property {boolean} enable_building \n @property {string} installed_version \n @property {path} key \n @property {integer} major_version \n @property {object} manifest \n @property {integer} minor_version \n @property {string} name \n @property {function} on_install_fn \n @property {attachment} package_file \n",
+	"doc": "A \"package\" of Business Objects.  Facilitates the grouping of arbitrary business objects into sharable, versionable data packages.\n @property {object} build_config \n @property {object} dependencies \n @property {string} description \n @property {reference.<JsDocConfig>} doc_config \n @property {boolean} enable_building \n @property {string} installed_version \n @property {path} key \n @property {integer} major_version \n @property {object} manifest \n @property {integer} minor_version \n @property {string} name \n @property {function} on_install_fn \n @property {attachment} package_file \n\n @property {composite[]} changelog \n\n @property {string} version \n",
 	"superclass": null,
 	"system": true
 },
@@ -1487,7 +1538,7 @@
 },
 {
 	"__disp": "AngularProvider",
-	"__ver": "sys:11",
+	"__ver": "sys:13",
 	"_class": "BusinessObjectDef",
 	"_id": "ZWSBEFYOT6WlJG95iIm_rw",
 	"abstract": false,
@@ -2083,57 +2134,6 @@
 	"system": true
 },
 {
-	"__disp": "TestObject",
-	"__ver": "sys:10",
-	"_class": "BusinessObjectDef",
-	"_id": "rVjuQcaKTzi2KV5qbWdP3Q",
-	"abstract": false,
-	"class_name": "TestObject",
-	"definition": {
-		"_fulltext_matches": [
-			"<%= first_name %> <%= last_name %>"
-		],
-		"comp": [
-			{
-				"type": "composite",
-				"type_desc_map": {
-					"_disp": "<%= name %> <%= age %>",
-					"age": {
-						"type": "integer"
-					},
-					"name": {
-						"type": "string"
-					}
-				}
-			}
-		],
-		"date": {
-			"type": "date"
-		},
-		"first_name": {
-			"type": "string"
-		},
-		"last_name": {
-			"type": "string"
-		},
-		"refArr": [
-			{
-				"denormalize_fields": [
-					"class_name"
-				],
-				"ref_class": "BusinessObjectDef",
-				"type": "reference"
-			}
-		],
-		"test": {
-			"enum": "TestEnum",
-			"type": "duration"
-		}
-	},
-	"doc": "For testing only; shouldn't end up in package\n @property {date} date \n @property {string} first_name \n @property {string} last_name \n\n @property {composite} comp \n\n @property {reference.<BusinessObjectDef>[]} refArr \n\n @property {phone} test \n",
-	"system": false
-},
-{
 	"__disp": "JsDocConfig",
 	"__ver": "sys:1",
 	"_class": "BusinessObjectDef",
@@ -2268,11 +2268,11 @@
 },
 {
 	"__t": "AngularApp",
-	"__ver": "sys:27",
+	"__ver": "sys:34",
 	"_class": "AngularApp",
 	"_id": "kRd_Ft64QFey_at4tgphXA",
 	"body": "<div class=\"container\" ng-controller=\"LoginController\">\n      <div class=\"row\">\n        <div class=\"col-sm-6\">{{message}}</div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-sm-6\">\n          <form class=\"form-horizontal\" ng-submit=\"submit()\">\n            <div class=\"form-group\" ng-hide=\"twoFactor\">\n              <label for=\"username\" class=\"control-label\">Username</label>\n              <input type=\"text\" class=\"form-control\" ng-model=\"postData.username\"/>\n            </div>\n            <div class=\"form-group\" ng-hide=\"twoFactor\">\n              <label for=\"password\" class=\"control-label\">Password</label>\n              <input name=\"password\" type=\"password\" class=\"form-control\" ng-model=\"postData.password\" />\n            </div>\n            \n            <div class=\"form-group\" ng-show=\"twoFactor\">\n                <label for=\"verifycode\" class=\"control-label\">Verification code</label>\n                <input name=\"verifycode\" type=\"text\" class=\"form-control\" ng-model=\"postData.second_factor_code\" />\n            </div>\n            \n            <input type=\"submit\" class=\"btn btn-default\" value=\"Login\" />\n          </form>\n        </div>\n      </div>\n  </div>",
-	"config_function": "function ($controllerProvider, $locationProvider) {\n    \n    $locationProvider.html5Mode(true);\n    \n    $controllerProvider.register('LoginController', function($scope, $http, $location, $window) {\n        console.log('LoginController');\n        \n        document.cookie = 'access_token=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';\n        \n        $scope.message = \"Please enter username and password below\";\n        $scope.postData = {};\n        \n        var urlParams = $location.search();\n        \n        \n        $scope.submit = function() {\n            \n            $http({\n                method:'POST',\n                url:'auth/login',\n                data:$scope.postData\n            }).then(\n                //Success:\n                function(resp) {\n                    console.log('Login response: ', resp);\n                    var redirectLink = (urlParams && urlParams.originalUrl) || '.';\n                    $window.location.href = redirectLink;\n                },\n                //ERROR\n                function(resp) {\n                    console.log('ERROR', resp);\n                    if(resp.data && resp.data.error === '$invalid_credentials') {\n                        $scope.message = 'Invalid login credentials.  Please try again.';\n                    }\n                    else if(resp.data && resp.data.error === '$missing_phone') {\n                        $scope.message = 'Two-factor authentication is required, but your user account is missing a phone number.  Please contact an administrator to resolve the issue.';\n                    }\n                    else if(resp.data && resp.data.twoFactorRequired) {\n                        $scope.twoFactor = true;\n                        $scope.message = 'Two-factor authentication required.  Please type in code sent to your phone.';\n                    }\n                    else {\n                        $scope.message = (resp.data && resp.data.error) || resp.statusText\n                    }\n                }\n            );\n            \n        }\n    })\n}",
+	"config_function": "function ($controllerProvider, $locationProvider) {\n    \n    $locationProvider.html5Mode(true);\n    \n    $controllerProvider.register('LoginController', function($scope, $http, $location, $window) {\n        \n        var urlBaseRegex = /^https?:\\/\\/[^\\/]+(\\/[^\\/]+\\/)login.html/;\n        var match = urlBaseRegex.exec($location.absUrl());\n        var urlBase = (match && match[1]) || '/';\n        document.cookie = 'access_token=; expires='+(new Date(Date.now()-1000).toGMTString())+'; path='+urlBase;\n        \n        \n        $scope.message = \"Please enter username and password below\";\n        $scope.postData = {};\n        \n        var urlParams = $location.search();\n        \n        \n        $scope.submit = function() {\n            \n            $http({\n                method:'POST',\n                url:'auth/login',\n                data:$scope.postData\n            }).then(\n                //Success:\n                function(resp) {\n                    console.log('Login response: ', resp);\n                    var redirectLink = (urlParams && urlParams.originalUrl) || '.';\n                    $window.location.href = redirectLink;\n                },\n                //ERROR\n                function(resp) {\n                    console.log('ERROR', resp);\n                    if(resp.data && resp.data.error === '$invalid_credentials') {\n                        $scope.message = 'Invalid login credentials.  Please try again.';\n                    }\n                    else if(resp.data && resp.data.error === '$missing_phone') {\n                        $scope.message = 'Two-factor authentication is required, but your user account is missing a phone number.  Please contact an administrator to resolve the issue.';\n                    }\n                    else if(resp.data && resp.data.twoFactorRequired) {\n                        $scope.twoFactor = true;\n                        $scope.message = 'Two-factor authentication required.  Please type in code sent to your phone.';\n                    }\n                    else {\n                        $scope.message = (resp.data && resp.data.error) || resp.statusText\n                    }\n                }\n            );\n            \n        }\n    })\n}",
 	"css_dependencies": [
 		{
 			"_disp": "bootstrap.min.css",
@@ -2620,11 +2620,11 @@
 	"type": "factory"
 },
 {
-	"__ver": "sys:36",
+	"__ver": "sys:37",
 	"_class": "AngularProvider",
 	"_id": "7UVBjiqKRueVphLN5EtfLg",
 	"doc": "Extends the NoonAction service to add DBUI specifics\n1) invokeAction is called w/ perspective and context bo, in addition to actionObj and argsObj.  Parameters are added depending on action type and provided perspective and context bo\n2) when any action returns object w/ 'message', 'error' or 'warning' properties, alert is rendered in UI via DbuiAlert service\n3) when any action returns object w/ 'action' property, action object is invoked, allowing for chaining behavior (e.g. webservice responding w/ re-direct)",
-	"function": "function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state, $parse, db, NoonAuth) {\n\n    var derivedService = Object.create(NoonAction);\n    \n    var dbuiCoreActions = {\n      'new':{\n        label:'New',\n        state:'dbui.create',\n        icon:'fa-plus-square',\n        id:'new'\n      },\n      'duplicate':{\n        label:'Duplicate',\n        icon:'fa-copy',\n        id:'duplicate',\n        fn: function(args) {\n            $state.go('dbui.create', {className:args.className, perspective:args.perspective, copyObject:args.targetObj});\n        }\n      },\n      'list':{\n        label:'List',\n        state:'dbui.list',\n        icon:'fa-list',\n        id:'list'\n      },\n      'folder_list':{\n        label:'List',\n        state:'dbui.folders',\n        icon:'fa-folder-o',\n        id:'folder_list'\n      },\n      'view':{\n        display_condition:'_id',\n        label:'View',\n        state:'dbui.view',\n        icon:'fa-eye',\n        id:'view'\n      },\n      'edit':{\n        label:'Edit',\n        state:'dbui.edit',\n        icon:'fa-pencil-square-o',\n        id:'edit'\n      },\n      'delete':{\n        display_condition:'_id',\n        label:'Delete',\n        icon:'fa-times-circle',\n        id:'delete',\n        fn: function(args) {\n          if(window.confirm('Are you sure you wish to delete this record?')) {\n            return args.targetObj.remove().then(function() {\n              $state.go('dbui.list', {className:args.className, perspective:args.perspective});\n            },\n            function(err) {\n              alert('error deleting: '+err);\n            });\n          }\n\n          return null;\n        }\n      },\n      'dialog-view': {\n        label:'View',\n        icon:'fa-eye',\n        id:'dialog-view',\n        fn: function(args) {\n\n          var modalInstance;\n          var scope = $rootScope.$new(true);\n\n          var className = scope.boClass = args.className;\n          var perspectiveName = scope.perspectiveName = args.perspective;\n          var boId = scope.boId = args.targetObj._id || args.targetObj;\n\n          modalInstance = $uibModal.open({\n            templateUrl:'dbui/core/view-dialog.html',\n            controller:'dbui_ViewCtrl',\n            size:'lg',\n            scope: scope,\n            resolve: {\n              theObject: function() {\n                return db[className].findOne({_id:boId}).$promise;\n              },\n              viewPerspective:  function(Dbui) {\n                return Dbui.getPerspective(perspectiveName, className, 'dialog-view');\n              }\n            }\n          });\n        }\n      }\n\n    };\n    \n    /**\n     * DbuiAction.init\n     */\n    derivedService.init = function() {\n        NoonAction.registerAliases(dbuiCoreActions);\n        \n    };\n    \n    \n    \n    /**\n     * DbuiAction.invokeAction\n     * Invokes actionObj, adding in parameters from $stateParams and contextBo.\n     * How contextBo is added to params is dependent on the type of action:\n     *   state and ws actions -> \"id\" is populated w/ contextBo._id \n     *   fn and UiAction actions -> \"targetObj\" is populated w/ contextBo\n     */\n    derivedService.invokeAction = function(perspectiveObj, contextBo, actionObj, argsObj) {\n        \n        // console.log('DbuiAction.invokeAction', perspectiveObj, actionObj, contextBo);\n        if(!actionObj) {\n            throw new Error('null actionObj not allowed');\n        }\n        \n      //Append the standard DBUI params to the action object\n      var params = actionObj.params ? _.clone(actionObj.params) : {};\n      \n      //Always pass className and perspective:\n      if(!params.className) {\n          params.className = $stateParams.className;\n      }\n      if(!params.perspective) {\n          if(perspectiveObj) {\n              params.perspective = perspectiveObj.name;\n          }\n          else {\n              params.perspective = $stateParams.perspective || 'default';  \n          }\n      }\n      \n      \n      //depending on type of action, we add either targetId or targetObj\n      if(actionObj.state || actionObj.ws) {\n          if(contextBo && contextBo._id)\n            params.id = contextBo._id;\n          else\n            params.id = contextBo;\n      }\n      else if(actionObj.fn || actionObj.ui_action) {\n          params.targetObj = contextBo;\n          params.perspectiveObj = perspectiveObj;\n      }\n      \n      \n      //Anything in argsObj supercedes the actionObj.params\n      if(argsObj) {\n          _.assign(params, argsObj);\n      }\n      \n      return NoonAction.invoke(actionObj, params).then(\n          function(result) {\n            if(result) {\n              if(result.error) {\n                // alert(result.error);\n                DbuiAlert.danger(result.error);\n              }\n              \n              if(result.message) {\n                // alert(result.message);\n                DbuiAlert.success(result.message);\n              }\n              \n              if(result.warning) {\n                  DbuiAlert.warning(result.warning);\n              }\n              \n              if(result.action) {\n                  console.log('Chaining action: ', result.action);\n                  return NoonAction.invoke(result.action);\n              }\n            }\n            \n            return result;\n          },\n          function(err) {\n              var msg = 'Error invoking action';\n              console.log('DbuiAction: '+msg, actionObj, err);\n              DbuiAlert.danger(msg+' '+err);\n          }\n\n        );\n    };\n    \n    \n    var noonContext;\n    const getNoonContext = function() {\n        if(!noonContext) {\n            noonContext = {\n                currentUser:NoonAuth.getCurrentUser(),\n                userPreferences:$rootScope.userPrefs\n            };\n        }\n        return noonContext;\n    }\n    \n    /**\n     * Set isHidden for any actions that have visiblityCondition expression set\n     */\n    derivedService.processActionVisibility = function(actionList, contextObject) {\n        contextObject = contextObject || {};\n        _.forEach(actionList, function(a) {\n            if(a.display_condition && !a.shouldShow) {\n                try {\n                    \n                    a.shouldShow = $parse(a.display_condition);\n                    a.requireNoonContext = (a.display_condition.indexOf('$noonContext') > -1);\n                    \n                } catch (e) {\n                    console.error(e);\n                }\n            }\n            \n            if(a.requireNoonContext) {\n                contextObject.$noonContext = getNoonContext();\n            }\n            \n            if(a.shouldShow && !a.shouldShow(contextObject)) {\n                a.isHidden = true;\n                delete contextObject.$noonContext;\n            }\n            else {\n                a.isHidden = false;\n            }\n            \n            \n            \n        });\n    };\n    \n    return derivedService;\n}",
+	"function": "function (NoonAction, DbuiAlert, $q, $stateParams, $rootScope, $uibModal, $state, $parse, db, NoonAuth) {\n\n    var derivedService = Object.create(NoonAction);\n    \n    var dbuiCoreActions = {\n      'new':{\n        label:'New',\n        state:'dbui.create',\n        icon:'fa-plus-square',\n        id:'new'\n      },\n      'duplicate':{\n        label:'Duplicate',\n        icon:'fa-copy',\n        id:'duplicate',\n        fn: function(args) {\n            $state.go('dbui.create', {className:args.className, perspective:args.perspective, copyObject:args.targetObj});\n        }\n      },\n      'list':{\n        label:'List',\n        state:'dbui.list',\n        icon:'fa-list',\n        id:'list'\n      },\n      'folder_list':{\n        label:'List',\n        state:'dbui.folders',\n        icon:'fa-folder-o',\n        id:'folder_list'\n      },\n      'view':{\n        display_condition:'_id',\n        label:'View',\n        state:'dbui.view',\n        icon:'fa-eye',\n        id:'view'\n      },\n      'edit':{\n        label:'Edit',\n        state:'dbui.edit',\n        icon:'fa-pencil-square-o',\n        id:'edit'\n      },\n      'delete':{\n        display_condition:'_id',\n        label:'Delete',\n        icon:'fa-times-circle',\n        id:'delete',\n        fn: function(args) {\n          if(window.confirm('Are you sure you wish to delete this record?')) {\n            return args.targetObj.remove().then(function() {\n              $state.go('dbui.list', {className:args.className, perspective:args.perspective});\n            },\n            function(err) {\n              alert('error deleting: '+err);\n            });\n          }\n\n          return null;\n        }\n      },\n      'dialog-view': {\n        label:'View',\n        icon:'fa-eye',\n        id:'dialog-view',\n        fn: function(args) {\n\n          var modalInstance;\n          var scope = $rootScope.$new(true);\n\n          var className = scope.boClass = args.className;\n          var perspectiveName = scope.perspectiveName = args.perspective;\n          var boId = scope.boId = args.targetObj._id || args.targetObj;\n\n          modalInstance = $uibModal.open({\n            templateUrl:'dbui/core/view-dialog.html',\n            controller:'dbui_ViewCtrl',\n            size:'lg',\n            scope: scope,\n            resolve: {\n              theObject: function() {\n                return db[className].findOne({_id:boId}).$promise;\n              },\n              viewPerspective:  function(Dbui) {\n                return Dbui.getPerspective(perspectiveName, className, 'dialog-view');\n              }\n            }\n          });\n        }\n      }\n\n    };\n    \n    /**\n     * DbuiAction.init\n     */\n    derivedService.init = function() {\n        NoonAction.registerAliases(dbuiCoreActions);\n        \n    };\n    \n    \n        const handleActionError = function(err) {\n        var msg = 'Error invoking action';\n        console.log('DbuiAction: '+msg, this, err);\n        DbuiAlert.danger(msg+' '+err);\n    };\n    \n    /**\n     * An action can resolve to special DBUI instructions:\n     * alert, action chain\n     */\n    const handleActionResult = function(result) {\n        if(result) {\n          if(result.error) {\n            // alert(result.error);\n            DbuiAlert.danger(result.error);\n          }\n          \n          if(result.message) {\n            // alert(result.message);\n            DbuiAlert.success(result.message);\n          }\n          \n          if(result.warning) {\n              DbuiAlert.warning(result.warning);\n          }\n          \n          if(result.action) {\n              console.log('Chaining action: ', result.action);\n              return NoonAction.invoke(result.action).then(handleActionResult, handleActionError.bind(result.action));\n          }\n        }\n        \n        return result;\n    };\n    \n    /**\n     * DbuiAction.invokeAction\n     * Invokes actionObj, adding in parameters from $stateParams and contextBo.\n     * How contextBo is added to params is dependent on the type of action:\n     *   state and ws actions -> \"id\" is populated w/ contextBo._id \n     *   fn and UiAction actions -> \"targetObj\" is populated w/ contextBo\n     */\n    derivedService.invokeAction = function(perspectiveObj, contextBo, actionObj, argsObj) {\n        \n        // console.log('DbuiAction.invokeAction', perspectiveObj, actionObj, contextBo);\n        if(!actionObj) {\n            throw new Error('null actionObj not allowed');\n        }\n        \n      //Append the standard DBUI params to the action object\n      var params = actionObj.params ? _.clone(actionObj.params) : {};\n      \n      //Always pass className and perspective:\n      if(!params.className) {\n          params.className = $stateParams.className;\n      }\n      if(!params.perspective) {\n          if(perspectiveObj) {\n              params.perspective = perspectiveObj.name;\n          }\n          else {\n              params.perspective = $stateParams.perspective || 'default';  \n          }\n      }\n      \n      \n      //depending on type of action, we add either targetId or targetObj\n      if(actionObj.state || actionObj.ws) {\n          if(contextBo && contextBo._id)\n            params.id = contextBo._id;\n          else\n            params.id = contextBo;\n      }\n      else if(actionObj.fn || actionObj.ui_action) {\n          params.targetObj = contextBo;\n          params.perspectiveObj = perspectiveObj;\n      }\n      \n      \n      //Anything in argsObj supercedes the actionObj.params\n      if(argsObj) {\n          _.assign(params, argsObj);\n      }\n      \n      return NoonAction.invoke(actionObj, params).then(\n          handleActionResult, handleActionError.bind(actionObj)\n        );\n    };\n    \n    \n    var noonContext;\n    const getNoonContext = function() {\n        if(!noonContext) {\n            noonContext = {\n                currentUser:NoonAuth.getCurrentUser(),\n                userPreferences:$rootScope.userPrefs\n            };\n        }\n        return noonContext;\n    }\n    \n    /**\n     * Set isHidden for any actions that have visiblityCondition expression set\n     */\n    derivedService.processActionVisibility = function(actionList, contextObject) {\n        contextObject = contextObject || {};\n        _.forEach(actionList, function(a) {\n            if(a.display_condition && !a.shouldShow) {\n                try {\n                    \n                    a.shouldShow = $parse(a.display_condition);\n                    a.requireNoonContext = (a.display_condition.indexOf('$noonContext') > -1);\n                    \n                } catch (e) {\n                    console.error(e);\n                }\n            }\n            \n            if(a.requireNoonContext) {\n                contextObject.$noonContext = getNoonContext();\n            }\n            \n            if(a.shouldShow && !a.shouldShow(contextObject)) {\n                a.isHidden = true;\n                delete contextObject.$noonContext;\n            }\n            else {\n                a.isHidden = false;\n            }\n            \n            \n            \n        });\n    };\n    \n    return derivedService;\n}",
 	"module": {
 		"_disp": "noonian.dbui",
 		"_id": "myP57XGhSNyDKrrcJFvO0Q"
@@ -2973,11 +2973,11 @@
 	"type": "directive"
 },
 {
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_class": "AngularProvider",
 	"_id": "YKldolloSTitGHf7Wz64PQ",
 	"doc": "Returns the constructor for a \"BusinessObjectLabelGroup\". Instances provide a getLabel accessor function to recurse into sub-fields\nA BO's _bo_meta_data.field_labels is an instance of BusinessObjectLabelGroup.",
-	"function": "function () {\n    var db;\n    \n    /**\n     * Constructor for type descriptor maps: special dynamic versions of BO definitions\n     * @constructor\n     * @param typeDescMap\n     * @param {!Object.<string, Object>} fieldLabels\n     **/\n    var BusinessObjectLabelGroup = function(typeDescMap, fieldLabels) {\n        if(!this || !(this instanceof BusinessObjectLabelGroup)) {\n            return new BusinessObjectLabelGroup(typeDescMap, fieldLabels);\n        }\n        this.__typeDescMap = typeDescMap;\n        _.assign(this, fieldLabels);\n        \n        var myLabels = this;\n        \n        //Process any composites; recursively instantiate BOLabelGroups as appropriate\n        _.forEach(typeDescMap, function(td, fieldName) {\n            if(td.type === 'composite' || (td instanceof Array && td[0].type === 'composite')) {\n                var myTd = td instanceof Array ? td[0] : td;\n                var subLabelgroupKey = '#'+fieldName;\n                if(myTd.type_desc_map &&  myLabels[subLabelgroupKey]) {\n                    myLabels[subLabelgroupKey] = new BusinessObjectLabelGroup(myTd.type_desc_map, myLabels[subLabelgroupKey]);\n                }\n            }\n        });\n    };\n    \n    /**\n     * @private \n     * getTypeDescriptor may need access to db when traversing into reference fields.  \n     * However, simply injecting db as a factory causes a circular depenency.\n     */\n    BusinessObjectLabelGroup._init = function(dbService) {\n        db = dbService;\n    };\n    \n    /**\n     * @function BusinessObjectLabelGroup#getLabel\n     * Retrieves a label for a particular field/sub-field; recursing into composites and references if needed.\n     * @param {string} path can be a simple fieldname or dotted into reference or composite fields, e.g.:\n     *     db.SomeBusinessObj._bo_meta_data.field_labels.getTypeDescriptor('refField.blah');\n     **/\n    Object.defineProperty(BusinessObjectLabelGroup.prototype, 'getLabel', {\n        enumerable:false, writable:false,\n        value:function(path, abbreviated) {\n            var dotPos = path.indexOf('.');\n            \n            if(dotPos === -1) { //no dot -> just a field name\n                if(abbreviated && this._abbreviated && this._abbreviated[path]) {\n                    return this._abbreviated[path];\n                }\n                return this[path] || path;\n            }\n            \n            //Peel off the first piece.\n            var localField = path.substring(0, dotPos);\n            var subPath = path.substring(dotPos+1);\n            \n            var localTd = this.__typeDescMap[localField];\n    \n            if(!localTd) {\n              console.error('invalid fieldname for td', localField, this);\n              return path;\n            }\n            \n            if(localTd instanceof Array && localTd.length > 0) {\n                localTd = localTd[0];\n            } \n            \n            if(localTd.type === 'reference') {\n                //Grab label it from referenced db model\n                var RefModel = db[localTd.ref_class];\n                if(!RefModel) {\n                    console.error('invalid reference class in type descriptor:', this);\n                    return path;\n                }\n                \n                return RefModel._bo_meta_data.field_labels.getLabel(subPath, abbreviated);\n            }\n            else if(localTd.type === 'composite') {\n                var subLabelgroupKey = '#'+fieldName;\n                \n                if(!this.fieldLabels[subLabelgroupKey]) {\n                    console.error('labelgroup missing for composite field', this);\n                    return path;\n                }\n                \n                return this.fieldLabels[subLabelgroupKey].getLabel(subPath, abbreviated);\n            }\n            else {\n              //dotted into a non-reference/composite or a non-existent field:\n              console.log('invalid field specifier for this label group', this, subPath);\n              return path;\n            }\n    \n          } //end function\n      });\n      \n      \n      \n    return BusinessObjectLabelGroup;\n}",
+	"function": "function () {\n    var db;\n    \n    /**\n     * Constructor for type descriptor maps: special dynamic versions of BO definitions\n     * @constructor\n     * @param typeDescMap\n     * @param {!Object.<string, Object>} fieldLabels\n     **/\n    var BusinessObjectLabelGroup = function(typeDescMap, fieldLabels) {\n        if(!this || !(this instanceof BusinessObjectLabelGroup)) {\n            return new BusinessObjectLabelGroup(typeDescMap, fieldLabels);\n        }\n        this.__typeDescMap = typeDescMap;\n        _.assign(this, fieldLabels);\n        \n        var myLabels = this;\n        \n        //Process any composites; recursively instantiate BOLabelGroups as appropriate\n        _.forEach(typeDescMap, function(td, fieldName) {\n            if(td.type === 'composite' || (td instanceof Array && td[0].type === 'composite')) {\n                var myTd = td instanceof Array ? td[0] : td;\n                var subLabelgroupKey = '#'+fieldName;\n                if(myTd.type_desc_map &&  myLabels[subLabelgroupKey]) {\n                    myLabels[subLabelgroupKey] = new BusinessObjectLabelGroup(myTd.type_desc_map, myLabels[subLabelgroupKey]);\n                }\n            }\n        });\n    };\n    \n    /**\n     * @private \n     * getTypeDescriptor may need access to db when traversing into reference fields.  \n     * However, simply injecting db as a factory causes a circular depenency.\n     */\n    BusinessObjectLabelGroup._init = function(dbService) {\n        db = dbService;\n    };\n    \n    /**\n     * @function BusinessObjectLabelGroup#getLabel\n     * Retrieves a label for a particular field/sub-field; recursing into composites and references if needed.\n     * @param {string} path can be a simple fieldname or dotted into reference or composite fields, e.g.:\n     *     db.SomeBusinessObj._bo_meta_data.field_labels.getTypeDescriptor('refField.blah');\n     **/\n    Object.defineProperty(BusinessObjectLabelGroup.prototype, 'getLabel', {\n        enumerable:false, writable:false,\n        value:function(path, abbreviated) {\n            var dotPos = path.indexOf('.');\n            \n            if(dotPos === -1) { //no dot -> just a field name\n                if(abbreviated && this._abbreviated && this._abbreviated[path]) {\n                    return this._abbreviated[path];\n                }\n                return this[path] || path;\n            }\n            \n            //Peel off the first piece.\n            var localField = path.substring(0, dotPos);\n            var subPath = path.substring(dotPos+1);\n            \n            var localTd = this.__typeDescMap[localField];\n    \n            if(!localTd) {\n              console.error('invalid fieldname for td', localField, this);\n              return path;\n            }\n            \n            if(localTd instanceof Array && localTd.length > 0) {\n                localTd = localTd[0];\n            } \n            \n            if(localTd.type === 'reference') {\n                //Grab label it from referenced db model\n                var RefModel = db[localTd.ref_class];\n                if(!RefModel) {\n                    console.error('invalid reference class in type descriptor:', this);\n                    return path;\n                }\n                \n                return RefModel._bo_meta_data.field_labels.getLabel(subPath, abbreviated);\n            }\n            else if(localTd.type === 'composite') {\n                var subLabelgroupKey = '#'+localField;\n                \n                if(!this[subLabelgroupKey]) {\n                    console.error('labelgroup missing for composite field', this);\n                    return path;\n                }\n                \n                return this[subLabelgroupKey].getLabel(subPath, abbreviated);\n            }\n            else {\n              //dotted into a non-reference/composite or a non-existent field:\n              console.log('invalid field specifier for this label group', this, subPath);\n              return path;\n            }\n    \n          } //end function\n      });\n      \n      \n      \n    return BusinessObjectLabelGroup;\n}",
 	"module": {
 		"_disp": "noonian.api",
 		"_id": "NJnfAVnFSmuMcv9voRnaJQ"
@@ -3802,6 +3802,21 @@
 },
 {
 	"__t": "AngularTemplate",
+	"__ver": "sys:2",
+	"_class": "AngularTemplate",
+	"_id": "uZEMmkI8S3qb6HGk1YdHEA",
+	"content": "<div class=\"modal-header\">\n    <h3 class=\"modal-title\">Install Package</h3>\n</div>\n<div class=\"modal-body\">\n    <span ng-show=\"waiting\" class=\"ng-hide\"><i class=\"fa fa-2x fa-spinner fa-pulse\"></i> {{waiting}}</span>\n    <div ng-show=\"!checkResult && !waiting\">\n        <uib-tabset>\n            <uib-tab heading=\"Upload File\">\n                <form class=\"form-horizontal\">\n                    <div class=\"form-group\">\n                        <label class=\"col-sm-2 control-label\" for=\"pkgFile\">Package File</label>\n                        <div class=\"col-sm-10\">\n                            <input class=\"form-control\" type=\"file\" id=\"pkgFile\" accept=\".json\" onchange=\"angular.element(this).scope().fileChanged(this)\">\n                            <p class=\"help-block\">Select the file to upload for install on this Noonian instance.</p>\n                        </div>\n                    </div>\n                    \n                    <!--<button class=\"btn btn-default\" ng-disabled=\"!fileObj\" ng-click=\"uploadFile()\">Upload File</button>-->\n                </form>\n            </uib-tab>\n            \n            <uib-tab heading=\"From Repository\" select=\"initRemote()\">\n                <span ng-show=\"!remoteList\"><i class=\"fa fa-2x fa-spinner fa-pulse\"></i> Obtaining list of pacakgates...</span>\n                <uib-tabset type=\"pills\">\n                    <uib-tab ng-repeat=\"rmt in remoteList\" heading=\"{{rmt.repo.name}}\">\n                         <table class=\"table table-bordered\">\n                            <thead>\n                                <tr>\n                                    <th>Name</th>\n                                    <th>Version</th>\n                                    <th>Description</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr ng-repeat=\"pkg in rmt.metadata\" ng-class=\"{danger:(pkg.status=='upgrade')}\" >\n                                    <td ng-hide=\"pkg.status == 'installed'\"><a href ng-click=\"checkPkg(rmt, pkg)\" uib-tooltip=\"{{pkg.status == 'upgrade' ? 'Upgrade' : 'Install'}} {{pkg.key}}.\">{{pkg.name}} ({{pkg.key}})</a></td>\n                                    <td ng-show=\"pkg.status == 'installed'\">{{pkg.name}} ({{pkg.key}}) [installed]</td>\n                                    <td>{{pkg.version}}</td>\n                                    <td>{{pkg.description}}</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </uib-tab>\n                </uib-tabset>\n            </uib-tab>\n        </uib-tabset>\n    </div>\n    <div ng-show=\"checkResult && !checkResult.error && !installResult\">\n        \n        <h4>{{checkResult.name}} ({{checkResult.key}}) </h4>\n        <div class=\"form-horizontal\" style=\"padding:10px;\">\n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <p>{{checkResult.description}}</p>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-md-6\">\n                    <div class=\"form-group\">\n                        <label class=\"col-sm-3 control-label\">Version</label>\n                        <div class=\"col-sm-9\">\n                            <p class=\"form-control-static\">{{checkResult.target_version}}</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-6\" ng-show=\"checkResult.installed_version\">\n                    <div class=\"form-group\">\n                        <label class=\"col-sm-3 control-label\">Installed Version</label>\n                        <div class=\"col-sm-9\">\n                            <p class=\"form-control-static\">{{checkResult.installed_version}}</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        \n        <div class=\"panel panel-default\" ng-show=\"anyDependencies\">\n            <div class=\"panel-heading\">\n                <h3 class=\"panel-title\">Dependencies</h3>\n            </div>\n            <div class=\"panel-body\">\n                <div class=\"alert alert-danger\" ng-show=\"missingRepos.length\">\n                    <p>Unable to locate any source for the following noonian dependencies: <span ng-repeat=\"mr in missingRepos\">{{mr}}{{$last ? '.' : ', '}}</span></p>\n                    <p>Please install separately, or add a RemotePackageRepository for the host and try again.</p>\n                </div>\n                <div class=\"alert alert-info\">\n                    <p>The following are the required NPM, Bower, and Noonian packages required by <strong>{{checkResult.key}}</strong>.  These lists includes dependencies <i>of</i> dependencies.</p>\n                    <p>All packages not already installed will be automatically installed. </p>\n                    <p><span style=\"font-size:140%\">*</span>NOTE: The system will NOT automatically upgrade NPM and Bower packages that are already installed but are of an incompatible version.</p>\n                </div>\n                <table class=\"table table-bordered table-striped\" ng-show=\"checkResult.dependency_resolution.npm\">\n                    <thead>\n                        <tr><th colspan=\"4\">NPM</th></tr>\n                        <tr>\n                            <th>Package</th>\n                            <th>Version</th>\n                            <th>Installed Version</th>\n                            <th>Dependency of</th>\n                        </tr>\n                    </thead>\n                    <tbody>\n                        <tr ng-repeat=\"d in checkResult.dependency_resolution.npm.to_install\">\n                            <td style=\"font-weight:bold\"><a href=\"https://www.npmjs.com/package/{{d.package}}\" target=\"_blank\">{{d.package}}</a></td> \n                            <td>{{d.version}}</td>\n                            <td><i>n/a</i></td>\n                            <td>{{d.dependency_of}}</td>\n                        </tr>\n                        <tr class=\"warning\" ng-repeat=\"d in checkResult.dependency_resolution.npm.to_upgrade\">\n                            <td style=\"font-weight:bold\"><a href=\"https://www.npmjs.com/package/{{d.package}}\" target=\"_blank\">{{d.package}}</a><span style=\"font-size:140%\">*</span></td> \n                            <td>{{d.version}}</td>\n                            <td>{{d.installed_version}}</td>\n                            <td>{{d.dependency_of}}</td>\n                        </tr>\n                    </tbody>\n                </table>\n                \n                <table class=\"table table-bordered\" ng-show=\"checkResult.dependency_resolution.bower\">\n                    <thead>\n                        <tr><th colspan=\"4\">Bower</th></tr>\n                        <tr>\n                            <th>Package</th>\n                            <th>Version</th>\n                            <th>Installed Version</th>\n                            <th>Dependency of</th>\n                        </tr>\n                    </thead>\n                    <tbody>\n                        <tr ng-repeat=\"d in checkResult.dependency_resolution.bower.to_install\">\n                            <td style=\"font-weight:bold\"><a href=\"https://bower.io/search/?q={{d.package}}\" target=\"_blank\">{{d.package}}</a></td> \n                            <td>{{d.version}}</td>\n                            <td><i>n/a</i></td>\n                            <td>{{d.dependency_of}}</td>\n                        </tr>\n                        <tr class=\"warning\" ng-repeat=\"d in checkResult.dependency_resolution.bower.to_upgrade\">\n                            <td style=\"font-weight:bold\"><a href=\"https://bower.io/search/?q={{d.package}}\" target=\"_blank\">{{d.package}}</a></td> \n                            <td>{{d.version}}</td>\n                            <td>{{d.installed_version}}</td>\n                            <td>{{d.dependency_of}}</td>\n                        </tr>\n                    </tbody>\n                </table>\n                \n                <table class=\"table table-bordered\" ng-show=\"checkResult.dependency_resolution.noonian\">\n                    <thead>\n                        <tr><th colspan=\"5\">Noonian</th></tr>\n                        <tr>\n                            <th>Package</th>\n                            <th>Version</th>\n                            <th>Installed Version</th>\n                            <th>Dependency of</th>\n                            <th>Repository</th>\n                        </tr>\n                    </thead>\n                    <tbody>\n                        <tr ng-repeat=\"d in checkResult.dependency_resolution.noonian.to_install\" ng-class=\"{danger:(!d.repository)}\">\n                            <td style=\"font-weight:bold\">{{d.package}}</td> \n                            <td>{{d.version}}</td>\n                            <td><i>n/a</i></td>\n                            <td>{{d.dependency_of}}</td>\n                            <td><span ng-show=\"d.repository\">{{d.repository.name}}</span><span ng-hide=\"d.repository\">Not found in any repository</span></td>\n                        </tr>\n                        <tr ng-repeat=\"d in checkResult.dependency_resolution.noonian.to_upgrade\" ng-class=\"{danger:(!d.repository)}\">\n                            <td style=\"font-weight:bold\">{{d.package}}</td> \n                            <td>{{d.version}}</td>\n                            <td>{{d.installed_version}}</td>\n                            <td>{{d.dependency_of}}</td>\n                            <td>{{d.repository.name}}</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>\n        </div> <!-- end dpeendencies panel -->\n        \n        <div  class=\"panel panel-default\" ng-repeat=\"up in userParams\">\n            <div class=\"panel-heading\">\n                <h3 class=\"panel-title\">Parameters for {{up.package_key}}</h3>\n            </div>\n            <div class=\"panel-body\">\n                <dbui-object-editor the-object=\"up.paramsObj\" perspective=\"up.perspective\" form-status=\"up.formStatus\"></dbui-object-editor>\n            </div>\n        </div>\n\n        <div class=\"row\" ng-show=\"!checkResult.error\">\n            <div class=\"col-md-12\">\n                <button class=\"btn btn-block btn-danger\" ng-disabled=\"!installReady\" ng-click=\"install()\">Install</button>\n            </div>\n        </div>\n    </div>\n    <div ng-show=\"installResult\">\n        <div ng-show=\"installResult.result === 'error'\">\n            <div  class=\"alert alert-danger\">Failed to install {{installResult.metaObj.key}} version {{installResult.metaObj.version}}</div>\n            <div class=\"alert alert-danger\">{{installResult.error_msg}}</div>\n        </div>\n        \n        <div ng-show=\"installResult.result === 'success'\">\n            <div  class=\"alert alert-success\">Successfully installed {{installResult.metaObj.key}} version {{installResult.metaObj.version}}</div>\n            \n            <div class=\"panel panel-default\" ng-show=\"installResult.functionResults.post\">\n                <div class=\"panel-heading\">\n                    <h3 class=\"panel-title\">Post-Install</h3>\n                </div>\n                <div class=\"panel-body\">\n                    <p ng-show=\"installResult.functionResults.post.error\" class=\"alert alert-danger\">{{installResult.functionResults.post.error_msg}}</p>\n                    <p ng-show=\"installResult.functionResults.post.message\" class=\"alert\" ng-class=\"installResult.functionResults.post.alert_level || 'alert-info'\">{{installResult.functionResults.post.message}}</p>\n                </div>\n            </div>\n            <div class=\"panel panel-default\" ng-show=\"anyDependencies\">\n                <div class=\"panel-heading\">\n                    <h3 class=\"panel-title\">Dependency Installation</h3>\n                </div>\n                <div class=\"panel-body\">\n                    <div class=\"alert alert-warning\" ng-show=\"anyError\">\n                        <p>One or more NPM or Bower dependencies failed to install.  Review the list below, and resolve the issues at the command line.</p>\n                    </div>\n                     <table class=\"table table-bordered\">\n                        <thead>\n                            <tr>\n                                <th></th>\n                                <th>Status</th>\n                                <th>Package</th>\n                                <th>Dependency of</th>\n                                <th>Message</th>\n                            </tr>\n                        </thead>\n                        <tbody>\n                            <tr ng-repeat=\"d in installResult.dependencyResults.bower\" ng-class=\"{danger:(d.result==='error'), success:(d.result==='success'}\">\n                                <td style=\"font-size:80%\">Bower</td>\n                                <td><span ng-show=\"d.result==='error'\">NOT INSTALLED</span><span ng-show=\"d.result==='success'\">Installed</span></td>\n                                <td>{{d.dependency.package}} {{d.dependency.version}}</td>\n                                <td>{{d.dependency.dependency_of}}</td>\n                                <td>{{d.call_result.stderr}}</td>\n                            </tr>\n                            <tr ng-repeat=\"d in installResult.dependencyResults.npm\" ng-class=\"{danger:(d.result==='error'), success:(d.result==='success'}}\">\n                                <td style=\"font-size:80%\">NPM</td>\n                                <td><span ng-show=\"d.result==='error'\">NOT INSTALLED</span><span ng-show=\"d.result==='success'\">Installed</span></td>\n                                <td>{{d.dependency.package}} {{d.dependency.version}}</td>\n                                <td>{{d.dependency.dependency_of}}</td>\n                                <td>{{d.call_result.stderr}}</td>\n                            </tr>\n                            <tr ng-repeat=\"d in installResult.dependencyResults.noonian\" class=\"success\">\n                                <td style=\"font-size:80%\">Noonian</td>\n                                <td>Installed</td>\n                                <td>{{d.dependency.package}} {{d.dependency.version}}</td>\n                                <td>{{d.dependency.dependency_of}}</td>\n                                <td ng-hide=\"d.install_result.functionResults.post.error\" ng-class=\"d.install_result.functionResults.post.alert_level\">{{d.install_result.functionResults.post.message}}</td>\n                                <td ng-show=\"d.install_result.functionResults.post.error\" class=\"danger\">{{d.install_result.functionResults.post.error_msg}}</td>\n                            </tr>\n                        </tbody>\n                    </table>\n                </div>\n            </div>\n            \n        </div>\n\n    </div>\n    <div class=\"alert alert-danger\" ng-show=\"attemptResult.error\">\n        <p><span style=\"font-weight:bold\">Error:</span> {{attemptResult.error_msg || attemptResult.error}}</p>\n        <button class=\"btn btn-default\" ng-click=\"clear()\">Go Back</button>\n    </div>\n    \n</div>\n<div class=\"modal-footer\">\n    <button ng-show=\"installResult\" class=\"btn btn-primary\" type=\"button\" ng-click=\"$dismiss()\">Close</button>\n    <button ng-hide=\"installResult\" class=\"btn btn-warning\" type=\"button\" ng-click=\"$dismiss()\">Cancel</button>\n</div>",
+	"module": {
+		"_disp": "noonian.dbui",
+		"_id": "myP57XGhSNyDKrrcJFvO0Q"
+	},
+	"name": "install_pkg_dialog.html",
+	"path": "sys/packaging",
+	"rolespec": [
+	]
+},
+{
+	"__t": "AngularTemplate",
 	"__ver": "sys:6",
 	"_class": "AngularTemplate",
 	"_id": "xQhrwwpWR-uqqlbCrQ95xw",
@@ -3861,6 +3876,16 @@
 	"code": "function (db, _, Q) {\n    var exports = {};\n    var ENGLISH_ID='-9vPfv2lEeSFtiimx_V4dw';\n\n    /**\n     * @private\n     */\n    var autogenLabelGroup = function(className) {\n      var key = 'sys.dbui.bo.'+className;\n      \n      var typeDescMap;\n      \n      if(db[className]) {\n          typeDescMap = db[className]._bo_meta_data.type_descriptor;\n      }\n      else if(className.indexOf('#') > -1) {\n          var hashPos = className.indexOf('#');\n          var baseClass = className.substring(0, hashPos);\n          var field = className.substring(hashPos+1);\n          \n          var td = db[baseClass] && db[baseClass]._bo_meta_data.type_descriptor[field];\n          \n          if(td instanceof Array) {\n              td = td[0]\n          }\n          \n          if(td && td.type === 'composite') {\n              typeDescMap = td.type_desc_map;\n          }\n      }\n    \n      if(typeDescMap) {\n        console.log(\"Auto-generating LabelGroup for %s\", className);\n         //Create a LabelGroup for i18n\n         var lg = new db.LabelGroup({\n           key:key,\n           language:{_id:'-9vPfv2lEeSFtiimx_V4dw'},\n           value:{}\n         });\n    \n         for(var f in typeDescMap) {\n           if(f.indexOf('_') !== 0) {\n             lg.value[f] = _.startCase(f);\n           }\n         }\n    \n         return lg.save();\n       }\n       return null;\n    };\n    \n    /**\n     * I18n.getLabelGroup\n     * Retrieve label group for a particular user.\n     */\n    exports.getLabelGroup = function(key, user) {\n      var lang = user && user.language ? user.language._id : ENGLISH_ID; //default to english\n    \n      return db.LabelGroup.findOne({key:key, 'language._id':lang}).then(function(lg){\n        return lg && lg.value;\n      });\n    \n    };\n    \n    /**\n     * I18n.aggregateLabelGroups\n     * Retrieve multiple label groups for a particular user.\n     */\n    exports.aggregateLabelGroups = function(keyArr, user) {\n      var lang = user && user.language ? user.language._id : ENGLISH_ID; //default to english\n    \n      return db.LabelGroup.find({key:{$in:keyArr}, 'language._id':lang}).then(function(lgArr){\n          var result = {};\n          _.forEach(lgArr, function(lg) {\n              result[lg.key] = lg.value;\n          });\n        return result;\n      });\n    \n    };\n    \n    /**\n     * I18n.getBoLabelGroup\n     * *resolves immediate reference sub-fields; TODO also resolve inheritance!\n    */\n    exports.getBoLabelGroup = function(className, user) {\n      var lang = user && user.language ? user.language._id : ENGLISH_ID; //default to english\n    \n    \n      var keyPrefix = 'sys.dbui.bo.';\n      var baseKey = keyPrefix+className;\n    \n      var boMetaData;\n      \n      if(db[className]) {\n          boMetaData = db[className]._bo_meta_data;\n      }\n      else if(className.indexOf('#') > -1) {\n          var hashPos = className.indexOf('#');\n          var baseClass = className.substring(0, hashPos);\n          var field = className.substring(hashPos+1);\n          \n          var td = db[baseClass] && db[baseClass]._bo_meta_data.type_descriptor[field];\n          \n          if(td instanceof Array) {\n              td = td[0]\n          }\n          \n          if(!td || td.type !== 'composite') {\n              throw new Error('Invalid class name: '+className);\n          }\n          \n          boMetaData = {\n              type_descriptor:td.type_desc_map\n          };\n      }\n      else {\n          throw new Error('Invalid class name: '+className);\n      }\n    \n      var queryKeyList = [baseKey]; //LabelGroup keys we'll be asking for\n    \n      var fieldToLgKey = {}; //Maps a ref field name to correpsonding LabelGroup key\n    \n      //first, determine all the reference fields and build a list of corresponding LabelGroup keys.\n      _.forEach(boMetaData.type_descriptor, function(td, fieldName) {\n        if(td.type === 'reference') {\n          var myKey = keyPrefix+td.ref_class;\n          queryKeyList.push(myKey);\n          fieldToLgKey[fieldName] = myKey;\n        }\n      });\n    \n      //Query for all the necessary LabelGroup's\n      return db.LabelGroup.find({key:{$in:queryKeyList}, 'language._id':lang}).then(function(lgList){\n        var lgMap = _.indexBy(lgList, 'key');\n        var composite;\n        var initPromise;\n    \n        if(lgMap[baseKey]) {\n          composite = lgMap[baseKey].value;\n          initPromise = Q(true);\n        }\n        else {\n          initPromise = autogenLabelGroup(className).then(function(newLg) {\n            composite = newLg.value;\n          });\n        }\n    \n        return initPromise.then(function() {\n          _.forEach(fieldToLgKey, function(lgKey, fieldName) {\n            if(lgMap[lgKey]) {\n              var fieldPrefix = fieldName+'.';\n              var labelPrefix = ''; //(composite[fieldName] || fieldName)+': ';\n    \n              _.forEach(lgMap[lgKey].value, function(subLabel, subField) {\n                composite[fieldPrefix+subField] = labelPrefix+subLabel;\n              });\n            }\n          });\n    \n          return composite;\n        });\n      });\n    };\n    \n    \n    return exports;\n}",
 	"name": "I18n",
 	"path": "sys/api"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Config",
+	"_id": "-lfYRd-AQxCyb2GhW2Eszw",
+	"allow_customize": false,
+	"key": "deleteme.test",
+	"rolespec": [
+	],
+	"system": false
 },
 {
 	"__ver": "sys:6",
@@ -4040,37 +4065,6 @@
 					"$istrue": true
 				}
 			}
-		}
-	}
-},
-{
-	"__pkg": "sys",
-	"__ver": "sys:1",
-	"_class": "Config",
-	"_id": "447ODSNfR4S1BcDTKHehoA",
-	"key": "sys.dbui.perspective.default.BusinessObjectPackageUpdate",
-	"system": true,
-	"value": {
-		"edit": {
-			"layout": [
-				"updates",
-				"target_object",
-				"package"
-			]
-		},
-		"list": {
-			"fields": [
-				"package",
-				"target_object",
-				"updates"
-			]
-		},
-		"view": {
-			"layout": [
-				"package",
-				"target_object",
-				"updates"
-			]
 		}
 	}
 },
@@ -4595,7 +4589,7 @@
 },
 {
 	"__pkg": "sys",
-	"__ver": "sys:6",
+	"__ver": "sys:9",
 	"_class": "Config",
 	"_id": "BfVWyf-jTjaOPaH3AZYgig",
 	"allow_customize": false,
@@ -4608,13 +4602,10 @@
 			"layout": [
 				"package_file",
 				"key",
-				[
-					"name",
-					"enable_building"
-				],
+				"name",
 				"description",
 				"build_config",
-				"installed_version",
+				"version",
 				[
 					"major_version",
 					"minor_version"
@@ -4626,33 +4617,35 @@
 			]
 		},
 		"list": {
+			"actions": [
+				"new",
+				{
+					"icon": "fa-download",
+					"label": "Install Package",
+					"ui_action": "sys.packaging.install_package"
+				}
+			],
 			"fields": [
 				"key",
 				"name",
-				"enable_building",
-				"major_version",
-				"minor_version"
+				"version"
 			]
 		},
 		"picker_list": {
 			"fields": [
 				"key",
 				"name",
-				"major_version",
-				"minor_version"
+				"version"
 			]
 		},
 		"view": {
 			"layout": [
 				"package_file",
 				"key",
-				[
-					"name",
-					"enable_building"
-				],
+				"name",
 				"description",
 				"build_config",
-				"installed_version",
+				"version",
 				[
 					"major_version",
 					"minor_version"
@@ -5242,7 +5235,7 @@
 	}
 },
 {
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_class": "Config",
 	"_id": "GYj1Vct0TV2Dx0OAshro-g",
 	"allow_customize": false,
@@ -5257,6 +5250,16 @@
 				"doc",
 				"rolespec",
 				"function"
+			],
+			"recordActions": [
+				"save",
+				"delete",
+				"view",
+				{
+					"icon": "fa-bolt",
+					"label": "Launch",
+					"ui_action": "sys.launch_ws"
+				}
 			]
 		},
 		"list": {
@@ -6563,21 +6566,6 @@
 	}
 },
 {
-	"__ver": "sys:1",
-	"_class": "Config",
-	"_id": "g7Eq-Ra_Qc2oJFqjM8AoBQ",
-	"key": "sys.dbui.perspective.default.related[BusinessObjectPackage_package].BusinessObjectPackageUpdate",
-	"system": true,
-	"value": {
-		"list": {
-			"fields": [
-				"target_object",
-				"updates"
-			]
-		}
-	}
-},
-{
 	"__ver": "sys:4",
 	"_class": "Config",
 	"_id": "hIGoBem9TQinCMTZh-tCTQ",
@@ -7718,10 +7706,10 @@
 },
 {
 	"__t": "CssResource",
-	"__ver": "sys:25",
+	"__ver": "sys:26",
 	"_class": "CssResource",
 	"_id": "mF2-m7xwSv-GOiV7I-YPNg",
-	"content": "\n#banner {\n    border-bottom: none;\n    margin-top: -20px;\n}\n\n#banner h1 {\n    font-size: 60px;\n    line-height: 1;\n    letter-spacing: -1px;\n}\n\n.hero-unit {\n    position: relative;\n    padding: 10px 15px;\n    color: #F5F5F5;\n    text-align: center;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #4393B9;\n}\n\n.footer {\n    text-align: center;\n    padding: 30px 0;\n    margin-top: 70px;\n    border-top: 1px solid #E5E5E5;\n}\n\n.dbui-header {\n    padding: 10px 15px;\n    color: #F5F5F5;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #4393B9;\n    border-radius: 0 0 12px 12px;\n    /*margin-top:-20px;*/\n    margin-bottom:10px;\n}\n\n.dbui-sub-header-alt {\n    padding: 10px 15px;\n    color: #F5F5F5;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #4393B9;\n    border-radius: 6px 6px 0 0;\n}\n\n.dbui-sub-header {\n    padding: 10px 15px;\n    color: #4393B9;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #F5F5F5;\n    border-radius: 6px 6px 0 0;\n}\n\n.dbui-sub-section-content {\n  border: 1px solid rgb(238, 238, 238);\n}\n\n.dbui-form-container {\n  border: 1px solid rgb(238, 238, 238);\n  \n}\n\n/** for subsections in view/edit forms **/\n.dbui-subsection-container {\n  border: 1px solid rgb(238, 238, 238);\n  border-radius: 6px;\n  padding: 10px 0 10px 0;\n  margin-bottom: 20px;\n  padding-right: 20px;\n}\n\n.dbui-subsection-header {\n    padding: 10px 15px;\n    color: #4393B9;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #F5F5F5;\n    border-radius: 6px 6px 0 0;\n    margin-top: -10px; /*cancel subsection padding*/\n    margin-bottom:10px;\n    cursor: pointer;\n}\n\n.dbui-subsection-header:hover {\n    background: #F0F0F0;\n}\n\n/**************************************/\n\n/** action buttons **/\n\n.btn-action {\n    padding: 6px 6px;\n    font-size: x-small;\n    margin-top: 4px;\n    margin-left: 12px;\n    height:35px;\n    opacity:0.8;\n    background-color: hsl(0, 0%, 57%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#fcfcfc\", endColorstr=\"#919191\"); background-image: -khtml-gradient(linear, left top, left bottom, from(#fcfcfc), to(#919191)); background-image: -moz-linear-gradient(top, #fcfcfc, #919191); background-image: -ms-linear-gradient(top, #fcfcfc, #919191); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #919191)); background-image: -webkit-linear-gradient(top, #fcfcfc, #919191); background-image: -o-linear-gradient(top, #fcfcfc, #919191); background-image: linear-gradient(#fcfcfc, #919191); border-color: #919191 #919191 hsl(0, 0%, 46.5%); color: #333 !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.69); -webkit-font-smoothing: antialiased;\n\n}\n\n.btn-action:hover {\n    opacity:1;\n    text-shadow: 2px 2px rgb(210, 210, 210);\n}\n\n\na.folder_view_folder {\n  color:#333;\n  font-weight:bold;\n}\n\na.folder_view_folder:hover {\n  text-decoration:none;\n}\n\na.folder_view_folder:active {\n  text-decoration:none;\n}\n\n.text-bold {\n  font-weight: bolder\n}\n\n.datatable_btn {\n  opacity:.5;\n  padding-left:6px;\n}\n.datatable_btn:hover {\n  opacity:1;\n}\n\n.datatable-group-title {\n  font-weight: bold;\n  background-color:#EEE;\n}\n\n.array-editor-row {\n  margin-left:0px;\n  margin-right:0px;\n  /*border-bottom: #ccc 1px solid;*/\n}\n\n.dbui-edit-field-reference input{\n  max-width:400px;\n}\n\n.array-editor-row .dbui-view-field-reference {\n padding-top:4px;\n}\n\n.dbui-view-field {\n    padding:8px;\n\n}\n\n.dbui-field-viewer {\n  display: block;\n  min-width:25%;\n  max-width:80%;\n\npadding: 6px 12px;\nfont-size: 14px;\nline-height: 1.42857;\ncolor: #555;\nbackground-color: #FFF;\nbackground-image: none;\nborder: 1px solid #CCC;\nborder-radius: 4px;\n}\n\n.querybuilder {\n  border: solid 1px lightgray;\n  padding: 25px;\n  border-radius: 8px;\n  margin: 10px;\n}\n.querybuilder-clausegroup-container {\n  background-color: #EEEEEE;\n  border-radius:8px;\n  padding:8px;\n}\n\n.query-editor-term a {\n  text-decoration: none;\n}\n\n.query-editor-term .dropdown-menu {\n  max-height: 300px;\noverflow-y: auto;\npadding:0;\n}\n\n.query-editor-term .dropdown-menu a {\n  border-bottom: 1px solid lightgray;\n  padding-top:10px;\n  padding-bottom: 10px;\n}\n\nlabel {\n  cursor: pointer;\n}\n\n\n.dbui-view-label span {\n\n    font-weight: bold;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n\n    /*color: #F5F5F5;\n    background: #AAAAAA;\n    padding:6px;\n    border-radius: 6px;*/\n}\n\n/*.dbui-view-container {\n    background: #EEEEEE;\n}\n\n.dbui-view-container .dbui-view-array-elem {\n  padding 2px;\n  background: #E5E5E5;\n}*/\n\n.readable-on-background {\n    text-shadow: 0px 0px 5px white;\n    color:black;\n}\n\n.dbui-view-field-boolean {\n  max-width: 50px;\n}\n\n.dbui-view-field-boolean .boolean-true {\n    font-weight:bold;\n    color:green;\n}\n.dbui-view-field-boolean .boolean-false {\n    font-weight:bold;\n    color:red;\n}\n.field-view-empty {\n    font-style:italic;\n}\n\n.dbui-edit-field-Array {\n  border: 1px solid #CCC;\n  border-radius: 4px;\n}\n\nlabel.required-field {\n    color:red;\n}\n\n.query-editor-term div {\n  display:inline;\n}\n\n.page-size-selector {\n  margin:15px;\n}\n\n.ace_editor { height: 500px; }\n\n\n.searchbox {\n  padding:5px;\n}\n\n.dbui-edit-field-date ul {\n  min-width:292px;\n}\n\n\n.dbui-table-data {\n  margin-top:10px;\n}\n\n.dbui-table-data thead {\n  border-top: 1px solid lightgray;\n  border-left: 1px solid lightgray;\n  border-right: 1px solid lightgray;\n}\n\n.basic-picker-list {\n  max-height: 300px;\n  overflow-y: scroll;\n}\n\n.basic-picker-list .list-group-item {\n  cursor:pointer;\n}\n\n.basic-picker-list .list-group-item:hover {\n  cursor:pointer;\n  background:#F5F5F5;\n}\n\n.basic-picker-list .selected-item {\n  font-weight: bolder;\n  color:#262626;\n  background-color: #F5F5F5;\n\n}\n\n.picker-list-title {\n  padding: 10px 10px 10px 20px;\n  font-weight: bold;\n  color: #4393B9;\n  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n  background: #F5F5F5;\n  border-radius: 9px 9px 0 0;\n}\n\n/*\n * Global add-ons\n */\n\n.sub-header {\n  padding-bottom: 10px;\n  border-bottom: 1px solid #eee;\n}\n\n\n\n.action-bar {\n  background:#EEEEEE;\n  margin-bottom: 15px;\n  padding: 6px 10px 6px 10px;\n  border-radius: 6px;\n}\n\n.action-bar-upper {\n  background:#EEEEEE;\n  padding: 12px;\n  border-radius: 6px 6px 0 0;\n\n}\n\n.action-bar-lower {\n  background:#EEEEEE;\n  padding: 12px;\n  border-radius: 0 0 6px 6px;\n  margin-bottom:15px;\n}\n\n.save-warn {\n    background-color:#f2dede !important\n}\n\n/*\n * Top navigation\n * Hide default border to remove 1px line.\n */\n.navbar-fixed-top {\n  border: 0;\n}\n\n/*\n * Sidebar\n */\n\n/* Hide for mobile, show later */\n\n\n#sidebar_nav span {\n  background: #4393B9;\n  color:#F5F5F5;\n  padding: 10px 20px 10px 20px;\n  border-radius: 8px;\n}\n\n\n.nav-sidebar-submenu-header {\n  color: #F5F5F5;\n  background-color: #4393B9;\n  padding: 5px;\n  font-weight: bold;\n  margin: 3px 5px 0px 5px;\n  border-radius: 3px;\n}\n\n\n/*@media (max-width: 992px) {\n.sidebar_main {\n  display: none;\n}\n  .sidebar_nav {\n    display:block;\n    background: #4393B9;\n    color:#F5F5F5 !important;\n    border-radius: 4px;\n  }\n}\n\n@media (min-width: 992px) {\n  .sidebar_main {\n    display: block;\n  }\n  .sidebar_nav {\n    display: none;\n  }\n\n}*/\n\n\n.panel-sidebar > .panel-heading {\n    color: #F5F5F5;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #4393B9;\n}\n\na.accordion-toggle:hover {\n    text-decoration: none;\n}\n\n.btn-primary {\n     background-color: hsl(0, 0%, 57%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#fcfcfc\", endColorstr=\"#919191\"); background-image: -khtml-gradient(linear, left top, left bottom, from(#fcfcfc), to(#919191)); background-image: -moz-linear-gradient(top, #fcfcfc, #919191); background-image: -ms-linear-gradient(top, #fcfcfc, #919191); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #919191)); background-image: -webkit-linear-gradient(top, #fcfcfc, #919191); background-image: -o-linear-gradient(top, #fcfcfc, #919191); background-image: linear-gradient(#fcfcfc, #919191); border-color: #919191 #919191 hsl(0, 0%, 46.5%); color: #333 !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.69); -webkit-font-smoothing: antialiased;\n}\n\n\n.dbui-field-viewer pre {\n  white-space: pre-line;\n  word-break:normal;\n}\n\n/*\n * Main content\n\n\n.main {\n  padding: 20px;\n}\n@media (min-width: 768px) {\n  .main {\n    padding-right: 40px;\n    padding-left: 40px;\n  }\n}\n.main .page-header {\n  margin-top: 0;\n}\n */\n\n/*\n * Placeholder dashboard ideas\n\n\n.placeholders {\n  margin-bottom: 30px;\n  text-align: center;\n}\n.placeholders h4 {\n  margin-bottom: 0;\n}\n.placeholder {\n  margin-bottom: 20px;\n}\n.placeholder img {\n  display: inline-block;\n  border-radius: 50%;\n} */\n\n\n/**\n * Bootstrap Fonts\n\n\n@font-face {\n    font-family: 'Glyphicons Halflings';\n    src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot');\n    src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),\n    url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'),\n    url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'),\n    url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');\n}\n */\n/**\n *Font Awesome Fonts\n\n\n@font-face {\n    font-family: 'FontAwesome';\n    src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.1.0');\n    src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'),\n    url('../bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'),\n    url('../bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'),\n    url('../bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');\n    font-weight: normal;\n    font-style: normal;\n}\n*/\n/**\n * App-wide Styles\n */\n\n.browsehappy {\n    margin: 0.2em 0;\n    background: #ccc;\n    color: #000;\n    padding: 0.2em 0;\n}\n\n .gridButton {\n \tcursor:pointer;\n \tcolor:gray;\n \tpadding: 2px;\n }\n\n .gridButton:hover {\n \tcolor:#4393B9;\n }\n\n .physical_address_editor label {\n  margin-right:10px;\n  margin-left:20px;\n }\n\n\n.alert-popover {\n    max-width:100%;\n}\n\n.alert-popover .popover-content {\n    max-height:300px;\n    overflow-y:auto;\n}\n\n\n/* Breadcrumb stuff */\n.breadcrumb-pin {\n    opacity:0.25;\n    color:gray;\n    cursor:pointer;\n}\n\n.pinned {\n    font-weight: bolder;\n}\n\n.pinned .breadcrumb-pin {\n    opacity:0.75;\n}\n\n.breadcrumb-pin:hover {\n    opacity:1;\n}\n\n.pinned .breadcrumb-pin i {\n    color:#4393B9;\n}\n\n\n/* alert queue at bottom left of screen */\n#alerts-queue {\n  position: fixed;\n  padding: 0 10px;\n  margin-top: 20px;\n  width: 480px;\n  max-width: 100%;\n  z-index: 999;\n    bottom:0;\n    right:0;\n\n}\n\n\n",
+	"content": "\n#banner {\n    border-bottom: none;\n    margin-top: -20px;\n}\n\n#banner h1 {\n    font-size: 60px;\n    line-height: 1;\n    letter-spacing: -1px;\n}\n\n.hero-unit {\n    position: relative;\n    padding: 10px 15px;\n    color: #F5F5F5;\n    text-align: center;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #4393B9;\n}\n\n.footer {\n    text-align: center;\n    padding: 30px 0;\n    margin-top: 70px;\n    border-top: 1px solid #E5E5E5;\n}\n\n.dbui-header {\n    padding: 10px 15px;\n    color: #F5F5F5;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #4393B9;\n    border-radius: 0 0 12px 12px;\n    /*margin-top:-20px;*/\n    margin-bottom:10px;\n}\n\n.dbui-sub-header-alt {\n    padding: 10px 15px;\n    color: #F5F5F5;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #4393B9;\n    border-radius: 6px 6px 0 0;\n}\n\n.dbui-sub-header {\n    padding: 10px 15px;\n    color: #4393B9;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #F5F5F5;\n    border-radius: 6px 6px 0 0;\n}\n\n.dbui-sub-section-content {\n  border: 1px solid rgb(238, 238, 238);\n}\n\n.dbui-form-container {\n  border: 1px solid rgb(238, 238, 238);\n  \n}\n\n/** for subsections in view/edit forms **/\n.dbui-subsection-container {\n  border: 1px solid rgb(238, 238, 238);\n  border-radius: 6px;\n  padding: 10px 0 10px 0;\n  margin-bottom: 20px;\n  padding-right: 20px;\n}\n\n.dbui-subsection-header {\n    padding: 10px 15px;\n    color: #4393B9;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #F5F5F5;\n    border-radius: 6px 6px 0 0;\n    margin-top: -10px; /*cancel subsection padding*/\n    margin-bottom:10px;\n    cursor: pointer;\n}\n\n.dbui-subsection-header:hover {\n    background: #F0F0F0;\n}\n\n/**************************************/\n\n/** action buttons **/\n\n.btn-action {\n    padding: 6px 6px;\n    font-size: x-small;\n    margin-top: 4px;\n    margin-left: 12px;\n    height:35px;\n    opacity:0.8;\n    background-color: hsl(0, 0%, 57%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#fcfcfc\", endColorstr=\"#919191\"); background-image: -khtml-gradient(linear, left top, left bottom, from(#fcfcfc), to(#919191)); background-image: -moz-linear-gradient(top, #fcfcfc, #919191); background-image: -ms-linear-gradient(top, #fcfcfc, #919191); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #919191)); background-image: -webkit-linear-gradient(top, #fcfcfc, #919191); background-image: -o-linear-gradient(top, #fcfcfc, #919191); background-image: linear-gradient(#fcfcfc, #919191); border-color: #919191 #919191 hsl(0, 0%, 46.5%); color: #333 !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.69); -webkit-font-smoothing: antialiased;\n\n}\n\n.btn-action:hover {\n    opacity:1;\n    text-shadow: 2px 2px rgb(210, 210, 210);\n}\n\n\na.folder_view_folder {\n  color:#333;\n  font-weight:bold;\n}\n\na.folder_view_folder:hover {\n  text-decoration:none;\n}\n\na.folder_view_folder:active {\n  text-decoration:none;\n}\n\n.text-bold {\n  font-weight: bolder\n}\n\n.datatable_btn {\n  opacity:.5;\n  padding-left:6px;\n}\n.datatable_btn:hover {\n  opacity:1;\n}\n\n.datatable-group-title {\n  font-weight: bold;\n  background-color:#EEE;\n}\n\n.array-editor-row {\n  margin-left:0px;\n  margin-right:0px;\n  /*border-bottom: #ccc 1px solid;*/\n}\n\n.dbui-edit-field-reference input{\n  max-width:400px;\n}\n\n.array-editor-row .dbui-view-field-reference {\n padding-top:4px;\n}\n\n.dbui-view-field {\n    padding:8px;\n\n}\n\n.dbui-field-viewer {\n  display: block;\n  min-width:25%;\n  max-width:80%;\n\npadding: 6px 12px;\nfont-size: 14px;\nline-height: 1.42857;\ncolor: #555;\nbackground-color: #FFF;\nbackground-image: none;\nborder: 1px solid #CCC;\nborder-radius: 4px;\n}\n\n.querybuilder {\n  border: solid 1px lightgray;\n  padding: 25px;\n  border-radius: 8px;\n  margin: 10px;\n}\n.querybuilder-clausegroup-container {\n  background-color: #EEEEEE;\n  border-radius:8px;\n  padding:8px;\n}\n\n.query-editor-term a {\n  text-decoration: none;\n}\n\n.query-editor-term .dropdown-menu {\n  max-height: 300px;\noverflow-y: auto;\npadding:0;\n}\n\n.query-editor-term .dropdown-menu a {\n  border-bottom: 1px solid lightgray;\n  padding-top:10px;\n  padding-bottom: 10px;\n}\n\nlabel {\n  cursor: pointer;\n}\n\n\n.dbui-view-label span {\n\n    font-weight: bold;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n\n    /*color: #F5F5F5;\n    background: #AAAAAA;\n    padding:6px;\n    border-radius: 6px;*/\n}\n\n/*.dbui-view-container {\n    background: #EEEEEE;\n}\n\n.dbui-view-container .dbui-view-array-elem {\n  padding 2px;\n  background: #E5E5E5;\n}*/\n\n.readable-on-background {\n    text-shadow: 0px 0px 5px white;\n    color:black;\n}\n\n.dbui-view-field-boolean {\n  max-width: 50px;\n}\n\n.dbui-view-field-boolean .boolean-true {\n    font-weight:bold;\n    color:green;\n}\n.dbui-view-field-boolean .boolean-false {\n    font-weight:bold;\n    color:red;\n}\n.field-view-empty {\n    font-style:italic;\n}\n\n.dbui-edit-field-Array {\n  border: 1px solid #CCC;\n  border-radius: 4px;\n}\n\nlabel.required-field {\n    color:red;\n}\n\n.query-editor-term div {\n  display:inline;\n}\n\n.page-size-selector {\n  margin:15px;\n}\n\n.ace_editor { height: 500px; }\n\n\n.searchbox {\n  padding:5px;\n}\n\n.dbui-edit-field-date ul {\n  min-width:292px;\n}\n\n\n.dbui-table-data {\n  margin-top:10px;\n}\n\n.dbui-table-data thead {\n  border-top: 1px solid lightgray;\n  border-left: 1px solid lightgray;\n  border-right: 1px solid lightgray;\n}\n\n.basic-picker-list {\n  max-height: 300px;\n  overflow-y: scroll;\n}\n\n.basic-picker-list .list-group-item {\n  cursor:pointer;\n}\n\n.basic-picker-list .list-group-item:hover {\n  cursor:pointer;\n  background:#F5F5F5;\n}\n\n.basic-picker-list .selected-item {\n  font-weight: bolder;\n  color:#262626;\n  background-color: #F5F5F5;\n\n}\n\n.picker-list-title {\n  padding: 10px 10px 10px 20px;\n  font-weight: bold;\n  color: #4393B9;\n  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n  background: #F5F5F5;\n  border-radius: 9px 9px 0 0;\n}\n\n/*\n * Global add-ons\n */\n\n.sub-header {\n  padding-bottom: 10px;\n  border-bottom: 1px solid #eee;\n}\n\n\n\n.action-bar {\n  background:#EEEEEE;\n  margin-bottom: 15px;\n  padding: 6px 10px 6px 10px;\n  border-radius: 6px;\n}\n\n.action-bar-upper {\n  background:#EEEEEE;\n  padding: 12px;\n  border-radius: 6px 6px 0 0;\n\n}\n\n.action-bar-lower {\n  background:#EEEEEE;\n  padding: 12px;\n  border-radius: 0 0 6px 6px;\n  margin-bottom:15px;\n}\n\n.save-warn {\n    background-color:#f2dede !important\n}\n\n/*\n * Top navigation\n * Hide default border to remove 1px line.\n */\n.navbar-fixed-top {\n  border: 0;\n}\n\n/*\n * Sidebar\n */\n\n/* Hide for mobile, show later */\n\n\n#sidebar_nav span {\n  background: #4393B9;\n  color:#F5F5F5;\n  padding: 10px 20px 10px 20px;\n  border-radius: 8px;\n}\n\n\n.nav-sidebar-submenu-header {\n  color: #F5F5F5;\n  background-color: #4393B9;\n  padding: 5px;\n  font-weight: bold;\n  margin: 3px 5px 0px 5px;\n  border-radius: 3px;\n}\n\n\n/*@media (max-width: 992px) {\n.sidebar_main {\n  display: none;\n}\n  .sidebar_nav {\n    display:block;\n    background: #4393B9;\n    color:#F5F5F5 !important;\n    border-radius: 4px;\n  }\n}\n\n@media (min-width: 992px) {\n  .sidebar_main {\n    display: block;\n  }\n  .sidebar_nav {\n    display: none;\n  }\n\n}*/\n\n\n.panel-sidebar > .panel-heading {\n    color: #F5F5F5;\n    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);\n    background: #4393B9;\n}\n\na.accordion-toggle:hover {\n    text-decoration: none;\n}\n\n.btn-primary {\n     background-color: hsl(0, 0%, 57%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#fcfcfc\", endColorstr=\"#919191\"); background-image: -khtml-gradient(linear, left top, left bottom, from(#fcfcfc), to(#919191)); background-image: -moz-linear-gradient(top, #fcfcfc, #919191); background-image: -ms-linear-gradient(top, #fcfcfc, #919191); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #919191)); background-image: -webkit-linear-gradient(top, #fcfcfc, #919191); background-image: -o-linear-gradient(top, #fcfcfc, #919191); background-image: linear-gradient(#fcfcfc, #919191); border-color: #919191 #919191 hsl(0, 0%, 46.5%); color: #333 !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.69); -webkit-font-smoothing: antialiased;\n}\n\n\n.dbui-field-viewer pre {\n  white-space: pre-line;\n  word-break:normal;\n    max-height: 300px;\n    overflow-y: auto;\n}\n\n/*\n * Main content\n\n\n.main {\n  padding: 20px;\n}\n@media (min-width: 768px) {\n  .main {\n    padding-right: 40px;\n    padding-left: 40px;\n  }\n}\n.main .page-header {\n  margin-top: 0;\n}\n */\n\n/*\n * Placeholder dashboard ideas\n\n\n.placeholders {\n  margin-bottom: 30px;\n  text-align: center;\n}\n.placeholders h4 {\n  margin-bottom: 0;\n}\n.placeholder {\n  margin-bottom: 20px;\n}\n.placeholder img {\n  display: inline-block;\n  border-radius: 50%;\n} */\n\n\n/**\n * Bootstrap Fonts\n\n\n@font-face {\n    font-family: 'Glyphicons Halflings';\n    src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot');\n    src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),\n    url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'),\n    url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'),\n    url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');\n}\n */\n/**\n *Font Awesome Fonts\n\n\n@font-face {\n    font-family: 'FontAwesome';\n    src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.1.0');\n    src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'),\n    url('../bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'),\n    url('../bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'),\n    url('../bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');\n    font-weight: normal;\n    font-style: normal;\n}\n*/\n/**\n * App-wide Styles\n */\n\n.browsehappy {\n    margin: 0.2em 0;\n    background: #ccc;\n    color: #000;\n    padding: 0.2em 0;\n}\n\n .gridButton {\n \tcursor:pointer;\n \tcolor:gray;\n \tpadding: 2px;\n }\n\n .gridButton:hover {\n \tcolor:#4393B9;\n }\n\n .physical_address_editor label {\n      margin-right: 10px;\n    margin-left: 10px;\n    min-width: 45px;\n    text-align: right;\n }\n\n\n.alert-popover {\n    max-width:100%;\n}\n\n.alert-popover .popover-content {\n    max-height:300px;\n    overflow-y:auto;\n}\n\n\n/* Breadcrumb stuff */\n.breadcrumb-pin {\n    opacity:0.25;\n    color:gray;\n    cursor:pointer;\n}\n\n.pinned {\n    font-weight: bolder;\n}\n\n.pinned .breadcrumb-pin {\n    opacity:0.75;\n}\n\n.breadcrumb-pin:hover {\n    opacity:1;\n}\n\n.pinned .breadcrumb-pin i {\n    color:#4393B9;\n}\n\n\n/* alert queue at bottom left of screen */\n#alerts-queue {\n  position: fixed;\n  padding: 0 10px;\n  margin-top: 20px;\n  width: 480px;\n  max-width: 100%;\n  z-index: 999;\n    bottom:0;\n    right:0;\n\n}\n\n\n",
 	"name": "app.css",
 	"path": "dbui/css",
 	"rolespec": [
@@ -7783,12 +7771,12 @@
 	]
 },
 {
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_class": "DataExport",
 	"_id": "Vs_E0HrSSk6_aNtNUvexaw",
 	"content_type": "text/csv",
 	"name": "CSV - Human Readable",
-	"transform_fn": "function (getInputStream, outputStream, className, params, db, i18n, nodeRequire, Q, _) {\n    var csv = nodeRequire('csv');\n    var moment = nodeRequire('moment');\n    var typeConverter = {\n        _identity: function(val) {return val;},\n        _array: function(val) {\n            var conv = typeConverter[this.type] || typeConverter._identity;\n            var ret = '', comma='';\n            val = val || [];\n            for(var i=0; i < val.length; i++) {\n                ret += comma+conv(val[i]);\n                comma=', ';\n            }\n            \n            return ret;\n        },\n        date: function(val) {\n            if(val) {\n                return moment(val).format('LL');\n            }\n            \n            return '';\n        },\n        reference: function(val) {\n            return val ? val._disp : '';\n        },\n        boolean: function(val) {\n            return val ? 'true' : 'false';\n        },\n        physical_address : function(val) {\n            if(val) {\n                return (val.address||'')+'\\n'+(val.city||'')+', '+(val.state||'')+' '+(val.zip||'');\n            }\n            return '';\n        }\n    };\n    \n    var deferred = Q.defer();\n    \n    var metaData = db[className]._bo_meta_data;\n    \n    var fieldList = params.fields;\n    \n    if(!fieldList) {\n      fieldList = Object.keys(metaData.type_descriptor);\n    }\n    else if(_.isString(fieldList)) {\n        fieldList = JSON.parse(fieldList);\n    }\n    \n    var lang = params.language || 'en';\n    i18n.getBoLabelGroup(className, lang).then(function(labelGroup) {\n        \n        var columns = {};\n        var fieldTypeConverters = {};\n    \n        _.forEach(fieldList, function(f) {\n            columns[f] = labelGroup[f] || f;\n            var td = metaData.getTypeDescriptor(f);\n            // console.log(\"%s: %j\", f, td);\n            if(td) {\n                if(_.isArray(td))\n                    fieldTypeConverters[f] = typeConverter._array.bind(td[0]);\n                else\n                    fieldTypeConverters[f] = td ? typeConverter[td.type] : null;\n            }\n        });\n        \n        var stringifier = csv.stringify({ header: true, columns: columns });\n        stringifier.pipe(outputStream);\n        \n        var inputStream = getInputStream();\n        \n        inputStream.on('data', function(obj) {\n            var ret = {};\n            _.forEach(fieldList, function(f) {\n                var fieldVal = _.get(obj, f);\n                var conv = fieldTypeConverters[f];\n                if(conv != null) {\n                    ret[f] = conv(fieldVal);\n                }\n                else {\n                    ret[f] = fieldVal;\n                }\n            });\n            stringifier.write(ret);\n        });\n        \n        inputStream.on('end', function() {\n            stringifier.end();\n            deferred.resolve(true);\n        });\n        \n        inputStream.on('error', function(err) {\n            stringifier.end();\n            deferred.reject(err);\n        });\n        \n        inputStream.resume();\n    });\n    \n    \n    \n    \n    return deferred.promise;\n}"
+	"transform_fn": "function (getInputStream, outputStream, className, params, db, i18n, nodeRequire, Q, _) {\n    var csv = nodeRequire('csv');\n    var moment = nodeRequire('moment');\n    var typeConverter = {\n        _identity: function(val) {return val;},\n        _array: function(val) {\n            var conv = typeConverter[this.type] || typeConverter._identity;\n            var ret = '', comma='';\n            val = val || [];\n            for(var i=0; i < val.length; i++) {\n                ret += comma+conv(val[i]);\n                comma=', ';\n            }\n            \n            return ret;\n        },\n        date: function(val) {\n            if(val) {\n                return moment(val).format('LL');\n            }\n            \n            return '';\n        },\n        datetime: function(val) {\n            if(val) {\n                return moment(val).format('LLL');\n            }\n            \n            return '';\n        },\n        reference: function(val) {\n            return val ? val._disp : '';\n        },\n        boolean: function(val) {\n            return val ? 'true' : 'false';\n        },\n        physical_address : function(val) {\n            if(val) {\n                return (val.address||'')+'\\n'+(val.city||'')+', '+(val.state||'')+' '+(val.zip||'');\n            }\n            return '';\n        }\n    };\n    \n    var deferred = Q.defer();\n    \n    var metaData = db[className]._bo_meta_data;\n    \n    var fieldList = params.fields;\n    \n    if(!fieldList) {\n      fieldList = Object.keys(metaData.type_descriptor);\n    }\n    else if(_.isString(fieldList)) {\n        fieldList = JSON.parse(fieldList);\n    }\n    \n    var lang = params.language || 'en';\n    i18n.getBoLabelGroup(className, lang).then(function(labelGroup) {\n        \n        var columns = {};\n        var fieldTypeConverters = {};\n    \n        _.forEach(fieldList, function(f) {\n            columns[f] = labelGroup[f] || f;\n            var td = metaData.getTypeDescriptor(f);\n            // console.log(\"%s: %j\", f, td);\n            if(td) {\n                if(_.isArray(td))\n                    fieldTypeConverters[f] = typeConverter._array.bind(td[0]);\n                else\n                    fieldTypeConverters[f] = td ? typeConverter[td.type] : null;\n            }\n        });\n        \n        var stringifier = csv.stringify({ header: true, columns: columns });\n        stringifier.pipe(outputStream);\n        \n        var inputStream = getInputStream();\n        \n        inputStream.on('data', function(obj) {\n            var ret = {};\n            _.forEach(fieldList, function(f) {\n                var fieldVal = _.get(obj, f);\n                var conv = fieldTypeConverters[f];\n                if(conv != null) {\n                    ret[f] = conv(fieldVal);\n                }\n                else {\n                    ret[f] = fieldVal;\n                }\n            });\n            stringifier.write(ret);\n        });\n        \n        inputStream.on('end', function() {\n            stringifier.end();\n            deferred.resolve(true);\n        });\n        \n        inputStream.on('error', function(err) {\n            stringifier.end();\n            deferred.reject(err);\n        });\n        \n        inputStream.resume();\n    });\n    \n    \n    \n    \n    return deferred.promise;\n}"
 },
 {
 	"__ver": "sys:2",
@@ -8700,7 +8688,7 @@
 	"template": "<div class=\"dbui-edit-field-date\">\n    <date-string-editor ng-model=\"binding.value\" display-format=\"{{displayFormat}}\" elem-id=\"{{elemId}}\"></date-string-editor>\n</div>"
 },
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_class": "FieldTypeUiSpec",
 	"_id": "L3YQRK0mSJGE1EK4_FDCCg",
 	"controller_fn": "function ($scope) {\n\n    $scope.clear = function() {\n      $scope.binding.value = null;\n      $scope.clearFile();\n    }\n\n\n  }",
@@ -8716,7 +8704,7 @@
 	"for_viewing": false,
 	"for_viewing_array": false,
 	"key": "dbui.core.attachment.edit",
-	"template": "<div class=\"dbui-edit-field-attachment form-inline\">\n    <input type=\"file\" id=\"{{elemId}}\" class=\"ng-hide\" attachment-uploader=\"binding.value\" />\n    <button class=\"form-control\" ng-show=\"!binding.value\" ng-click=\"initiateUpload()\">Upload File</button>\n    <span ng-show=\"uploading\"><i class=\"fa fa-2x fa-spinner fa-pulse\"></i> uploading...</span>\n    <div ng-show=\"binding.value\">\n        <span>{{binding.value.filename}}</span>\n        <button class=\"form-control\" ng-show=\"binding.value\" ng-click=\"clear()\">x</button>\n    </div>\n</div>"
+	"template": "<div class=\"dbui-edit-field-attachment form-inline\">\n    <input type=\"file\" id=\"{{elemId}}\" class=\"ng-hide\" attachment-uploader=\"binding.value\" />\n    <button class=\"form-control\" ng-show=\"!binding.value\" ng-click=\"initiateUpload()\">Upload File</button>\n    <span ng-show=\"uploading\"><i class=\"fa fa-2x fa-spinner fa-pulse\"></i> uploading...</span>\n    <div ng-show=\"binding.value\">\n        <a target=\"_blank\" ng-href=\"attachment_ws/download/{{binding.value.attachment_id}}\"><i class=\"fa fa-download\"></i><span>{{binding.value.filename}}</span>\n        </a>\n        <button class=\"form-control\" ng-show=\"binding.value\" ng-click=\"clear()\">x</button>\n    </div>\n</div>"
 },
 {
 	"__ver": "sys:2",
@@ -9795,7 +9783,7 @@
 },
 {
 	"__pkg": "sys",
-	"__ver": "sys:4",
+	"__ver": "sys:6",
 	"_class": "LabelGroup",
 	"_id": "8X3sML8-SS6icy3ql5brQg",
 	"key": "sys.dbui.bo.BusinessObjectPackage",
@@ -9815,7 +9803,9 @@
 		"manifest": "Manifest",
 		"minor_version": "Minor Version",
 		"name": "Name",
-		"package_file": "Package File"
+		"on_install_fn": "Install Function",
+		"package_file": "Package File",
+		"version": "Version"
 	}
 },
 {
@@ -10316,24 +10306,6 @@
 		"name": "Name",
 		"path": "Path",
 		"rolespec": "Rolespec"
-	}
-},
-{
-	"__pkg": "sys",
-	"__ver": "sys:1",
-	"_class": "LabelGroup",
-	"_id": "f5jWkW__R7GMilAtgyOsjA",
-	"key": "sys.dbui.bo.BusinessObjectPackageUpdate",
-	"language": {
-		"_disp": "English",
-		"_id": "-9vPfv2lEeSFtiimx_V4dw",
-		"code": "en"
-	},
-	"system": true,
-	"value": {
-		"package": "Package",
-		"target_object": "Target Object",
-		"updates": "Updates"
 	}
 },
 {
@@ -11465,11 +11437,11 @@
 },
 {
 	"__pkg": "sys",
-	"__ver": "sys:1",
+	"__ver": "sys:3",
 	"_class": "Language",
 	"_id": "-9vYjv2lEeSFtiimx_V4dw",
 	"code": "ky",
-	"name": "Kirghiz"
+	"name": "Kirghiz / Kyrgyz"
 },
 {
 	"__pkg": "sys",
@@ -11785,11 +11757,11 @@
 },
 {
 	"__pkg": "sys",
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_class": "Language",
 	"_id": "-9vjuv2lEeSFtiimx_V4dw",
 	"code": "fa",
-	"name": "Persian"
+	"name": "Persian/Farsi"
 },
 {
 	"__pkg": "sys",
@@ -11809,11 +11781,11 @@
 },
 {
 	"__pkg": "sys",
-	"__ver": "sys:1",
+	"__ver": "sys:2",
 	"_class": "Language",
 	"_id": "-9vkZP2lEeSFtiimx_V4dw",
 	"code": null,
-	"name": "Portugese"
+	"name": "Portuguese"
 },
 {
 	"__pkg": "sys",
@@ -12242,9 +12214,60 @@
 {
 	"__ver": "sys:1",
 	"_class": "Language",
+	"_id": "35h56bGXTnWeSsGhSN6QLg",
+	"name": "Mandarin Chinese"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "3AmDv83VTyOTZLTfLDBrAQ",
+	"name": "Cantonese Chinese"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "3O8VSz5QQNG3KcvonLJ5Kg",
+	"name": "Haitian Creole"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
 	"_id": "3sYTbZcQQDig4jSSYIuH7A",
 	"code": "kek",
 	"name": "Q’eqchi’"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "5BLKqdkhRRCmLV3egGyUjw",
+	"name": "Taiwanese"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "67_depbpSvapJdJVcqutwA",
+	"code": "uig",
+	"name": "Uighur"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "8SS-RtbuQ8aeOXCpvfdIyA",
+	"code": "tsg",
+	"name": "Tausug"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "9IwiLwanRvC2I7xa8At5vQ",
+	"code": "uzb",
+	"name": "Uzbek"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "AE13wg62SyWYxSeaXm-IKg",
+	"name": "Ilocano"
 },
 {
 	"__ver": "sys:1",
@@ -12256,9 +12279,89 @@
 {
 	"__ver": "sys:1",
 	"_class": "Language",
+	"_id": "Gb4bdjSoTTOEqh0z1eaUUw",
+	"name": "Hmong"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "K-xjF8tGT5OaY1RDNIRw1w",
+	"code": "apc",
+	"name": "Arabic (Levantine)"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "Mov30kihSTOR-DidfnWGKg",
+	"code": "wuu",
+	"name": "Wu"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
 	"_id": "Ory8fkpLRRSbnSf0K8_WeA",
 	"code": "cab",
 	"name": "Garifuna"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "Q5S_T6C1RjSyz9EfHVdTIw",
+	"code": "arz",
+	"name": "Arabic (Egyptian)"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "Qjd0duhvRpeRNMSgWUeHzw",
+	"name": "Khmer"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "WWJNtFv1R_iDQf5VSSs0zA",
+	"name": "Sudanese"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "XVwG-FX4R3GASjjCGL3I8w",
+	"code": "cbk",
+	"name": "Chavacano"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "YOEVImE_TTmqC_5lJZMkUQ",
+	"code": "ukr",
+	"name": "Ukrainian"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "ZF4sBPeSSSizSh9JBQsntg",
+	"code": "prs",
+	"name": "Dari"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "ZyvL2DqGQ5WhSAV86qWDIw",
+	"code": "ceb",
+	"name": "Cebuano"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "cNM3bt46T3C5mwjgSqZnww",
+	"code": "ka",
+	"name": "Georgian"
+},
+{
+	"__ver": "sys:1",
+	"_class": "Language",
+	"_id": "w4A1K5ARRIGGYGXsZDNiTg",
+	"name": "Fujianese"
 },
 {
 	"__ver": "sys:1",
@@ -14132,7 +14235,7 @@
 			"_id": "7R4cBwsWTSacdSk5ZrAjTw",
 			"key": "sys",
 			"major_version": 0,
-			"minor_version": 64
+			"minor_version": 70
 		}
 	],
 	"url": "https://pkg.noonian.org"
@@ -14143,12 +14246,6 @@
 	"_class": "Role",
 	"_id": "FnQ_eBYITOSC8kJA4Zul5g",
 	"name": "ROLE_SYSADMIN"
-},
-{
-	"__ver": "sys:1",
-	"_class": "Role",
-	"_id": "vZnQ6fGnTKiEWWy9k2gyqg",
-	"name": "TEST_ROLE"
 },
 {
 	"__ver": "sys:4",
@@ -14173,6 +14270,13 @@
 	"key": "test.logme"
 },
 {
+	"__ver": "sys:2",
+	"_class": "UiAction",
+	"_id": "i9IyWncoTpGmb4M0kT_UPQ",
+	"function": "function ($rootScope, $uibModal, $http, BusinessObjectModelFactory, Dbui) {\n    \n    var modalInstance;\n    var scope = $rootScope.$new(true);\n    \n    const buildUserParamsObj = function(specObj) {\n        const labels = {};\n        const defaults = specObj.defauls || {};\n         _.forEach(specObj.fields, (td, fname)=>{\n            labels[fname] = td.label || fname;\n        });\n        const paramModel = BusinessObjectModelFactory.getConstructor(\n              specObj.fields,\n              specObj.package_key+'#params', \n              labels\n        );\n        const result = {package_key:specObj.package_key};\n        result.paramsObj = new paramModel(defaults);\n        result.perspective = specObj.perspective || {layout:Object.keys(specObj.fields)};\n        result.perspective.layout = Dbui.normalizeLayout(result.perspective.layout);\n        \n        result.formStatus = {};\n        return result;\n    };\n    \n    \n    const handleCheckResult = function(checkResult) {\n        var r = scope.checkResult = scope.attemptResult = checkResult;\n        console.log(r);\n        if(r.error) {\n            return;\n        }\n        \n        let missingRepos = scope.missingRepos = [];\n        let dr = r.dependency_resolution && r.dependency_resolution.noonian;\n        if(dr) {\n            ['to_install','to_upgrade'].forEach(cat=>{\n                _.forEach(dr[cat], d=>{\n                    if(!d.repository) {\n                        missingRepos.push(d.package);\n                    }\n                });\n            });\n        }\n        \n        scope.anyDependencies = !!Object.keys(r.dependency_resolution).length;\n        \n        if(missingRepos.length || r.error) {\n            scope.installReady = false;\n        }\n        else if(r.user_parameters) {\n            scope.userParams = [];\n            scope.paramFormStatus = [];\n            _.forEach(r.user_parameters, upSpec=>{\n                let up = buildUserParamsObj(upSpec);\n                scope.paramFormStatus.push(up.formStatus);\n                scope.userParams.push(up);\n            });\n        \n            scope.$watch('paramFormStatus', ()=>{\n                scope.installReady = true;\n                scope.paramFormStatus.forEach(fs=>{\n                    scope.installReady = scope.installReady && (fs.isValid !== false);\n                });\n            }, true);\n        }\n        else {\n            scope.installReady = true;\n        }\n    };\n    \n    scope.fileChanged = function(elem) {\n        \n        if(!elem || !elem.files || !elem.files.length) {\n            scope.fileObj = scope.fileData = null;\n            return;\n        }\n        \n        const fileObj = scope.fileObj = elem.files[0];\n\n        scope.fileData = {\n          filename:fileObj.name,\n          size:fileObj.size,\n          type:fileObj.type\n        };\n        \n        scope.uploadFile();\n\n    };\n    \n    scope.uploadFile = function() {\n        var fd = new FormData();\n        fd.append('pkgStream', scope.fileObj);\n\n        var httpConfig = {\n          transformRequest: angular.identity,\n          headers: {'Content-Type': undefined}\n        };\n\n        var uploadWs = 'ws/pkg/upload/checkPackage';\n\n        scope.waiting = 'Checking Package and Dependencies...';\n        $http.post(uploadWs, fd, httpConfig)\n        .then(function(result) {\n          scope.waiting = false;\n          handleCheckResult(result.data);\n        },\n        function(err) {\n            scope.waiting = false;\n            scope.uploadResult = err;\n            console.log(err);\n        });\n    };\n    \n    scope.install = function() {\n        console.log(scope.userParams);\n        const cr = scope.checkResult;\n        const uploadWs = 'ws/pkg/installPackage?upload_id='+cr.file_id;\n        const paramsObjects = {};\n        \n        if(cr.user_parameters) {\n            //Pull in params from forms\n            for(let i=0; i < cr.user_parameters.length; i++) {\n                let upDef = cr.user_parameters[i];\n                paramsObjects[upDef.package_key] = scope.userParams[i];\n            }\n        }\n\n        scope.waiting = 'Installing...';\n        $http.post(uploadWs, paramsObjects)\n        .then(function(result) {\n          scope.waiting = false;\n          var r = scope.installResult = scope.attemptResult = result.data;\n          scope.installReady = false;\n          console.log(r);\n          ['bower','npm'].forEach(m=>{\n              _.forEach(r.dependencyResults[m], d=>{\n                  if(d.result === 'error') {\n                      scope.anyError = true;\n                  }\n              })\n          })\n          \n          \n        });\n    };\n    \n    scope.clear = function() {\n        scope.checkResult = scope.installResult = scope.installReady = scope.attemptResult = null;\n        scope.waiting = false;\n    };\n    \n    scope.initRemote = function() {\n        if(!scope.remoteList) {\n            $http.get('ws/pkg/listRemotePackages').then(result=>{\n                scope.remoteList = result.data;\n            });\n        }\n    };\n    scope.checkPkg = function(rmt, pkg) {\n        scope.waiting = \"Checking Package and Dependencies...\";\n        $http.get(`ws/pkg/checkPackage?repo=${rmt.repo._id}&key=${pkg.key}`).then(function(result){\n            scope.waiting = false;\n            handleCheckResult(result.data);\n        });\n    };\n    \n    modalInstance = $uibModal.open({\n        templateUrl:'sys/packaging/install_pkg_dialog.html',\n        size:'lg',\n        scope: scope\n    });\n    \n    modalInstance.result.then(()=>{\n        console.log('yay!');\n    });\n      \n}",
+	"key": "sys.packaging.install_package"
+},
+{
 	"__ver": "sys:8",
 	"_class": "UiAction",
 	"_id": "nCpVSR9XR3CrhRBRNDNtPw",
@@ -14187,11 +14291,18 @@
 	"key": "dbui.export_csv"
 },
 {
+	"__ver": "sys:1",
+	"_class": "UiAction",
+	"_id": "zd0dwbHnRR605jMa_mW81Q",
+	"function": "function ($window) {\n    let to = this.targetObj;\n    if(to && to.path) {\n        $window.open('ws'+to.path);\n    }\n}",
+	"key": "sys.launch_ws"
+},
+{
 	"__pkg": "sys",
-	"__ver": "sys:10",
+	"__ver": "sys:26",
 	"_class": "User",
 	"_id": "vl22Nf2XTNym2-X90sxOag",
-	"last_login": "2018-07-16T13:49:05.383Z",
+	"last_login": "2019-01-17T16:09:29.988Z",
 	"name": "admin",
 	"password": {
 		"hash": "$2a$10$upi6IEXcAO71HY.NzpT33ePm58Pf4Oxo8Flf8K6iOWqyPrQjFyh9G"
@@ -14201,6 +14312,18 @@
 			"_disp": "ROLE_SYSADMIN",
 			"_id": "FnQ_eBYITOSC8kJA4Zul5g"
 		}
+	]
+},
+{
+	"__disp": "/pkg/upload/checkPackage",
+	"__ver": "sys:4",
+	"_class": "WebService",
+	"_id": "3JFCqjtrTuyxcelC77-FCQ",
+	"doc": "Called via package install dialog opened on BusinessObjectPackage List; checks the package and scans the system",
+	"function": "function (db, req, Q) {\n    \n    const PassThrough = require('stream').PassThrough;\n    const PackagingService = db._svc.PackagingService;\n    const GridFsService = db._svc.GridFsService;\n    \n    const moment = require('moment');\n    const multiparty = require('multiparty');\n    const form = new multiparty.Form();\n    \n    const deferred = Q.defer();\n    \n    form.on('error', function(err) {\n        console.error(err);\n        deferred.reject(err);\n    });\n    \n    form.on('part', function(part) {\n        console.log('Processing upload part: %s', part.name);\n        if(part.name === 'pkgStream') {\n            \n            //Split stream into two passthroughs so we can check it \n            // and also cache it to gridfs (so installation won't require a 2nd upload)\n            const streamToCheck = new PassThrough();\n            const streamToCache = new PassThrough();\n            part.pipe(streamToCheck);\n            part.pipe(streamToCache);\n            \n                \n            Q.all([\n                PackagingService.checkPackageStream(streamToCheck),\n                GridFsService.saveFile(streamToCache, {type:'noonian-pkg', saved:moment().format()})\n            ]).then(\n                function([checkResult, cacheFileId]) {\n                    checkResult.file_id = cacheFileId;\n                    deferred.resolve(checkResult);\n                },\n                function(err) {\n                    deferred.resolve({error:err, error_msg:err.message});\n                }\n            );\n        }\n        else {\n            console.error('unknown part');\n        }\n        \n    });\n    \n    // form.on('close', function() {});\n    \n\n    form.parse(req);\n    \n    return deferred.promise;\n}",
+	"path": "/pkg/upload/checkPackage",
+	"rolespec": [
+		"FnQ_eBYITOSC8kJA4Zul5g"
 	]
 },
 {
@@ -14323,11 +14446,11 @@
 },
 {
 	"__disp": "/pkg/installPackage",
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_class": "WebService",
 	"_id": "SyEf04PFRfKB6f-MOH3QBg",
-	"doc": "Called via button on BusinessObjectPackage; installs the package (the .json file attachment) into the system",
-	"function": "function (queryParams, db) {\n    var bopId = queryParams.id;\n    if(!bopId) {\n        throw 'invalid package id';\n    }\n    \n    return db._svc.PackagingService.applyPackage(bopId).then(function(result) {\n        return {message:'applied package '+result};\n    });\n}",
+	"doc": "New way: called via \"install package\" dialog\nOld way: called via button on BusinessObjectPackage; installs the package (the .json file attachment) into the system",
+	"function": "function (queryParams, db, postBody) {\n    const PackagingService = db._svc.PackagingService;\n    const GridFsService = db._svc.GridFsService;\n    \n    if(queryParams.id) {\n        //Old way of installing file attached to a BusinessObjectPackage\n        return PackagingService.applyPackage(queryParams.id).then(function(result) {\n            return {message:'applied package '+result};\n        });\n    }\n    \n    if(queryParams.upload_id) {\n        return GridFsService.getFile(queryParams.upload_id).then(fileObj=>{\n            return PackagingService.installPackageStream(fileObj.readstream, postBody);\n        });\n    }\n    \n    throw new Error('missing required parameters');\n}",
 	"path": "/pkg/installPackage",
 	"rolespec": [
 	]
@@ -14363,6 +14486,18 @@
 	"function": "function (queryParams, db, req) {\n    var boClass = queryParams.class_name;\n    var perspectiveName = queryParams.perspective;\n    var title = queryParams.title;\n    var toSave = queryParams.theQuery;\n    \n    if(!boClass || !perspectiveName || !toSave) {\n        throw new Error('Missing required parameters');\n    }\n    \n    toSave = JSON.parse(toSave);\n    \n    var currUserId = req.user._id;\n    \n    var configKey = 'sys.dbui.perspective.'+perspectiveName+'.'+boClass;\n    return db.Config.findOne({key:configKey, user:currUserId}).then(function(cfg) {\n        if(!cfg) {\n            cfg = new db.Config({key:configKey, user:{_id:currUserId}, value:{}});\n        }\n        \n        var list = cfg.value.list = cfg.value.list || {};\n        var queryList = list.savedQueries = list.savedQueries || [];\n        queryList.push({\n            title:title,\n            query:toSave\n        });\n        cfg.markModified('value');\n        return cfg.save();\n    })\n    .then(function(cfg) {\n        return {result:'success', queryList:cfg.value.list.savedQueries};\n    })\n    ;\n}",
 	"path": "/dbui/saveQuery",
 	"rolespec": [
+	]
+},
+{
+	"__disp": "/pkg/listRemotePackages",
+	"__ver": "sys:1",
+	"_class": "WebService",
+	"_id": "aVvXfsYRTc2f2_bZv-v3uw",
+	"doc": "Calls the RemotePackageRepositories configured in the system and obtains list of packages hosted at each.\nUsed by the \"install package\" dialog.",
+	"function": "function (db, _, Q) {\n    const request = require('request');\n    \n    const semver = require('semver');\n    \n    //Can take this out once all hosted package versions are properly converted\n    const getPkgVersion = function(bop) {\n\t\tvar v = bop.version || ((bop.major_version||'0')+'.'+(bop.minor_version||'0')+'.0');\n\t\treturn new semver(semver.coerce(v)).toString();\n\t};\n\t\n\tconst isNewer = function(a, b) {\n\t    //is a newer than b?\n\t    let aPieces = a.split('.');\n\t    let bPieces = b.split('.');\n\t    if(aPieces.length === 3 && bPieces.length === 3) {\n\t        for(let i=0; i < 3; i++) {\n\t            if(+aPieces[i] > +bPieces[i]) {\n\t                return true;\n\t            }\n\t        }\n\t    }\n\t    return false;\n\t};\n    \n    const callRemoteRepo = function(rpr) {\n\t\tconst deferred = Q.defer();\n\n\t\tif(!rpr || !rpr.url || !rpr.auth || !rpr.auth.token) {\n\t\t\tdeferred.reject('Bad RemotePackageRepository entry');\n\t\t}\n\t\t\n\t\tconst fullUrl = `${rpr.url}/ws/package_repo/getMetaData`;\n\t\t\n\t\trequest(\n\t\t\t{\n\t\t\t\tmethod:'GET',\n\t\t\t\turi:fullUrl,\n\t\t\t\tauth:{bearer:rpr.auth.token},\n\t\t\t\tjson:true\n\t\t\t},\n\t\t\tfunction(err, httpResponse, body) {\n\t\t\t\tif(err || body.error) {\n\t\t\t\t\t// console.error(err || body.error);\n\t\t\t\t\treturn deferred.reject(err || body.error);\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t//Can take this out once all hosted package versions are properly converted\n\t\t\t\t_.forEach(body, md=>{\n\t\t\t\t    if(!md.version) {\n\t\t\t\t        md.version = getPkgVersion(md);\n\t\t\t\t    }\n\t\t\t\t});\n\n\t\t\t\tdeferred.resolve({\n\t\t\t\t\trepo:{name:rpr.name, _id:rpr._id, url:rpr.url},\n\t\t\t\t\tmetadata:body  // pkgkey->metadata obj\n\t\t\t\t});\n\t\t\t}\n\t\t);\n\n\t\treturn deferred.promise;\n\t};\n\t\n\treturn db.RemotePackageRepository.find({}).then(rprList=>{\n\t\tconst promiseList = [];\n\t\t_.forEach(rprList, rpr=>{\n\t\t\tpromiseList.push(callRemoteRepo(rpr));\n\t\t});\n\n\t\treturn Q.allSettled(promiseList).then(function(promises) {\n\t\t\tvar result = [];\n\t\t\t_.forEach(promises, p=>{\n\t\t\t\tif(p.state === 'fulfilled') {\n\t\t\t\t\tresult.push(p.value);\n\t\t\t\t}\n\t\t\t});\n\t\t\treturn result;\n\t\t})\n\t\t;\n\t})\n\t.then(resultObj=>{\n\t    //Now, scan result object to mark status on each package\n\t    return db.BusinessObjectPackage.find({}).then(bopList=>{\n\t        const installed = {};\n\n\t\t\t_.forEach(bopList, bop => {\n\t\t\t\tinstalled[bop.key] = getPkgVersion(bop).toString();\n\t\t\t});\n\t\t\t\n\t\t\t_.forEach(resultObj, rmtList => {\n\t\t\t    _.forEach(rmtList.metadata, md => {\n\t\t\t        let k = md.key;\n\t\t\t        let hostedVersion = md.version;\n\t\t\t        let installedVersion = installed[k];\n\t\t\t        if(installedVersion === hostedVersion) {\n\t\t\t            md.status = 'installed';\n\t\t\t        }\n\t\t\t        else if(installedVersion && isNewer(hostedVersion, installedVersion)) {\n\t\t\t            md.status = 'upgrade';\n\t\t\t        }\n\t\t\t    });\n\t\t\t})\n\t\t\t\n\t\t\treturn resultObj;\n\t    });\n\t}) \n\t;\n}",
+	"path": "/pkg/listRemotePackages",
+	"rolespec": [
+		"FnQ_eBYITOSC8kJA4Zul5g"
 	]
 },
 {

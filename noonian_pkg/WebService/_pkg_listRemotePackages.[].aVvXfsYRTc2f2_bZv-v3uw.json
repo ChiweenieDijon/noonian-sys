@@ -1,0 +1,9 @@
+{
+	"__ver": "sys:1",
+	"_id": "aVvXfsYRTc2f2_bZv-v3uw",
+	"doc": "Calls the RemotePackageRepositories configured in the system and obtains list of packages hosted at each.\nUsed by the \"install package\" dialog.",
+	"path": "/pkg/listRemotePackages",
+	"rolespec": [
+		"FnQ_eBYITOSC8kJA4Zul5g"
+	]
+}

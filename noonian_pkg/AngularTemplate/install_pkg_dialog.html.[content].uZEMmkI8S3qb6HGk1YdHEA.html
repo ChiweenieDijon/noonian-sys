@@ -19,19 +19,38 @@
                 </form>
             </uib-tab>
             
-            <uib-tab heading="From Repository">
-                <p>Coming soon...</p>
+            <uib-tab heading="From Repository" select="initRemote()">
+                <span ng-show="!remoteList"><i class="fa fa-2x fa-spinner fa-pulse"></i> Obtaining list of pacakgates...</span>
+                <uib-tabset type="pills">
+                    <uib-tab ng-repeat="rmt in remoteList" heading="{{rmt.repo.name}}">
+                         <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="pkg in rmt.metadata" ng-class="{danger:(pkg.status=='upgrade')}" >
+                                    <td ng-hide="pkg.status == 'installed'"><a href ng-click="checkPkg(rmt, pkg)" uib-tooltip="{{pkg.status == 'upgrade' ? 'Upgrade' : 'Install'}} {{pkg.key}}.">{{pkg.name}} ({{pkg.key}})</a></td>
+                                    <td ng-show="pkg.status == 'installed'">{{pkg.name}} ({{pkg.key}}) [installed]</td>
+                                    <td>{{pkg.version}}</td>
+                                    <td>{{pkg.description}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </uib-tab>
+                </uib-tabset>
             </uib-tab>
         </uib-tabset>
     </div>
-    <div ng-show="checkResult">
+    <div ng-show="checkResult && !checkResult.error && !installResult">
         
-        <h4>{{checkResult.key}} </h4>
-        <div class="form-horizontal" style="padding:10px; border: solid 1px #ccc">
-            
+        <h4>{{checkResult.name}} ({{checkResult.key}}) </h4>
+        <div class="form-horizontal" style="padding:10px;">
             <div class="row">
                 <div class="col-md-12">
-                    <p style="font-weight:bold">{{checkResult.name}}</p>
                     <p>{{checkResult.description}}</p>
                 </div>
             </div>
@@ -55,47 +74,192 @@
             </div>
         </div>
         
-        <div ng-show="checkResult.dependency_resolution">
-            <h4>Dependencies</h4>
-            <table class="table table-bordered" ng-show="checkResult.dependency_resolution.npm">
-                <thead><tr><th>NPM</th></tr></thead>
-                <tbody>
-                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.npm.to_install"><td>Install <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
-                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.npm.to_upgrade"><td>Upgrade <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
-                </tbody>
-            </table>
-            
-            <table class="table table-bordered" ng-show="checkResult.dependency_resolution.bower">
-                <thead><tr><th>Bower</th></tr></thead>
-                <tbody>
-                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.bower.to_install"><td>Install <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
-                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.bower.to_upgrade"><td>Upgrade <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
-                </tbody>
-            </table>
-            
-            <table class="table table-bordered" ng-show="checkResult.dependency_resolution.noonian">
-                <thead><tr><th>Noonian</th></tr></thead>
-                <tbody>
-                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.noonian.to_install"><td>Install <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
-                    <tr ng-repeat="(name, ver) in checkResult.dependency_resolution.noonian.to_upgrade"><td>Upgrade <span style="font-weight:bold">{{name}}</span> <span>{{ver}}</span></td></tr>
-                </tbody>
-            </table>
-        </div>
+        <div class="panel panel-default" ng-show="anyDependencies">
+            <div class="panel-heading">
+                <h3 class="panel-title">Dependencies</h3>
+            </div>
+            <div class="panel-body">
+                <div class="alert alert-danger" ng-show="missingRepos.length">
+                    <p>Unable to locate any source for the following noonian dependencies: <span ng-repeat="mr in missingRepos">{{mr}}{{$last ? '.' : ', '}}</span></p>
+                    <p>Please install separately, or add a RemotePackageRepository for the host and try again.</p>
+                </div>
+                <div class="alert alert-info">
+                    <p>The following are the required NPM, Bower, and Noonian packages required by <strong>{{checkResult.key}}</strong>.  These lists includes dependencies <i>of</i> dependencies.</p>
+                    <p>All packages not already installed will be automatically installed. </p>
+                    <p><span style="font-size:140%">*</span>NOTE: The system will NOT automatically upgrade NPM and Bower packages that are already installed but are of an incompatible version.</p>
+                </div>
+                <table class="table table-bordered table-striped" ng-show="checkResult.dependency_resolution.npm">
+                    <thead>
+                        <tr><th colspan="4">NPM</th></tr>
+                        <tr>
+                            <th>Package</th>
+                            <th>Version</th>
+                            <th>Installed Version</th>
+                            <th>Dependency of</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="d in checkResult.dependency_resolution.npm.to_install">
+                            <td style="font-weight:bold"><a href="https://www.npmjs.com/package/{{d.package}}" target="_blank">{{d.package}}</a></td> 
+                            <td>{{d.version}}</td>
+                            <td><i>n/a</i></td>
+                            <td>{{d.dependency_of}}</td>
+                        </tr>
+                        <tr class="warning" ng-repeat="d in checkResult.dependency_resolution.npm.to_upgrade">
+                            <td style="font-weight:bold"><a href="https://www.npmjs.com/package/{{d.package}}" target="_blank">{{d.package}}</a><span style="font-size:140%">*</span></td> 
+                            <td>{{d.version}}</td>
+                            <td>{{d.installed_version}}</td>
+                            <td>{{d.dependency_of}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table class="table table-bordered" ng-show="checkResult.dependency_resolution.bower">
+                    <thead>
+                        <tr><th colspan="4">Bower</th></tr>
+                        <tr>
+                            <th>Package</th>
+                            <th>Version</th>
+                            <th>Installed Version</th>
+                            <th>Dependency of</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="d in checkResult.dependency_resolution.bower.to_install">
+                            <td style="font-weight:bold"><a href="https://bower.io/search/?q={{d.package}}" target="_blank">{{d.package}}</a></td> 
+                            <td>{{d.version}}</td>
+                            <td><i>n/a</i></td>
+                            <td>{{d.dependency_of}}</td>
+                        </tr>
+                        <tr class="warning" ng-repeat="d in checkResult.dependency_resolution.bower.to_upgrade">
+                            <td style="font-weight:bold"><a href="https://bower.io/search/?q={{d.package}}" target="_blank">{{d.package}}</a></td> 
+                            <td>{{d.version}}</td>
+                            <td>{{d.installed_version}}</td>
+                            <td>{{d.dependency_of}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table class="table table-bordered" ng-show="checkResult.dependency_resolution.noonian">
+                    <thead>
+                        <tr><th colspan="5">Noonian</th></tr>
+                        <tr>
+                            <th>Package</th>
+                            <th>Version</th>
+                            <th>Installed Version</th>
+                            <th>Dependency of</th>
+                            <th>Repository</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="d in checkResult.dependency_resolution.noonian.to_install" ng-class="{danger:(!d.repository)}">
+                            <td style="font-weight:bold">{{d.package}}</td> 
+                            <td>{{d.version}}</td>
+                            <td><i>n/a</i></td>
+                            <td>{{d.dependency_of}}</td>
+                            <td><span ng-show="d.repository">{{d.repository.name}}</span><span ng-hide="d.repository">Not found in any repository</span></td>
+                        </tr>
+                        <tr ng-repeat="d in checkResult.dependency_resolution.noonian.to_upgrade" ng-class="{danger:(!d.repository)}">
+                            <td style="font-weight:bold">{{d.package}}</td> 
+                            <td>{{d.version}}</td>
+                            <td>{{d.installed_version}}</td>
+                            <td>{{d.dependency_of}}</td>
+                            <td>{{d.repository.name}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- end dpeendencies panel -->
         
-        <div ng-if="paramsObj">
-            <h4>Parameters</h4>
-             <dbui-object-editor the-object="paramsObj" perspective="paramsPerspective" form-status="paramFormStatus"></dbui-object-editor>
+        <div  class="panel panel-default" ng-repeat="up in userParams">
+            <div class="panel-heading">
+                <h3 class="panel-title">Parameters for {{up.package_key}}</h3>
+            </div>
+            <div class="panel-body">
+                <dbui-object-editor the-object="up.paramsObj" perspective="up.perspective" form-status="up.formStatus"></dbui-object-editor>
+            </div>
         </div>
-        
-        <div class="row">
+
+        <div class="row" ng-show="!checkResult.error">
             <div class="col-md-12">
                 <button class="btn btn-block btn-danger" ng-disabled="!installReady" ng-click="install()">Install</button>
             </div>
         </div>
     </div>
+    <div ng-show="installResult">
+        <div ng-show="installResult.result === 'error'">
+            <div  class="alert alert-danger">Failed to install {{installResult.metaObj.key}} version {{installResult.metaObj.version}}</div>
+            <div class="alert alert-danger">{{installResult.error_msg}}</div>
+        </div>
+        
+        <div ng-show="installResult.result === 'success'">
+            <div  class="alert alert-success">Successfully installed {{installResult.metaObj.key}} version {{installResult.metaObj.version}}</div>
+            
+            <div class="panel panel-default" ng-show="installResult.functionResults.post">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Post-Install</h3>
+                </div>
+                <div class="panel-body">
+                    <p ng-show="installResult.functionResults.post.error" class="alert alert-danger">{{installResult.functionResults.post.error_msg}}</p>
+                    <p ng-show="installResult.functionResults.post.message" class="alert" ng-class="installResult.functionResults.post.alert_level || 'alert-info'">{{installResult.functionResults.post.message}}</p>
+                </div>
+            </div>
+            <div class="panel panel-default" ng-show="anyDependencies">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Dependency Installation</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="alert alert-warning" ng-show="anyError">
+                        <p>One or more NPM or Bower dependencies failed to install.  Review the list below, and resolve the issues at the command line.</p>
+                    </div>
+                     <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Status</th>
+                                <th>Package</th>
+                                <th>Dependency of</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="d in installResult.dependencyResults.bower" ng-class="{danger:(d.result==='error'), success:(d.result==='success'}">
+                                <td style="font-size:80%">Bower</td>
+                                <td><span ng-show="d.result==='error'">NOT INSTALLED</span><span ng-show="d.result==='success'">Installed</span></td>
+                                <td>{{d.dependency.package}} {{d.dependency.version}}</td>
+                                <td>{{d.dependency.dependency_of}}</td>
+                                <td>{{d.call_result.stderr}}</td>
+                            </tr>
+                            <tr ng-repeat="d in installResult.dependencyResults.npm" ng-class="{danger:(d.result==='error'), success:(d.result==='success'}}">
+                                <td style="font-size:80%">NPM</td>
+                                <td><span ng-show="d.result==='error'">NOT INSTALLED</span><span ng-show="d.result==='success'">Installed</span></td>
+                                <td>{{d.dependency.package}} {{d.dependency.version}}</td>
+                                <td>{{d.dependency.dependency_of}}</td>
+                                <td>{{d.call_result.stderr}}</td>
+                            </tr>
+                            <tr ng-repeat="d in installResult.dependencyResults.noonian" class="success">
+                                <td style="font-size:80%">Noonian</td>
+                                <td>Installed</td>
+                                <td>{{d.dependency.package}} {{d.dependency.version}}</td>
+                                <td>{{d.dependency.dependency_of}}</td>
+                                <td ng-hide="d.install_result.functionResults.post.error" ng-class="d.install_result.functionResults.post.alert_level">{{d.install_result.functionResults.post.message}}</td>
+                                <td ng-show="d.install_result.functionResults.post.error" class="danger">{{d.install_result.functionResults.post.error_msg}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="alert alert-danger" ng-show="attemptResult.error">
+        <p><span style="font-weight:bold">Error:</span> {{attemptResult.error_msg || attemptResult.error}}</p>
+        <button class="btn btn-default" ng-click="clear()">Go Back</button>
+    </div>
     
 </div>
 <div class="modal-footer">
-    <!--<button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>-->
-    <button class="btn btn-warning" type="button" ng-click="$dismiss()">Cancel</button>
+    <button ng-show="installResult" class="btn btn-primary" type="button" ng-click="$dismiss()">Close</button>
+    <button ng-hide="installResult" class="btn btn-warning" type="button" ng-click="$dismiss()">Cancel</button>
 </div>

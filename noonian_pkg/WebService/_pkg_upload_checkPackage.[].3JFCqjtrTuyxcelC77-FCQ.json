@@ -1,8 +1,8 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:4",
 	"_id": "3JFCqjtrTuyxcelC77-FCQ",
 	"doc": "Called via package install dialog opened on BusinessObjectPackage List; checks the package and scans the system",
-	"path": "/pkg/checkPackage",
+	"path": "/pkg/upload/checkPackage",
 	"rolespec": [
 		"FnQ_eBYITOSC8kJA4Zul5g"
 	]
