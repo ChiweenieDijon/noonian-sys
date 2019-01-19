@@ -1,0 +1,8 @@
+{
+	"__ver": "sys:3",
+	"_id": "dNHIiDVvT7y75OYcZBMsyg",
+	"doc": "Pulls metadata for a package hosted in a RemotePackageRepository and checks it against local system.\nUsed by \"install package\" dialog.",
+	"path": "/pkg/checkPackage",
+	"rolespec": [
+	]
+}
