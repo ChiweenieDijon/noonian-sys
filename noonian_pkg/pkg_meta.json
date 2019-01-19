@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:78",
+	"__ver": "sys:79",
 	"_id": "7R4cBwsWTSacdSk5ZrAjTw",
 	"build_config": {
 		"exclude": [
@@ -787,6 +787,7 @@
 			"b-cPJu3CRAiUw_DKazyB0A": "sys:2",
 			"bl7smamMSomv6EqTsuHCCg": "sys:11",
 			"cCrZOnWwSeO0dxcvJOfUBA": "sys:1",
+			"dNHIiDVvT7y75OYcZBMsyg": "sys:3",
 			"fIUOA_5HQCGLI_sRwleqBA": "sys:1",
 			"fiWfHKZ8QS6-SezUmvfSmQ": "sys:4",
 			"gvfgQ7NmQB-IfJSvKxyE6w": "sys:1",
@@ -800,12 +801,12 @@
 			"w-lHVPreRRSku89vhlyagA": "sys:3"
 		}
 	},
-	"minor_version": 71,
+	"minor_version": 72,
 	"name": "Core System",
 	"package_file": {
-		"attachment_id": "3urQx2YgQb-r8QwJbiQpZA",
-		"filename": "sys.0.71.0.json",
+		"attachment_id": "KTEzb1RtRpK5swjQTENHyg",
+		"filename": "sys.0.72.0.json",
 		"type": "application/json"
 	},
-	"version": "0.71.0"
+	"version": "0.72.0"
 }
