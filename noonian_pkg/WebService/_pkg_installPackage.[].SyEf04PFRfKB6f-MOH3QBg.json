@@ -1,7 +1,7 @@
 {
-	"__ver": "sys:2",
+	"__ver": "sys:3",
 	"_id": "SyEf04PFRfKB6f-MOH3QBg",
-	"doc": "Called via button on BusinessObjectPackage; installs the package (the .json file attachment) into the system",
+	"doc": "New way: called via \"install package\" dialog\nOld way: called via button on BusinessObjectPackage; installs the package (the .json file attachment) into the system",
 	"path": "/pkg/installPackage",
 	"rolespec": [
 	]
