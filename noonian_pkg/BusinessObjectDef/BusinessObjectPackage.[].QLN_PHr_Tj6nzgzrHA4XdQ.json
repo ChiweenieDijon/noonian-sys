@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:8",
+	"__ver": "sys:9",
 	"_id": "QLN_PHr_Tj6nzgzrHA4XdQ",
 	"abstract": false,
 	"class_name": "BusinessObjectPackage",
@@ -29,9 +29,6 @@
 		"doc_config": {
 			"ref_class": "JsDocConfig",
 			"type": "reference"
-		},
-		"enable_building": {
-			"type": "boolean"
 		},
 		"key": {
 			"seperator": ".",
