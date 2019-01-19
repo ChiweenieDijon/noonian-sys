@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:79",
+	"__ver": "sys:80",
 	"_id": "7R4cBwsWTSacdSk5ZrAjTw",
 	"build_config": {
 		"exclude": [
@@ -106,7 +106,7 @@
 			"qwW8v9NIReKHdrGiRZl9tg": "sys:10",
 			"r4BrmS_bRVWPqcl-NAQYiQ": "sys:1",
 			"rnTzkxz-SoayJMPtHFEPcA": "sys:13",
-			"uZEMmkI8S3qb6HGk1YdHEA": "sys:2",
+			"uZEMmkI8S3qb6HGk1YdHEA": "sys:3",
 			"xQhrwwpWR-uqqlbCrQ95xw": "sys:6"
 		},
 		"BusinessObjectDef": {
@@ -758,7 +758,7 @@
 		},
 		"UiAction": {
 			"i8CPDhK4SXKT7tT8JknLQw": "sys:1",
-			"i9IyWncoTpGmb4M0kT_UPQ": "sys:2",
+			"i9IyWncoTpGmb4M0kT_UPQ": "sys:5",
 			"nCpVSR9XR3CrhRBRNDNtPw": "sys:8",
 			"zIbWSxNgRiGVY_G7j_jYsA": "sys:1",
 			"zd0dwbHnRR605jMa_mW81Q": "sys:1"
@@ -779,7 +779,7 @@
 			"KwOpx2idREyjG8IkQgPZjQ": "sys:4",
 			"OsHGskAGTUWcWsUUMDkVLA": "sys:3",
 			"SUUJLgaBQSmM-hi3AyGP0A": "sys:14",
-			"SyEf04PFRfKB6f-MOH3QBg": "sys:3",
+			"SyEf04PFRfKB6f-MOH3QBg": "sys:4",
 			"Tjiak1GXQq2BArAt7X9gew": "sys:2",
 			"UbKQqqY7SAWn6IrffevzFQ": "sys:7",
 			"_ody1b4bSw2XY7xo1FycqQ": "sys:1",
@@ -801,12 +801,12 @@
 			"w-lHVPreRRSku89vhlyagA": "sys:3"
 		}
 	},
-	"minor_version": 72,
+	"minor_version": 73,
 	"name": "Core System",
 	"package_file": {
-		"attachment_id": "KTEzb1RtRpK5swjQTENHyg",
-		"filename": "sys.0.72.0.json",
+		"attachment_id": "mXZwRRy4QaS692_wd4IlmA",
+		"filename": "sys.0.73.0.json",
 		"type": "application/json"
 	},
-	"version": "0.72.0"
+	"version": "0.73.0"
 }

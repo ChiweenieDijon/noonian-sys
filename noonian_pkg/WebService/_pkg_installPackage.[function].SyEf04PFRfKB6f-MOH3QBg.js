@@ -15,5 +15,24 @@ function (queryParams, db, postBody) {
         });
     }
     
+    if(queryParams.key && queryParams.repo && queryParams.version) {
+        const request = require('request');
+        
+        return db.RemotePackageRepository.findOne({_id:queryParams.repo}).then(repo=>{
+           if(!repo) {
+               throw new Error('invalid repository '+queryParams.repo);
+           }
+           
+            const fullUrl = `${repo.url}/ws/package_repo/getPackage?key=${queryParams.key}&version=${queryParams.version}`;
+    		var requestParams = {
+                uri:fullUrl,
+                auth:{bearer:repo.auth.token},
+                rejectUnauthorized: false
+            };
+            
+            return PackagingService.installPackageStream(request.get(requestParams), postBody);
+        });
+    }
+    
     throw new Error('missing required parameters');
 }
