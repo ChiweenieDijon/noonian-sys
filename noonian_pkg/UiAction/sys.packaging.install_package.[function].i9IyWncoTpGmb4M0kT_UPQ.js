@@ -24,8 +24,11 @@ function ($rootScope, $uibModal, $http, BusinessObjectModelFactory, Dbui) {
     };
     
     
-    const handleCheckResult = function(checkResult) {
+    const handleCheckResult = function(checkResult, rmt) {
         var r = scope.checkResult = scope.attemptResult = checkResult;
+        if(rmt) {
+            r.fromRemote = rmt.repo._id;
+        }
         console.log(r);
         if(r.error) {
             return;
@@ -115,7 +118,21 @@ function ($rootScope, $uibModal, $http, BusinessObjectModelFactory, Dbui) {
     scope.install = function() {
         console.log(scope.userParams);
         const cr = scope.checkResult;
-        const uploadWs = 'ws/pkg/installPackage?upload_id='+cr.file_id;
+        
+        var uploadWs;
+        if(cr.file_id) {
+            uploadWs = `ws/pkg/installPackage?upload_id=${cr.file_id}`;
+        }
+        else if(cr.fromRemote){
+            uploadWs = `ws/pkg/installPackage?key=${cr.key}&version=${cr.target_version}&repo=${cr.fromRemote}`;
+        }
+        else {
+            //Should never get here
+            console.log('Couldnt determine package source');
+            scope.installResult = scope.attemptResult = {error_message:'Couldnt determine package source'};
+        }
+        
+        
         const paramsObjects = {};
         
         if(cr.user_parameters) {
@@ -133,13 +150,15 @@ function ($rootScope, $uibModal, $http, BusinessObjectModelFactory, Dbui) {
           var r = scope.installResult = scope.attemptResult = result.data;
           scope.installReady = false;
           console.log(r);
-          ['bower','npm'].forEach(m=>{
-              _.forEach(r.dependencyResults[m], d=>{
-                  if(d.result === 'error') {
-                      scope.anyError = true;
-                  }
+          if(r.r.dependencyResults) {
+              ['bower','npm'].forEach(m=>{
+                  _.forEach(r.dependencyResults[m], d=>{
+                      if(d.result === 'error') {
+                          scope.anyError = true;
+                      }
+                  })
               })
-          })
+          }
           
           
         });
@@ -161,7 +180,7 @@ function ($rootScope, $uibModal, $http, BusinessObjectModelFactory, Dbui) {
         scope.waiting = "Checking Package and Dependencies...";
         $http.get(`ws/pkg/checkPackage?repo=${rmt.repo._id}&key=${pkg.key}`).then(function(result){
             scope.waiting = false;
-            handleCheckResult(result.data);
+            handleCheckResult(result.data, rmt);
         });
     };
     

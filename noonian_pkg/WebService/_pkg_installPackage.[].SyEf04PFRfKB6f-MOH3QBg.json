@@ -1,5 +1,5 @@
 {
-	"__ver": "sys:3",
+	"__ver": "sys:4",
 	"_id": "SyEf04PFRfKB6f-MOH3QBg",
 	"doc": "New way: called via \"install package\" dialog\nOld way: called via button on BusinessObjectPackage; installs the package (the .json file attachment) into the system",
 	"path": "/pkg/installPackage",

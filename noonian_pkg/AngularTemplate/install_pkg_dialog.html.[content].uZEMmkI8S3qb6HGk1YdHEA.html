@@ -20,7 +20,7 @@
             </uib-tab>
             
             <uib-tab heading="From Repository" select="initRemote()">
-                <span ng-show="!remoteList"><i class="fa fa-2x fa-spinner fa-pulse"></i> Obtaining list of pacakgates...</span>
+                <span ng-show="!remoteList"><i class="fa fa-2x fa-spinner fa-pulse"></i> Obtaining list of packages...</span>
                 <uib-tabset type="pills">
                     <uib-tab ng-repeat="rmt in remoteList" heading="{{rmt.repo.name}}">
                          <table class="table table-bordered">
